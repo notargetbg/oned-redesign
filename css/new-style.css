@@ -1697,4 +1697,5 @@ ul.tabs li.tab-title.active a {
 h2.section-slider-controls i.fa {
     font-size: 30px;
     margin-left: 30px;
+    cursor: pointer;
 }
