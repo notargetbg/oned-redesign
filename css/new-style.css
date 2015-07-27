@@ -1,4 +1,49 @@
 /* Lovely Element Style Resets */
+@font-face {
+      font-family: 'fontello';
+      src: url('../fonts/fontello.eot?99615524');
+      src: url('../fonts/fontello.eot?99615524#iefix') format('embedded-opentype'),
+           url('../fonts/fontello.woff?99615524') format('woff'),
+           url('../fonts/fontello.ttf?99615524') format('truetype'),
+           url('../fonts/fontello.svg?99615524#fontello') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+.fontello-icon
+    {
+      font-family: "fontello";
+      font-style: normal;
+      font-weight: normal;
+      speak: none;
+     
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      margin-right: .2em;
+      text-align: center;
+      /* opacity: .8; */
+     
+      /* For safety - reset parent styles, that can break glyph codes*/
+      font-variant: normal;
+      text-transform: none;
+     
+      /* fix buttons height, for twitter bootstrap */
+      line-height: 1em;
+     
+      /* Animation center compensation - margins should be symmetric */
+      /* remove if not needed */
+      margin-left: .2em;
+     
+      /* You can be more comfortable with increased icons size */
+      /* font-size: 120%; */
+     
+      /* Font smoothing. That was taken from TWBS */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+     
+      /* Uncomment for 3D effect */
+      /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+    }
 body {
 	font-family: 'Open Sans', sans-serif;
 	color: #263339;
@@ -383,10 +428,17 @@ button.profile-btn .fa-dot-circle-o {
   color: #263339;
 }
 
-.wrapper-box.normal::before, .wrapper-box.featured::before {
+.wrapper-box.normal.discount::before, .wrapper-box.featured.discount::before {
   content: "Sale";
   display: block;
   position: absolute;
+  font-size: 15px;
+  padding: 5px 11px;
+  background-color: #c1272c;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  z-index: 10;
 }
 
 
@@ -1397,10 +1449,35 @@ div.step.active {
   background-image: url('../imgs/course-img-3.jpg');
 }
 
+.course-img-4 {
+  background-image: url('../imgs/course-img-4.jpg');
+}
+
+.course-img-5 {
+  background-image: url('../imgs/course-img-5.jpg');
+}
+.course-img-6 {
+  background-image: url('../imgs/course-img-6.png');
+}
+.course-img-7 {
+  background-image: url('../imgs/course-img-7.jpg');
+}
+.course-img-8 {
+  background-image: url('../imgs/course-img-8.jpg');
+}
+.course-img-9 {
+  background-image: url('../imgs/course-img-9.jpeg');
+}
+.course-img-10 {
+  background-image: url('../imgs/course-img-10.jpg');
+}
+.course-img-11 {
+  background-image: url('../imgs/course-img-11.jpg');
+}
 .course-image-background > div {
   min-height: 470px;
   padding: 15px;
-  background-color: rgba(2, 2, 2, 0.38)
+  background-color: rgba(2, 2, 2, 0.21)
 }
 
 .stick-to-bottom-container {
@@ -1586,4 +1663,38 @@ button.follow-btn {
 }
 .profile-wiget span{
   padding-right: 6px;
+}
+
+/* Tabs */
+.tabs {
+  margin-bottom: 30px;
+}
+
+ul.tabs li.tab-title a {
+  font-family: 'Comfortaa', cursive;
+  color: #717171;
+  font-size: 18px;
+  border-radius: 3px;
+  text-align: center;
+}
+ul.tabs li.tab-title {
+  min-width: 212px; 
+}
+
+ul.tabs li.tab-title i.fontello-icon {
+  color: #717171;
+}
+
+
+ul.tabs li.tab-title.active i.fontello-icon {
+  color: white;
+}
+ul.tabs li.tab-title.active a {
+  background-color: #202020;
+  color: white;
+}
+
+h2.section-slider-controls i.fa {
+    font-size: 30px;
+    margin-left: 30px;
 }
