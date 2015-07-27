@@ -150,6 +150,7 @@ h2.section-title {
 	max-width: 1200px;
 }
 body>section {
+  background-color: #eeeff1;
 	padding: 40px;
 }
 section.header-section {
@@ -164,10 +165,8 @@ section.main-section {
 	box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
+
 /* Header Styles */
-.header-section .header-logo {
-	margin: 15px auto;
-}
 .header-section strong {
 	font-weight: 800;
 }
@@ -314,6 +313,58 @@ button.profile-btn .fa-dot-circle-o {
   font-size: 13px;
 	color: #666666;
 }
+
+.wrapper-box .stick-to-bottom {
+    padding-right: 15px;
+}
+
+
+
+.wrapper-box .author-box p, .wrapper-box .author-box p a {
+  font-family: 'Open Sans', sans-serif;
+  color: #717171;
+}
+
+
+
+.wrapper-box .tags span  {
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  padding: 5px 12px;
+  font-size: 13px;
+  color: #717171;
+  margin: 2px;
+}
+
+.wrapper-box hr { 
+  margin: 10px auto;
+}
+
+.wrapper-box .details p {
+  color:  #202020;
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 1px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.wrapper-box .details .social i.fa {
+  font-size: 17px;
+  margin: 14px 8px;
+  color: #b5b5b5;
+}
+
+.wrapper-box .price-box {
+  position: relative;
+  top: -2px;
+
+}
+.wrapper-box button {
+  margin-top:10px;
+}
+
 .padding-box {
 	padding: 15px;
 }
@@ -332,26 +383,54 @@ button.profile-btn .fa-dot-circle-o {
   color: #263339;
 }
 
-
+.wrapper-box.normal::before, .wrapper-box.featured::before {
+  content: "Sale";
+  display: block;
+  position: absolute;
+}
 
 
 /* Featured Course Styles ( Big sized Box ) */
-.featured-img-box {
-	max-height: 364px;
-	height: 364px;
-  	overflow: hidden;
-}
-.featured-img-box .featured-image {
-	border-top-left-radius: 3px;
-	border-top-right-radius: 3px;
-}
+
 .wrapper-box.featured {
   background-color: #202020;
 }
 
+.featured h2 a {
+  color: #263339;
+}
+.featured .price-box span.old-price {
+  margin-right: 6px;
+}
 
+.featured h2 a {
+  color: white;
+}
 
+.featured h5 a , .wrapper-box h5 a {
+  font-size: 13px;
+}
 
+.featured .author-box p, .featured .author-box p a {
+ font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+.featured.wrapper-box .tags span  {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 5px 12px;
+  font-size: 13px;
+  color: rgb(244, 244, 244);
+  margin: 2px;
+}
+
+.featured.wrapper-box .details p {
+  color:  #ffffff;
+  font-size: 13px;
+  margin-bottom: 1px;
+  font-family: 'Open Sans', sans-serif;
+}
 
 /* Normal Course Styles ( Normal sized Box ) */
 .img-box {
@@ -378,74 +457,12 @@ button.profile-btn .fa-dot-circle-o {
 	font-size: 15px;
 	font-weight: 800;
 }
-/* Enrollment Styles */
-.enrollment p {
-	color: #adadad;
-}
-.enrollment span.enrolling {
-	color: #666666;
-	font-weight: 600;
-}
-
-/* Course Types and Featured Box Styles */
-
-/* Webinar Box
-Category and Price color  	- GREEN
-On-sale color 				- RED
- */
-.webinar .category-color p,.webinar .category-color p a {
-	color: #84d26d;
-}
-.webinar strong.sale {
-	color: #c7595a;
-}
-.webinar .price-box .price-desc {
-	color: #84d26d;
-}
-.webinar .price-box span.new-price,.webinar .price-box span.price {
-	color: #84d26d;
-}
-
-/* Pre-Made Box
-Category and Price color  	- BLUE
-On-sale color 				- ORANGE
- */
-.pre-made .category-color p,.pre-made .category-color p a {
-	color: #5ec0fd;
-}
-.pre-made strong.sale {
-	color: #fbaf41;
-}
-.pre-made .price-box .price-desc {
-	color: #5ec0fd;
-}
-.pre-made .price-box span.new-price,.pre-made .price-box span.price {
-	color: #5ec0fd;
-}
-/* Featured Box
-Category and Price color  	- GREEN
-On-sale color 				- ORANGE
- */
-.featured .category-color p,.featured .category-color p a {
-	color: #84d26d;
-}
-.featured h2 a {
-  color: #263339;
-}
-.featured strong.sale {
-	color: #fbaf41;
-}
-.featured .price-box .price-desc {
-	color: #84d26d;
-}
-.featured .price-box span.old-price {
-	margin-right: 6px;
-}
 
 
 
 
-/* Subscribe Form Box */
+
+/* Subscribe Form Box - Saved for later use... */
 .subscribe-box {
 	background-color: #f6f8f7;
 	padding: 30px;
@@ -462,11 +479,6 @@ On-sale color 				- ORANGE
     height: 41px;
     float: left;
     max-width: 470px;
-}
-.subscribe-form button.blue-btn {
-	/*position:absolute;
-	top: 0;
-	right: 10px;*/
 }
 .subscribe-form ::-webkit-input-placeholder::before { 
 	font-family: fontAwesome; 
@@ -489,6 +501,8 @@ On-sale color 				- ORANGE
 	color: #bcbcbe; 
 }
 
+
+
 /* Top Menu Bar */
 nav.oned-top-menu {
 	background-color: #ffffff;
@@ -503,7 +517,6 @@ li.oned-menu-item {
 	list-style-type: none;
 	margin: auto;
 	display: inline-block;
-/*	margin-left: 10px;*/
 	color: #adadad;
 	font-size: 13px;
 }
@@ -518,6 +531,8 @@ li.oned-menu-item a {
 li.oned-menu-item a:hover {
 	color: #666666;
 }
+
+
 /* Register and Login Page */
 
 section.register-section {
@@ -1321,11 +1336,6 @@ div.step.active {
 } 
 
 @media all and (max-width: 642px) {
-    .featured-img-box {
-        max-height: initial;
-        height: initial;
-        overflow: hidden;
-    }
 
     .register-section .wrapper-box .help-link-sign,.register-section .wrapper-box .help-link-login  {
         top: 10px;
@@ -1397,90 +1407,17 @@ div.step.active {
   position: relative;
 }
 
-.wrapper-box .stick-to-bottom {
-    padding-right: 15px;
-}
 
 .stick-to-bottom {
   position:absolute; 
   bottom:0;
 }
 
-.featured h2 a {
-  color: white;
-}
-
-.featured h5 a , .wrapper-box h5 a {
-  font-size: 13px;
-}
-
-
-.wrapper-box .author-box p, .wrapper-box .author-box p a {
-  font-family: 'Open Sans', sans-serif;
-  color: #717171;
-}
-
-.featured .author-box p, .featured .author-box p a {
- font-family: 'Open Sans', sans-serif;
-  color: white;
-}
-
-.featured.wrapper-box .tags span  {
-  border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.25);
-  padding: 5px 12px;
-  font-size: 13px;
-  color: rgb(244, 244, 244);
-  margin: 2px;
-}
-
-.wrapper-box .tags span  {
-  border-radius: 4px;
-  background-color: #f2f2f2;
-  padding: 5px 12px;
-  font-size: 13px;
-  color: #717171;
-  margin: 2px;
-}
-
-.wrapper-box hr { 
-  margin: 10px auto;
-}
-
-.wrapper-box .details p {
-  color:  #202020;
-  font-weight: 600;
-  font-size: 13px;
-  margin-bottom: 1px;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.featured.wrapper-box .details p {
-  color:  #ffffff;
-  font-size: 13px;
-  margin-bottom: 1px;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.wrapper-box .details .social i.fa {
-  font-size: 17px;
-  margin: 14px 8px;
-  color: #b5b5b5;
-}
-
-.wrapper-box .price-box {
-  position: relative;
-  top: -2px;
-
-}
-
 .price-box p {
   font-family: 'Open Sans', sans-serif;
 }
 
-.wrapper-box button {
-  margin-top:10px;
-}
+
 
 .webinar button {
   background-color: #84cf6e;
