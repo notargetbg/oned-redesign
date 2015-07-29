@@ -113,11 +113,11 @@ FaceBook Color -    #3a5a98
 }
 
 button {
-	font-size: 13px;
+	font-size: 15px;
 	border-radius: 4px;
 	border: none;
 	margin: auto;
-	height: 42px;
+	height: 38px;
 	width: 120px;
 	padding: 4px 10px;
   font-family: 'Open Sans', sans-serif;
@@ -592,6 +592,8 @@ button.profile-btn .fa-dot-circle-o {
 /* Top Menu Bar */
 nav.oned-top-menu {
 	background-color: #202020;
+    height: 58px;
+    padding-top: 2px;
 	
 }
 ul.oned-top-menu {
@@ -619,7 +621,7 @@ li.search-courses input {
         border: none;
         font-size:14px;
         font-weight: 600;
-    box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.84) inset;
+    box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.35) inset;
 }
 li.search-courses input:active {
   background-color: #717171;
@@ -640,6 +642,12 @@ li.oned-menu-item a:hover {
 	color: #B6B6B6;;
 }
 
+li.menu-link {
+  margin-left: 20px;
+}
+li.oned-menu-item button {
+  margin-top: 8px;
+}
 
 /* Register and Login Page */
 
