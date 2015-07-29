@@ -127,7 +127,7 @@ button.green-btn {
   	color: #ffffff;
   	background-color: #84d26d;
     font-weight: 600;
-    box-shadow: 0 1px 4px rgba(98, 98, 98, 0.62);
+    box-shadow: 0 1px 2px rgba(98, 98, 98, 0.32);
 }
 button.blue-btn {
 	text-transform: uppercase;
@@ -204,6 +204,7 @@ section.header-section {
 	box-shadow: 0 1px 4px rgba(218, 218, 218, 0.75);
   background-size: 100%;
   background-position: center;
+  padding-top:58px;
 }
 section.main-section {
 	background-color: #eeeff1;
@@ -371,7 +372,7 @@ button.profile-btn .fa-dot-circle-o {
 
 .wrapper-box {
 	background-color: #ffffff;
-  box-shadow: 0 1px 1px rgba(218, 218, 218, 0.75);
+  box-shadow: 0 0px 1px rgba(138, 138, 138, 0.75);
   border-radius: 3px;
 }
 .wrapper-box h2, .wrapper-box h3 {
@@ -438,6 +439,7 @@ button.profile-btn .fa-dot-circle-o {
 
 .padding-box {
 	padding: 15px;
+  margin-bottom: 4px;
 }
 
 
@@ -594,7 +596,9 @@ nav.oned-top-menu {
 	background-color: #202020;
     height: 58px;
     padding-top: 2px;
-	
+	    position: fixed;
+    width: 100%;
+    z-index: 100;
 }
 ul.oned-top-menu {
 	margin: auto;
@@ -928,10 +932,14 @@ input[type=checkbox]:not(old):checked + label > span:before{
     margin:15px auto;
 }
 .author-profile-box h3 {
-    font-weight: 700;
+    color: #202020;
+    font-size: 32px;
+    font-weight: 300;
 }
 .author-profile-box p, .author-profile-box p a {
-    color: #adadad;
+    color: #202020;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 .author-profile-box .social-profiles {
     margin: 15px auto;
@@ -979,6 +987,7 @@ button.follow-btn {
 .author-courses .author-box .author-circle-pic {
     margin: initial;
 }
+
 /* Course and Lesson Page */
 .course-header {
     padding: 0 40px;
@@ -1625,78 +1634,36 @@ div.step.active {
 
 /* Profile Page */
 
+section.author-courses {
+    background-color: white;
+    padding-top:15px;
+}
+
 
 .profile-header {
-    background: url("../imgs/profile-page-bg.jpg") no-repeat center center; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    padding-bottom: 16px;
-    padding-top: 36px;
+    background-color: white;
+    padding-top: 58px;
 }
 .author-profile-box {
   max-width: 200px;
   margin: 0 auto;
-}
-.author-profile-box .author-circle-pic {
-      width: 150px;
-      height: 150px;
-      background-image: url("../imgs/author-pic.jpg");
-      margin: auto;
-      border: 7px solid rgba(255, 255, 255, 0.5);
-      background-size: 100%;
+  padding-top: 50px;
 }
 
-.author-profile-box .author-stats {
-    margin-bottom: 15px;
+.profile-header .tabs {
+  margin: 25px 0;
 }
-.author-profile-box h2 {
-    font-size: 23px;
-    font-weight: 700;
-    line-height: 19px;
-    margin:15px auto;
-    color: #ffffff;
-}
-.author-profile-box h3 {
-    color: #ffffff;
-    font-size: 32px;
-    font-weight: 100;
-}
-.author-profile-box p, .author-profile-box p a {
-    color: #dadada;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-.author-profile-box .social-profiles {
-    margin: 15px auto;
-}
-.author-profile-box .social-profiles p {
-    margin: 5px auto;
-}
-.author-profile-box .social-profiles span {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    text-align: center;
-    background-color: #cccccc;
-    border-radius: 100%;
-    margin-right: 5px;
-    position: relative;
-    top: 1px;
-}
-.author-profile-box .social-profiles span .fa {
-    color: white;
-    font-size: 9px;
-    position: relative;
-    top: -2px;
-}
+
+
 button.follow-btn {
     width: 110px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    margin-top: 32px;
+    margin-top: 25px;
+    color: #ffffff;
+    background-color: #84d26d;
+    box-shadow: 0 1px 2px rgba(98, 98, 98, 0.32);
 }
 
 .author-information-box h3 {
@@ -1712,21 +1679,75 @@ button.follow-btn {
 .author-courses .author-box {
     margin: 8px auto 0px;
 }
+.author-courses .wrapper-box button.enroll-btn {
+  margin-left:20px;
+  font-weight: 700;
+}
+.author-courses .wrapper-box .img-box .thumbnail-image {
+      border-top-right-radius: 0;
+}
 .author-courses .author-box .author-circle-pic {
     margin: initial;
 }
-.profile-wiget {
-  background-color: #ffffff;
-  box-shadow: 0 1px 4px rgba(218, 218, 218, 0.75);
-  font-size: 13px;
-  padding: 23px 17px;
+.author-courses .course-row {
+  margin-bottom: 20px;
 }
-.profile-wiget a{
+.author-courses .course-row a.green:hover {
+  color: #74C15E;
+}
+.author-courses .header-top-course {
+  padding-top:10px;
+}
+.author-courses .course-row .wrapper-box {
+  background-color: rgba(252, 252, 252, 0.41);
+} 
+.author-courses .wrapper-box .price-box span.new-price, .price-box span.price {
+  font-weight: 700;
+}
+.author-courses .wrapper-box .author-box p a {
+  color: #020202;
+  font-weight: 700;
+}
+.profile-widget h3 {
+    margin: 15px auto;
+}
+.profile-widget div:first-child h3 {
+  margin: 0;
+  margin-bottom: 15px;
+
+}
+
+.profile-widget .author-biography p {
+  color: #666666;
+}
+
+.profile-widget .social-profiles {
+  margin-top: 25px;
+}
+
+.profile-widget .social-profiles a{
   font-size: 13px;
   color: #adadad;
 }
-.profile-wiget span{
-  padding-right: 6px;
+
+.profile-widget .social-profiles span{
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 5px;
+    
+}
+
+.profile-widget .social-profiles i.fa {
+    background-color: #B4ADAD;
+    padding: 5px;
+    border-radius: 59px;
+    width: 20px;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+}
+.author-courses .wrapper-box.course .social.tags {
+  margin: 0;
 }
 
 /* Tabs */
@@ -1740,9 +1761,13 @@ ul.tabs li.tab-title a {
   font-size: 18px;
   border-radius: 3px;
   text-align: center;
+  padding-left: 20px;
 }
 ul.tabs li.tab-title {
   min-width: 212px; 
+}
+ul.tabs li.tab-title:not(:first-child)  {
+  margin-left: 20px;
 }
 
 ul.tabs li.tab-title i.fontello-icon {
