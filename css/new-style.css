@@ -658,6 +658,8 @@ li.oned-menu-item button {
 section.register-section {
     box-shadow: 0 1px 4px rgba(218, 218, 218, 0.75);
     background-color: #eeeff1;
+    height: 100%;
+    padding-top: 242px;
     
 }
 .register-section .wrapper-box {
@@ -730,6 +732,10 @@ button.facebook-btn {
     top:150px;
 }
 /* Settings Page Styles Start Here */
+section.settings-section {
+    height: 100%;
+    padding-top: 130px;
+}
 
 .settings-section .wrapper-box {
     padding: 0;
