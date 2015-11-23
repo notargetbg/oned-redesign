@@ -195,8 +195,8 @@ h2.section-title {
 	max-width: 1200px;
 }
 body>section {
-  background-color: #eeeff1;
-	padding: 40px;
+  background-color: #f7f9fa;
+  padding: 0 40px;
 }
 section.header-section {
 	background-color: #ffffff;
