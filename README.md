@@ -6,8 +6,6 @@ This README would normally document whatever steps are necessary to get your app
 
 # *Just Doing Pretty Redesign #
 
-## Includes: ##
-
 ### Header ###
 ### Footer ###
 ### Course Grid ###
