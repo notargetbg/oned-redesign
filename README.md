@@ -4,14 +4,14 @@ This README would normally document whatever steps are necessary to get your app
 
 ### What is this repository for? ###
 
-*Just Doing Pretty Redesign
+# *Just Doing Pretty Redesign #
 
-# // 1. Includes: #
+## Includes: ##
 
-### -Header ###
-### -Footer ###
-### -Course Grid ###
-### -Login/Register ###
-### -Settings ( work in progress ) ###
-### -Profile page ###
-### -Course page ###
+### Header ###
+### Footer ###
+### Course Grid ###
+### Login/Register ###
+### Settings ( work in progress ) ###
+### Profile page ###
+### Course page ###
