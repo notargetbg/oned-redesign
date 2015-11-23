@@ -445,13 +445,22 @@ button.profile-btn .fa-dot-circle-o {
 
 /* Author Box Styles */
 .author-box p, .author-box p a {
-	color: #263339;
+	color: #FFFFFF;
 	font-weight: 600;
 }
+.oned-top-menu  .author-box {
+  margin-top: 6px;
+}
+
 .author-circle-pic {
 	border-radius: 100%;
 	margin-bottom: 4px;
+
 }
+.author-box .author-circle-pic {
+  display: inline;
+}
+
 .author-name a {
   color: #263339;
 }
@@ -742,6 +751,24 @@ section.settings-section {
 }
 
 /* Settings Menu Styles */
+.settings-section .wrapper-box .tabs {
+      margin: 0;
+}
+.settings-section .wrapper-box .tabs .tab-title {
+  float: none;
+  margin-left: 0 !important;
+}
+.settings-section .wrapper-box .tabs .tab-title a {
+  border-radius: 0;
+  background-color: #FFFFFF;
+  font-weight: 400;
+  font-size: 15px;
+  color: black;
+}
+
+.settings-section .wrapper-box .tabs .tab-title.active a {
+  background-color: #DADADA;
+}
 
 .settings-section .wrapper-box h3 {
     margin:initial;
@@ -750,20 +777,27 @@ section.settings-section {
     color: #000000;
     border-bottom: 1px solid rgba(218, 218, 218, 0.75);
 }
+
+/* old style */
 .settings-section .wrapper-box a:hover h3 {
   background-color: #F3F3F3;
 }
+/* old style */
 .settings-section .wrapper-box a.active h3 {
     background-color: #dadada;
 }
+/* old style */
 .settings-section .wrapper-box div:first-child  h3 {
     border-bottom: none;
 }
+/* old style */
 .settings-section .wrapper-box .setting-type h3 {
     border-bottom: none;
     color: #ffffff;
     font-weight: 800;
 }
+
+
 .settings-section .wrapper-box .setting-type {
     background-color: #263339;
     text-transform: uppercase;

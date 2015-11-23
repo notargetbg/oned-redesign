@@ -12,25 +12,39 @@
     <link rel="stylesheet" type="text/css" href="css/new-style.css">
   </head>
   <body>
-    
+
     <header class="">
       <nav class="oned-top-menu container-width">
         <div class="row">
           <div class="large-24 columns">
             <ul class="oned-top-menu">
-              <div class="text-center">
-                <li class="oned-menu-item category-drop">
-                  <button class="white-btn square-btn"><i class="fa fa-bars"></i></button>
-                </li>
+              <div class="left-side left">
                 <li class="oned-menu-item menu-logo">
                   <a href="#"><img src="imgs/logos/oned-logo-small.png" alt=""></a>
                 </li>
-                <li style="display:none;" class="oned-menu-item search-courses">
-                  <input type="text" placeholder="Search Courses, Webinars and more...">
+                <li class="oned-menu-item search-courses">
+                  <input type="text" placeholder=" Search">
                 </li>
-                <li class="oned-menu-item category-drop">
-                  <button class="white-btn square-btn"><i class="fa fa-search"></i></button>
+                <li class="oned-menu-item menu-link">
+                  <a href="#">Discover</a>
                 </li>
+                <li class="oned-menu-item menu-link">
+                  <a href="#">Create a course</a>
+                </li>
+                <li class="oned-menu-item menu-link">
+                  <a href="#">Help</a>
+                </li>
+              </div>
+              <div class="right">
+                <div class="author-box">
+                  <p class="">
+                    <a href="#">
+                      <img src="http://placehold.it/40x40" alt="" class="author-circle-pic">
+                      David Lantz
+                    </a>
+                    <i class="fa fa-chevron-down"></i>
+                  </p>
+                </div>
               </div>
             </ul>
           </div>
@@ -41,7 +55,7 @@
     <section class="container-width settings-section">
       <div class="row">
 
-        <div class="large-5 large-offset-3 medium-12 small-24 hide-for-small columns">
+        <div class="large-5 large-offset-2 medium-12 small-24 hide-for-small columns">
           <div class="row">
             <div class="large-24 columns wrapper-box">
               <div class="setting-type">
@@ -76,8 +90,53 @@
           </div>
         </div>
 
+        <ul class="tabs vertical" data-tab>
+          <li class="tab-title active"><a href="#panel11">Tab 1</a></li>
+          <li class="tab-title"><a href="#panel21">Tab 2</a></li>
+          <li class="tab-title"><a href="#panel31">Tab 3</a></li>
+          <li class="tab-title"><a href="#panel41">Tab 4</a></li>
+        </ul>
+
+
+         <div class="large-5 large-offset-2 medium-12 small-24 hide-for-small columns">
+          <div class="row">
+            <div class="large-24 columns wrapper-box">
+              <div class="setting-type">
+                <h3>Profile Settings</h3>
+              </div>
+              <ul class="tabs settings" data-tab>
+                <li class="tab-title active">
+                  <a href="#panel11">
+                   General info
+                  </a>
+                </li>
+                <li class="tab-title">
+                  <a href="#panel21">
+                   Personal info
+                  </a>
+                </li>
+                <li class="tab-title">
+                  <a href="#panel31">
+                    Interests
+                  </a>
+                </li>
+                <li class="tab-title">
+                  <a href="#panel41">
+                    Newsletter
+                  </a>
+                </li>
+              </ul>
+             
+            </div>
+          </div> <!-- end of .wrapper-box -->
+
+          <div class="row button-row">
+            <button type="submit" class="blue-btn"> Save</button>
+          </div>
+        </div>
+
         <!-- General Info -->
-        <div class="large-15 medium-24 small-24 right columns">
+        <div class="large-15 left medium-24 small-24  columns">
           <div class="row">
             <div class="large-24 columns wrapper-box">
               <div class="separator">
@@ -181,7 +240,7 @@
         </div> <!-- end of .large-18 small-24 columns -> end of general info -->
 
         <!-- Personal Info -->
-        <div class="large-15 small-24 right columns">
+        <div class="large-15 small-24 left columns">
           <div class="row">
             <div class="large-24 columns wrapper-box">
               <div class="separator">
@@ -252,7 +311,7 @@
         </div> <!-- end of .large-18 small-24 columns -> end of personal info -->
 
         <!-- Interests Settings -->
-        <div class="large-15 small-24 right columns">
+        <div class="large-15 small-24 left columns">
           <div class="row">
             <div class="large-24 columns wrapper-box">
               <div class="separator">
@@ -350,7 +409,7 @@
         </div> <!-- end of .large-18 small-24 columns -> end of interests settings -->
 
         <!-- Newsletter Settings -->
-        <div class="large-15 small-24 right columns">
+        <div class="large-15 small-24 left columns">
           <div class="row">
             <div class="large-24 columns wrapper-box">
               <div class="separator">
@@ -417,11 +476,6 @@
           </div>
         </div> <!-- end of .large-18 small-24 columns -> end of newsletter settings -->
 
-      <div class="large-15 small-24 right columns">
-        <div class="row button-row">
-          <button type="submit" class="blue-btn"> Save</button>
-        </div>
-      </div>
 
       </div> <!-- end of main .row -->
     </section>
