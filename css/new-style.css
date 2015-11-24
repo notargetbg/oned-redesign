@@ -196,7 +196,7 @@ h2.section-title {
 }
 body>section {
   background-color: #f7f9fa;
-  padding: 0 40px;
+  padding: 40px;
 }
 section.header-section {
 	background-color: #ffffff;
@@ -1720,6 +1720,10 @@ section.br-cr > .row , section.course-header > .row , section.course-content > .
 .course-futures i{
   color: #bcbdbe;
   font-size: 20px;
+}
+.no-vertical-padding{
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 /* Create Course Styles */
