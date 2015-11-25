@@ -1081,6 +1081,7 @@ section.settings-section {
     display: inline-block;
     text-align: center;
     cursor: pointer;
+    font-weight: 700;
 }
 .settings-section  .lang-translations span.active {
     background-color: #84D26D;
