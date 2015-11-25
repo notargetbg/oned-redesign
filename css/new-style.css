@@ -1765,6 +1765,9 @@ section.br-cr > .row , section.course-header > .row , section.course-content > .
   padding: 16px 0;
   font-weight: 600;
 }
+.course-content .small-24 .wrapper-box{
+  margin-top: 8px;
+}
 .course-content p{
   font-family: "Open Sans",sans-serif;
 }
