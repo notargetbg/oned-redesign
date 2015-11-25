@@ -536,6 +536,10 @@ footer .copyright {
 
 /* Featured Course Styles ( Big sized Box ) */
 
+.wrapper-box.course {
+  border-radius: 1px;
+}
+
 .wrapper-box.featured {
   background-color: #202020;
 }
