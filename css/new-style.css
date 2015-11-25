@@ -921,75 +921,104 @@ button.facebook-btn {
 }
 /* Settings Page Styles Start Here */
 section.settings-section {
-    height: 100%;
     padding-top: 130px;
+    height: 100%;
 }
 
 .settings-section .wrapper-box {
     padding: 0;
 }
 
-/* Settings Menu Styles */
-.settings-section .wrapper-box .tabs {
-      margin: 0;
+/* Utility Classes */
+.position-relative {
+    position: relative;
 }
-.settings-section .wrapper-box .tabs .tab-title {
+.border-radius-top-7px {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px; 
+}
+.border-radius-bottom-7px {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px; 
+}
+
+
+/* Settings Menu Styles */
+.settings-section h1,
+.settings-section h2,
+.settings-section h3,
+.settings-section h4,
+.settings-section h5,
+.settings-section h6,
+.settings-section p {
+
+  font-family: 'Open Sans', sans-serif;
+}
+
+.settings.tabs.wrapper-box {
+  max-width: 220px;
+  width: 27%;
+  float: left;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px; 
+}
+.settings.tabs.wrapper-box .tab-title:last-child a  {
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px; 
+}
+.settings-section .wrapper-box.tabs .tab-title {
   float: none;
   margin-left: 0 !important;
+  text-align: left;
 }
-.settings-section .wrapper-box .tabs .tab-title a {
+.settings-section .wrapper-box.tabs .tab-title a {
   border-radius: 0;
+  padding: 20px;
   background-color: #FFFFFF;
   font-weight: 400;
   font-size: 15px;
   color: black;
+  font-family: 'Open Sans', sans-serif;
+  border-bottom: 1px solid rgba(218, 218, 218, 0.75);
 }
 
-.settings-section .wrapper-box .tabs .tab-title.active a {
-  background-color: #DADADA;
-}
-
-.settings-section .wrapper-box h3 {
-    margin:initial;
-    padding: 20px;
-    font-weight: 500;
-    color: #000000;
-    border-bottom: 1px solid rgba(218, 218, 218, 0.75);
-}
-
-/* old style */
-.settings-section .wrapper-box a:hover h3 {
+.settings-section .settings .tab-title:hover a {
   background-color: #F3F3F3;
 }
-/* old style */
-.settings-section .wrapper-box a.active h3 {
-    background-color: #dadada;
-}
-/* old style */
-.settings-section .wrapper-box div:first-child  h3 {
-    border-bottom: none;
-}
-/* old style */
-.settings-section .wrapper-box .setting-type h3 {
-    border-bottom: none;
-    color: #ffffff;
-    font-weight: 800;
-}
 
+.settings-section .wrapper-box.tabs .tab-title.active a {
+  color: #5ec0fd;
+}
 
 .settings-section .wrapper-box .setting-type {
-    background-color: #263339;
-    text-transform: uppercase;
+    background-color: #eeeff1;
 }
-.settings-section .wrapper-box .setting-type:first-child {
+
+.settings-section .settings .setting-type h3 {
+    margin: initial;
+    padding: 20px;
     border-bottom: none;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px; 
+    color: #adadad;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-.settings-section .wrapper-box .setting-type:last-child {
-    border-bottom: none;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
+
+.settings-section .tabs-content {
+  width: 68%;
+  margin-left: 5%;
+  float: left;
+}
+.settings-section .tabs-content .content {
+  padding: 0;
+  margin: 0;
+}
+.settings-section .tabs-content .row.button-row {
+    margin: 0;
+}
+
+.settings-section .tabs-content .wrapper-box {
+  border-radius: 7px;
 }
 
 .settings-section .button-row button {
@@ -1008,8 +1037,11 @@ section.settings-section {
 .settings-section .wrapper-box .separator:last-child {
   border-bottom: none;
 }
-.settings-section .wrapper-box h2 {
+.settings-section  .tabs-content .wrapper-box h2 {
     margin: initial;
+    font-weight: 300;
+    font-size: 27px;
+    line-height: 38px;
 }
 
 .settings-section .wrapper-box .separator h3, .settings-section .wrapper-box .separator p {
@@ -1019,6 +1051,7 @@ section.settings-section {
     font-size: 15px;
     position:relative;
     top: 8px;
+    font-weight: 700;
 }
 .settings-section .wrapper-box .separator img {
     border-radius: 7px;
@@ -1027,6 +1060,7 @@ section.settings-section {
 }
 .wrapper-box .separator p.tip {
     color: #757575;
+    font-weight: 400;
 }
 
 .wrapper-box .separator .input-positioning {
@@ -1036,11 +1070,44 @@ section.settings-section {
 .wrapper-box .separator .interests input {
     margin-bottom: 36px;
 }
+
+.settings-section .tabs-content .lang-translations span {
+    font-size: 13px;
+    margin: 0 8px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+}
+.settings-section  .lang-translations span.active {
+    background-color: #84D26D;
+    color: white;
+    width: 28px;
+    height: 28px;
+    margin: 0;
+    line-height: 26px;
+    border-radius: 101px;
+    border: 1px solid #5a9c46;
+}
+
+
 .settings-section .wrapper-box .separator button.white-btn {
-    margin-top: 10px;
-    width: 100%;
-    color: #5ec0fd;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    max-width: 220px;
+    font-weight: 700;
+    color: #adadad;
     font-weight: 600;
+    box-shadow: 0 1px 3px #dadada;
+background: rgba(255,255,255,0.03);
+background: -moz-linear-gradient(top, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.05) 78%, rgba(255,255,255,0.05) 80%, rgba(255,255,255,0.05) 81%, rgba(255,255,255,0.05) 81%, rgba(255,255,255,0.05) 82%, rgba(255,255,255,0.05) 83%, rgba(255,255,255,0.05) 84%, rgba(255,255,255,0.05) 85%, rgba(153,153,153,0.05) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0.03)), color-stop(78%, rgba(255,255,255,0.05)), color-stop(80%, rgba(255,255,255,0.05)), color-stop(81%, rgba(255,255,255,0.05)), color-stop(81%, rgba(255,255,255,0.05)), color-stop(82%, rgba(255,255,255,0.05)), color-stop(83%, rgba(255,255,255,0.05)), color-stop(84%, rgba(255,255,255,0.05)), color-stop(85%, rgba(255,255,255,0.05)), color-stop(100%, rgba(153,153,153,0.05)));
+background: -webkit-linear-gradient(top, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.05) 78%, rgba(255,255,255,0.05) 80%, rgba(255,255,255,0.05) 81%, rgba(255,255,255,0.05) 81%, rgba(255,255,255,0.05) 82%, rgba(255,255,255,0.05) 83%, rgba(255,255,255,0.05) 84%, rgba(255,255,255,0.05) 85%, rgba(153,153,153,0.05) 100%);
+background: -o-linear-gradient(top, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.05) 78%, rgba(255,255,255,0.05) 80%, rgba(255,255,255,0.05) 81%, rgba(255,255,255,0.05) 81%, rgba(255,255,255,0.05) 82%, rgba(255,255,255,0.05) 83%, rgba(255,255,255,0.05) 84%, rgba(255,255,255,0.05) 85%, rgba(153,153,153,0.05) 100%);
+background: -ms-linear-gradient(top, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.05) 78%, rgba(255,255,255,0.05) 80%, rgba(255,255,255,0.05) 81%, rgba(255,255,255,0.05) 81%, rgba(255,255,255,0.05) 82%, rgba(255,255,255,0.05) 83%, rgba(255,255,255,0.05) 84%, rgba(255,255,255,0.05) 85%, rgba(153,153,153,0.05) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.05) 78%, rgba(255,255,255,0.05) 80%, rgba(255,255,255,0.05) 81%, rgba(255,255,255,0.05) 81%, rgba(255,255,255,0.05) 82%, rgba(255,255,255,0.05) 83%, rgba(255,255,255,0.05) 84%, rgba(255,255,255,0.05) 85%, rgba(153,153,153,0.05) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#999999', GradientType=0 );
 }
 
 select {
@@ -1054,6 +1121,7 @@ select {
       outline-color: rgb(214, 214, 214);
       font-size:15px;
       font-family: 'Open Sans', sans-serif;
+      cursor: pointer;
 }
 
 select option {
@@ -1068,6 +1136,7 @@ input[type=radio   ]:not(old){
   padding   : 0;
   font-size : 1em;
   opacity   : 0;
+  cursor: pointer;
 }
 
 input[type=checkbox]:not(old) + label,
@@ -1781,13 +1850,16 @@ section.br-cr > .row , section.course-header > .row , section.course-content > .
   color: #757575;
   margin-right: 0;
 }
-.type-slectors input[type="checkbox"]:not(old), input[type="radio"]:not(old) {
+
+/* These affect the settings section. Need to find a fix. */
+
+/*.type-slectors input[type="checkbox"]:not(old), input[type="radio"]:not(old) {
     font-size: 1em;
     margin: -1em;
     opacity: 0;
     padding: 0;
     width: 20px;
-}
+}*/
 .wrapper-box .type-slectors input[type="radio"] + label p{
   line-height: 24px;
   margin-left: 28px;
@@ -2210,12 +2282,12 @@ button.follow-btn {
   margin: 0;
 }
 
-/* Tabs */
-.tabs {
+/* Tabs For Home Page */
+.home-page .tabs {
   margin-bottom: 30px;
 }
 
-ul.tabs li.tab-title a {
+.home-page ul.tabs li.tab-title a {
   font-family: 'Comfortaa', cursive;
   color: #717171;
   font-size: 18px;
@@ -2223,22 +2295,22 @@ ul.tabs li.tab-title a {
   text-align: center;
   padding-left: 20px;
 }
-ul.tabs li.tab-title {
+.home-page ul.tabs li.tab-title {
   min-width: 212px; 
 }
-ul.tabs li.tab-title:not(:first-child)  {
+.home-page ul.tabs li.tab-title:not(:first-child)  {
   margin-left: 20px;
 }
 
-ul.tabs li.tab-title i.fontello-icon {
+.home-page ul.tabs li.tab-title i.fontello-icon {
   color: #717171;
 }
 
 
-ul.tabs li.tab-title.active i.fontello-icon {
+.home-page ul.tabs li.tab-title.active i.fontello-icon {
   color: white;
 }
-ul.tabs li.tab-title.active a {
+.home-page ul.tabs li.tab-title.active a {
   background-color: #202020;
   color: white;
 }
@@ -2247,4 +2319,26 @@ h2.section-slider-controls i.fa {
     font-size: 30px;
     margin-left: 30px;
     cursor: pointer;
+}
+
+/* Media for Settings Page */
+@media all and (max-width: 768px) {
+  .settings-section .settings.tabs.wrapper-box,
+  .settings-section .tabs-content  {
+    max-width: initial;
+    margin: 0;
+    width: 100%;
+    float: none;
+  }
+  .settings-section .tabs-content {
+    margin-top: 20px;
+  }
+  .settings-section .settings .setting-type h3,
+  .settings-section .wrapper-box.tabs .tab-title a {
+    padding: 10px;
+  }
+  section.settings-section {
+    padding-top: 75px;
+    height: initial;
+  }
 }

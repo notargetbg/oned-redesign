@@ -10,13 +10,21 @@
     <script src="js/vendor/modernizr.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/new-style.css">
+     <!-- AWESOME CSS ANIMATIONS MADE SUPER EZ -->
+    <link rel="stylesheet" href="css/animate.css">
   </head>
   <body>
 
-    <header class="">
+     <header class="">
       <nav class="oned-top-menu container-width">
         <div class="row">
           <div class="large-24 columns">
+            <div class="responsive-menu-button">
+               <li class="oned-menu-item menu-logo">
+                  <a href="#"><img src="imgs/logos/oned-logo-small.png" alt=""></a>
+                </li>
+              <i class="fa fa-bars"></i>
+            </div>
             <ul class="oned-top-menu">
               <div class="left-side left">
                 <li class="oned-menu-item menu-logo">
@@ -36,7 +44,8 @@
                 </li>
               </div>
               <div class="right">
-                <div class="author-box">
+                <li class="oned-menu-item">
+                 <div class="author-box">
                   <p class="">
                     <a href="#">
                       <img src="http://placehold.it/40x40" alt="" class="author-circle-pic">
@@ -45,6 +54,15 @@
                     <i class="fa fa-chevron-down"></i>
                   </p>
                 </div>
+                </li>
+
+                <li class="oned-menu-item lang-dropdown">
+                  <a data-dropdown="lang_dropdown" aria-controls="lang_dropdown" aria-expanded="false">BG <i style="font-size:12px;" class="fa fa-chevron-down"></i></a>
+                  <ul id="lang_dropdown" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+                    <li><a href="#">EN</a></li>
+                    <li><a href="#">RU</a></li>
+                  </ul>
+                </li>
               </div>
             </ul>
           </div>
@@ -54,430 +72,438 @@
 
     <section class="container-width settings-section">
       <div class="row">
-
-        <div class="large-5 large-offset-2 medium-12 small-24 hide-for-small columns">
-          <div class="row">
-            <div class="large-24 columns wrapper-box">
-              <div class="setting-type">
+        <div class="large-22 large-centered columns ">
+          
+          <ul class="settings tabs wrapper-box border-radius-top-7px" data-tab>
+            <li class="tab-title">
+              <div class="tab-title setting-type border-radius-top-7px">
                 <h3>Profile Settings</h3>
               </div>
-              <a href="#" class="active">
-                <h3>General info</h3>
+            </li>
+            <li class="tab-title active">
+              <a href="#general-info-tab">
+               General info
               </a>
-              <a href="#">
-                <h3>Personal info</h3>
+            </li>
+            <li class="tab-title">
+              <a href="#personal-info-tab">
+               Personal info
               </a>
-              <a href="#">
-                <h3>Interests</h3>
+            </li>
+            <li class="tab-title">
+              <a href="#interests-tab">
+                Interests
               </a>
-              <a href="#">
-                <h3>Newsletter</h3>
+            </li>
+            <li class="tab-title">
+              <a href="#newsletter-tab">
+                Newsletter
               </a>
-              <div class="setting-type">
+            </li>
+            <li class="tab-title">
+             <div class="setting-type">
                 <h3>Settings</h3>
               </div>
-              <a href="#">
-                <h3>Account</h3>
+            </li>
+             <li class="tab-title">
+                <a href="#">
+                Account
               </a>
-              <a href="#">
-                <h3>PayPal Account</h3>
+            </li>
+            <li class="tab-title">
+               <a href="#">
+                PayPal Account
               </a>
-            </div>
-          </div> <!-- end of .wrapper-box -->
+            </li>
+           
+           
+          </ul>
 
-          <div class="row button-row">
-            <button type="submit" class="blue-btn"> Save</button>
-          </div>
-        </div>
-
-        <ul class="tabs vertical" data-tab>
-          <li class="tab-title active"><a href="#panel11">Tab 1</a></li>
-          <li class="tab-title"><a href="#panel21">Tab 2</a></li>
-          <li class="tab-title"><a href="#panel31">Tab 3</a></li>
-          <li class="tab-title"><a href="#panel41">Tab 4</a></li>
-        </ul>
-
-
-         <div class="large-5 large-offset-2 medium-12 small-24 hide-for-small columns">
-          <div class="row">
-            <div class="large-24 columns wrapper-box">
-              <div class="setting-type">
-                <h3>Profile Settings</h3>
-              </div>
-              <ul class="tabs settings" data-tab>
-                <li class="tab-title active">
-                  <a href="#panel11">
-                   General info
-                  </a>
-                </li>
-                <li class="tab-title">
-                  <a href="#panel21">
-                   Personal info
-                  </a>
-                </li>
-                <li class="tab-title">
-                  <a href="#panel31">
-                    Interests
-                  </a>
-                </li>
-                <li class="tab-title">
-                  <a href="#panel41">
-                    Newsletter
-                  </a>
-                </li>
-              </ul>
-             
-            </div>
-          </div> <!-- end of .wrapper-box -->
-
-          <div class="row button-row">
-            <button type="submit" class="blue-btn"> Save</button>
-          </div>
-        </div>
-
-        <!-- General Info -->
-        <div class="large-15 left medium-24 small-24  columns">
-          <div class="row">
-            <div class="large-24 columns wrapper-box">
-              <div class="separator">
-                <h2>General Info</h2>
-              </div>
-              <div class="separator">
-                <div class="row">
-                  <div class="large-6 medium-6 columns">
-                    <p>Choose an image</p>
+          <div class="tabs-content">
+         
+            <!-- General Info -->
+            <div id="general-info-tab" class="row content active animated fadeInRight">
+              <div class="large-24 columns wrapper-box">
+                <div class="separator">
+                  <h2>General Info</h2>
+                </div>
+                <div class="separator">
+                  <div class="row">
+                    <div class="large-6 medium-6 columns">
+                      <p>Choose an image</p>
+                    </div>
+                    <div class="large-7 medium-7 columns">
+                      <img src="http://placehold.it/220x220" alt="">
+                    </div>
+                    <div style="min-height:192px;" class="large-8 medium-11 left columns position-relative">
+                      <p class="tip">
+                        TIP: Your clean, non-pixelated
+                        image should be at minimum
+                        220x220 px.
+                      </p>
+                      <button class="white-btn">Upload a photo</button>
+                    </div>
                   </div>
-                  <div class="large-7 medium-7 columns">
-                    <img src="http://placehold.it/220x220" alt="">
+                </div>
+                <div class="separator">
+                  <div class="row">
+                    <div class="large-6 medium-6 columns">
+                      <p>Birthdate</p>
+                    </div>
+                    <div class="large-7 medium-18 left columns">
+                      <select>
+                        <option value="husker">Husker</option>
+                        <option value="starbuck">Starbuck</option>
+                        <option value="hotdog">Hot Dog</option>
+                        <option value="apollo">Apollo</option>
+                      </select>
+                    </div>
                   </div>
-                  <div class="large-8 medium-11 left columns">
-                    <p class="tip">
-                      TIP: Your clean, non-pixelated
-                      image should be at minimum
-                      220x220 px.
-                    </p>
-                    <button class="white-btn">Upload a photo</button>
+                </div>
+                <div class="separator">
+                  <div class="row">
+                    <div class="large-6 medium-6 columns">
+                      <p>Gender</p>
+                    </div>
+                    <div class="large-18 medium-18 columns">
+                        <div class="input-positioning">
+                          <input id="male" type="radio" name="gender" value="option">
+                          <label for="male"><span><span></span></span>Male</label>
+                          <input id="female" type="radio" name="gender" value="option">
+                          <label for="female"><span><span></span></span>Female</label>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="separator">
+                  <div class="row">
+                    <div class="large-6 medium-6 columns">
+                      <p>Country</p>
+                    </div>
+                    <div class="large-7 medium-18 left columns">
+                      <select>
+                        <option value="husker">Bulgaria</option>
+                        <option value="starbuck">Russia</option>
+                        <option value="hotdog">Ukraine</option>
+                        <option value="apollo">Spain</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="separator">
+                  <div class="row">
+                    <div class="large-6 medium-6 columns">
+                      <p>Timezone</p>
+                    </div>
+                    <div class="large-7 medium-18 left columns">
+                      <select>
+                        <option value="husker">GMT-12:00</option>
+                        <option value="starbuck">GMT-10:00</option>
+                        <option value="hotdog">GMT-9:00</option>
+                        <option value="apollo">GMT</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="separator">
+                  <div class="row">
+                    <div class="large-6 medium-6 columns">
+                      <p>Choose Language</p>
+                    </div>
+                    <div class="large-7 medium-18 left columns">
+                        <input id="english" type="radio" name="language" value="option">
+                        <label for="english"><span><span></span></span>English</label><br>
+                        <input id="russian" type="radio" name="language" value="option">
+                        <label for="russian"><span><span></span></span>Русский</label><br>
+                        <input id="bulgarian" type="radio" name="language" value="option">
+                        <label for="bulgarian"><span><span></span></span>Български</label>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="separator">
-                <div class="row">
-                  <div class="large-6 medium-6 columns">
-                    <p>Birthdate</p>
+            </div>
+
+            <!-- Personal Info -->
+            <div id="personal-info-tab" class="row content  animated fadeInRight">
+              <div class="large-24 columns wrapper-box">
+                <div class="separator">
+                  <div class="row">
+                    <div class="medium-16 columns">
+                      <h2>Personal Info</h2>
+                    </div>
+                    <div class="medium-8 columns text-right lang-translations">
+                      <span class="active">BG</span>
+                      <span>EN</span>
+                      <span>RU</span>
+                    </div>
                   </div>
-                  <div class="large-7 medium-18 left columns">
-                    <select>
-                      <option value="husker">Husker</option>
-                      <option value="starbuck">Starbuck</option>
-                      <option value="hotdog">Hot Dog</option>
-                      <option value="apollo">Apollo</option>
-                    </select>
+                </div>
+                <div class="separator">
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <p>First Name</p>
+                    </div>
+                    <div class="large-17 left columns">
+                      <input type="text" placeholder="First Name">
+                    </div>
+                  </div>
+                </div>
+                <div class="separator">
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <p>Family Name</p>
+                    </div>
+                    <div class="large-17 left columns">
+                      <input type="text" placeholder="Family Name">
+                    </div>
+                  </div>
+                </div>
+                <div class="separator">
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <p>Biography</p>
+                    </div>
+                    <div class="large-17 left columns">
+                      <textarea type="text" rows="10" placeholder="Enter more about you"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="separator">
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <p>Education</p>
+                    </div>
+                    <div class="large-17 left columns">
+                      <textarea type="text" rows="7" placeholder="Enter more about you"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="separator">
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <p>Job</p>
+                    </div>
+                    <div class="large-17 left columns">
+                      <textarea type="text" rows="7" placeholder="Enter more about you"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="separator">
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <p>Description</p>
+                    </div>
+                    <div class="large-17 left columns">
+                      <textarea type="text" rows="7" placeholder="Enter more about you"></textarea>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="separator">
-                <div class="row">
-                  <div class="large-6 medium-6 columns">
-                    <p>Gender</p>
-                  </div>
-                  <div class="large-18 medium-18 columns">
+            </div>
+
+            <!-- Interests Settings -->
+            <div id="interests-tab" class="row content  animated fadeInRight">
+              <div class="large-24 columns wrapper-box">
+                <div class="separator">
+                  <h2>Interests</h2>
+                </div>
+                <div class="separator">
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <p>Show courses in:</p>
+                    </div>
+                    <div class="large-18 columns">
                       <div class="input-positioning">
-                        <input id="male" type="radio" name="gender" value="option">
-                        <label for="male"><span><span></span></span>Male</label>
-                        <input id="female" type="radio" name="gender" value="option">
-                        <label for="female"><span><span></span></span>Female</label>
-                      </div>
+                        <div class="row">
+                          <div class="large-8 columns">
+                            <input id="courses-english" type="checkbox" name="courses-language" value="option">
+                            <label for="courses-english"><span><span></span></span>English</label>
+                          </div>
+                          <div class="large-8 columns">
+                            <input id="courses-russian" type="checkbox" name="courses-language" value="option">
+                            <label for="courses-russian"><span><span></span></span>Русский</label>
+                          </div>
+                          <div class="large-8 columns">
+                            <input id="courses-bulgarian" type="checkbox" name="courses-language" value="option">
+                            <label for="courses-bulgarian"><span><span></span></span>Български</label>
+                          </div>
+                        </div>
+                      </div>  
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="separator">
-                <div class="row">
-                  <div class="large-6 medium-6 columns">
-                    <p>Country</p>
-                  </div>
-                  <div class="large-7 medium-18 left columns">
-                    <select>
-                      <option value="husker">Bulgaria</option>
-                      <option value="starbuck">Russia</option>
-                      <option value="hotdog">Ukraine</option>
-                      <option value="apollo">Spain</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="separator">
-                <div class="row">
-                  <div class="large-6 medium-6 columns">
-                    <p>Timezone</p>
-                  </div>
-                  <div class="large-7 medium-18 left columns">
-                    <select>
-                      <option value="husker">GMT-12:00</option>
-                      <option value="starbuck">GMT-10:00</option>
-                      <option value="hotdog">GMT-9:00</option>
-                      <option value="apollo">GMT</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="separator">
-                <div class="row">
-                  <div class="large-6 medium-6 columns">
-                    <p>Choose Language</p>
-                  </div>
-                  <div class="large-7 medium-18 left columns">
-                      <input id="english" type="radio" name="language" value="option">
-                      <label for="english"><span><span></span></span>English</label><br>
-                      <input id="russian" type="radio" name="language" value="option">
-                      <label for="russian"><span><span></span></span>Русский</label><br>
-                      <input id="bulgarian" type="radio" name="language" value="option">
-                      <label for="bulgarian"><span><span></span></span>Български</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> <!-- end of .large-18 small-24 columns -> end of general info -->
-
-        <!-- Personal Info -->
-        <div class="large-15 small-24 left columns">
-          <div class="row">
-            <div class="large-24 columns wrapper-box">
-              <div class="separator">
-                <h2>Personal Info</h2>
-              </div>
-              <div class="separator">
-                <div class="row">
-                  <div class="large-6 columns">
-                    <p>First Name</p>
-                  </div>
-                  <div class="large-18 columns">
-                    <input type="text" placeholder="First Name">
-                  </div>
-                </div>
-              </div>
-              <div class="separator">
-                <div class="row">
-                  <div class="large-6 columns">
-                    <p>Family Name</p>
-                  </div>
-                  <div class="large-18 columns">
-                    <input type="text" placeholder="Family Name">
-                  </div>
-                </div>
-              </div>
-              <div class="separator">
-                <div class="row">
-                  <div class="large-6 columns">
-                    <p>Biography</p>
-                  </div>
-                  <div class="large-18 columns">
-                    <textarea type="text" rows="10" placeholder="Enter more about you"></textarea>
-                  </div>
-                </div>
-              </div>
-              <div class="separator">
-                <div class="row">
-                  <div class="large-6 columns">
-                    <p>Education</p>
-                  </div>
-                  <div class="large-18 columns">
-                    <textarea type="text" rows="7" placeholder="Enter more about you"></textarea>
-                  </div>
-                </div>
-              </div>
-              <div class="separator">
-                <div class="row">
-                  <div class="large-6 columns">
-                    <p>Job</p>
-                  </div>
-                  <div class="large-18 columns">
-                    <textarea type="text" rows="7" placeholder="Enter more about you"></textarea>
-                  </div>
-                </div>
-              </div>
-              <div class="separator">
-                <div class="row">
-                  <div class="large-6 columns">
-                    <p>Description</p>
-                  </div>
-                  <div class="large-18 columns">
-                    <textarea type="text" rows="7" placeholder="Enter more about you"></textarea>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> <!-- end of .large-18 small-24 columns -> end of personal info -->
-
-        <!-- Interests Settings -->
-        <div class="large-15 small-24 left columns">
-          <div class="row">
-            <div class="large-24 columns wrapper-box">
-              <div class="separator">
-                <h2>Interests</h2>
-              </div>
-              <div class="separator">
-                <div class="row">
-                  <div class="large-6 columns">
-                    <p>Show courses in:</p>
-                  </div>
-                  <div class="large-18 columns">
-                    <div class="input-positioning">
+                <div class="separator">
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <p>Choose Interests</p>
+                    </div>
+                    <div class="large-18 columns">
                       <div class="row">
-                        <div class="large-8 columns">
-                          <input id="courses-english" type="checkbox" name="courses-language" value="option">
-                          <label for="courses-english"><span><span></span></span>English</label>
-                        </div>
-                        <div class="large-8 columns">
-                          <input id="courses-russian" type="checkbox" name="courses-language" value="option">
-                          <label for="courses-russian"><span><span></span></span>Русский</label>
-                        </div>
-                        <div class="large-8 columns">
-                          <input id="courses-bulgarian" type="checkbox" name="courses-language" value="option">
-                          <label for="courses-bulgarian"><span><span></span></span>Български</label>
-                        </div>
-                      </div>
-                    </div>  
-                  </div>
-                </div>
-              </div>
-              <div class="separator">
-                <div class="row">
-                  <div class="large-6 columns">
-                    <p>Choose Interests</p>
-                  </div>
-                  <div class="large-18 columns">
-                    <div class="row">
-                      <div class="input-positioning interests">
-                        <div class="large-12 columns">
-                          <input id="interests-technology" type="checkbox" name="interests" value="option">
-                          <label for="interests-technology"><span><span></span></span>Technology</label><br>
+                        <div class="input-positioning interests">
+                          <div class="large-12 columns">
+                            <input id="interests-technology" type="checkbox" name="interests" value="option">
+                            <label for="interests-technology"><span><span></span></span>Technology</label><br>
 
-                          <input id="interests-business" type="checkbox" name="interests" value="option">
-                          <label for="interests-business"><span><span></span></span>Business</label><br>
+                            <input id="interests-business" type="checkbox" name="interests" value="option">
+                            <label for="interests-business"><span><span></span></span>Business</label><br>
 
-                          <input id="interests-design" type="checkbox" name="interests" value="option">
-                          <label for="interests-design"><span><span></span></span>Design</label><br>
+                            <input id="interests-design" type="checkbox" name="interests" value="option">
+                            <label for="interests-design"><span><span></span></span>Design</label><br>
 
-                          <input id="interests-arts" type="checkbox" name="interests" value="option">
-                          <label for="interests-arts"><span><span></span></span>Arts and Photography</label><br>
+                            <input id="interests-arts" type="checkbox" name="interests" value="option">
+                            <label for="interests-arts"><span><span></span></span>Arts and Photography</label><br>
 
-                          <input id="interests-health" type="checkbox" name="interests" value="option">
-                          <label for="interests-health"><span><span></span></span>Health and Sport</label><br>
+                            <input id="interests-health" type="checkbox" name="interests" value="option">
+                            <label for="interests-health"><span><span></span></span>Health and Sport</label><br>
 
-                          <input id="interests-lifestyle" type="checkbox" name="interests" value="option">
-                          <label for="interests-lifestyle"><span><span></span></span>Lifestyle and Psychology</label><br>
+                            <input id="interests-lifestyle" type="checkbox" name="interests" value="option">
+                            <label for="interests-lifestyle"><span><span></span></span>Lifestyle and Psychology</label><br>
 
-                          <input id="interests-education" type="checkbox" name="interests" value="option">
-                          <label for="interests-education"><span><span></span></span>Education</label><br>
+                            <input id="interests-education" type="checkbox" name="interests" value="option">
+                            <label for="interests-education"><span><span></span></span>Education</label><br>
 
-                          <input id="interests-languages" type="checkbox" name="interests" value="option">
-                          <label for="interests-languages"><span><span></span></span>Languages</label>
+                            <input id="interests-languages" type="checkbox" name="interests" value="option">
+                            <label for="interests-languages"><span><span></span></span>Languages</label>
 
-                        </div>
-                        <div class="large-12 columns">
-                          <input id="interests-music" type="checkbox" name="interests" value="option">
-                          <label for="interests-music"><span><span></span></span>Music</label><br>
+                          </div>
+                          <div class="large-12 columns">
+                            <input id="interests-music" type="checkbox" name="interests" value="option">
+                            <label for="interests-music"><span><span></span></span>Music</label><br>
 
-                          <input id="interests-crafts" type="checkbox" name="interests" value="option">
-                          <label for="interests-crafts"><span><span></span></span>Crafts and Hobbies</label><br>
+                            <input id="interests-crafts" type="checkbox" name="interests" value="option">
+                            <label for="interests-crafts"><span><span></span></span>Crafts and Hobbies</label><br>
 
-                          <input id="interests-humannitaries" type="checkbox" name="interests" value="option">
-                          <label for="interests-humannitaries"><span><span></span></span>Hummanitaries</label><br>
+                            <input id="interests-humannitaries" type="checkbox" name="interests" value="option">
+                            <label for="interests-humannitaries"><span><span></span></span>Hummanitaries</label><br>
 
-                          <input id="interests-science" type="checkbox" name="interests" value="option">
-                          <label for="interests-science"><span><span></span></span>Science</label><br>
+                            <input id="interests-science" type="checkbox" name="interests" value="option">
+                            <label for="interests-science"><span><span></span></span>Science</label><br>
 
-                          <input id="interests-kids" type="checkbox" name="interests" value="option">
-                          <label for="interests-kids"><span><span></span></span>Kids</label><br>
+                            <input id="interests-kids" type="checkbox" name="interests" value="option">
+                            <label for="interests-kids"><span><span></span></span>Kids</label><br>
 
-                          <input id="interests-other" type="checkbox" name="interests" value="option">
-                          <label for="interests-other"><span><span></span></span>Other</label><br>
+                            <input id="interests-other" type="checkbox" name="interests" value="option">
+                            <label for="interests-other"><span><span></span></span>Other</label><br>
 
-                          <input id="interests-select-all" type="checkbox" name="interests" value="option">
-                          <label for="interests-select-all"><span><span></span></span>Select All</label><br>
+                            <input id="interests-select-all" type="checkbox" name="interests" value="option">
+                            <label for="interests-select-all"><span><span></span></span>Select All</label><br>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
+              </div>
             </div>
-          </div>
-        </div> <!-- end of .large-18 small-24 columns -> end of interests settings -->
 
-        <!-- Newsletter Settings -->
-        <div class="large-15 small-24 left columns">
-          <div class="row">
-            <div class="large-24 columns wrapper-box">
-              <div class="separator">
-                <h2>Newsletter settings</h2>
-              </div>
-             
-              <div class="separator">
-                <div class="row">
-                  <div class="large-6 columns">
-                    <p>Notify me for</p>
-                  </div>
-                  <div class="large-18 columns">
-                    <div class="input-positioning">
-                      <input id="new-courses" type="checkbox" name="newsletter" value="option">
-                      <label for="new-courses"><span><span></span></span>New courses or lectures</label>
+            <!-- Newsletter Settings -->
+            <div id="newsletter-tab" class="row content  animated fadeInRight">
+              <div class="large-24 columns wrapper-box">
+                <div class="separator">
+                  <h2>Newsletter settings</h2>
+                </div>
+               
+                <div class="separator">
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <p>Notify me for</p>
+                    </div>
+                    <div class="large-18 columns">
+                      <div class="input-positioning">
+                        <input id="new-courses" type="checkbox" name="newsletter" value="option">
+                        <label for="new-courses"><span><span></span></span>New courses or lectures</label>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="separator">
-                <div class="row">
-                  <div class="large-6 columns">
-                    <p></p>
-                  </div>
-                  <div class="large-18 columns">
-                     <div class="input-positioning">
-                      <input id="followers" type="checkbox" name="newsletter" value="option">
-                      <label for="followers"><span><span></span></span>New Followers</label>
+                <div class="separator">
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <p></p>
+                    </div>
+                    <div class="large-18 columns">
+                       <div class="input-positioning">
+                        <input id="followers" type="checkbox" name="newsletter" value="option">
+                        <label for="followers"><span><span></span></span>New Followers</label>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="separator">
-                <div class="row">
-                  <div class="large-6 columns">
-                    <p></p>
-                  </div>
-                  <div class="large-18 columns">
-                    <div class="input-positioning">
-                      <input id="enrollers" type="checkbox" name="newsletter" value="option">
-                      <label for="enrollers"><span><span></span></span>New Enrollers</label>
+                <div class="separator">
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <p></p>
+                    </div>
+                    <div class="large-18 columns">
+                      <div class="input-positioning">
+                        <input id="enrollers" type="checkbox" name="newsletter" value="option">
+                        <label for="enrollers"><span><span></span></span>New Enrollers</label>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="separator">
-                <div class="row">
-                  <div class="large-6 columns">
-                    <p></p>
-                  </div>
-                  <div class="large-18 columns">
-                    <div class="input-positioning">
-                      <input id="weekly-report" type="checkbox" name="newsletter" value="option">
-                      <label for="weekly-report"><span><span></span></span>Send me a Weekly Report</label>
+                <div class="separator">
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <p></p>
+                    </div>
+                    <div class="large-18 columns">
+                      <div class="input-positioning">
+                        <input id="weekly-report" type="checkbox" name="newsletter" value="option">
+                        <label for="weekly-report"><span><span></span></span>Send me a Weekly Report</label>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
+              </div>
             </div>
+            
+          <div class="row button-row">
+            <button type="submit" class="blue-btn"> Save</button>
           </div>
-        </div> <!-- end of .large-18 small-24 columns -> end of newsletter settings -->
+          </div> <!-- end of  tabs-content.large-15.columns -->
 
+        </div> <!-- end of .wrapper-box -->
+      </div>  
 
-      </div> <!-- end of main .row -->
+      
+
+    </section>
+
+     <section class="footer-section">
+      <footer>
+        <div class="row">
+          <div class="medium-18 columns">
+            <ul class="footer-menu">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Teachers</a></li>
+              <li><a href="#">jobs</a></li>
+              <li><a href="#">blog</a></li>
+              <li><a href="#">Terms of use</a></li>
+              <li><a href="#">instructor terms</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">contact us</a></li>
+              <li><a href="#">faq</a></li>
+            </ul>
+            <p class="copyright">
+              Copyright © 2013 On-ed.com. All rights reserved
+            </p>
+          </div>
+          <div class="medium-6 columns">
+            <ul class="footer-menu social-links">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-google-plus"></i></a>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </section>
 
    
@@ -486,6 +512,14 @@
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
+
+      $(document).ready(function(){
+       
+        $( ".responsive-menu-button i" ).click(function() {
+          
+          $( "ul.oned-top-menu" ).slideToggle('500');
+        });
+      });
     </script>
   </body>
 </html>
