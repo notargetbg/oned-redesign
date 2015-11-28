@@ -1280,6 +1280,7 @@ button.follow-btn {
 section.br-cr > .row , section.course-header > .row , section.course-content > .row , section.bootom-enroll > .row  {
       max-width: 61.25em;
 }
+
 .course-content p{
   font-size: 15px;
 }
@@ -1534,6 +1535,36 @@ section.br-cr > .row , section.course-header > .row , section.course-content > .
 }
 .combine , .bootom-enroll{
     background-color: #ffffff;
+}
+.bootom-enroll button{
+    background-color: #ffc579;
+    background-image: linear-gradient(to bottom, #ff9f00, #fb6e00);
+    border-radius: 7px;
+    display: block;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 12px;
+    width: 100%;
+    height: auto;
+}
+.bootom-enroll p{
+  font-family: "Open Sans",sans-serif;
+}
+.bootom-enroll p strong{
+  color: #5ec0fd;
+}
+.bootom-enroll .bottom-price{
+  font-size: 32px;
+  font-weight: 700;
+  color: #5ec0fd;
+  text-decoration: none;
+  padding-left: 8px;
+  line-height: 20px;
+}
+.bootom-enroll p span{
+   color: #adadad;
+   font-size: 17px;
+   text-decoration: line-through;
 }
 .row.lesson-active.lessons {
     background-color: #fafafa;
