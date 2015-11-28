@@ -520,7 +520,9 @@ footer .copyright {
   color: #263339;
 }
 
-.wrapper-box.normal.discount::before, .wrapper-box.featured.discount::before {
+.wrapper-box.normal.discount::before, 
+.wrapper-box.featured.discount::before,
+.wrapper-box.webinar.discount::before {
   content: "Sale";
   display: block;
   position: absolute;
@@ -531,14 +533,23 @@ footer .copyright {
   font-weight: 600;
   text-transform: uppercase;
   z-index: 10;
+  border-top-left-radius: 1px;
 }
 
 
 /* Featured Course Styles ( Big sized Box ) */
 
-.wrapper-box.course {
+.wrapper-box.course,
+.wrapper-box.webinar  {
   border-radius: 1px;
 }
+
+.course .stick-to-bottom-container,
+.webinar .stick-to-bottom-container {
+  border-top-left-radius: 1px;
+  border-top-right-radius: 1px;
+}
+
 
 .wrapper-box.featured {
   background-color: #202020;
