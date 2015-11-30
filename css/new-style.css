@@ -1345,7 +1345,7 @@ section.br-cr > .row , section.course-header > .row , section.course-content > .
 }
 .course-header .info a{
     color: #666666;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 13px;
     padding: 10px;
 }
