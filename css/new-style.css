@@ -100,9 +100,6 @@ FaceBook Color -    #3a5a98
 
 /* Buttons */
 
-.four-courses-per-row .wrapper-box.normal button.enroll-btn  {
-  width: initial;
-}
 .small-btn {
   width: initial;
 }
@@ -479,8 +476,9 @@ footer .copyright {
 
 .wrapper-box .details .social i.fa {
   font-size: 17px;
-  margin: 14px 8px;
+  margin: 14px 0;
   color: #b5b5b5;
+  margin-left: 6px;
 }
 
 .wrapper-box .price-box {
@@ -533,7 +531,7 @@ footer .copyright {
   font-weight: 600;
   text-transform: uppercase;
   z-index: 10;
-  border-top-left-radius: 1px;
+  border-radius: 1px;
 }
 
 
@@ -598,8 +596,8 @@ footer .copyright {
   overflow: hidden;
 }
 .img-box .thumbnail-image {
-	border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+	border-top-left-radius: 1px;
+  border-top-right-radius: 1px;
 }
 
 /* Price Styles */
@@ -1465,9 +1463,8 @@ section.br-cr > .row , section.course-header > .row , section.course-content > .
     margin-bottom: 20px;
     padding: 0 8px;
 }
-.padding-box span{
+.course-page .course-content .padding-box span{
     color: #717171;
-    padding-right: 6px;
 }
 .padding-box p {
   font-size: 13px;
@@ -2194,6 +2191,7 @@ div.step.active {
   color: white;
   font-size: 42px;
   margin-top: 10px;
+  line-height: 42px;
 }
 
 .create-course-box p {
@@ -2336,7 +2334,7 @@ button.follow-btn {
   margin-bottom: 30px;
 }
 
-.home-page ul.tabs li.tab-title a {
+.tabs.oned-horizontal-tabs li.tab-title a {
   font-family: 'Comfortaa', cursive;
   color: #717171;
   font-size: 18px;
@@ -2344,22 +2342,25 @@ button.follow-btn {
   text-align: center;
   padding-left: 20px;
 }
-.home-page ul.tabs li.tab-title {
-  min-width: 212px; 
-}
-.home-page ul.tabs li.tab-title:not(:first-child)  {
-  margin-left: 20px;
+@media all and (max-width: 640px ) {
+    .tabs.oned-horizontal-tabs li.tab-title {
+    max-width: 212px;
+    width: 32%;
+  }
+  .tabs.oned-horizontal-tabs li.tab-title:not(:first-child)  {
+    margin-left: 2%;
+  }
 }
 
-.home-page ul.tabs li.tab-title i.fontello-icon {
+.tabs.oned-horizontal-tabs li.tab-title i.fontello-icon {
   color: #717171;
 }
 
 
-.home-page ul.tabs li.tab-title.active i.fontello-icon {
+.tabs.oned-horizontal-tabs li.tab-title.active i.fontello-icon {
   color: white;
 }
-.home-page ul.tabs li.tab-title.active a {
+.tabs.oned-horizontal-tabs li.tab-title.active a {
   background-color: #202020;
   color: white;
 }
