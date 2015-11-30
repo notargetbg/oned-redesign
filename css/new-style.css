@@ -200,9 +200,35 @@ section.header-section {
 	background-color: #ffffff;
   background-image: url("../imgs/header-bg.jpg");
 	box-shadow: 0 1px 4px rgba(218, 218, 218, 0.75);
-  background-size: 100%;
+  
   background-position: center;
 }
+@media all and (min-width: 1280px) {
+  section.header-section {
+    background-size: 100%;
+  }
+}
+@media all and (max-width: 970px) {
+.header-section .tags a {
+  line-height: 44px;
+}  
+}
+
+@media all and (max-width: 768px) {
+  section.header-section {
+    background-size: initial;
+    background-repeat: no-repeat;
+  }
+  .header-section .main-heading {
+    margin-top: 75px !important;
+    margin-bottom: 30px !important;
+  }
+  .header-section .search-form {
+    margin: 10px auto !important;
+    margin-top: 20px !important;
+  }
+}
+
 section.main-section {
 	background-color: #eeeff1;
 	box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
@@ -2340,15 +2366,34 @@ button.follow-btn {
   font-size: 18px;
   border-radius: 3px;
   text-align: center;
-  padding-left: 20px;
+  padding: 20px 0;
 }
-@media all and (max-width: 640px ) {
-    .tabs.oned-horizontal-tabs li.tab-title {
+  .tabs.oned-horizontal-tabs li.tab-title {
     max-width: 212px;
     width: 32%;
   }
   .tabs.oned-horizontal-tabs li.tab-title:not(:first-child)  {
     margin-left: 2%;
+  }
+
+/* Media for horizontal tabs */
+@media all and (max-width: 640px ) {
+  .tabs.oned-horizontal-tabs li.tab-title i.fontello-icon {
+    display: block;
+    margin: auto;
+  }
+}
+@media all and (max-width: 420px ) {
+  .tabs.oned-horizontal-tabs li.tab-title {
+    width: 100%;
+    max-width: initial;
+  }
+  .tabs.oned-horizontal-tabs li.tab-title a {
+    padding: 10px 0;
+  }
+  .tabs.oned-horizontal-tabs li.tab-title:not(:first-child) {
+    margin-left: 0 !important;
+    margin-top: 5px;
   }
 }
 
