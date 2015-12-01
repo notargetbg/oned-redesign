@@ -17,7 +17,8 @@
   <!--[if lt IE 8]>
     <link rel="stylesheet" href="css/general_enclosed_foundicons_ie7.css">
   <![endif]-->
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- AWESOME CSS ANIMATIONS MADE SUPER EZ -->
+    <link rel="stylesheet" href="css/animate.css">
 
 </head>
 <body class="course-page">
@@ -109,7 +110,9 @@
                         <h2>Starting tips as a Monster in Evolve's Hunt mode</h2>
                         <p>Hunters follow you based on the tracks you leave in the ground. In Hunt mode, both the Monster and Hunters also start at the same point, the Monster a few moments before. So, as the Monster, as soon as you start, use your three jumps to head deep into the wilderness. From there, crawl and begin to eat to try and evolve to stages two and three.</p>
                         <p>The real thorn in your side when it comes to remaining elusive is Daisy, who can track you at all times. Always remember to keep moving and you’ll find yourself at stage three relatively quickly.</p>
-                        <h2>Evolve's Monster shouldn't stay in one place for too long</h2>
+                        <div class="read-more">
+                            <div id="read-more" class="animated"><span>Read More</span></div>
+                             <h2>Evolve's Monster shouldn't stay in one place for too long</h2>
                         <p>If you remain idle for too long you’ll leave yourself vulnerable to be caught by the Hunters, and worse caught in the mobile arena, unable to escape. Sometimes you may have to risk leaving a large amount of food in order to run in search of more, but it’s worth remaining hidden in order to stay safe and evolve until you’re ready to go on the attack.
                         Remember you can click the right stick to smell, which will give you a sense of what is in your immediate environment. Make sure you use this frequently, as it isn’t very wide-reaching and Hunters move fast. Also pan the camera a full 360-degrees when you use the smell ability to view everything around you.</p>
                         <h2>Use your monster's abilities on the wildlife</h2>
@@ -117,6 +120,7 @@
                         <p>As the Monster, your abilities are a much more effective way of killing multiple animals at once, rather than simply using melee attacks. Goliath’s Rock Throw and Kraken’s Lightning Strike are great for taking down a crowd of wildlife to quickly feed on, again helping you evolve quicker.</p>
                         <h2>Monsters are vulnerable during evolution</h2>
                         <p>After you evolve to a new stage, you have no armour, so it is vital that you quickly find some animals to eat to build up your defences once again. It’s also crucial that you find a safe place to evolve, as if you’re found during the evolve process, you’ll be at a massive disadvantage.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="row margin-top-10">
@@ -616,6 +620,13 @@
     <script src="js/foundation.min.js"></script>
     <script>
         $(document).foundation();
+
+        $(document).ready(function(){
+            $( "#read-more" ).click(function() {
+                $( ".read-more" ).addClass("read-more-open");
+                $( "#read-more" ).addClass("fadeOutDown");
+            });
+        });
     </script>
     </body>
 </html>
