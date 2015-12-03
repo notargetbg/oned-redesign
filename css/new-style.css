@@ -2328,6 +2328,7 @@ button.follow-btn {
 
 .profile-widget .social-profiles {
   margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .profile-widget .social-profiles a{
@@ -2492,5 +2493,5 @@ h2.section-slider-controls i.fa {
 }
 
 .read-more-open {
-  max-height: 1000px;
+  max-height: 10000px;
 }
