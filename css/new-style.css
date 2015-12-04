@@ -1744,7 +1744,8 @@ section.br-cr > .row , section.course-header > .row , section.course-content > .
 .comments-add {
     background-color: #eeeff1;
     border-radius: 7px;
-    padding: 12px 20px 0;
+    margin-top: 20px;
+    padding: 24px 24px 0;
 }
 .comments-add textarea{
     border: none;
@@ -1799,12 +1800,6 @@ section.br-cr > .row , section.course-header > .row , section.course-content > .
 .more-comments-btn:hover{
     background-color: #f6f8f7;
     color: #263339;
-}
-.comments-bottom {
-    padding-bottom: 48px;    
-}
-.lecture-desc {
-   border-bottom: 1px solid #dadada; 
 }
 .chevron-button {
     background-color: #eeeff1;
@@ -2510,5 +2505,61 @@ h2.section-slider-controls i.fa {
 }
 
 .read-more-open {
+<<<<<<< HEAD
   max-height: 10000px;
 }
+=======
+  max-height: 1000px;
+}
+/* Course Lesson */
+.lesson-files-files button{
+  background-color: #84d26d;
+  font-size: 13px;
+  font-weight: 300;
+  height: auto;
+  padding: 4px 16px;
+  width: auto;
+}
+.lesson-files-files .lesson-file-pdf{
+  color: #c7595a;
+  font-size: 13px;
+  font-weight: 700;
+  padding-right: 24px;
+  text-transform: uppercase;
+}
+.lesson-files-files .lesson-file-avi{
+  color: #666666;
+  font-size: 13px;
+  font-weight: 700;
+  padding-right: 24px;
+  text-transform: uppercase;
+}
+.lesson-files-files .lesson-file-doc{
+  color: #4fa3c9;
+  font-size: 13px;
+  font-weight: 700;
+  padding-right: 24px;
+  text-transform: uppercase;
+}
+.lesson-files-title {
+  padding-bottom: 8px;  
+}
+.lesson-files-title span{
+  font-size: 13px;
+  text-transform: uppercase;
+  padding-right: 10px;
+}
+.lecture-desc h3{
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: -16px;
+  margin-top: 20px;
+}
+.lesson-page section{
+  background-color: #ffffff;
+}
+.lesson-page .course-header h1{
+  margin: 20px 0;
+}
+/* Course Lesson End */
+>>>>>>> 2045a62bb2748df7b54bd61a0c3e475da240e297
