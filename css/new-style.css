@@ -1239,6 +1239,142 @@ input[type=checkbox]:not(old):checked + label > span:before{
 
 /* Profile Page */
 
+section.author-courses {
+    background-color: white;
+    padding-top:15px;
+}
+
+
+.profile-header {
+    background-color: white;
+    padding-top: 58px;
+}
+.author-profile-box {
+  max-width: 200px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.profile-header .tabs {
+  margin: 25px 0;
+}
+
+
+button.follow-btn {
+    width: 110px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 25px;
+    color: #ffffff;
+    background-color: #84d26d;
+    box-shadow: 0 1px 2px rgba(98, 98, 98, 0.32);
+}
+
+.author-information-box h3 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.author-information-box p {
+    font-size: 14px;
+    margin: 10px auto;
+    color: #666666;
+}
+.author-courses .author-box {
+    margin: 8px auto 0px;
+}
+.author-courses .wrapper-box button.enroll-btn {
+  margin-left:20px;
+  font-weight: 700;
+}
+.author-courses .wrapper-box .img-box .thumbnail-image {
+      border-top-right-radius: 0;
+}
+.author-courses .author-box .author-circle-pic {
+    margin: initial;
+}
+.author-courses .course-row {
+  margin-bottom: 20px;
+}
+.author-courses .course-row a.green:hover {
+  color: #74C15E;
+}
+.author-courses .header-top-course {
+  padding-top:10px;
+}
+.author-courses .course-row .wrapper-box {
+  background-color: rgba(252, 252, 252, 0.41);
+} 
+.author-courses .wrapper-box .price-box span.new-price, .price-box span.price {
+  font-weight: 700;
+}
+.author-courses .wrapper-box .author-box p a {
+  color: #020202;
+  font-weight: 700;
+}
+.profile-widget h3 {
+    margin: 15px auto;
+}
+.profile-widget div:first-child h3 {
+  margin: 0;
+  margin-bottom: 15px;
+
+}
+
+.profile-widget .author-biography p {
+  color: #666666;
+}
+
+.profile-widget .social-profiles {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.profile-widget .social-profiles a{
+  font-size: 13px;
+  color: #adadad;
+}
+
+.profile-widget .social-profiles span{
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 5px;
+    
+}
+
+.profile-widget .social-profiles i.fa {
+    background-color: #B4ADAD;
+    padding: 5px;
+    border-radius: 59px;
+    width: 20px;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+}
+.author-courses .wrapper-box .social.tags {
+  margin: 0;
+}
+.course-partic .following {
+      font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: 15px;
+}
+.profile-widget .course-partic img {
+  margin-left: 13px;
+}
+.profile-widget .course-partic p {
+    line-height: 47px;
+    font-family: "Open Sans",sans-serif;
+   font-weight: 600;
+    color: #263339;
+}
+.profile-widget .course-partic p a { 
+    color: #263339;
+}
+
 .author-profile-box .author-circle-pic {
       width: 150px;
       height: 150px;
@@ -1311,9 +1447,7 @@ button.follow-btn {
 .author-courses .author-box {
     margin: 8px auto 0px;
 }
-.author-courses .author-box .author-circle-pic {
-    margin: initial;
-}
+
 
 /* Course and Lesson Page */
 section.br-cr > .row , section.course-header > .row , section.course-content > .row , section.bootom-enroll > .row  {
@@ -1854,7 +1988,7 @@ section.br-cr > .row , section.course-header > .row , section.course-content > .
   padding-top: 8px;
   text-align: center;
 }
-.course-partic a{
+.course-partic .view-all-link {
   color: #b5b5b5;
     display: block;
     font-size: 13px;
@@ -2237,124 +2371,7 @@ div.step.active {
 }
 
 
-/* Profile Page */
 
-section.author-courses {
-    background-color: white;
-    padding-top:15px;
-}
-
-
-.profile-header {
-    background-color: white;
-    padding-top: 58px;
-}
-.author-profile-box {
-  max-width: 200px;
-  margin: 0 auto;
-  padding-top: 50px;
-}
-
-.profile-header .tabs {
-  margin: 25px 0;
-}
-
-
-button.follow-btn {
-    width: 110px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-top: 25px;
-    color: #ffffff;
-    background-color: #84d26d;
-    box-shadow: 0 1px 2px rgba(98, 98, 98, 0.32);
-}
-
-.author-information-box h3 {
-    font-size: 14px;
-    font-weight: 700;
-}
-
-.author-information-box p {
-    font-size: 14px;
-    margin: 10px auto;
-    color: #666666;
-}
-.author-courses .author-box {
-    margin: 8px auto 0px;
-}
-.author-courses .wrapper-box button.enroll-btn {
-  margin-left:20px;
-  font-weight: 700;
-}
-.author-courses .wrapper-box .img-box .thumbnail-image {
-      border-top-right-radius: 0;
-}
-.author-courses .author-box .author-circle-pic {
-    margin: initial;
-}
-.author-courses .course-row {
-  margin-bottom: 20px;
-}
-.author-courses .course-row a.green:hover {
-  color: #74C15E;
-}
-.author-courses .header-top-course {
-  padding-top:10px;
-}
-.author-courses .course-row .wrapper-box {
-  background-color: rgba(252, 252, 252, 0.41);
-} 
-.author-courses .wrapper-box .price-box span.new-price, .price-box span.price {
-  font-weight: 700;
-}
-.author-courses .wrapper-box .author-box p a {
-  color: #020202;
-  font-weight: 700;
-}
-.profile-widget h3 {
-    margin: 15px auto;
-}
-.profile-widget div:first-child h3 {
-  margin: 0;
-  margin-bottom: 15px;
-
-}
-
-.profile-widget .author-biography p {
-  color: #666666;
-}
-
-.profile-widget .social-profiles {
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
-.profile-widget .social-profiles a{
-  font-size: 13px;
-  color: #adadad;
-}
-
-.profile-widget .social-profiles span{
-    display: inline-block;
-    margin-right: 10px;
-    margin-top: 5px;
-    
-}
-
-.profile-widget .social-profiles i.fa {
-    background-color: #B4ADAD;
-    padding: 5px;
-    border-radius: 59px;
-    width: 20px;
-    text-align: center;
-    font-size: 10px;
-    color: white;
-}
-.author-courses .wrapper-box .social.tags {
-  margin: 0;
-}
 
 /* Tabs For Home Page */
 .home-page .tabs {
