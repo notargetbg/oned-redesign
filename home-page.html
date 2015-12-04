@@ -23,19 +23,20 @@
     <header class="">
       <nav class="oned-top-menu container-width">
         <div class="row">
-          <div class="large-24 columns">
-            <div class="responsive-menu-button">
+
+
+          <div class="small-6 medium-3 columns">
+            <ul class="oned-top-menu">
                <li class="oned-menu-item menu-logo">
                   <a href="#"><img src="imgs/logos/oned-logo-small.png" alt=""></a>
                 </li>
-              <i class="fa fa-bars"></i>
-            </div>
-            <ul class="oned-top-menu">
-              <div class="left-side left">
-                <li class="oned-menu-item menu-logo">
-                  <a href="#"><img src="imgs/logos/oned-logo-small.png" alt=""></a>
-                </li>
-                <li class="oned-menu-item search-courses">
+            </ul>
+          </div>
+           <div class="small-16 columns mobile-menu">
+               <ul class="oned-top-menu">
+             
+              
+                 <li class="oned-menu-item search-courses">
                   <input type="text" placeholder=" Search">
                 </li>
                 <li class="oned-menu-item menu-link">
@@ -47,9 +48,13 @@
                 <li class="oned-menu-item menu-link">
                   <a href="#">Help</a>
                 </li>
-              </div>
-              <div class="right">
-                <li class="oned-menu-item lang-dropdown">
+             
+               
+            </ul>
+          </div>
+           <div class="small-5 columns mobile-width">
+            <ul class="oned-top-menu">
+               <li class="oned-menu-item lang-dropdown">
                   <a data-dropdown="lang_dropdown" aria-controls="lang_dropdown" aria-expanded="false">BG <i style="font-size:12px;" class="fa fa-chevron-down"></i></a>
                   <ul id="lang_dropdown" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
                     <li><a href="#">EN</a></li>
@@ -59,12 +64,21 @@
                 <li class="oned-menu-item">
                  <button class="green-btn">Join / Sign in</button>
                 </li>
-              </div>
             </ul>
           </div>
+            <div class="responsive-menu-button">
+              
+              <i class="fa fa-bars"></i>
+            </div>
+           
+
+
+
         </div>
       </nav>
     </header> 
+
+    <div class="small-18 columns">dsads</div>
 
     <section class="text-center container-width header-section">
       <div class="row">
@@ -1714,10 +1728,10 @@
         ]
         });
 
-        $( ".responsive-menu-button i" ).click(function() {
-          
-          $( "ul.oned-top-menu" ).slideToggle('500');
-        });
+         $( ".responsive-menu-button i" ).click(function() {
+            
+           $( "mobile-menu ul.oned-top-menu" ).slideToggle('500');
+         });
       });
     </script>
   </body>

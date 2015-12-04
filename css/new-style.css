@@ -730,7 +730,7 @@ nav li.lang-dropdown .f-dropdown {
 }
 
 li.search-courses {
-    padding: 6px 0;
+    padding: 7px 0 7px;
     vertical-align: middle;
     width: 350px;
 }
@@ -758,49 +758,65 @@ li.oned-menu-item a {
 	color: #ffffff;
 }
 li.oned-menu-item a:hover {
-	color: #B6B6B6;;
+	color: #B6B6B6;
+}
+li.oned-menu-item.menu-logo {
+  margin-top: 13px;
 }
 
-li.menu-link {
-  margin-left: 20px;
-}
 li.oned-menu-item button {
   margin-top: 8px;
 }
 
 /* Rules and Media For Navigation  */
 
-  nav.oned-top-menu div.responsive-menu-button {
-    display: none;
-  }
-@media all and (min-width: 990px ) {
-  ul.oned-top-menu {
-    display: block !important;
+@media all and (min-width: 990px) {
+    li.menu-link {
+    margin-left: 20px;
+    position: relative;
+    top: 2px;
   }
 }
 
+  nav.oned-top-menu div.responsive-menu-button {
+    display: none;
+  }
+
+
 @media all and (max-width: 990px) {
-ul.oned-top-menu {
-  display: none;
-}
+  li.oned-menu-item.menu-logo {
+    margin-top: 10px;
+    position: relative;
+    left: 8px;
+  }
+  nav.oned-top-menu .mobile-menu {
+    position: absolute;
+    top: 58px;
+        width: 100%;
+  }
+
+  nav.oned-top-menu .mobile-width {
+    width: 75%;
+    text-align: right;
+    float: right;
+    margin-top: 5px !important;
+    position: relative;
+    right: 11px;
+  }
 
   nav.oned-top-menu .row, nav.oned-top-menu .columns {
     margin: 0;
     padding: 0;
   }
-  li.oned-menu-item.lang-dropdown {
-    margin-bottom: -20px;    
-  }
   li.oned-menu-item.lang-dropdown > a {
-    position: absolute;
-    top: 5px;
-    right: 10px;
+    position: relative;
+    z-index: 9999;
   }
   nav li.lang-dropdown .f-dropdown {
     margin-left: 0;
   }
 
-  nav.oned-top-menu li.oned-menu-item  {
+  nav.oned-top-menu .mobile-menu li.oned-menu-item  {
     display: block;
     width: 100%;
     background-color: #202020;
@@ -812,9 +828,7 @@ ul.oned-top-menu {
     border-bottom: 1px solid rgba(185, 185, 185, 0.18);
   }
 
-  nav.oned-top-menu li.oned-menu-item.menu-logo {
-    visibility: hidden;
-  }
+ 
 
    /* Simple functionality */
   
@@ -1355,6 +1369,9 @@ button.follow-btn {
 .author-courses .wrapper-box .social.tags {
   margin: 0;
 }
+.profile-widget .course-partic {
+  margin-bottom: 20px;
+}
 .course-partic .following {
       font-weight: 400;
     text-transform: uppercase;
@@ -1373,6 +1390,9 @@ button.follow-btn {
 }
 .profile-widget .course-partic p a { 
     color: #263339;
+}
+#followers-modal {
+      top: 850px !important;
 }
 
 .author-profile-box .author-circle-pic {
@@ -1636,7 +1656,10 @@ section.br-cr > .row , section.course-header > .row , section.course-content > .
     padding: 8px;
     min-height: 48px;
 }
-.lessons .large-15, .medium-14, .small-21{
+/* Be careful not to modify foundation grid/helper classess! */
+.lessons .large-15, 
+.lessons .medium-14, 
+.lessons .small-21 {
     display: table-cell;
     min-height: 32px;
     vertical-align: middle;
@@ -2505,11 +2528,7 @@ h2.section-slider-controls i.fa {
 }
 
 .read-more-open {
-<<<<<<< HEAD
   max-height: 10000px;
-}
-=======
-  max-height: 1000px;
 }
 /* Course Lesson */
 .lesson-files-files button{
