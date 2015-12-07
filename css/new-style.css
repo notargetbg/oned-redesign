@@ -1249,8 +1249,8 @@ select option {
   font-family: 'Open Sans', sans-serif;
 }
 
-input[type=checkbox]:not(old),
-input[type=radio   ]:not(old){
+.settings-page input[type=checkbox]:not(old),
+.settings-page input[type=radio   ]:not(old){
   width: 20px;
   margin    : 0;
   padding   : 0;
@@ -2648,4 +2648,14 @@ h2.section-slider-controls i.fa {
   margin: 20px 0;
 }
 /* Course Lesson End */
->>>>>>> 2045a62bb2748df7b54bd61a0c3e475da240e297
+
+/* Effects for Home Page */
+
+.home-page .main-section .tabs-content .medium-12.large-8:nth-child(2)  {
+   -webkit-animation-delay: .2s; /* Chrome, Safari, Opera */
+    animation-delay: .2s;
+}
+.home-page .main-section .tabs-content .medium-12.large-8:nth-child(3)  {
+   -webkit-animation-delay: .4s; /* Chrome, Safari, Opera */
+    animation-delay: .4s;
+}
