@@ -1440,7 +1440,7 @@ button.follow-btn {
   margin-bottom: 20px;
 }
 .course-partic .following {
-      font-weight: 400;
+    font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 10px;
     display: block;
@@ -2012,6 +2012,12 @@ section.br-cr > .row , section.course-header > .row , section.course-content > .
   font-size: 34px;
   color: #84d26d;
 }
+.course-widget-price p span.old-price-wiget{
+  font-size: 18px;
+  color: #b5b5b5;
+  text-decoration: line-through;
+  padding-right: 8px;
+}
 
 .course-widget-price button{
   background-color: #ffc579;
@@ -2030,7 +2036,7 @@ section.br-cr > .row , section.course-header > .row , section.course-content > .
   display: block;
   margin: 16px auto;
 }
-.course-widget-price .large-22 p{
+.course-widget-price .widget-price-bottom p{
   font-size: 15px;
   font-weight: 200;
   text-align: left;
@@ -2039,12 +2045,12 @@ section.br-cr > .row , section.course-header > .row , section.course-content > .
   border-top: 1px solid #dadada;
   line-height: 21px;
 }
-.course-widget-price .large-22 p span{
+.course-widget-price .widget-price-bottom p span{
   font-size: 15px;
   color: #84d26d;
   font-weight: 700;
 }
-.course-widget-price .large-22 p.more-info {
+.course-widget-price .widget-price-bottom p.more-info {
   font-size: 15px;
   color: #202020;
   border: none;
@@ -2067,7 +2073,6 @@ section.br-cr > .row , section.course-header > .row , section.course-content > .
   border-radius: 4px;
   box-shadow: 0 1px 4px rgba(218, 218, 218, 0.75);
   padding: 16px 8px;
-  margin-top: 20px;
 }
 .course-partic .large-6{
   padding-top: 8px;
