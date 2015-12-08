@@ -726,14 +726,16 @@ li.oned-menu-item {
   color: #adadad;
   text-transform: uppercase;
 }
-li.oned-menu-item.lang-dropdown {
-  margin-right: 10px;
-}
 
 nav li.lang-dropdown .f-dropdown {
   margin-top: 8px;
   margin-left: -9px;
   max-width: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+}
+nav li.profile-dropdown .f-dropdown {
+  margin-top: 8px;
   background: rgba(0, 0, 0, 0.5);
   border: none;
 }
@@ -744,21 +746,16 @@ li.search-courses {
     width: 350px;
 }
 li.search-courses input {
- background-color: #717171;
+ background-color: #EEEFF1;
     color: #202020; 
         border: none;
         font-size:14px;
         font-weight: 600;
     box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.35) inset;
 }
-li.search-courses input:active {
-  background-color: #717171;
-   color: #202020;
-        border: none;
-    box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.84) inset;
-}
+li.search-courses input:active,
 li.search-courses input:focus {
-background-color: #717171;
+  background-color: #fff;
    color: #202020;
         border: none;
     box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.84) inset;
@@ -779,8 +776,24 @@ li.oned-menu-item button {
 }
 
 /* Rules and Media For Navigation  */
+@media all and (min-width: 990px) and (max-width: 1100px) {
+  li.search-courses {
+    width: 275px;
+  }
+  li.menu-link {
+    margin-left: 10px !important;
+  }
+  li.oned-menu-item.lang-dropdown {
+    left: 10px;
+  }
+}
 
 @media all and (min-width: 990px) {
+  li.oned-menu-item.lang-dropdown {
+    position: relative;
+      top: 2px;
+      left: 20px;
+  }
     li.menu-link {
     margin-left: 20px;
     position: relative;
@@ -795,6 +808,9 @@ li.oned-menu-item button {
   }
   .mobile-menu-search-open .fa-search {
     display: none;
+  }
+  .oned-top-menu .mobile-menu {
+    display: block !important;
   }
 
 }
@@ -1062,6 +1078,10 @@ section.settings-section {
     border-bottom-right-radius: 7px; 
 }
 
+    .display-block {
+      display: block !important;
+      }
+
 
 /* Settings Menu Styles */
 .settings-section h1,
@@ -1212,8 +1232,7 @@ section.settings-section {
 
 
 .settings-section .wrapper-box .separator button.white-btn {
-    position: absolute;
-    bottom: 0;
+   
     width: 90%;
     max-width: 220px;
     font-weight: 700;
@@ -1319,6 +1338,24 @@ input[type=checkbox]:not(old):checked + label > span:before{
 
 
 /* Profile Page */
+@media all and (max-width: 640px) {
+  .profile-page .author-courses  .price-box p {
+    position: relative;
+  }
+  .profile-page .author-courses  .price-box span {
+    position: absolute;
+    top: -33px;
+    right: 0;
+  }
+  .profile-page .author-courses .wrapper-box button.enroll-btn {
+    margin-left: 0;
+  }
+  .profile-page .profile-header button.follow-btn {
+    margin-top: 0px;
+    margin-bottom: 20px;    
+  }
+
+}
 
 section.author-courses {
     background-color: white;
@@ -1458,9 +1495,18 @@ button.follow-btn {
 .profile-widget .course-partic p a { 
     color: #263339;
 }
-#followers-modal {
+
+/*#followers-modal {
       top: 850px !important;
+}*/
+
+.profile-page #followers-modal .users {
+  text-align: center;
 }
+.profile-page #followers-modal .author-circle-pic {
+  margin: 4px;
+}
+
 
 .author-profile-box .author-circle-pic {
       width: 150px;

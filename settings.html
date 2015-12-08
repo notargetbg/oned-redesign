@@ -15,22 +15,34 @@
   </head>
   <body class="settings-page">
 
-     <header class="">
+      <header class="">
       <nav class="oned-top-menu container-width">
         <div class="row">
-          <div class="large-24 columns">
-            <div class="responsive-menu-button">
+          <div class="col-xs-12 search-mobile">
+            <li class="oned-menu-item search-courses animated">
+              <input type="text" placeholder=" Search" spellcheck="false">
+              <i class="fa fa-times close-search"></i>
+            </li>
+            </div>
+  
+          <div class="small-4 columns mobile-width-left">
+            <ul class="oned-top-menu">
                <li class="oned-menu-item menu-logo">
                   <a href="#"><img src="imgs/logos/oned-logo-small.png" alt=""></a>
                 </li>
-              <i class="fa fa-bars"></i>
-            </div>
-            <ul class="oned-top-menu">
-              <div class="left-side left">
-                <li class="oned-menu-item menu-logo">
-                  <a href="#"><img src="imgs/logos/oned-logo-small.png" alt=""></a>
+                <li class="oned-menu-item">
+                   <div class="responsive-menu-button">
+                    <i class="fa fa-bars"></i>
+                  </div>
                 </li>
-                <li class="oned-menu-item search-courses">
+               
+            </ul>
+          </div>
+           <div class="small-16 columns mobile-menu">
+               <ul class="oned-top-menu">
+             
+              
+                 <li class="oned-menu-item search-courses hide-search-mobile">
                   <input type="text" placeholder=" Search">
                 </li>
                 <li class="oned-menu-item menu-link">
@@ -42,19 +54,6 @@
                 <li class="oned-menu-item menu-link">
                   <a href="#">Help</a>
                 </li>
-              </div>
-              <div class="right">
-                <li class="oned-menu-item">
-                 <div class="author-box">
-                  <p class="">
-                    <a href="#">
-                      <img src="http://placehold.it/40x40" alt="" class="author-circle-pic">
-                      David Lantz
-                    </a>
-                    <i class="fa fa-chevron-down"></i>
-                  </p>
-                </div>
-                </li>
 
                 <li class="oned-menu-item lang-dropdown">
                   <a data-dropdown="lang_dropdown" aria-controls="lang_dropdown" aria-expanded="false">BG <i style="font-size:12px;" class="fa fa-chevron-down"></i></a>
@@ -63,12 +62,35 @@
                     <li><a href="#">RU</a></li>
                   </ul>
                 </li>
-              </div>
+               
             </ul>
           </div>
+           <div class="small-4 columns mobile-width-right">
+            <ul class="oned-top-menu">
+                <li class="oned-menu-item mobile-menu-search-open">
+                  <i class="fa fa-search"></i>
+                </li>
+                 <li class="oned-menu-item profile-dropdown">
+                   <div class="author-box">
+                    <p class="">
+                      <a data-dropdown="profile_dropdown" aria-controls="profile_dropdown" aria-expanded="false">
+                        <img src="http://placehold.it/40x40" alt="" class="author-circle-pic">
+                        David Lantz
+                      </a>
+                      <ul id="profile_dropdown" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Logout</a></li>
+                      </ul>
+                    </p>
+                  </div>
+                  </li>
+            </ul>
+          </div>
+
         </div>
       </nav>
-    </header> 
+    </header>
 
     <section class="container-width settings-section">
       <div class="row">
@@ -508,17 +530,38 @@
 
    
     
-    <script src="js/vendor/jquery.js"></script>
+     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
 
       $(document).ready(function(){
+
+         $( ".responsive-menu-button i" ).click(function() {
+            
+           $( ".mobile-menu" ).slideToggle('500');
+
+         });
+
+         $(".close-search").click(function() {
+            $(".search-mobile  .search-courses").removeClass('fadeInDown');
+            $(".search-mobile  .search-courses").addClass('fadeOutUp');
+
+            
+         });
+         $(".mobile-menu-search-open i").click(function() {
+          $(".search-mobile  .search-courses").addClass('display-block fadeInDown');
+          $(".search-mobile  .search-courses").removeClass('fadeOutUp');
+         });
+
+         $(".close-search").hover(function () {
+              $(this).addClass('rotate-close-search');
+            }, function () {
+              $(this).removeClass('rotate-close-search');
+            }
+          );
+
        
-        $( ".responsive-menu-button i" ).click(function() {
-          
-          $( "ul.oned-top-menu" ).slideToggle('500');
-        });
       });
     </script>
   </body>
