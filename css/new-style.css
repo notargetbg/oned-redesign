@@ -459,6 +459,9 @@ footer .copyright {
 .row.margin-top-10 {
 	margin-top: 10px;
 }
+.margin-top-58 {
+  margin-top: 58px;
+}
 
 /* Main Course Boxes Styles */
 
@@ -2709,4 +2712,16 @@ h2.section-slider-controls i.fa {
 .home-page .main-section .tabs-content .medium-12.large-8:nth-child(3)  {
    -webkit-animation-delay: .4s; /* Chrome, Safari, Opera */
     animation-delay: .4s;
+}
+
+section .panel p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1em;
+}
+section .panel h3, 
+section .panel h5 {
+   font-family: 'Open Sans', sans-serif;
+}
+section .panel h5 {
+  font-size: 1.6em;
 }
