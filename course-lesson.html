@@ -7,35 +7,49 @@
   <meta name="viewport" content="width=device-width">
   <title>ONline EDucation Home Page Redesigned</title>
  
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/foundation.min.css">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="css/new-style.css">
-
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Comfortaa:400,300,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/foundation.css" />
+    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/new-style.css">
 
   <!--[if lt IE 8]>
     <link rel="stylesheet" href="css/general_enclosed_foundicons_ie7.css">
   <![endif]-->
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- AWESOME CSS ANIMATIONS MADE SUPER EZ -->
+    <link rel="stylesheet" href="css/animate.css">
 
 </head>
 <body class="course-page lesson-page">
-    <header class="">
+ <header class="">
       <nav class="oned-top-menu container-width">
         <div class="row">
-          <div class="large-24 columns">
-            <div class="responsive-menu-button">
+          <div class="col-xs-12 search-mobile">
+            <li class="oned-menu-item search-courses animated">
+              <input type="text" placeholder=" Search" spellcheck="false">
+              <i class="fa fa-times close-search"></i>
+            </li>
+            </div>
+  
+          <div class="small-4 columns mobile-width-left">
+            <ul class="oned-top-menu">
                <li class="oned-menu-item menu-logo">
                   <a href="#"><img src="imgs/logos/oned-logo-small.png" alt=""></a>
                 </li>
-              <i class="fa fa-bars"></i>
-            </div>
-            <ul class="oned-top-menu">
-              <div class="left-side left">
-                <li class="oned-menu-item menu-logo">
-                  <a href="#"><img src="imgs/logos/oned-logo-small.png" alt=""></a>
+                <li class="oned-menu-item">
+                   <div class="responsive-menu-button">
+                    <i class="fa fa-bars"></i>
+                  </div>
                 </li>
-                <li class="oned-menu-item search-courses">
+               
+            </ul>
+          </div>
+           <div class="small-16 columns mobile-menu">
+               <ul class="oned-top-menu">
+             
+              
+                 <li class="oned-menu-item search-courses hide-search-mobile">
                   <input type="text" placeholder=" Search">
                 </li>
                 <li class="oned-menu-item menu-link">
@@ -47,24 +61,31 @@
                 <li class="oned-menu-item menu-link">
                   <a href="#">Help</a>
                 </li>
-              </div>
-              <div class="right">
+
                 <li class="oned-menu-item lang-dropdown">
-                  <a data-dropdown="lang_dropdown" aria-controls="lang_dropdown" aria-expanded="false">БГ <i style="font-size:12px;" class="fa fa-chevron-down"></i></a>
+                  <a data-dropdown="lang_dropdown" aria-controls="lang_dropdown" aria-expanded="false">BG <i style="font-size:12px;" class="fa fa-chevron-down"></i></a>
                   <ul id="lang_dropdown" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
                     <li><a href="#">EN</a></li>
                     <li><a href="#">RU</a></li>
                   </ul>
                 </li>
+               
+            </ul>
+          </div>
+           <div class="small-4 columns mobile-width-right">
+            <ul class="oned-top-menu">
+                <li class="oned-menu-item mobile-menu-search-open">
+                  <i class="fa fa-search"></i>
+                </li>
                 <li class="oned-menu-item">
                  <button class="green-btn">Join / Sign in</button>
                 </li>
-              </div>
             </ul>
           </div>
+
         </div>
       </nav>
-    </header>  
+    </header>
     <section class="br-cr">
         <div class="row">
             <ul class="breadcrumbs">
@@ -269,7 +290,7 @@
           </div>
       </div>
     </section>
-    <section class="footer-section">
+   <section class="footer-section">
       <footer>
         <div class="row">
           <div class="medium-18 columns">
@@ -299,4 +320,44 @@
         </div>
       </footer>
     </section> 
-</body>
+         <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+
+        $(document).ready(function(){
+
+            // Read More Script
+            $( "#read-more" ).click(function() {
+                $( ".read-more" ).addClass("read-more-open");
+                $( "#read-more" ).addClass("fadeOutDownBig");
+            });
+
+            // Menu Functionality
+             $( ".responsive-menu-button i" ).click(function() {
+            
+               $( ".mobile-menu" ).slideToggle('500');
+
+             });
+
+             $(".close-search").click(function() {
+                $(".search-mobile  .search-courses").removeClass('fadeInDown');
+                $(".search-mobile  .search-courses").addClass('fadeOutUp');
+
+                
+             });
+             $(".mobile-menu-search-open i").click(function() {
+              $(".search-mobile  .search-courses").addClass('display-block fadeInDown');
+              $(".search-mobile  .search-courses").removeClass('fadeOutUp');
+             });
+
+             $(".close-search").hover(function () {
+                  $(this).addClass('rotate-close-search');
+                }, function () {
+                  $(this).removeClass('rotate-close-search');
+                }
+              );
+        });
+    </script>
+    </body>
+</html>

@@ -2717,6 +2717,7 @@ h2.section-slider-controls i.fa {
 section .panel p {
       font-family: 'Open Sans', sans-serif;
       font-size: 1em;
+      margin: 15px auto;
 }
 section .panel h3, 
 section .panel h5 {
