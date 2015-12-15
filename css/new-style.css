@@ -2726,3 +2726,9 @@ section .panel h5 {
 section .panel h5 {
   font-size: 1.6em;
 }
+
+/* Contact Page */
+
+.contact-section .wrapper-box input {
+    max-width: 100%;
+}
