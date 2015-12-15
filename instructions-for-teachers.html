@@ -1,0 +1,270 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ONline EDucation Home Page Redesigned</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Comfortaa:400,300,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/foundation.css" />
+    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/new-style.css">
+
+    
+    <script src="js/vendor/modernizr.js"></script>
+    <link rel="stylesheet" href="css/animation.css"><!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
+    <!-- AWESOME CSS ANIMATIONS MADE SUPER EZ -->
+    <link rel="stylesheet" href="css/animate.css">
+  </head>
+  <body class="home-page">
+    <header class="">
+      <nav class="oned-top-menu container-width">
+        <div class="row">
+          <div class="col-xs-12 search-mobile">
+            <li class="oned-menu-item search-courses animated">
+              <input type="text" placeholder=" Search" spellcheck="false">
+              <i class="fa fa-times close-search"></i>
+            </li>
+            </div>
+  
+          <div class="small-4 columns mobile-width-left">
+            <ul class="oned-top-menu">
+               <li class="oned-menu-item menu-logo">
+                  <a href="#"><img src="imgs/logos/oned-logo-small.png" alt=""></a>
+                </li>
+                <li class="oned-menu-item">
+                   <div class="responsive-menu-button">
+                    <i class="fa fa-bars"></i>
+                  </div>
+                </li>
+               
+            </ul>
+          </div>
+           <div class="small-16 columns mobile-menu">
+               <ul class="oned-top-menu">
+             
+              
+                 <li class="oned-menu-item search-courses hide-search-mobile">
+                  <input type="text" placeholder=" Search">
+                </li>
+                <li class="oned-menu-item menu-link">
+                  <a href="#">Discover</a>
+                </li>
+                <li class="oned-menu-item menu-link">
+                  <a href="#">Create a course</a>
+                </li>
+                <li class="oned-menu-item menu-link">
+                  <a href="#">Help</a>
+                </li>
+
+                <li class="oned-menu-item lang-dropdown">
+                  <a data-dropdown="lang_dropdown" aria-controls="lang_dropdown" aria-expanded="false">BG <i style="font-size:12px;" class="fa fa-chevron-down"></i></a>
+                  <ul id="lang_dropdown" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+                    <li><a href="#">EN</a></li>
+                    <li><a href="#">RU</a></li>
+                  </ul>
+                </li>
+               
+            </ul>
+          </div>
+           <div class="small-4 columns mobile-width-right">
+            <ul class="oned-top-menu">
+                <li class="oned-menu-item mobile-menu-search-open">
+                  <i class="fa fa-search"></i>
+                </li>
+                <li class="oned-menu-item">
+                 <button class="green-btn">Join / Sign in</button>
+                </li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <section class="margin-top-58">
+      <div class="row">
+        <div class="large-24 columns">
+          <h3>INSTRUCTIONS FOR TEACHERS</h3>
+          <div class="panel">  
+             <p><strong>You can try all of the system`s functionalities or check your settings in the test webinar room. It will be opened for 30 minutes and you can also invite other participants inside. You only need to share the link with them after you enter the test webinar.</strong></p>
+             <div class="large-24 center columns">
+                <input class="button submit" onclick="demoWebinar()" type="button" name="submit" value="Enter the Test Webinar">
+             </div>
+             <p>1. To use the webinar services, please choose <strong>Google Chrome</strong> or <strong>Firefox</strong>.</p>
+             <p>2. When you first visit the webinar room, a pop-up window will appear to ask, if you will be using a <strong>Microphone</strong> 
+             or you will <strong>Listen Only</strong>. Choose <strong>Microphone</strong>. We recommend you to use headsets with microphone for a better experience. 
+             If your microphone is integrated we recommend you to use a headsets to avoid causing background noise. Now that you 
+             have chosen the devices that you will be using, please check your computer`s speakers to see if the volumes are set. 
+             After clicking the <strong>Microphone</strong> button, your browser will ask for permission to use your microphone. Click Allow. Next 
+             you have to make an <strong>Echo</strong> Test where you should hear your own voice after pronouncing a couple of words. If you do hear 
+             your voice click <strong>YES</strong> and an icon with a microphone will appear next to your name in the <strong>Users</strong> list. In the lower right 
+             corner of the room, next to the language bar you will see a <strong>WebRTC</strong> sign, which means that you are using channel with HD 
+             sound instead of a Flash Player. If you don`t hear your voice, click NO and continue to <strong>Settings</strong>. During the <strong>Test</strong> the 
+             system uses the microphone which is by <strong>Default</strong>. If you don`t hear your voice, probably the chosen microphone is not 
+             working. Choose the right microphone from the listed options in order to activate the right device.
+             </p><p>3. You can switch your language to English from the button in the lower right corner if necessary.</p>
+             <p>4. The webinar room has three sections - <strong>Users, Presentation/Whiteboard, Chat</strong></p>
+                <p><span class="icon-asterisk"></span> <strong>Users</strong> - On the left side of the room you will Users list. On the top of the list is the teacher`s name written in blue you will see you name and the rest of the participant`s names who join and leave the room. In the <strong>Status</strong> field different icons will appear next to the each name when a student raises or receives presenter`s rights by the teacher. In the <strong>Media</strong> filed you can see the everyone`s activity, shown with different icons (muted/unmuted microphone, camera, listen only). In this field your activity will be shown as well.</p>
+                <p><span class="icon-asterisk"></span> <strong>Chat</strong> - The chat is positioned at the right side of the room. It is separated into two sections-main chat (everyone will be able to see what you write) and individual chat (you can chose a student or the teacher to address him personally)</p>
+                <p><span class="icon-asterisk"></span> <strong>Presentation/Whiteboard</strong> - A presentation sample and a virtual whiteboard are positioned at the middle of the room. A red mark will show all of the teacher`s actions on the virtual presentation and whiteboard. He will also upload different files there.</p>
+             <p>5. Above the Users list you will see five buttons - Share microphone, Share desktop, Share camera, Record Webinar, Mute/Unmute microphone</p>
+                <p><span class="icon-asterisk"></span><strong>Record this webinar</strong> - click this button if you want to record the session. You can pause the record and continue it again whenever you want.</p>
+                <p><span class="icon-asterisk"></span><strong>Share microphone</strong> - if you haven`t done this when you entered the room you can do it by clicking this button. The procedure is the same as in p.2</p>
+                <p><span class="icon-asterisk"></span><strong>Share your camera</strong> - after clicking this button a window with your camera settings will appear. Your browser will ask you for permission to use your device. After you allow it you should see your image in the window and then <strong>Share your camera</strong>. If you don`t, continue to setting you camera and choose <strong>Default</strong> from the listed.</p>
+                <p><span class="icon-asterisk"></span><strong>Mute Microphone</strong> - You can <strong>MUTE/UNMUTE</strong> your microphone whenever you want. In the <strong>Media</strong> field an icon will appear to show you actions.</p>
+                <p><span class="icon-asterisk"></span><strong>Desktop Sharing</strong> - when you click this button, the system will require the latest version of Java installed on your computer. You can check from the pop-up window that will appear if you have it. If it is not the latest version you can click to install it and after the process is finished you have to refresh the page in order to start the program. In the lower left corner a window with you shared desktop should appear and all of your students should be able to see your actions. You can play them videos or show them all kind of files.</p>                 
+             <p>6. Below the <strong>Status</strong> field you will find a <strong>Settings</strong> button from which you can mute/unmute all of the microphones or restrict all of the students actions (sharing camera, rising hand, using the chat etc.). Also, you can choose to mute certain people by clicking the Microphone icon next to their names.</p>
+             <p>7. As a teacher, you can make some of the participants a presenter. This way the student will have the right to use the presentation and whiteboard and also share his desktop. Click next to the name of the person you have chosen in the <strong>Status</strong> field and if you want to return your rights click again the icon next to your name.</p>
+             <p>8. From the Layout button in the lower right corner, you can change the look of the room and choose on which part the students should be focused (video/presentation/ chat etc.).</p>
+             <p>9. To <strong>Exit</strong> the webinar, click the button in the upper right corner.</p>
+             <p><a class="admin-note" target="_blank" href="https://www.youtube.com/watch?v=J9mbw00P9W0">Click here</a> to watch tutorial videos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <section class="footer-section">
+      <footer>
+        <div class="row">
+          <div class="medium-18 columns">
+            <ul class="footer-menu">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Teachers</a></li>
+              <li><a href="#">jobs</a></li>
+              <li><a href="#">blog</a></li>
+              <li><a href="#">Terms of use</a></li>
+              <li><a href="#">instructor terms</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">contact us</a></li>
+              <li><a href="#">faq</a></li>
+            </ul>
+            <p class="copyright">
+              Copyright © 2013 On-ed.com. All rights reserved
+            </p>
+          </div>
+          <div class="medium-6 columns">
+            <ul class="footer-menu social-links">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-google-plus"></i></a>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </section>
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <script>
+      $(document).foundation();
+
+      $(document).ready(function(){
+        $('.category-1-slider').slick({
+          dots: false,
+          autoplay: true,
+          autoplaySpeed: 10000,
+          speed: 300,
+          slidesToShow: 3,
+          arrows: true,
+          slidesToScroll: 1,
+          appendArrows: $('.category-1 .section-slider-controls'),
+          prevArrow: '<i class="fa fa-angle-left"></i>',
+          nextArrow: '<i class="fa fa-angle-right"></i>',
+          responsive: [
+          {
+            breakpoint: 800,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+        });
+
+        $('.category-2-slider').slick({
+          dots: false,
+          autoplay: true,
+          autoplaySpeed: 10000,
+          speed: 300,
+          slidesToShow: 4,
+          arrows: true,
+          slidesToScroll: 1,
+          appendArrows: $('.category-2 .section-slider-controls'),
+          prevArrow: '<i class="fa fa-angle-left"></i>',
+          nextArrow: '<i class="fa fa-angle-right"></i>',
+          responsive: [
+
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3
+            }
+          },
+          {
+            breakpoint: 800,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+        });
+
+         $( ".responsive-menu-button i" ).click(function() {
+            
+           $( ".mobile-menu" ).slideToggle('500');
+
+         });
+
+         $(".close-search").click(function() {
+            $(".search-mobile  .search-courses").removeClass('fadeInDown');
+            $(".search-mobile  .search-courses").addClass('fadeOutUp');
+
+            
+         });
+         $(".mobile-menu-search-open i").click(function() {
+          $(".search-mobile  .search-courses").addClass('display-block fadeInDown');
+          $(".search-mobile  .search-courses").removeClass('fadeOutUp');
+         });
+
+         $(".close-search").hover(function () {
+              $(this).addClass('rotate-close-search');
+            }, function () {
+              $(this).removeClass('rotate-close-search');
+            }
+          );
+
+       
+      });
+    </script>
+  </body>
+</html>
