@@ -1383,3 +1383,96 @@ stroke: #3294d6; /* avoid gap in FF */
 	stroke: #ecf0f1;
 }
 
+/* Teachers */
+body.teachers .position-relative {
+	position: relative;
+}
+body.teachers  section h2 {
+	line-height: 1em;
+}
+body.teachers section.control-your-content p,
+body.teachers section.your-profit p {
+	font-size: 15px;
+	margin: 15px auto;
+	color: #263339;
+
+}
+body.teachers  section .heading {
+	font-size: 2em;
+	margin: 25px auto;
+	line-height: 1em;
+}
+body.teachers section.you-teach .heading,
+body.teachers  section.you-teach p {
+	color: white;
+}
+body.teachers .slider-images .caption {
+	font-size: 17px;
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+	width: 100%;
+	background-color: rgba(43, 64, 97, 0.65);
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+body.teachers section.you-teach ul {
+	font-size: 1em;
+	color: white;
+}
+body.teachers section.control-your-content {
+	background-color: white;
+}
+body.teachers .btn-big {
+	width: 275px;
+	font-size: 25px;
+	padding-top: 20px;
+	padding-bottom: 22px;
+	height: auto;
+	line-height: 28px;
+}
+body.teachers section.your-profit p {
+	font-weight: 600;
+}
+
+@media all and (min-width: 768px) {
+	body.teachers section.your-profit p {
+		max-width: 65%;
+	}
+}
+body.teachers section.team-images .columns {
+	height: 275px;
+}
+body.teachers section.team-images {
+	padding: 50px;
+}
+body.teachers section.team-images h2 {
+    margin-top: 0px; 
+}
+body.teachers section.team-images .name {
+	margin: 0;
+	font-size: 1.6em;
+	font-weight: 600;
+	line-height: 1em;
+	color: white;
+}
+body.teachers section.team-images .job-title {
+	margin: 0;
+	font-size: 14px;
+	font-weight: 800;
+	color: white;
+}
+body.teachers section.team-images hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+body.teachers section.team-images .description {
+	color: white;
+}
+body.teachers section.team-images button {
+	width: 100%;
+    margin-top: 15px;
+}
+body.teachers section.team-images .ch-grid li {
+	margin: 0 20px;
+}
