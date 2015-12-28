@@ -1081,10 +1081,12 @@ section.settings-section {
     border-bottom-right-radius: 7px; 
 }
 
-    .display-block {
-      display: block !important;
-      }
-
+.display-block {
+  display: block !important;
+  }
+.margin-top-58 {
+  margin-top: 58px;
+}
 
 /* Settings Menu Styles */
 .settings-section h1,
@@ -2728,7 +2730,6 @@ section .panel h5 {
 }
 
 /* Contact Page */
-
 .contact-section .wrapper-box input {
     max-width: 100%;
 }
