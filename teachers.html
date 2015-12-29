@@ -275,6 +275,7 @@
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/viewportchecker.js"></script>
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <script>
       $(document).foundation();
@@ -337,7 +338,29 @@
             }
           );
 
-       
+       $('.teachers section h1').addClass("hidden").viewportChecker({
+            classToAdd: 'visible animated zoomIn',
+        });
+
+         $('.teachers section h2').addClass("hidden").viewportChecker({
+            classToAdd: 'visible animated zoomIn',
+        });
+
+          $('.teachers section h3').addClass("hidden").viewportChecker({
+            classToAdd: 'visible animated zoomIn',
+        });
+
+           $('.teachers section p').addClass("hidden").viewportChecker({
+            classToAdd: 'visible animated fadeIn',
+        });
+
+            $('.teachers section img').addClass("hidden").viewportChecker({
+            classToAdd: 'visible animated fadeIn',
+        });
+
+             $('.teachers section li').addClass("hidden").viewportChecker({
+            classToAdd: 'visible animated rollIn',
+        });
       });
     </script>
   </body>
