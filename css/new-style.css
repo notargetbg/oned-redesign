@@ -1087,7 +1087,12 @@ section.settings-section {
 .margin-top-58 {
   margin-top: 58px;
 }
-
+.margin-top-0 {
+  margin-top: 0;
+}
+.padding-top-0 {
+  padding-top: 0 !important;
+}
 /* Settings Menu Styles */
 .settings-section h1,
 .settings-section h2,
@@ -2452,7 +2457,8 @@ div.step.active {
   background-color: #84cf6e;
 }
 
-.webinar .details p span {
+.webinar .details p span,
+.course .details p span {
   color: #b5b5b5;
 }
 
@@ -2732,4 +2738,32 @@ section .panel h5 {
 /* Contact Page */
 .contact-section .wrapper-box input {
     max-width: 100%;
+}
+
+/* Discover Page */
+.discover-page .sub-nav dt {
+    margin-left: 0;
+}
+.discover-page .sub-nav {
+  margin-bottom: 10px;
+}
+.discover-page .filters {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #EEEFF1;
+}
+
+.discover-page .select-category {
+  padding: 0 5px;
+    height: 25px;
+    border-radius: 4px;
+    position: relative;
+    top: -2px;
+    line-height: 19px;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+
+.discover-page .wrapper-box .details p {
+  height: 60px;
 }

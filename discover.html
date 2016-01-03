@@ -1,6 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="en">
- <head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ONline EDucation Profile Page Redesigned</title>
@@ -18,7 +18,7 @@
     <!-- AWESOME CSS ANIMATIONS MADE SUPER EZ -->
     <link rel="stylesheet" href="css/animate.css">
   </head>
-  <body class="profile-page">
+  <body class="discover-page">
     
     <header class="">
       <nav class="oned-top-menu container-width">
@@ -85,34 +85,19 @@
       </nav>
     </header>
 
-     <!--  Discover Page Widget -->
+    <!--  Discover Page Widget -->
     <section class="container-width discover margin-top-58">
-      <div class="row">
-        <div class="large-5 columns">
-          <h2>Choose a category</h2>  
-        </div>
-        <div class="large-5 columns left">
-           <select>
-            <option value="technology">Technology</option>
-            <option value="starbuck">Starbuck</option>
-            <option value="hotdog">Hot Dog</option>
-            <option value="apollo">Apollo</option>
-          </select>
-        </div>
-
-       
-      </div>
       <div class="row">
         <div class="large-24 columns">
           <ul class="tabs oned-horizontal-tabs" data-tab="">
             <li class="tab-title active">
-              <a href="#panel2-1" aria-selected="true" tabindex="0">
+              <a href="#course-panel" aria-selected="true" tabindex="0">
 
                  Courses
               </a>
             </li>
             <li class="tab-title">
-              <a href="#panel2-2" aria-selected="false" tabindex="-1">
+              <a href="#webinar-panel" aria-selected="false" tabindex="-1">
                 
                 Webinars
               </a>
@@ -120,346 +105,1432 @@
           </ul>
         </div>
       </div>
+      <div class="row filters">
+        <div class="large-4 columns">
+          <dl class="sub-nav">
+            <dt>Categories:</dt>
+            <dd class="hidden-for-large-up">  
+              <select class="select-category">
+                <option>All</option> 
+                <option>Arts</option> 
+                <option>Technology</option>
+                <option>Design</option>
+                <option>Health and sport</option>
+                <option>Education</option>
+                <option>Music</option>
+                <option>Humanities</option>
+                <option>Kids</option>
+                <option>Business</option>
+                <option>Photography</option>
+                <option>Science</option>
+                <option>Carts and Hobbies</option>
+                <option>Languages</option>
+                <option>Psychology</option>
+                <option>Lifestyle</option>
+                <option>More</option>
+              </select>
+            </dd>
+          </dl>
+        </div>
+        <div class="large-10 columns filter">
+          <dl class="sub-nav">
+            <dt>Languages:</dt>
+            <dd class="active"><a href="#">All</a></dd>
+            <dd><a href="#">English</a></dd>
+            <dd><a href="#">Russian</a></dd>
+            <dd><a href="#">Bulgarian</a></dd>
+          </dl>
+        </div>
+        <div class="large-10 columns filter">
+          <dl class="sub-nav">
+            <dt>Price:</dt>
+            <dd class="active"><a href="#">All</a></dd>
+            <dd><a href="#">Paid</a></dd>
+            <dd><a href="#">On Sale</a></dd>
+            <dd><a href="#">Free</a></dd>
+          </dl>
+        </div>
+      </div>
       <div class="row">
+        <div class="large-4 columns">
+          <ul class="side-nav padding-top-0 hide-for-medium hide-for-small">
+            <li><a href="#">All</a></li>
+            <li><a href="#">Arts</a></li> 
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Health and sport</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">Humanities</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Photography</a></li>
+            <li><a href="#">Science</a></li>
+            <li><a href="#">Carts and Hobbies</a></li>
+            <li><a href="#">Languages</a></li>
+            <li><a href="#">Psychology</a></li>
+            <li><a href="#">Lifestyle</a></li>
+            <li><a href="#">More</a></li>
+          </ul>
+        </div>
         <div class="large-20 columns ">
           <div class="tabs-content">
-          <section role="tabpanel" aria-hidden="false" class="content active" id="panel2-1">
-            <!-- every course in a new .row -->
-            <div class="row course-row">
-              <div class="small-24 columns">
-                <div class="wrapper-box webinar normal">
-                  <div class="row ">
-                    <div class="medium-10 small-24 columns img-box">
+            <section role="tabpanel" aria-hidden="false" class="content active padding-top-0 " id="course-panel">
+              <!-- every course in a new .row -->
+              <div class="row">
+
+                <div class="large-8 medium-12 columns" >
+                  <div class="wrapper-box course normal">
+                    <div class="img-box">
                       <a href="#">
-                        <img class="thumbnail-image" src="http://placehold.it/580x700" alt="">
+                        <img class="thumbnail-image" src="http://placehold.it/580x500" alt="">
                       </a>
                     </div>
-                    <div class="medium-14 small-24 columns header-top-course">
-                      <div class="padding-box">
-                        <h5 class="">
-                          <a class="green" href="#">Webinar</a>
-                        </h5>
-                        <h3>
+                    <div class="padding-box">
+                      <h5 class="" >
+                        <a class="blue" href="#">Course</a>
+                      </h5>
+                      <h3>
+                        <a href="#">
+                          Рекомендация - инструмент
+                        в продажах или голословная
+                        антиреклама, или...
+                        </a>
+                      </h3>
+                      <hr>
+                      <div class="author-box">
+                        <p>
                           <a href="#">
-                            Auditing Spreadsheets &amp; Hacking Spreadsheet protection
-                          </a>
-                        </h3>
-                        <div class="author-box">
-                          <p>
-                            by
-                            <a href="#">
+                            <img src="http://placehold.it/40x40" alt="" class="author-circle-pic">
                               Rosalee Laws
-                            </a>
-                          </p>
-                        </div>
-                        <div class="details text-left" >
+                          </a>
+                        </p>
+                      </div>
+                      <div class="tags">
+                        <a href="#"><span>Email</span></a>
+                        <a href="#"><span>Tutorials</span></a>
+                      </div>
+                      <div class="row" >
+                        <div class="large-16 small-12 columns details text-left" >
                           <p>
                             Петък, 27 Декември 2015, <br>
                             19:00 <span>(GMT+03:00)</span>
                           </p>
                         </div>
+                        <div class="small-8 columns text-right price-box" >
+                          <p>
+                            <span class="new-price blue">$39</span>
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="padding-box">
-                    <div class="row" >
-                      <div class="large-12 small-20 columns details text-left" >
-                        <p class="social tags">
-                          <a href=""><i class="fa fa-heart-o"></i></a>  <a href=""><i class="fa fa-share-alt"></i></a>
-                          <a href="#"><span>Sport</span></a>
-                          <a href="#"><span>Tutorials</span></a>
-                        </p>
-                      </div>
-                      <div class="large-12 small-24 columns text-right price-box" >
-                        <p>
-                          <span class="new-price green">$69</span>
+                      <hr>
+                      <div class="row" >
+                        <div class="small-8 columns details text-left" >
+                          <p class="social">
+                            <a href=""><i class="fa fa-heart-o"></i></a>  <a href=""><i class="fa fa-share-alt"></i></a>
+                          </p>
+                        </div>
+                        <div class="small-16 columns text-right price-box" >
                           <button class="enroll-btn">ENROLL</button>
-                        </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>  <!-- end of .row for a single course -->
 
-            <!-- every course in a new .row -->
-            <div class="row course-row">
-              <div class="small-24 columns">
-                <div class="wrapper-box course normal">
-                  <div class="row">
-                    <div class="medium-10 small-24 columns img-box">
+                <div class="large-8 medium-12 columns" h>
+                  <div class="wrapper-box course normal">
+                    <div class="img-box">
                       <a href="#">
                         <img class="thumbnail-image" src="http://placehold.it/580x700" alt="">
                       </a>
                     </div>
-                    <div class="medium-14 small-24 columns header-top-course">
-                      <div class="padding-box">
-                        <h5 class="">
-                          <a class="blue" href="#">Course</a>
-                        </h5>
-                        <h3>
+                    <div class="padding-box">
+                      <h5 class="">
+                        <a class="blue" href="#">Course</a>
+                      </h5>
+                      <h3 >
+                        <a href="#" >
+                          Auditing Spreadsheets &amp; Hacking Spreadsheet protection
+                        </a>
+                      </h3>
+                      <hr>
+                      <div class="author-box">
+                        <p>
                           <a href="#">
-                            Auditing Spreadsheets &amp; Hacking Spreadsheet protection
+                            <img src="http://placehold.it/40x40" alt="" class="author-circle-pic">
+                              Elrond Thomas
                           </a>
-                        </h3>
-                        <div class="author-box">
-                          <p>
-                            by
-                            <a href="#">
-                              Rosalee Laws
-                            </a>
-                          </p>
-                        </div>
-                        <div class="details text-left" >
+                        </p>
+                      </div>
+                      <div class="tags">
+                        <a href="#"><span>Sport</span></a>
+                        <a href="#"><span>Tutorials</span></a>
+                      </div>
+                      <div class="row" >
+                        <div class="small-16 columns details text-left" >
                           <p>
                             51 lectures
                           </p>
                         </div>
+                        <div class="small-8 columns text-right price-box" >
+                          <p>
+                            <span class="new-price blue">$69</span>
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="padding-box">
-                    <div class="row" >
-                      <div class="large-12 small-20 columns details text-left" >
-                        <p class="social tags">
-                          <a href=""><i class="fa fa-heart-o"></i></a>  <a href=""><i class="fa fa-share-alt"></i></a>
-                          <a href="#"><span>Sport</span></a>
-                          <a href="#"><span>Tutorials</span></a>
-                        </p>
-                      </div>
-                      <div class="large-12 small-24 columns text-right price-box" >
-                        <p>
-                          <span class="new-price blue">$69</span>
+                      <hr>
+                      <div class="row" >
+                        <div class="small-8 columns details text-left" >
+                          <p class="social">
+                            <a href=""><i class="fa fa-heart-o"></i></a>  <a href=""><i class="fa fa-share-alt"></i></a>
+                          </p>
+                        </div>
+                        <div class="small-16 columns text-right price-box" >
                           <button class="enroll-btn">ENROLL</button>
-                        </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>  <!-- end of .row for a single course -->
 
-            <!-- every course in a new .row -->
-            <div class="row course-row">
-              <div class="small-24 columns">
-                <div class="wrapper-box webinar normal">
-                  <div class="row">
-                    <div class="medium-10 small-24  columns img-box">
+                <div class="large-8 medium-12 columns" >
+                  <div class="wrapper-box course normal">
+                    <div class="img-box">
                       <a href="#">
-                        <img class="thumbnail-image" src="http://placehold.it/580x700" alt="">
+                        <img class="thumbnail-image" src="http://placehold.it/580x500" alt="">
                       </a>
                     </div>
-                    <div class="medium-14 small-24 columns header-top-course">
-                      <div class="padding-box">
-                        <h5 class="">
-                          <a class="green" href="#">Webinar</a>
-                        </h5>
-                        <h3>
+                    <div class="padding-box">
+                      <h5 class=""  >
+                        <a class="blue" href="#">Course</a>
+                      </h5>
+                      <h3 >
+                        <a href="#" >
+                          Рекомендация - инструмент
+                        в продажах или голословная
+                        антиреклама, или...
+                        </a>
+                      </h3>
+                      <hr>
+                      <div class="author-box">
+                        <p>
                           <a href="#">
-                            Auditing Spreadsheets &amp; Hacking Spreadsheet protection
-                          </a>
-                        </h3>
-                        <div class="author-box">
-                          <p>
-                            by
-                            <a href="#">
+                            <img src="http://placehold.it/40x40" alt="" class="author-circle-pic">
                               Rosalee Laws
-                            </a>
-                          </p>
-                        </div>
-                        <div class="details text-left" >
+                          </a>
+                        </p>
+                      </div>
+                      <div class="tags">
+                        <a href="#"><span>Email</span></a>
+                        <a href="#"><span>Tutorials</span></a>
+                      </div>
+                      <div class="row" >
+                        <div class="large-16 small-12 columns details text-left" >
                           <p>
                             Петък, 27 Декември 2015, <br>
                             19:00 <span>(GMT+03:00)</span>
                           </p>
                         </div>
+                        <div class="small-8 columns text-right price-box" >
+                          <p>
+                            <span class="new-price blue">$39</span>
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="padding-box">
-                    <div class="row" >
-                      <div class="large-12 small-20 columns details text-left" >
-                        <p class="social tags">
-                          <a href=""><i class="fa fa-heart-o"></i></a>  <a href=""><i class="fa fa-share-alt"></i></a>
-                          <a href="#"><span>Sport</span></a>
-                          <a href="#"><span>Tutorials</span></a>
-                        </p>
-                      </div>
-                      <div class="large-12 small-24 columns text-right price-box" >
-                        <p>
-                          <span class="new-price green">$69</span>
+                      <hr>
+                      <div class="row" >
+                        <div class="small-8 columns details text-left" >
+                          <p class="social">
+                            <a href=""><i class="fa fa-heart-o"></i></a>  <a href=""><i class="fa fa-share-alt"></i></a>
+                          </p>
+                        </div>
+                        <div class="small-16 columns text-right price-box" >
                           <button class="enroll-btn">ENROLL</button>
-                        </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>  <!-- end of .row for a single course -->
-         
-          </section>
 
-            <section role="tabpanel" aria-hidden="true" class="content" id="panel2-2">
-            <!-- every course in a new .row -->
-            
+                <div class="large-8 medium-12 columns" >
+                  <div class="wrapper-box course normal">
+                    <div class="img-box">
+                      <a href="#">
+                        <img class="thumbnail-image" src="http://placehold.it/580x500" alt="">
+                      </a>
+                    </div>
+                    <div class="padding-box">
+                      <h5 class="" >
+                        <a class="blue" href="#">Course</a>
+                      </h5>
+                      <h3 >
+                        <a href="#" >
+                          Рекомендация - инструмент
+                        в продажах или голословная
+                        антиреклама, или...
+                        </a>
+                      </h3>
+                      <hr>
+                      <div class="author-box">
+                        <p>
+                          <a href="#">
+                            <img src="http://placehold.it/40x40" alt="" class="author-circle-pic">
+                              Rosalee Laws
+                          </a>
+                        </p>
+                      </div>
+                      <div class="tags">
+                        <a href="#"><span>Email</span></a>
+                        <a href="#"><span>Tutorials</span></a>
+                      </div>
+                      <div class="row" >
+                        <div class="large-16 small-12 columns details text-left" >
+                          <p>
+                            Петък, 27 Декември 2015, <br>
+                            19:00 <span>(GMT+03:00)</span>
+                          </p>
+                        </div>
+                        <div class="small-8 columns text-right price-box" >
+                          <p>
+                            <span class="new-price blue">$39</span>
+                          </p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="row" >
+                        <div class="small-8 columns details text-left" >
+                          <p class="social">
+                            <a href=""><i class="fa fa-heart-o"></i></a>  <a href=""><i class="fa fa-share-alt"></i></a>
+                          </p>
+                        </div>
+                        <div class="small-16 columns text-right price-box" >
+                          <button class="enroll-btn">ENROLL</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-            <div class="row course-row">
-              <div class="small-24 columns">
-                <div class="wrapper-box course normal">
-                  <div class="row">
-                    <div class="medium-10 small-24 columns img-box">
+                <div class="large-8 medium-12 columns" >
+                  <div class="wrapper-box course normal">
+                    <div class="img-box">
+                      <a href="#">
+                        <img class="thumbnail-image" src="http://placehold.it/580x500" alt="">
+                      </a>
+                    </div>
+                    <div class="padding-box">
+                      <h5 class="">
+                        <a class="blue" href="#">Course</a>
+                      </h5>
+                      <h3 >
+                        <a href="#" >
+                          Рекомендация - инструмент
+                        в продажах или голословная
+                        антиреклама, или...
+                        </a>
+                      </h3>
+                      <hr>
+                      <div class="author-box">
+                        <p>
+                          <a href="#">
+                            <img src="http://placehold.it/40x40" alt="" class="author-circle-pic">
+                              Rosalee Laws
+                          </a>
+                        </p>
+                      </div>
+                      <div class="tags">
+                        <a href="#"><span>Email</span></a>
+                        <a href="#"><span>Tutorials</span></a>
+                      </div>
+                      <div class="row" >
+                        <div class="large-16 small-12 columns details text-left" >
+                          <p>
+                            Петък, 27 Декември 2015, <br>
+                            19:00 <span>(GMT+03:00)</span>
+                          </p>
+                        </div>
+                        <div class="small-8 columns text-right price-box" >
+                          <p>
+                            <span class="new-price blue">$39</span>
+                          </p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="row" >
+                        <div class="small-8 columns details text-left" >
+                          <p class="social">
+                            <a href=""><i class="fa fa-heart-o"></i></a>  <a href=""><i class="fa fa-share-alt"></i></a>
+                          </p>
+                        </div>
+                        <div class="small-16 columns text-right price-box" >
+                          <button class="enroll-btn">ENROLL</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="large-8 medium-12 columns" >
+                  <div class="wrapper-box course normal">
+                    <div class="img-box">
                       <a href="#">
                         <img class="thumbnail-image" src="http://placehold.it/580x700" alt="">
                       </a>
                     </div>
-                    <div class="medium-14 small-24 columns header-top-course">
-                      <div class="padding-box">
-                        <h5 class="">
-                          <a class="blue" href="#">dssaddasadsasdasddasasd</a>
-                        </h5>
-                        <h3>
+                    <div class="padding-box">
+                      <h5 class="">
+                        <a class="blue" href="#">Course</a>
+                      </h5>
+                      <h3 >
+                        <a href="#">
+                          Auditing Spreadsheets &amp; Hacking Spreadsheet protection
+                        </a>
+                      </h3>
+                      <hr>
+                      <div class="author-box">
+                        <p>
                           <a href="#">
-                            Auditing Spreadsheets &amp; Hacking Spreadsheet protection
+                            <img src="http://placehold.it/40x40" alt="" class="author-circle-pic">
+                              Elrond Thomas
                           </a>
-                        </h3>
-                        <div class="author-box">
-                          <p>
-                            by
-                            <a href="#">
-                              Rosalee Laws
-                            </a>
-                          </p>
-                        </div>
-                        <div class="details text-left" >
+                        </p>
+                      </div>
+                      <div class="tags">
+                        <a href="#"><span>Sport</span></a>
+                        <a href="#"><span>Tutorials</span></a>
+                      </div>
+                      <div class="row" >
+                        <div class="small-16 columns details text-left" >
                           <p>
                             51 lectures
                           </p>
                         </div>
+                        <div class="small-8 columns text-right price-box" >
+                          <p>
+                            <span class="new-price blue">$69</span>
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="padding-box">
-                    <div class="row" >
-                      <div class="large-12 small-20 columns details text-left" >
-                        <p class="social tags">
-                          <a href=""><i class="fa fa-heart-o"></i></a>  <a href=""><i class="fa fa-share-alt"></i></a>
-                          <a href="#"><span>Sport</span></a>
-                          <a href="#"><span>Tutorials</span></a>
-                        </p>
-                      </div>
-                      <div class="large-12 small-24 columns text-right price-box" >
-                        <p>
-                          <span class="new-price blue">$69</span>
+                      <hr>
+                      <div class="row" >
+                        <div class="small-8 columns details text-left" >
+                          <p class="social">
+                            <a href=""><i class="fa fa-heart-o"></i></a>  <a href=""><i class="fa fa-share-alt"></i></a>
+                          </p>
+                        </div>
+                        <div class="small-16 columns text-right price-box" >
                           <button class="enroll-btn">ENROLL</button>
-                        </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>  <!-- end of .row for a single course -->
 
-            <!-- every course in a new .row -->
-            <div class="row course-row">
-              <div class="small-24 columns">
-                <div class="wrapper-box webinar normal">
-                  <div class="row">
-                    <div class="medium-10 small-24  columns img-box">
+                <div class="large-8 medium-12 columns" >
+                  <div class="wrapper-box course normal">
+                    <div class="img-box">
                       <a href="#">
-                        <img class="thumbnail-image" src="http://placehold.it/580x700" alt="">
+                        <img class="thumbnail-image" src="http://placehold.it/580x500" alt="">
                       </a>
                     </div>
-                    <div class="medium-14 small-24 columns header-top-course">
-                      <div class="padding-box">
-                        <h5 class="">
-                          <a class="green" href="#">Webinar</a>
-                        </h5>
-                        <h3>
+                    <div class="padding-box">
+                      <h5 class="">
+                        <a class="blue" href="#">Course</a>
+                      </h5>
+                      <h3 >
+                        <a href="#" >
+                          Рекомендация - инструмент
+                        в продажах или голословная
+                        антиреклама, или...
+                        </a>
+                      </h3>
+                      <hr>
+                      <div class="author-box">
+                        <p>
                           <a href="#">
-                            Auditing Spreadsheets &amp; Hacking Spreadsheet protection
-                          </a>
-                        </h3>
-                        <div class="author-box">
-                          <p>
-                            by
-                            <a href="#">
+                            <img src="http://placehold.it/40x40" alt="" class="author-circle-pic">
                               Rosalee Laws
-                            </a>
-                          </p>
-                        </div>
-                        <div class="details text-left" >
+                          </a>
+                        </p>
+                      </div>
+                      <div class="tags">
+                        <a href="#"><span>Email</span></a>
+                        <a href="#"><span>Tutorials</span></a>
+                      </div>
+                      <div class="row" >
+                        <div class="large-16 small-12 columns details text-left" >
                           <p>
                             Петък, 27 Декември 2015, <br>
                             19:00 <span>(GMT+03:00)</span>
                           </p>
                         </div>
+                        <div class="small-8 columns text-right price-box" >
+                          <p>
+                            <span class="new-price blue">$39</span>
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="padding-box">
-                    <div class="row" >
-                      <div class="large-12 small-20 columns details text-left" >
-                        <p class="social tags">
-                          <a href=""><i class="fa fa-heart-o"></i></a>  <a href=""><i class="fa fa-share-alt"></i></a>
-                          <a href="#"><span>Sport</span></a>
-                          <a href="#"><span>Tutorials</span></a>
-                        </p>
-                      </div>
-                      <div class="large-12 small-24 columns text-right price-box" >
-                        <p>
-                          <span class="new-price green">$69</span>
+                      <hr>
+                      <div class="row" >
+                        <div class="small-8 columns details text-left" >
+                          <p class="social">
+                            <a href=""><i class="fa fa-heart-o"></i></a>  <a href=""><i class="fa fa-share-alt"></i></a>
+                          </p>
+                        </div>
+                        <div class="small-16 columns text-right price-box" >
                           <button class="enroll-btn">ENROLL</button>
-                        </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>  <!-- end of .row for a single course -->
-           </section>
+
+               <div class="large-8 medium-12 columns" >
+                  <div class="wrapper-box course normal">
+                    <div class="img-box">
+                      <a href="#">
+                        <img class="thumbnail-image" src="http://placehold.it/580x500" alt="">
+                      </a>
+                    </div>
+                    <div class="padding-box">
+                      <h5 class="" >
+                        <a class="blue" href="#">Course</a>
+                      </h5>
+                      <h3 >
+                        <a href="#">
+                          Рекомендация - инструмент
+                        в продажах или голословная
+                        антиреклама, или...
+                        </a>
+                      </h3>
+                      <hr>
+                      <div class="author-box">
+                        <p>
+                          <a href="#">
+                            <img src="http://placehold.it/40x40" alt="" class="author-circle-pic">
+                              Rosalee Laws
+                          </a>
+                        </p>
+                      </div>
+                      <div class="tags">
+                        <a href="#"><span>Email</span></a>
+                        <a href="#"><span>Tutorials</span></a>
+                      </div>
+                      <div class="row" >
+                        <div class="large-16 small-12 columns details text-left" >
+                          <p>
+                            Петък, 27 Декември 2015, <br>
+                            19:00 <span>(GMT+03:00)</span>
+                          </p>
+                        </div>
+                        <div class="small-8 columns text-right price-box" >
+                          <p>
+                            <span class="new-price blue">$39</span>
+                          </p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="row" >
+                        <div class="small-8 columns details text-left" >
+                          <p class="social">
+                            <a href=""><i class="fa fa-heart-o"></i></a>  <a href=""><i class="fa fa-share-alt"></i></a>
+                          </p>
+                        </div>
+                        <div class="small-16 columns text-right price-box" >
+                          <button class="enroll-btn">ENROLL</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="large-8 medium-12 columns" h>
+                  <div class="wrapper-box course normal">
+                    <div class="img-box">
+                      <a href="#">
+                        <img class="thumbnail-image" src="http://placehold.it/580x700" alt="">
+                      </a>
+                    </div>
+                    <div class="padding-box">
+                      <h5 class="">
+                        <a class="blue" href="#">Course</a>
+                      </h5>
+                      <h3 >
+                        <a href="#">
+                          Auditing Spreadsheets &amp; Hacking Spreadsheet protection
+                        </a>
+                      </h3>
+                      <hr>
+                      <div class="author-box">
+                        <p>
+                          <a href="#">
+                            <img src="http://placehold.it/40x40" alt="" class="author-circle-pic">
+                              Elrond Thomas
+                          </a>
+                        </p>
+                      </div>
+                      <div class="tags">
+                        <a href="#"><span>Sport</span></a>
+                        <a href="#"><span>Tutorials</span></a>
+                      </div>
+                      <div class="row" >
+                        <div class="small-16 columns details text-left" >
+                          <p>
+                            51 lectures
+                          </p>
+                        </div>
+                        <div class="small-8 columns text-right price-box" >
+                          <p>
+                            <span class="new-price blue">$69</span>
+                          </p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="row" >
+                        <div class="small-8 columns details text-left" >
+                          <p class="social">
+                            <a href=""><i class="fa fa-heart-o"></i></a>  <a href=""><i class="fa fa-share-alt"></i></a>
+                          </p>
+                        </div>
+                        <div class="small-16 columns text-right price-box" >
+                          <button class="enroll-btn">ENROLL</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="large-8 medium-12 columns" >
+                  <div class="wrapper-box course normal">
+                    <div class="img-box">
+                      <a href="#">
+                        <img class="thumbnail-image" src="http://placehold.it/580x500" alt="">
+                      </a>
+                    </div>
+                    <div class="padding-box">
+                      <h5 class=""  >
+                        <a class="blue" href="#">Course</a>
+                      </h5>
+                      <h3 >
+                        <a href="#">
+                          Рекомендация - инструмент
+                        в продажах или голословная
+                        антиреклама, или...
+                        </a>
+                      </h3>
+                      <hr>
+                      <div class="author-box">
+                        <p>
+                          <a href="#">
+                            <img src="http://placehold.it/40x40" alt="" class="author-circle-pic">
+                              Rosalee Laws
+                          </a>
+                        </p>
+                      </div>
+                      <div class="tags">
+                        <a href="#"><span>Email</span></a>
+                        <a href="#"><span>Tutorials</span></a>
+                      </div>
+                      <div class="row" >
+                        <div class="large-16 small-12 columns details text-left" >
+                          <p>
+                            Петък, 27 Декември 2015, <br>
+                            19:00 <span>(GMT+03:00)</span>
+                          </p>
+                        </div>
+                        <div class="small-8 columns text-right price-box" >
+                          <p>
+                            <span class="new-price blue">$39</span>
+                          </p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="row" >
+                        <div class="small-8 columns details text-left" >
+                          <p class="social">
+                            <a href=""><i class="fa fa-heart-o"></i></a>  <a href=""><i class="fa fa-share-alt"></i></a>
+                          </p>
+                        </div>
+                        <div class="small-16 columns text-right price-box" >
+                          <button class="enroll-btn">ENROLL</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="large-8 medium-12 columns" >
+                  <div class="wrapper-box course normal">
+                    <div class="img-box">
+                      <a href="#">
+                        <img class="thumbnail-image" src="http://placehold.it/580x500" alt="">
+                      </a>
+                    </div>
+                    <div class="padding-box">
+                      <h5 class="" >
+                        <a class="blue" href="#">Course</a>
+                      </h5>
+                      <h3 >
+                        <a href="#">
+                          Рекомендация - инструмент
+                        в продажах или голословная
+                        антиреклама, или...
+                        </a>
+                      </h3>
+                      <hr>
+                      <div class="author-box">
+                        <p>
+                          <a href="#">
+                            <img src="http://placehold.it/40x40" alt="" class="author-circle-pic">
+                              Rosalee Laws
+                          </a>
+                        </p>
+                      </div>
+                      <div class="tags">
+                        <a href="#"><span>Email</span></a>
+                        <a href="#"><span>Tutorials</span></a>
+                      </div>
+                      <div class="row" >
+                        <div class="large-16 small-12 columns details text-left" >
+                          <p>
+                            Петък, 27 Декември 2015, <br>
+                            19:00 <span>(GMT+03:00)</span>
+                          </p>
+                        </div>
+                        <div class="small-8 columns text-right price-box" >
+                          <p>
+                            <span class="new-price blue">$39</span>
+                          </p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="row" >
+                        <div class="small-8 columns details text-left" >
+                          <p class="social">
+                            <a href=""><i class="fa fa-heart-o"></i></a>  <a href=""><i class="fa fa-share-alt"></i></a>
+                          </p>
+                        </div>
+                        <div class="small-16 columns text-right price-box" >
+                          <button class="enroll-btn">ENROLL</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="large-8 medium-12 columns" >
+                  <div class="wrapper-box course normal">
+                    <div class="img-box">
+                      <a href="#">
+                        <img class="thumbnail-image" src="http://placehold.it/580x500" alt="">
+                      </a>
+                    </div>
+                    <div class="padding-box">
+                      <h5 class="">
+                        <a class="blue" href="#">Course</a>
+                      </h5>
+                      <h3 >
+                        <a href="#">
+                          Рекомендация - инструмент
+                        в продажах или голословная
+                        антиреклама, или...
+                        </a>
+                      </h3>
+                      <hr>
+                      <div class="author-box">
+                        <p>
+                          <a href="#">
+                            <img src="http://placehold.it/40x40" alt="" class="author-circle-pic">
+                              Rosalee Laws
+                          </a>
+                        </p>
+                      </div>
+                      <div class="tags">
+                        <a href="#"><span>Email</span></a>
+                        <a href="#"><span>Tutorials</span></a>
+                      </div>
+                      <div class="row" >
+                        <div class="large-16 small-12 columns details text-left" >
+                          <p>
+                            Петък, 27 Декември 2015, <br>
+                            19:00 <span>(GMT+03:00)</span>
+                          </p>
+                        </div>
+                        <div class="small-8 columns text-right price-box" >
+                          <p>
+                            <span class="new-price blue">$39</span>
+                          </p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="row" >
+                        <div class="small-8 columns details text-left" >
+                          <p class="social">
+                            <a href=""><i class="fa fa-heart-o"></i></a>  <a href=""><i class="fa fa-share-alt"></i></a>
+                          </p>
+                        </div>
+                        <div class="small-16 columns text-right price-box" >
+                          <button class="enroll-btn">ENROLL</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="large-8 medium-12 columns" >
+                  <div class="wrapper-box course normal">
+                    <div class="img-box">
+                      <a href="#">
+                        <img class="thumbnail-image" src="http://placehold.it/580x700" alt="">
+                      </a>
+                    </div>
+                    <div class="padding-box">
+                      <h5 class="">
+                        <a class="blue" href="#">Course</a>
+                      </h5>
+                      <h3 >
+                        <a href="#">
+                          Auditing Spreadsheets &amp; Hacking Spreadsheet protection
+                        </a>
+                      </h3>
+                      <hr>
+                      <div class="author-box">
+                        <p>
+                          <a href="#">
+                            <img src="http://placehold.it/40x40" alt="" class="author-circle-pic">
+                              Elrond Thomas
+                          </a>
+                        </p>
+                      </div>
+                      <div class="tags">
+                        <a href="#"><span>Sport</span></a>
+                        <a href="#"><span>Tutorials</span></a>
+                      </div>
+                      <div class="row" >
+                        <div class="small-16 columns details text-left" >
+                          <p>
+                            51 lectures
+                          </p>
+                        </div>
+                        <div class="small-8 columns text-right price-box" >
+                          <p>
+                            <span class="new-price blue">$69</span>
+                          </p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="row" >
+                        <div class="small-8 columns details text-left" >
+                          <p class="social">
+                            <a href=""><i class="fa fa-heart-o"></i></a>  <a href=""><i class="fa fa-share-alt"></i></a>
+                          </p>
+                        </div>
+                        <div class="small-16 columns text-right price-box" >
+                          <button class="enroll-btn">ENROLL</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="large-8 medium-12 columns" >
+                  <div class="wrapper-box course normal">
+                    <div class="img-box">
+                      <a href="#">
+                        <img class="thumbnail-image" src="http://placehold.it/580x500" alt="">
+                      </a>
+                    </div>
+                    <div class="padding-box">
+                      <h5 class="">
+                        <a class="blue" href="#">Course</a>
+                      </h5>
+                      <h3 >
+                        <a href="#">
+                          Рекомендация - инструмент
+                        в продажах или голословная
+                        антиреклама, или...
+                        </a>
+                      </h3>
+                      <hr>
+                      <div class="author-box">
+                        <p>
+                          <a href="#">
+                            <img src="http://placehold.it/40x40" alt="" class="author-circle-pic">
+                              Rosalee Laws
+                          </a>
+                        </p>
+                      </div>
+                      <div class="tags">
+                        <a href="#"><span>Email</span></a>
+                        <a href="#"><span>Tutorials</span></a>
+                      </div>
+                      <div class="row" >
+                        <div class="large-16 small-12 columns details text-left" >
+                          <p>
+                            Петък, 27 Декември 2015, <br>
+                            19:00 <span>(GMT+03:00)</span>
+                          </p>
+                        </div>
+                        <div class="small-8 columns text-right price-box" >
+                          <p>
+                            <span class="new-price blue">$39</span>
+                          </p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="row" >
+                        <div class="small-8 columns details text-left" >
+                          <p class="social">
+                            <a href=""><i class="fa fa-heart-o"></i></a>  <a href=""><i class="fa fa-share-alt"></i></a>
+                          </p>
+                        </div>
+                        <div class="small-16 columns text-right price-box" >
+                          <button class="enroll-btn">ENROLL</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div> <!-- end of .row -->
+            </section>
+
+            <section role="tabpanel" aria-hidden="true" class="content padding-top-0" id="webinar-panel">
+              <div class="row">
+                  
+
+                <div class="large-8 medium-12 columns">
+                  <div class="wrapper-box webinar normal">
+                    <div class="img-box">
+                      <a href="#">
+                        <img class="thumbnail-image" src="http://placehold.it/580x500" alt="">
+                      </a>
+                    </div>
+                    <div class="padding-box">
+                      <h5 class="">
+                        <a class="green" href="#">Webinar</a>
+                      </h5>
+                      <h3>
+                        <a href="#">
+                          Рекомендация - инструмент
+                        в продажах или голословная
+                        антиреклама, или...
+                        </a>
+                      </h3>
+                      <hr>
+                      <div class="author-box">
+                        <p>
+                          <a href="#">
+                            <img src="http://placehold.it/40x40" alt="" class="author-circle-pic">
+                              Rosalee Laws
+                          </a>
+                        </p>
+                      </div>
+                      <div class="tags">
+                        <a href="#"><span>Email</span></a>
+                        <a href="#"><span>Tutorials</span></a>
+                      </div>
+                      <div class="row" >
+                        <div class="large-16 small-12 columns details text-left" >
+                          <p>
+                            Петък, 27 Декември 2015, <br>
+                            19:00 <span>(GMT+03:00)</span>
+                          </p>
+                        </div>
+                        <div class="small-8 columns text-right price-box" >
+                          <p>
+                            <span class="new-price green">$39</span>
+                          </p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="row" >
+                        <div class="small-8 columns details text-left" >
+                          <p class="social">
+                            <a href=""><i class="fa fa-heart-o"></i></a>  <a href=""><i class="fa fa-share-alt"></i></a>
+                          </p>
+                        </div>
+                        <div class="small-16 columns text-right price-box" >
+                          <button class="enroll-btn">ENROLL</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="large-8 medium-12 columns">
+                  <div class="wrapper-box webinar normal">
+                    <div class="img-box">
+                      <a href="#">
+                        <img class="thumbnail-image" src="http://placehold.it/580x500" alt="">
+                      </a>
+                    </div>
+                    <div class="padding-box">
+                      <h5 class="">
+                        <a class="green" href="#">Webinar</a>
+                      </h5>
+                      <h3>
+                        <a href="#">
+                          Рекомендация - инструмент
+                        в продажах или голословная
+                        антиреклама, или...
+                        </a>
+                      </h3>
+                      <hr>
+                      <div class="author-box">
+                        <p>
+                          <a href="#">
+                            <img src="http://placehold.it/40x40" alt="" class="author-circle-pic">
+                              Rosalee Laws
+                          </a>
+                        </p>
+                      </div>
+                      <div class="tags">
+                        <a href="#"><span>Email</span></a>
+                        <a href="#"><span>Tutorials</span></a>
+                      </div>
+                      <div class="row" >
+                        <div class="large-16 small-12 columns details text-left" >
+                          <p>
+                            Петък, 27 Декември 2015, <br>
+                            19:00 <span>(GMT+03:00)</span>
+                          </p>
+                        </div>
+                        <div class="small-8 columns text-right price-box" >
+                          <p>
+                            <span class="new-price green">$39</span>
+                          </p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="row" >
+                        <div class="small-8 columns details text-left" >
+                          <p class="social">
+                            <a href=""><i class="fa fa-heart-o"></i></a>  <a href=""><i class="fa fa-share-alt"></i></a>
+                          </p>
+                        </div>
+                        <div class="small-16 columns text-right price-box" >
+                          <button class="enroll-btn">ENROLL</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="large-8 medium-12 columns">
+                  <div class="wrapper-box webinar normal">
+                    <div class="img-box">
+                      <a href="#">
+                        <img class="thumbnail-image" src="http://placehold.it/580x500" alt="">
+                      </a>
+                    </div>
+                    <div class="padding-box">
+                      <h5 class="">
+                        <a class="green" href="#">Webinar</a>
+                      </h5>
+                      <h3>
+                        <a href="#">
+                          Рекомендация - инструмент
+                        в продажах или голословная
+                        антиреклама, или...
+                        </a>
+                      </h3>
+                      <hr>
+                      <div class="author-box">
+                        <p>
+                          <a href="#">
+                            <img src="http://placehold.it/40x40" alt="" class="author-circle-pic">
+                              Rosalee Laws
+                          </a>
+                        </p>
+                      </div>
+                      <div class="tags">
+                        <a href="#"><span>Email</span></a>
+                        <a href="#"><span>Tutorials</span></a>
+                      </div>
+                      <div class="row" >
+                        <div class="large-16 small-12 columns details text-left" >
+                          <p>
+                            Петък, 27 Декември 2015, <br>
+                            19:00 <span>(GMT+03:00)</span>
+                          </p>
+                        </div>
+                        <div class="small-8 columns text-right price-box" >
+                          <p>
+                            <span class="new-price green">$39</span>
+                          </p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="row" >
+                        <div class="small-8 columns details text-left" >
+                          <p class="social">
+                            <a href=""><i class="fa fa-heart-o"></i></a>  <a href=""><i class="fa fa-share-alt"></i></a>
+                          </p>
+                        </div>
+                        <div class="small-16 columns text-right price-box" >
+                          <button class="enroll-btn">ENROLL</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="large-8 medium-12 columns">
+                  <div class="wrapper-box webinar normal">
+                    <div class="img-box">
+                      <a href="#">
+                        <img class="thumbnail-image" src="http://placehold.it/580x500" alt="">
+                      </a>
+                    </div>
+                    <div class="padding-box">
+                      <h5 class="">
+                        <a class="green" href="#">Webinar</a>
+                      </h5>
+                      <h3>
+                        <a href="#">
+                          Рекомендация - инструмент
+                        в продажах или голословная
+                        антиреклама, или...
+                        </a>
+                      </h3>
+                      <hr>
+                      <div class="author-box">
+                        <p>
+                          <a href="#">
+                            <img src="http://placehold.it/40x40" alt="" class="author-circle-pic">
+                              Rosalee Laws
+                          </a>
+                        </p>
+                      </div>
+                      <div class="tags">
+                        <a href="#"><span>Email</span></a>
+                        <a href="#"><span>Tutorials</span></a>
+                      </div>
+                      <div class="row" >
+                        <div class="large-16 small-12 columns details text-left" >
+                          <p>
+                            Петък, 27 Декември 2015, <br>
+                            19:00 <span>(GMT+03:00)</span>
+                          </p>
+                        </div>
+                        <div class="small-8 columns text-right price-box" >
+                          <p>
+                            <span class="new-price green">$39</span>
+                          </p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="row" >
+                        <div class="small-8 columns details text-left" >
+                          <p class="social">
+                            <a href=""><i class="fa fa-heart-o"></i></a>  <a href=""><i class="fa fa-share-alt"></i></a>
+                          </p>
+                        </div>
+                        <div class="small-16 columns text-right price-box" >
+                          <button class="enroll-btn">ENROLL</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+
+                <div class="large-8 medium-12 columns">
+                  <div class="wrapper-box webinar normal">
+                    <div class="img-box">
+                      <a href="#">
+                        <img class="thumbnail-image" src="http://placehold.it/580x500" alt="">
+                      </a>
+                    </div>
+                    <div class="padding-box">
+                      <h5 class="">
+                        <a class="green" href="#">Webinar</a>
+                      </h5>
+                      <h3>
+                        <a href="#">
+                          Рекомендация - инструмент
+                        в продажах или голословная
+                        антиреклама, или...
+                        </a>
+                      </h3>
+                      <hr>
+                      <div class="author-box">
+                        <p>
+                          <a href="#">
+                            <img src="http://placehold.it/40x40" alt="" class="author-circle-pic">
+                              Rosalee Laws
+                          </a>
+                        </p>
+                      </div>
+                      <div class="tags">
+                        <a href="#"><span>Email</span></a>
+                        <a href="#"><span>Tutorials</span></a>
+                      </div>
+                      <div class="row" >
+                        <div class="large-16 small-12 columns details text-left" >
+                          <p>
+                            Петък, 27 Декември 2015, <br>
+                            19:00 <span>(GMT+03:00)</span>
+                          </p>
+                        </div>
+                        <div class="small-8 columns text-right price-box" >
+                          <p>
+                            <span class="new-price green">$39</span>
+                          </p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="row" >
+                        <div class="small-8 columns details text-left" >
+                          <p class="social">
+                            <a href=""><i class="fa fa-heart-o"></i></a>  <a href=""><i class="fa fa-share-alt"></i></a>
+                          </p>
+                        </div>
+                        <div class="small-16 columns text-right price-box" >
+                          <button class="enroll-btn">ENROLL</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="large-8 medium-12 columns">
+                  <div class="wrapper-box webinar normal">
+                    <div class="img-box">
+                      <a href="#">
+                        <img class="thumbnail-image" src="http://placehold.it/580x500" alt="">
+                      </a>
+                    </div>
+                    <div class="padding-box">
+                      <h5 class="">
+                        <a class="green" href="#">Webinar</a>
+                      </h5>
+                      <h3>
+                        <a href="#">
+                          Рекомендация - инструмент
+                        в продажах или голословная
+                        антиреклама, или...
+                        </a>
+                      </h3>
+                      <hr>
+                      <div class="author-box">
+                        <p>
+                          <a href="#">
+                            <img src="http://placehold.it/40x40" alt="" class="author-circle-pic">
+                              Rosalee Laws
+                          </a>
+                        </p>
+                      </div>
+                      <div class="tags">
+                        <a href="#"><span>Email</span></a>
+                        <a href="#"><span>Tutorials</span></a>
+                      </div>
+                      <div class="row" >
+                        <div class="large-16 small-12 columns details text-left" >
+                          <p>
+                            Петък, 27 Декември 2015, <br>
+                            19:00 <span>(GMT+03:00)</span>
+                          </p>
+                        </div>
+                        <div class="small-8 columns text-right price-box" >
+                          <p>
+                            <span class="new-price green">$39</span>
+                          </p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="row" >
+                        <div class="small-8 columns details text-left" >
+                          <p class="social">
+                            <a href=""><i class="fa fa-heart-o"></i></a>  <a href=""><i class="fa fa-share-alt"></i></a>
+                          </p>
+                        </div>
+                        <div class="small-16 columns text-right price-box" >
+                          <button class="enroll-btn">ENROLL</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="large-8 medium-12 columns">
+                  <div class="wrapper-box webinar normal">
+                    <div class="img-box">
+                      <a href="#">
+                        <img class="thumbnail-image" src="http://placehold.it/580x500" alt="">
+                      </a>
+                    </div>
+                    <div class="padding-box">
+                      <h5 class="">
+                        <a class="green" href="#">Webinar</a>
+                      </h5>
+                      <h3>
+                        <a href="#">
+                          Рекомендация - инструмент
+                        в продажах или голословная
+                        антиреклама, или...
+                        </a>
+                      </h3>
+                      <hr>
+                      <div class="author-box">
+                        <p>
+                          <a href="#">
+                            <img src="http://placehold.it/40x40" alt="" class="author-circle-pic">
+                              Rosalee Laws
+                          </a>
+                        </p>
+                      </div>
+                      <div class="tags">
+                        <a href="#"><span>Email</span></a>
+                        <a href="#"><span>Tutorials</span></a>
+                      </div>
+                      <div class="row" >
+                        <div class="large-16 small-12 columns details text-left" >
+                          <p>
+                            Петък, 27 Декември 2015, <br>
+                            19:00 <span>(GMT+03:00)</span>
+                          </p>
+                        </div>
+                        <div class="small-8 columns text-right price-box" >
+                          <p>
+                            <span class="new-price green">$39</span>
+                          </p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="row" >
+                        <div class="small-8 columns details text-left" >
+                          <p class="social">
+                            <a href=""><i class="fa fa-heart-o"></i></a>  <a href=""><i class="fa fa-share-alt"></i></a>
+                          </p>
+                        </div>
+                        <div class="small-16 columns text-right price-box" >
+                          <button class="enroll-btn">ENROLL</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="large-8 medium-12 columns">
+                  <div class="wrapper-box webinar normal">
+                    <div class="img-box">
+                      <a href="#">
+                        <img class="thumbnail-image" src="http://placehold.it/580x500" alt="">
+                      </a>
+                    </div>
+                    <div class="padding-box">
+                      <h5 class="">
+                        <a class="green" href="#">Webinar</a>
+                      </h5>
+                      <h3>
+                        <a href="#">
+                          Рекомендация - инструмент
+                        в продажах или голословная
+                        антиреклама, или...
+                        </a>
+                      </h3>
+                      <hr>
+                      <div class="author-box">
+                        <p>
+                          <a href="#">
+                            <img src="http://placehold.it/40x40" alt="" class="author-circle-pic">
+                              Rosalee Laws
+                          </a>
+                        </p>
+                      </div>
+                      <div class="tags">
+                        <a href="#"><span>Email</span></a>
+                        <a href="#"><span>Tutorials</span></a>
+                      </div>
+                      <div class="row" >
+                        <div class="large-16 small-12 columns details text-left" >
+                          <p>
+                            Петък, 27 Декември 2015, <br>
+                            19:00 <span>(GMT+03:00)</span>
+                          </p>
+                        </div>
+                        <div class="small-8 columns text-right price-box" >
+                          <p>
+                            <span class="new-price green">$39</span>
+                          </p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="row" >
+                        <div class="small-8 columns details text-left" >
+                          <p class="social">
+                            <a href=""><i class="fa fa-heart-o"></i></a>  <a href=""><i class="fa fa-share-alt"></i></a>
+                          </p>
+                        </div>
+                        <div class="small-16 columns text-right price-box" >
+                          <button class="enroll-btn">ENROLL</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div> <!-- end of .row --> 
+            </section>
           </div> <!-- end of .tabs-content -->
-        </div> <!-- end of .medium-14 -->
-        <div class="large-4 columns">
-          Sidebar
-        </div>
-     
-      </div>
+          <div class="row paginate">
+            <ul class="pagination" role="menubar" aria-label="Pagination">
+              <li class="arrow unavailable" aria-disabled="true"><a href="">&laquo; Previous</a></li>
+              <li class="current"><a href="">1</a></li>
+              <li><a href="">2</a></li>
+              <li><a href="">3</a></li>
+              <li><a href="">4</a></li>
+              <li class="unavailable" aria-disabled="true"><a href="">&hellip;</a></li>
+              <li><a href="">12</a></li>
+              <li><a href="">13</a></li>
+              <li class="arrow"><a href="">Next &raquo;</a></li>
+            </ul>
+          </div>      
+        </div> <!-- end of .large-20 -->
+        
+      </div> <!-- end of .main content -->
     </section>   
-  
-  <section class="footer-section">
-      <footer>
-        <div class="row">
-          <div class="medium-18 columns">
-            <ul class="footer-menu">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Partners</a></li>
-              <li><a href="#">Teachers</a></li>
-              <li><a href="#">jobs</a></li>
-              <li><a href="#">blog</a></li>
-              <li><a href="#">Terms of use</a></li>
-              <li><a href="#">instructor terms</a></li>
-              <li><a href="#">privacy policy</a></li>
-              <li><a href="#">contact us</a></li>
-              <li><a href="#">faq</a></li>
-            </ul>
-            <p class="copyright">
-              Copyright © 2013 On-ed.com. All rights reserved
-            </p>
+    
+    <section class="footer-section">
+        <footer>
+          <div class="row">
+            <div class="medium-18 columns">
+              <ul class="footer-menu">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Teachers</a></li>
+                <li><a href="#">jobs</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">instructor terms</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">contact us</a></li>
+                <li><a href="#">faq</a></li>
+              </ul>
+              <p class="copyright">
+                Copyright © 2013 On-ed.com. All rights reserved
+              </p>
+            </div>
+            <div class="medium-6 columns">
+              <ul class="footer-menu social-links">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+              </ul>
+            </div>
           </div>
-          <div class="medium-6 columns">
-            <ul class="footer-menu social-links">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-google-plus"></i></a>
-            </ul>
-          </div>
-        </div>
-      </footer>
-    </section>
-         <script src="js/vendor/jquery.js"></script>
+        </footer>
+      </section>
+    <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <script src="js/matchHeight.js" type="text/javascript"></script>
     <script>
       $(document).foundation();
 
@@ -489,7 +1560,8 @@
             }
           );
 
-       
+        $('.tabs-content .wrapper-box .padding-box h3').matchHeight();
+        
       });
     </script>
   </body>
