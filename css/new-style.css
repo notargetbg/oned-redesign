@@ -2860,5 +2860,18 @@ button.sort:active, button.sort:focus {
   color: #999999;
 }
 .discover-page .filter-sort-order .f-dropdown.tiny {
-    max-width: 120px;
-}}
+  max-width: 120px;
+}
+
+/* revenue */
+.revenue-page table {
+  margin: auto;
+  margin-bottom: 10px;
+
+}
+.revenue-page .panel {
+  overflow-x: auto;
+}
+.revenue-page h5 {
+  text-align: center;
+}
