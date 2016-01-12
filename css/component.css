@@ -790,41 +790,53 @@ ul.ch-grid {
 		0 1px 2px rgba(0,0,0,0.1);
 }
 section.idea {
-	 background: #30486D;
+	background: #ffffff;
     margin-top: 58px;
+    padding: 80px 0;
 }
 section.idea h2 {
-	font-size: 2.6em;
-   
+	color: #263339;
+    font-size: 3.6em;
     font-weight: 800;
-    color: white;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
 section.idea p {
-	    color: white;
-	    font-size: 1.3em;
+	color: #263339;
+    font-size: 1.3em;
+    font-weight: 100;
 }
 section.related {
-    background: url("../imgs/family.png") center 130px no-repeat #ecf0f1;
+    background: #202020;
     text-align: center;
-    padding-top: 0.8em;
-    padding-bottom: 18em;
-        min-height: 400px;
+    padding: 40px 0;
+}
+section.related p{
+    color: #ffffff;
+    font-size: 1.3em;
+}
+section.related a{
+    color: #ffffff;
+    font-size: 0.8em;
+}
+section.related a:hover{
+    color: #b6b6b6;
+    font-size: 0.8em;
 }
 section.team-images {
-	    padding: 0 50px;
-	background:#30486D;
+	padding: 80px 50px;
+	background:#ffffff;
 }
 section.team-images h2 {
-	font-size: 2.6em;
-    margin-top: -40px;
+	font-size: 3.6em;
+    margin-top: 40px;
     font-weight: 800;
-    color: white;
-    margin-bottom: 15px;
+    color: #263339;
+    margin-bottom: 40px;
 }
 section.featured-icons {
-	background: #3294d6;
-
+	background: #5ec0fd;
+	padding: 80px 0;
 }
 section.featured-icons h2  {
 	font-size: 1.6em;
@@ -857,7 +869,7 @@ svg {
 }
 .ch-info h3 {
     line-height: inherit;
-    font-weight: bold;
+    font-weight: 400;
     background: none;
     display: inherit;
     color: #fff;
@@ -867,19 +879,19 @@ svg {
     margin: 0 20px;
     padding: 45px 0 0 0;
     height: 130px;
-    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-family: "Open Sans",sans-serif;
     text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0,0,0,0.3);
 }
 section .ch-info p a {
   display: block;
   color: #84d26d;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   font-size: 9px;
   letter-spacing: 1px;
   padding-top: 4px;
-  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  font-family: "Open Sans",sans-serif;
 }
 
 .wrapper section h2 {
