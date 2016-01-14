@@ -50,18 +50,6 @@ Green:			#95C718;
 	color: white;
 	padding: 40px 0;
 }
-.green-image-bg {
-	background-size: 100%;
-    background-color: #ffffff;
-    /*background-image: url("../imgs/student-h-t-bg.jpg");*/
-    background-position: center;
-    padding: 40px 0;
-    color: #ffffff;
-}
-.green-image-bg h2{
-	font-weight: 100;
-    color: #ffffff;
-}
 .light-bg .green-btn {
 	width: auto;
     font-size: 45px;
@@ -80,6 +68,11 @@ Green:			#95C718;
 }
 .dark-bg p,.dark-bg h1,.dark-bg h2{
 	color: white;
+}
+.dark-bg li{
+	color: #ffffff;
+	font-family: 'Comfortaa', cursive;
+	font-weight: 100;
 }
 .light-bg {
 	background-color: #f7f9fa;
@@ -172,7 +165,7 @@ p.introduction-wrapper {
 	.font-size-35 {
 		font-size: 25px;
 	}
-	.white-bg, .blue-bg, .light-blue-bg, .dark-blue-bg, .green-bg {
+	.white-bg, .light-blue-bg, .dark-bg, .green-bg {
 		padding: 50px 0;
 	}
 }
@@ -187,7 +180,7 @@ p.introduction-wrapper {
 	.font-size-35 {
 		font-size: 25px;
 	}
-	.white-bg, .blue-bg, .light-blue-bg, .dark-blue-bg, .green-bg {
+	.white-bg, .light-blue-bg, .dark-bg, .green-bg {
 		padding: 25px 0;
 	}
 	.top-margin-50 {
@@ -218,7 +211,7 @@ p.introduction-wrapper {
 	.font-size-35 {
 		font-size: 25px;
 	}
-	.white-bg, .blue-bg, .light-blue-bg, .dark-blue-bg, .green-bg {
+	.white-bg, .blue-bg, .light-blue-bg, .dark-bg, .green-bg {
 		padding: 25px 0;
 	}
 	.top-margin-50 {
@@ -242,7 +235,7 @@ p.introduction-wrapper {
 	.font-size-35 {
 		font-size: 22px;
 	}
-	.white-bg, .blue-bg, .light-blue-bg, .dark-blue-bg, .green-bg {
+	.white-bg, .blue-bg, .light-blue-bg, .dark-bg, .green-bg {
 		padding: 22px 0;
 	}
 	.top-margin-50 {
@@ -260,8 +253,8 @@ p.introduction-wrapper {
 /* Addon-Fixes Dec 2015 */
 .blue-bg h1, 
 .blue-bg p,
-.dark-blue-bg h1,
-.dark-blue-bg p,
+.dark-bg h1,
+.dark-bg p,
 .light-blue-bg h1,
 .light-blue-bg p,
 .green-bg h1,
