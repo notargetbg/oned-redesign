@@ -2876,3 +2876,38 @@ button.sort:active, button.sort:focus {
 .revenue-page h5 {
   text-align: center;
 }
+
+/* Notifications - Alert Boxes */
+
+.alert-box.success {
+  background-color: #84D26D;
+  border-color: #6EAF5A;
+}
+.alert-box.warning { 
+  background-color: #f39c12;
+  border-color: #de770f;
+}
+
+.alert-box.info {
+    background-color: #5EC0FD;
+    border-color: #74bfdd;
+}
+.alert-box.alert {
+    background-color: #e74c3c;
+    border-color: #CE493B;
+}
+.alert-box.secondary {
+    background-color: #34495e;
+    border-color: #516982;
+}
+.alert-box {
+  font-weight: 500;
+  font-size: 15px;
+}
+.alert-box.info {
+  color: white;
+}
+.alert-box.secondary {
+  background-color: #16a085;
+  border-color: #158E76;
+}
