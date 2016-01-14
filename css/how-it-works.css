@@ -11,14 +11,6 @@ White:			#FFFFFF;
 Green:			#95C718;
 */
 
-/* CONTAINER CUSTOM WIDTH */
-.custom-container-width {
-	max-width: 1600px;
-	width: 100%;
-	margin: auto;
-	padding: 0 10px;
-}
-
 /* Some Universal Classes */
 
 .margin-none {
@@ -41,42 +33,56 @@ Green:			#95C718;
 	    line-height: normal;
 }
 
-.color-grey {
-	color: rgb(237, 237, 237);
-}
-
 /* SECTION COLORS */
 
 .white-bg {
 	background-color: white;
-	padding: 100px 0;
+	color: #263339;
+	padding: 40px 0;
 }
 .light-blue-bg {
-	background-color: #116094;
-	padding: 100px;
+	background-color: #5ec0fd;
 	color: white;
+	padding: 40px 0;
 }
-
-.blue-bg {
-	background-color: #30486D;
-	padding: 100px 0;
-	color: white;
-}
-
-.dark-blue-bg {
-	background-color: #2B4061;
-	padding: 100px 0;
-	color: white;
-}
-
 .green-bg {
 	background-color: #84d26d;
-	padding: 100px 0;
+	color: white;
+	padding: 40px 0;
+}
+.green-image-bg {
+	background-size: 100%;
+    background-color: #ffffff;
+    /*background-image: url("../imgs/student-h-t-bg.jpg");*/
+    background-position: center;
+    padding: 40px 0;
+    color: #ffffff;
+}
+.green-image-bg h2{
+	font-weight: 100;
+    color: #ffffff;
+}
+.light-bg .green-btn {
+	width: auto;
+    font-size: 45px;
+    font-weight: 200;
+    padding: 8px 40px;
+    height: auto;
+    margin-top: 20px;
+}
+.light-bg p{
+	font-size: 20px;
+	font-weight: 200;
+}
+.dark-bg {
+	background-color: #202020;
+	padding: 40px 0;
+}
+.dark-bg p,.dark-bg h1,.dark-bg h2{
 	color: white;
 }
-
-.custom-pattern {
-	background-image: url("../img/pattern-custom.png");
+.light-bg {
+	background-color: #f7f9fa;
 }
 
 /* Typography Classes */
@@ -120,7 +126,7 @@ p.introduction-wrapper {
 }*/
 
 .special-words-green {
-	color: #84D26D;
+	color: #537d3e;
 }
 .orange-link-text {
 	color: rgb(255, 174, 0);
@@ -128,20 +134,25 @@ p.introduction-wrapper {
 
 /* Icon Classes */
 
-.big-category-icon {
-	font-size: 70px;
-	color: rgba(255, 255, 255, 0.85);
-	/*text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.76);*/
+.big-category-icons .big-category-icon {
+	display: block;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.1);
+    color: #fff;
+    text-align: center;
+    font-size: 4em;
+    line-height: 1.9em;
+    margin: 32px auto;
 }
 
 .big-category-icons p {
-	font-family: 'Open Sans', sans-serif;
-    margin-top: 10px;
     letter-spacing: 2px;
     color: #84D26D !important;
     text-transform: uppercase;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .icon-course-type {

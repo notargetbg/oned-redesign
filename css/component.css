@@ -791,8 +791,8 @@ ul.ch-grid {
 }
 section.idea {
 	background: #ffffff;
-    margin-top: 58px;
-    padding: 80px 0;
+    margin-top: 38px;
+    padding: 60px 0;
 }
 section.idea h2 {
 	color: #263339;
@@ -800,6 +800,7 @@ section.idea h2 {
     font-weight: 800;
     margin-bottom: 20px;
     margin-top: 40px;
+    line-height: 52px;
 }
 section.idea p {
 	color: #263339;
@@ -824,8 +825,10 @@ section.related a:hover{
     font-size: 0.8em;
 }
 section.team-images {
-	padding: 80px 50px;
 	background:#ffffff;
+}
+body.teachers section.team-images {
+	background:#202020;
 }
 section.team-images h2 {
 	font-size: 3.6em;
@@ -833,10 +836,11 @@ section.team-images h2 {
     font-weight: 800;
     color: #263339;
     margin-bottom: 40px;
+    line-height: 52px;
 }
 section.featured-icons {
 	background: #5ec0fd;
-	padding: 80px 0;
+	padding: 48px 0 80px;
 }
 section.featured-icons h2  {
 	font-size: 1.6em;
@@ -933,15 +937,15 @@ margin: 0px 0px 30px;
 
 .icon {
 	display: block;
-	width: 2em;
-	height: 2em;
-	border-radius: 50%;
-	background: rgba(0,0,0,0.1);
-	color: #fff;
-	text-align: center;
-	font-size: 8em;
-	line-height: 1.9em;
-	margin: 0 auto;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.1);
+    color: #fff;
+    text-align: center;
+    font-size: 6em;
+    line-height: 1.9em;
+    margin: 32px auto;
 }
 .small-icon {   
 display: block;
@@ -1416,7 +1420,7 @@ body.teachers  section .heading {
 }
 body.teachers section.you-teach .heading,
 body.teachers  section.you-teach p {
-	color: white;
+	color: #263339;
 }
 body.teachers .slider-images .caption {
 	font-size: 17px;
@@ -1427,10 +1431,11 @@ body.teachers .slider-images .caption {
 	background-color: rgba(43, 64, 97, 0.65);
 	padding-top: 10px;
 	padding-bottom: 10px;
+	color: #ffffff;
 }
 body.teachers section.you-teach ul {
 	font-size: 1em;
-	color: white;
+	color: #263339;
 }
 body.teachers section.control-your-content {
 	background-color: white;
@@ -1444,7 +1449,7 @@ body.teachers .btn-big {
 	line-height: 28px;
 }
 body.teachers section.your-profit p {
-	font-weight: 600;
+	font-weight: 400;
 }
 
 @media all and (min-width: 768px) {
@@ -1471,7 +1476,7 @@ body.teachers section.team-images .name {
 body.teachers section.team-images .job-title {
 	margin: 0;
 	font-size: 14px;
-	font-weight: 800;
+	font-weight: 100;
 	color: white;
 }
 body.teachers section.team-images hr {
@@ -1487,4 +1492,6 @@ body.teachers section.team-images button {
 }
 body.teachers section.team-images .ch-grid li {
 	margin: 0 20px;
+}
+.slider-images-controls {
 }
