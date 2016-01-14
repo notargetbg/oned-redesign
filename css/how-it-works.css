@@ -104,14 +104,6 @@ p.introduction-wrapper {
 	font-weight: 300;
 	letter-spacing: 2px;
 }
-
-.special-heading {
-	font-size: 35px;
-	color: white;
-	font-weight: 800;
-	letter-spacing: 2px;
-	    line-height: normal;
-}
 .normal-text-desc p {
 	margin: 100px auto;
 	font-size: 17px;
@@ -120,11 +112,6 @@ p.introduction-wrapper {
 	text-align: center;
 
 }
-
-/*.text-shadow-black {
-	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.95);
-}*/
-
 .special-words-green {
 	color: #537d3e;
 }
@@ -149,7 +136,6 @@ p.introduction-wrapper {
 
 .big-category-icons p {
     letter-spacing: 2px;
-    color: #84D26D !important;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 400;
@@ -165,6 +151,10 @@ p.introduction-wrapper {
 .video-caption {
 	letter-spacing: 2px;
 	margin: 15px auto;
+}
+.how-web-icon {
+	font-size: 54px;
+	margin-top: 24px;
 }
 
 /* Media Querries */
