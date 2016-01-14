@@ -1779,6 +1779,7 @@ section.br-cr > .row , section.course-header > .row , section.course-content > .
 .padding-box p {
   font-size: 13px;
   color: #202020;
+  padding-bottom: 10px;
 }
 .lessons{
     border-bottom: 1px solid #dcdedf;
