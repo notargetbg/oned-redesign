@@ -1065,7 +1065,6 @@ button.facebook-btn {
 /* Settings Page Styles Start Here */
 section.settings-section {
     padding-top: 130px;
-    height: 100%;
 }
 
 .settings-section .wrapper-box {
@@ -1113,8 +1112,8 @@ section.settings-section {
 }
 
 .settings.tabs.wrapper-box {
-  max-width: 220px;
-  width: 27%;
+  max-width: 270px;
+  width: 25%;
   float: left;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px; 
@@ -1162,7 +1161,7 @@ section.settings-section {
 }
 
 .settings-section .tabs-content {
-  width: 68%;
+  width: 70%;
   margin-left: 5%;
   float: left;
 }
@@ -2911,4 +2910,20 @@ button.sort:active, button.sort:focus {
 .alert-box.secondary {
   background-color: #16a085;
   border-color: #158E76;
+}
+
+/* Create Course New Styles */
+.course-preview.panel {
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(218, 218, 218, 0.75);
+    border-color: #E6E6E6;
+}
+
+.course-preview img {
+    border-radius: 10px;
+}
+
+.course-preview button {
+  text-transform: uppercase;
+  font-weight: 600;
 }
