@@ -2914,16 +2914,33 @@ button.sort:active, button.sort:focus {
 
 /* Create Course New Styles */
 .course-preview.panel {
-    border-radius: 10px;
+    border-radius: 3px;
     box-shadow: 0 1px 4px rgba(218, 218, 218, 0.75);
     border-color: #E6E6E6;
 }
 
 .course-preview img {
-    border-radius: 10px;
+    border-radius: 3px;
 }
 
 .course-preview button {
   text-transform: uppercase;
   font-weight: 600;
+}
+
+.wrapper-box .separator p.title {
+  font-weight: 500;
+}
+
+.separator span.label {
+  position: relative;
+  top: -2px;
+  color: white;
+  line-height: initial;
+}
+
+.separator button.small-btn {
+      font-size: 13px;
+    height: 28px;
+    width: initial;
 }
