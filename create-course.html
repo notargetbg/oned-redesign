@@ -13,7 +13,7 @@
      <!-- AWESOME CSS ANIMATIONS MADE SUPER EZ -->
     <link rel="stylesheet" href="css/animate.css">
   </head>
-  <body class="settings-page">
+  <body class="create-course-page">
 
       <header class="">
       <nav class="oned-top-menu container-width">
@@ -169,28 +169,28 @@
                 <h3>Course Management</h3>
               </div>
             </li>
-             <li class="tab-title">
-                <a href="#">
+             <li class="tab-title disabled">             
+                <a href="#" data-tooltip aria-haspopup="true" class="has-tip" title="Only for Published courses.">
                 Promotion
               </a>
             </li>
-            <li class="tab-title">
-               <a href="#">
+            <li class="tab-title disabled">
+               <a href="#" data-tooltip aria-haspopup="true" class="has-tip" title="Only for Published courses.">
                 Vouchers
               </a>
             </li>
-            <li class="tab-title">
-               <a href="#">
+            <li class="tab-title disabled">
+               <a href="#" data-tooltip aria-haspopup="true" class="has-tip" title="Only for Published courses.">
                 On Sale
               </a>
             </li>
-            <li class="tab-title">
-               <a href="#">
+            <li class="tab-title disabled">
+               <a href="#" data-tooltip aria-haspopup="true" class="has-tip" title="Only for Published courses.">
                 Revenue
               </a>
             </li>
-            <li class="tab-title">
-               <a href="#">
+            <li class="tab-title disabled">
+               <a href="#" data-tooltip aria-haspopup="true" class="has-tip" title="Only for Published courses.">
                 Remove course
               </a>
             </li>
@@ -506,17 +506,30 @@
                         <div class="row lessons-title">
                           <div class="large-24 columns"><span class="label round">Section 1</span><strong>Introduction</strong></div>
                         </div>
-                        <div class="row lessons">
+
+                        <div id="sortable-section-1">
+
+                          <div class="row lessons">
                             <div class="large-1 medium-1 small-3 columns">1</div>
-                            <div class="large-14 medium-14 small-21 columns">Ongoing Help &amp; How to Contact Me</div>
-                            <div class="large-6 medium-6 small-9 small-text-left large-text-right columns"><span class="new-tag">New</span><i class="fa fa-youtube-play"></i></div>
-                            <div class="large-3 medium-3 small-12 text-right columns"><span>32:40</span></div>
-                        </div>
-                        <div class="row lessons">
-                            <div class="large-1 medium-1 small-3 columns">2</div>
-                            <div class="large-14 medium-14 small-21 columns">Getting Started</div>
-                            <div class="large-6 medium-6 small-9 small-text-left large-text-right columns"><span class="free-tag">Free</span><i class="fa fa-youtube-play"></i></div>
-                            <div class="large-3 medium-3 small-12 text-right columns"><span>180:00</span></div>
+                              <div class="medium-14 small-21 columns">Ongoing Help &amp; How to Contact Me</div>
+                              
+                              <div class="medium-9 small-24 text-right columns">
+                                
+                                <i class="fa fa-youtube-play"></i> <span>32:40</span> <a href="" class="edit"><i class="fa fa-pencil"></i></a> <a href="" class="delete"><i class="fa fa-trash"></i></a>
+                              </div>
+                          </div>
+                          <div class="row lessons">
+                              <div class="large-1 medium-1 small-3 columns">2</div>
+                              <div class="medium-14 small-21 columns">Getting Started</div>
+                              
+                              <div class="medium-9 small-24 text-right columns">
+                                <span class="free-tag">Free</span>
+                                <i class="fa fa-youtube-play"></i> <span>180:00</span> <a href="" class="edit"><i class="fa fa-pencil"></i></a> <a href="" class="delete"><i class="fa fa-trash"></i></a> 
+                              </div>
+                          </div>
+
+                         
+                        
                         </div>
                         <div class="row">
                           <div class="large-24 columns text-center">
@@ -526,61 +539,86 @@
                         <div class="row lessons-title">
                             <div class="large-18 columns"><span class="label round">Section 2</span><strong>Getting To Zero Today</strong></div>
                         </div>
+
+                      <div id="sortable-section-2">
                         <div class="row lessons">
                             <div class="large-1 medium-1 small-3 columns">1</div>
-                            <div class="large-14 medium-14 small-21 columns">WordPress Assignment Checklist (to build your website while you take the course)</div>
-                            <div class="large-6 medium-6 small-9 small-text-left large-text-right columns"><i class="fa fa-youtube-play"></i></div>
-                            <div class="large-3 medium-3 small-12 text-right columns"><span>120:00</span></div>
+                            <div class="medium-14 small-21 columns">WordPress Assignment Checklist (to build your website while you take the course)</div>
+                            
+                            <div class="medium-9 small-24 text-right columns">
+                              <i class="fa fa-youtube-play"></i> <span>120:00</span> <a href="" class="edit"><i class="fa fa-pencil"></i></a> <a href=" " class="delete"><i class="fa fa-trash"></i></a>
+                            </div>
                         </div>
                         <div class="row lessons">
                             <div class="large-1 medium-1 small-3 columns">2</div>
-                            <div class="large-14 medium-14 small-21 columns">So Why WordPress</div>
-                            <div class="large-6 medium-6 small-9 small-text-left large-text-right columns"><i class="fa fa-youtube-play"></i></div>
-                            <div class="large-3 medium-3 small-12 text-right columns"><span>90:00</span></div>
+                            <div class="medium-14 small-21 columns">So Why WordPress</div>
+                            
+                            <div class="medium-9 small-24 text-right columns">
+                              <i class="fa fa-youtube-play"></i> <span>90:00</span> <a href="" class="edit"><i class="fa fa-pencil"></i></a> <a href="" class="delete"><i class="fa fa-trash"></i></a>
+                            </div>
                         </div>
                         <div class="row lessons">
                             <div class="large-1 medium-1 small-3 columns">3</div>
-                            <div class="large-14 medium-14 small-21 columns">WordPress Lingo</div>
-                            <div class="large-6 medium-6 small-9 small-text-left large-text-right columns"><i class="fa fa-youtube-play"></i></div>
-                            <div class="large-3 medium-3 small-12 text-right columns"><span>60:00</span></div>
+                            <div class="medium-14 small-21 columns">WordPress Lingo</div>
+                            
+                            <div class="medium-9 small-24 text-right columns">
+                              <i class="fa fa-youtube-play"></i> <span>60:00</span> <a href="" class="edit"><i class="fa fa-pencil"></i></a> <a href="" class="delete"><i class="fa fa-trash"></i></a> 
+                            </div>
                             
                         </div>
                         <div class="row lessons">
                             <div class="large-1 medium-1 small-3 columns">4</div>
-                            <div class="large-14 medium-14 small-21 columns">WordPress Hosting &amp; Domain Names</div>
-                            <div class="large-6 medium-6 small-9 small-text-left large-text-right columns"><i class="fa fa-youtube-play"></i></div>
-                            <div class="large-3 medium-3 small-12 text-right columns"><span>80:40</span></div>
+                            <div class="medium-14 small-21 columns">WordPress Hosting &amp; Domain Names</div>
+                            
+                            <div class="medium-9 small-24 text-right columns">
+                              <i class="fa fa-youtube-play"></i> <span>80:40</span> <a href="" class="edit"><i class="fa fa-pencil"></i></a> <a href="" class="delete"><i class="fa fa-trash"></i></a>
+                            </div>
                         </div>
                         <div class="row lessons">
                             <div class="large-1 medium-1 small-3 columns">5</div>
-                            <div class="large-14 medium-14 small-21 columns">Installing WordPress in Seconds</div>
-                            <div class="large-6 medium-6 small-9 small-text-left large-text-right columns"><i class="fa fa-youtube-play"></i></div>
-                            <div class="large-3 medium-3 small-12 text-right columns"><span>136:00</span></div>
+                            <div class="medium-14 small-21 columns">Installing WordPress in Seconds</div>
+                            
+                            <div class="medium-9 small-24 text-right columns">
+                              <i class="fa fa-youtube-play"></i> <span>136:00</span> <a href="" class="edit"><i class="fa fa-pencil"></i></a> <a href=" " class="delete"><i class="fa fa-trash"></i></a>
+                            </div>
                         </div>
                         <div class="row lessons">
                             <div class="large-1 medium-1 small-3 columns">6</div>
-                            <div class="large-14 medium-14 small-21 columns">Logging into the WordPress Dashboard</div>
-                            <div class="large-6 medium-6 small-9 small-text-left large-text-right columns"><i class="fa fa-youtube-play"></i></div>
-                            <div class="large-3 medium-3 small-12 text-right columns"><span>42:00</span></div>
+                            <div class="medium-14 small-21 columns">Logging into the WordPress Dashboard</div>
+                            
+                            <div class="medium-9 small-24 text-right columns">
+                              <span class="new-tag">New</span>
+                              <i class="fa fa-youtube-play"></i> <span>42:00</span> <a href="" class="edit"><i class="fa fa-pencil"></i></a> <a href="" class="delete"><i class="fa fa-trash"></i></a>
+                            </div>
                         </div>
                         <div class="row lessons">
                             <div class="large-1 medium-1 small-3 columns">7</div>
-                            <div class="large-14 medium-14 small-21 columns">The Ins and Outs of the WordPress Dashboard</div>
-                            <div class="large-6 medium-6 small-9 small-text-left large-text-right columns"><i class="fa fa-youtube-play"></i></div>
-                            <div class="large-3 medium-3 small-12 text-right columns"><span>24:00</span></div>
+                            <div class="medium-14 small-21 columns">The Ins and Outs of the WordPress Dashboard</div>
+                            
+                            <div class="medium-9 small-24 text-right columns">
+                               <span class="free-tag">Free</span>
+                              <span class="new-tag">New</span>
+                              <i class="fa fa-youtube-play"></i> <span>24:00</span> <a href="" class="edit"><i class="fa fa-pencil"></i></a> <a href="" class="delete"><i class="fa fa-trash"></i></a> 
+                            </div>
                         </div>
                         <div class="row lessons">
                             <div class="large-1 medium-1 small-3 columns">8</div>
-                            <div class="large-14 medium-14 small-21 columns">Setting Up Pages and Posts </div>
-                            <div class="large-6 medium-6 small-9 small-text-left large-text-right columns"><i class="fa fa-youtube-play"></i></div>
-                            <div class="large-3 medium-3 small-12 text-right columns"><span>52:00</span></div>
+                            <div class="medium-14 small-21 columns">Setting Up Pages and Posts </div>
+                            
+                            <div class="medium-9 small-24 text-right columns">
+                              <span class="new-tag">New</span>
+                              <i class="fa fa-youtube-play"></i> <span>52:00</span> <a href="" class="edit"><i class="fa fa-pencil"></i></a> <a href="" class="delete"><i class="fa fa-trash"></i></a> 
+                            </div>
                         </div>
-                        <div class="row">
+                       
+
+                      </div>
+                      
+                       <div class="row">
                           <div class="large-24 columns text-center">
                             <button data-reveal-id="add-lesson-modal" class="small-btn green-btn">Add Lesson</button>
                           </div>
                         </div>
-                    
 
                       <div class="text-center">
                         <button data-reveal-id="add-section-modal" class="green-btn">Add Section</button>
@@ -601,8 +639,85 @@
 
 
                         <div id="add-lesson-modal" class="reveal-modal" data-reveal aria-labelledby="secondModalTitle" aria-hidden="true" role="dialog">
-                          <h2 id="secondModalTitle">This is a second modal.</h2>
-                          <p>See? It just slides into place after the other first modal. Very handy when you need subsequent dialogs, or when a modal option impacts or requires another decision.</p>
+                          <h2 id="secondModalTitle">This the add lesson modal.</h2>
+                          
+                          <div class="row">
+                            <div class="large-4 columns">
+                              <h3>Lesson Name</h3>
+                            </div>
+                            <div class="large-20 left columns">
+                              <input type="text" placeholder="Lesson name" spellcheck="false">
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="large-4 columns">
+                              <h3>Lesson Description</h3>
+                            </div>
+                            <div class="large-20 left columns">
+                              <textarea name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="large-4 columns">
+                              <h3>
+                                Free lesson
+                              </h3>
+                            </div>
+                            <div class="large-20 columns">
+                              <p>By clicking here you will make the lesson free for watching by anybody. Use it to promote your course.</p>
+                             
+                             <div class="input-positioning">
+                                <input id="free-lesson" type="radio" name="lesson-price-type" value="option">
+                                <label for="free-lesson"><span><span></span></span>FREE</label>
+                                <input id="regular-lesson" type="radio" checked="" name="lesson-price-type" value="option">
+                                <label for="regular-lesson"><span><span></span></span>Regular</label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="large-4 columns">
+                              <h3>Choose lesson type:</h3>
+                            </div>
+                            <div class="large-20 columns lesson-type">
+
+                              <button class="green-btn">
+                                <i class="fa fa-users"></i>
+                               Add live session
+                              </button>
+
+                              <button class="green-btn">
+                                <i class="fa fa-video-camera"></i>
+                                Add video
+                              </button>
+                           
+                              <button class="green-btn">
+                                <i class="fa fa-youtube"></i>
+                                Embed video
+                              </button>
+                            
+                              <button class="green-btn">
+                                <i class="fa fa-file-text-o"></i>
+                               Add document
+                              </button>
+                              
+                              <button class="green-btn">
+                                <i class="fa fa-file-audio-o"></i>
+                               Add audio
+                              </button>
+
+                              
+
+                            </div>
+                            
+                          </div>
+                          <hr>
+                          <div class="text-center">
+                            <button type="submit" class="blue-btn"> Save</button>
+                          </div>
+                        
                           <a class="close-reveal-modal" aria-label="Close">&#215;</a>
                         </div>
 
@@ -664,6 +779,7 @@
    
     
      <script src="js/vendor/jquery.js"></script>
+     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
@@ -694,7 +810,10 @@
             }
           );
 
-       
+       $("#sortable-section-1, #sortable-section-2").sortable({
+          axis: "y"
+        });
+
       });
     </script>
   </body>
