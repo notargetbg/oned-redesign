@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/new-style.css">
      <!-- AWESOME CSS ANIMATIONS MADE SUPER EZ -->
     <link rel="stylesheet" href="css/animate.css">
+
   </head>
   <body class="create-course-page">
 
@@ -124,77 +125,83 @@
       <div class="row">
         <div class="large-22 large-centered columns ">
           
-          <ul class="settings tabs wrapper-box border-radius-top-7px" data-tab>
-            <li class="tab-title">
+          <ul id="accordion" class="settings tabs wrapper-box border-radius-top-7px" >
+            <li class="tab-title accordion-tab">
               <div class="tab-title setting-type border-radius-top-7px">
-                <h3>Course Info</h3>
+                <h3>Course Info</h3>               
               </div>
             </li>
-            <li class="tab-title active">
-              <a href="#basics-tab">
-               Basics
-              </a>
-            </li>
-            <li class="tab-title">
-              <a href="#details-tab">
-               Details
-              </a>
-            </li>
-            <li class="tab-title">
-              <a href="#images-tab">
-                Images
-              </a>
-            </li>
-            <li class="tab-title">
-              <a href="#price-tab">
-                Price
-              </a>
-            </li>
-            <li class="tab-title">
+            <div class="accordion-content" data-tab>
+              <li class="tab-title active">
+                <a href="#basics-tab">
+                 Basics
+                </a>
+              </li>
+              <li class="tab-title">
+                <a href="#details-tab">
+                 Details
+                </a>
+              </li>
+              <li class="tab-title">
+                <a href="#images-tab">
+                  Images
+                </a>
+              </li>
+              <li class="tab-title">
+                <a href="#price-tab">
+                  Price
+                </a>
+              </li>
+            </div>
+            <li class="tab-title accordion-tab">
              <div class="setting-type">
                 <h3>Course Content</h3>
               </div>
             </li>
-             <li class="tab-title">
+            <div class="accordion-content"  data-tab>
+              <li class="tab-title">
                 <a href="#curriculum-tab">
-                Curriculum
-              </a>
-            </li>
-            <li class="tab-title">
-               <a href="#">
-                Library
-              </a>
-            </li>
+                  Curriculum
+                </a>
+              </li>
+              <li class="tab-title">
+                 <a href="#library-tab">
+                  Library
+                </a>
+              </li>
+            </div>
+            <li class="tab-title accordion-tab disabled">
              <div class="setting-type">
                 <h3>Course Management</h3>
               </div>
-            </li>
-             <li class="tab-title disabled">             
-                <a href="#" data-tooltip aria-haspopup="true" class="has-tip" title="Only for Published courses.">
+             </li>
+             <div class="accordion-content"  data-tab>
+               <li class="tab-title ">             
+                <a href="#promotion-tab">
                 Promotion
               </a>
-            </li>
-            <li class="tab-title disabled">
-               <a href="#" data-tooltip aria-haspopup="true" class="has-tip" title="Only for Published courses.">
-                Vouchers
-              </a>
-            </li>
-            <li class="tab-title disabled">
-               <a href="#" data-tooltip aria-haspopup="true" class="has-tip" title="Only for Published courses.">
-                On Sale
-              </a>
-            </li>
-            <li class="tab-title disabled">
-               <a href="#" data-tooltip aria-haspopup="true" class="has-tip" title="Only for Published courses.">
-                Revenue
-              </a>
-            </li>
-            <li class="tab-title disabled">
-               <a href="#" data-tooltip aria-haspopup="true" class="has-tip" title="Only for Published courses.">
-                Remove course
-              </a>
-            </li>
-           
+              </li>
+              <li class="tab-title ">
+                 <a href="#vouchers-tab">
+                  Vouchers
+                </a>
+              </li>
+              <li class="tab-title ">
+                 <a href="#on-sale-tab">
+                  On Sale
+                </a>
+              </li>
+              <li class="tab-title">
+                 <a href="#revenue-tab">
+                  Revenue
+                </a>
+              </li>
+              <li class="tab-title disabled">
+                 <a href="#remove-tab" data-tooltip aria-haspopup="true" class="has-tip" title="Only for Published courses.">
+                  Remove course
+                </a>
+              </li>
+            </div>
           </ul>
 
           <div class="tabs-content">
@@ -501,7 +508,7 @@
                   <div class="row">
                     <div class="large-24 columns">
                         <div class="row lessons-head">
-                          <div class="large-24 columns"><h2><i class="fa fa-tasks"></i> 4 Sections, 32 Lessons</h2></div>
+                          <div class="large-24 columns"><h2>4 Sections, 32 Lessons</h2></div>
                         </div>
                         <div class="row lessons-title">
                           <div class="large-24 columns"><span class="label round">Section 1</span><strong>Introduction</strong></div>
@@ -731,11 +738,200 @@
                               
 
               </div>
+            </div> <!-- end of Curriculum -->
+
+            <!-- Library -->
+            <div id="library-tab" class="row content animated fadeInUp">
+              <div class="large-24 columns wrapper-box">
+                <div class="separator">
+                  <h2>Library</h2>
+                </div>
+               
+               <div class="separator">
+                  <div class="row">
+                    <div class="large-6 medium-6 columns">
+                      <p>File upload</p>
+                    </div>
+                    <div class="large-18 medium-18 columns">
+                        <p>
+                          You can upload up to 1GB of additional materials for your students. They will be accessible only for those enrolled in your course.
+                        </p>
+                         <button class="white-btn">
+                          <i class="fa fa-file"></i>
+                         Add file
+                        </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="separator">
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <p>Description</p>
+                    </div>
+                    <div class="large-18 left columns">
+                      <textarea name="" id="" cols="30" rows="10">Enter a file description here.</textarea>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Promotion -->
+            <div id="promotion-tab" class="row content animated fadeInUp">
+              <div class="large-24 columns wrapper-box">
+                <div class="separator">
+                  <h2>Promotion</h2>
+                  <p>
+                    Make sure to reach your customers and let them know about your course!
+                  </p>
+                </div>
+
+                <div class="separator">
+                  <div class="row">
+                    <div class="large-24 columns">
+                      <p>
+                        Your personal course URL. Everybody clicking on it will count as a student attracted by you and you’ll get 95% of their payments!
+                      </p>
+                      <p class="margin-top-5">
+                         <kbd>http://oned.com/users?userid=321?affid=321</kbd>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="separator">
+                  <div class="row">
+                    <div class="large-24 columns">
+                      <p>
+                        Share your course on the social networks. Everybody clicking on your post will count as a student attracted by you and you’ll get 95% of their payments!
+                      </p>
+                      <p>
+                        <button class="facebook-btn"><i class="fa fa-facebook"></i> Share this course !</button>
+                        <button class="twitter-btn"><i class="fa fa-twitter"></i> Tweet this course !</button>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <!-- Vouchers -->
+            <div id="vouchers-tab" class="row content animated fadeInUp">
+              <div class="large-24 columns wrapper-box">
+                <div class="separator">
+                  <h2>Vouchers</h2>
+                </div>
+
+                <div class="separator">
+                  <div class="row">
+                    <div class="large-6 medium-6 columns">
+                      <p>Course vouchers</p>
+                    </div>
+                    <div class="large-18 medium-18 columns">
+                      <p>
+                        <span class="label round">5% Course Discount</span>
+                      </p>
+                       <p>
+                        <span class="label info  round">No vouchers found for this course.</span>
+                        
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="separator">
+                  <div class="row">
+                    <div class="medium-6 columns">
+                      <p>Create vouchers</p>
+                    </div>
+                    <div class="medium-6 columns">
+                      <input type="text" placeholder="Voucher Code" spellcheck="false">
+                    </div>
+                    <div class="medium-6 columns">
+                      <input type="text" placeholder="Voucher Discount" spellcheck="false">
+                    </div>
+                    <div class="medium-6 columns">
+                      <input type="text" placeholder="Voucher Uses" spellcheck="false">
+                    </div>
+                  </div>
+                  <div class="row margin-top-5">
+                    <div class="medium-6 medium-offset-6 columns">
+                      <input type="text" placeholder="Voucher Expiration" spellcheck="false">
+                    </div>
+                    <div class="medium-6 left columns" style="    padding-top: 8px;">
+                        <input id="voucher-expiry" type="checkbox" name="voucher-expiry" value="option">
+                        <label for="voucher-expiry"><span><span></span></span>No expiration date.</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="medium-18 medium-offset-6 columns">
+                      <button class="green-btn">CREATE</button>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <!-- On Sale -->
+            <div id="on-sale-tab" class="row content animated fadeInUp">
+              <div class="large-24 columns wrapper-box">
+                <div class="separator">
+                  <h2>On sale</h2>
+                  <p>
+                    “On Sale” functionality allows you to put your course on sale for a time limited period. The discount and time left are displayed on Course page and in Course listing.
+                  </p>
+                </div>
+
+                <div class="separator">
+                  <div class="row">
+                    <div class="medium-6 columns">
+                        <p>Turn on/off</p>
+                    </div>
+                    <div class="medium-18 columns">
+                      <div>
+                        <input id="on-sale-on" type="radio" name="on-sale" value="option">
+                        <label for="on-sale-on"><span><span></span></span>ON</label>
+                        <input id="on-sale-off" type="radio" checked="" name="on-sale" value="option">
+                        <label for="on-sale-off"><span><span></span></span>OFF</label>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+
+                <div class="separator">
+                  <div class="row">
+                    <div class="medium-6 columns">
+                      <p>On Sale Price</p>            
+                    </div>
+                    <div class="medium-3 left columns">
+                      <input type="text" placeholder="0" spellcheck="false">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="separator">
+                  <div class="row">
+                    <div class="medium-6 columns">
+                      <p>Expiration date</p>            
+                    </div>
+                    <div class="medium-6 left columns">
+                      <input type="text" placeholder="Default date - today" spellcheck="false">
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
             </div>
             
-          <div class="row button-row">
-            <button type="submit" class="blue-btn"> Save</button>
-          </div>
+            <div class="row button-row">
+              <button type="submit" class="blue-btn"> Save</button>
+            </div>
+
           </div> <!-- end of  tabs-content.large-15.columns -->
 
         </div> <!-- end of .wrapper-box -->
@@ -812,6 +1008,15 @@
 
        $("#sortable-section-1, #sortable-section-2").sortable({
           axis: "y"
+        });
+
+         $('#accordion').find('.accordion-tab').click( function() {
+          
+          $(this).next().slideToggle();
+
+
+
+          $(".accordion-content").not($(this).next()).slideUp();
         });
 
       });

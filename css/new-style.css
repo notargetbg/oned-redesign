@@ -1048,6 +1048,15 @@ button.facebook-btn {
     padding: 4px 15px;
     text-align: center;
 }
+button.twitter-btn {
+    background-color: #55ACEE;
+    color: #ffffff;
+    width: 220px;
+    font-weight: 400;
+    padding: 4px 15px;
+    text-align: center;
+}
+
 
 .register-section .wrapper-box p {
     color: #263339;
@@ -1095,6 +1104,9 @@ section.settings-section {
 }
 .padding-top-0 {
   padding-top: 0 !important;
+}
+.margin-top-5 {
+  margin-top: 5px !important;
 }
 .margin-bot-10 {
   margin-bottom: 10px !important;
@@ -1159,7 +1171,15 @@ section.settings-section {
     font-weight: 700;
     padding-top: 10px;
     padding-bottom: 10px;
-}
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  }
+  .settings-section .settings .setting-type h3:active {
+    top: 2px;
+  }
 
 .settings-section .tabs-content {
   width: 70%;
@@ -1189,7 +1209,7 @@ section.settings-section {
 .settings-section .wrapper-box .separator {
     padding: 12px;
     border-bottom: 1px solid rgba(218, 218, 218, 0.75);
-    min-height: 66px;
+    m
 }
 .settings-section .wrapper-box .separator:last-child {
   border-bottom: none;
@@ -1206,9 +1226,8 @@ section.settings-section {
 }
 .settings-section .wrapper-box .separator p {
     font-size: 15px;
-    position:relative;
-    top: 8px;
-    font-weight: 700;
+    font-weight: 400;
+    line-height: 19px;
 }
 .settings-section .wrapper-box .separator img {
     border-radius: 7px;
@@ -1220,10 +1239,6 @@ section.settings-section {
     font-weight: 400;
 }
 
-.wrapper-box .separator .input-positioning {
-    position: relative;
-    top: 4px;
-}
 .wrapper-box .separator .interests input {
     margin-bottom: 36px;
 }
@@ -1318,7 +1333,7 @@ input[type=radio   ]:not(old) + label > span{
   display          : inline-block;
   width            : 22px;
   height           : 22px;
-  margin           : 5px 5px 0 0;
+  margin           : 0px 5px 0 0;
   border           : 1px solid #c7dfbe;
   border-radius    : 100%;
   background-color : #fcfcfc;
@@ -1344,7 +1359,7 @@ input[type=checkbox   ]:not(old) + label > span{
   display          : inline-block;
   width            : 22px;
   height           : 22px;
-  margin           : 5px 5px 0 0;
+  margin           : 0px 5px 0 0;
   border           : 1px solid rgb(192,192,192, 0.25);
   border-radius    : 0.25em;
   background-color : #fcfcfc;
@@ -3029,4 +3044,17 @@ text-align: center;
     background: #E8E8E8;
     color: #AFAFAF;
     cursor: help;
+}
+
+.create-course-page .settings-section .wrapper-box .separator p {
+  position: static;
+  top: 0;
+  line-height: 19px;
+  margin: 5px auto;
+}
+
+.create-course-page .voucher-inputs input {
+      width: 32%;
+    float: left;
+    margin-right: 1.33%;
 }
