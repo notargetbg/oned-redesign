@@ -176,7 +176,24 @@ button.profile-btn .author-box img.author-circle-pic {
 	margin: 0;
 	margin-right: 5px;
 }
-
+button.warning-btn {
+  width: auto;
+  max-width: 250px;
+  margin: auto;
+  background-color: #e67e22;
+  color: white;
+  font-weight: 500;
+  box-shadow: 0 1px 2px rgba(98, 98, 98, 0.32);
+}
+button.alert-btn {
+  width: auto;
+  max-width: 250px;
+  margin: auto;
+  background-color: #e74c3c;
+  color: white;
+  font-weight: 500;
+  box-shadow: 0 1px 2px rgba(98, 98, 98, 0.32);
+}
 /* Typography */
 
 p {
@@ -1130,7 +1147,7 @@ section.settings-section {
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px; 
 }
-.settings.tabs.wrapper-box .tab-title:last-child a  {
+.settings.tabs.wrapper-box .accordion-content:last-of-type .tab-title:last-child a  {
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px; 
 }
@@ -2203,111 +2220,6 @@ section.br-cr > .row , section.course-header > .row , section.course-content > .
     padding: 4px;
 }
 
-/* Create Course Styles */
-
-/* Create Course step 1 */
-
-.settings-section .create-breadcrumb .wrapper-box h3{
-  font-size: 21px;
-  padding: 16px 8px;
-  color: #adadad;
-}
-.settings-section .create-breadcrumb .blue-background {
-  background-color: #5ec0fd;
-}
-.settings-section .create-breadcrumb .blue-background h3{
-  color: #ffffff;
-}
-.wrapper-box .course-create-input {
-  margin-top: 18px;
-  margin-bottom: 18px;
-}
-.wrapper-box .course-create-input h2{
-  margin-top: 8px;
-  margin-bottom: 18px;
-}
-.type-slectors input[type="radio"] + label{
-  font-size: 23px;
-  line-height: 1em;
-  margin-left: 0;
-  margin-top: 27px;
-  color: #757575;
-  margin-right: 0;
-}
-
-/* These affect the settings section. Need to find a fix. */
-
-/*.type-slectors input[type="checkbox"]:not(old), input[type="radio"]:not(old) {
-    font-size: 1em;
-    margin: -1em;
-    opacity: 0;
-    padding: 0;
-    width: 20px;
-}*/
-.wrapper-box .type-slectors input[type="radio"] + label p{
-  line-height: 24px;
-  margin-left: 28px;
-  color: #757575;
-  margin-bottom: 27px;
-}
-.settings-section .wrapper-box .separator .udemy-inport h2{
-  font-size: 23px;
-  line-height: 1em;
-  color: #757575;
-  font-weight: 400;
-  margin-top: 21px;  
-}
-.settings-section .wrapper-box .separator .udemy-inport h2 span{
-  color: #30476c;
-}
-.settings-section .wrapper-box .separator .udemy-inport h2 span img{
-  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
-  border-radius: 0;
-  box-shadow: none;
-  padding: 0 8px 3px;
-}
-.settings-section .wrapper-box .separator .udemy-inport p{
-  line-height: 24px;
-  color: #757575;
-  margin-bottom: 27px;
-}
-.create-button-row .blue-btn {
-  font-size: 21px;
-  height: auto;
-  margin-bottom: 27px;
-  margin-top: 27px;
-  padding: 13px 36px;
-  text-transform: none;
-  width: auto;
-}
-
-/* Details Step */
-
-.wrapper-box .separator .course-create-input .upload-buttons .white-btn {
-  width: 224px;
-  margin-right: 10px;
-}
-
-div.step {
-    padding: 12px;
-    font-size: 21px;
-    font-weight: 800;
-    text-align: center;
-    border-radius: 7px;
-    
-}
-
-div.step.inactive {
-    color: #dadada;
-}
-div.step.completed {
-  background-color: #84d26d;
-  color: white;
-}
-div.step.active {
-  background-color: #5ec0fd;
-  color: white;
-}
 
 /*@media all and and (max-width: 768px)  {
   
@@ -3057,4 +2969,8 @@ text-align: center;
       width: 32%;
     float: left;
     margin-right: 1.33%;
+}
+
+.accordion-content:not(:first-of-type) {
+  display: none;
 }

@@ -176,31 +176,36 @@
               </div>
              </li>
              <div class="accordion-content"  data-tab>
-               <li class="tab-title ">             
-                <a href="#promotion-tab">
-                Promotion
-              </a>
-              </li>
-              <li class="tab-title ">
-                 <a href="#vouchers-tab">
-                  Vouchers
-                </a>
-              </li>
-              <li class="tab-title ">
-                 <a href="#on-sale-tab">
-                  On Sale
-                </a>
-              </li>
-              <li class="tab-title">
-                 <a href="#revenue-tab">
-                  Revenue
-                </a>
-              </li>
-              <li class="tab-title disabled">
-                 <a href="#remove-tab" data-tooltip aria-haspopup="true" class="has-tip" title="Only for Published courses.">
-                  Remove course
-                </a>
-              </li>
+                <li class="tab-title ">             
+                  <a href="#premium-program-tab">
+                  Premium Program
+                  </a>
+                </li>
+                <li class="tab-title ">             
+                  <a href="#translation-program-tab">
+                  Translation Program
+                  </a>
+                </li>
+                <li class="tab-title ">             
+                  <a href="#share-tab">
+                  Share
+                  </a>
+                </li>
+                <li class="tab-title ">
+                   <a href="#vouchers-tab">
+                    Vouchers
+                  </a>
+                </li>
+                <li class="tab-title ">
+                   <a href="#on-sale-tab">
+                    On Sale
+                  </a>
+                </li>
+                <li class="tab-title disabled">
+                   <a href="#remove-tab" data-tooltip aria-haspopup="true" class="has-tip" title="Only for Published courses.">
+                    Remove course
+                  </a>
+                </li>
             </div>
           </ul>
 
@@ -727,7 +732,7 @@
                         
                           <a class="close-reveal-modal" aria-label="Close">&#215;</a>
                         </div>
-
+                      
                         <a class="close-reveal-modal" aria-label="Close">&#215;</a>
                       </div>
 
@@ -778,11 +783,126 @@
               </div>
             </div>
 
-            <!-- Promotion -->
-            <div id="promotion-tab" class="row content animated fadeInUp">
+            <!-- Premium Program -->
+            <div id="premium-program-tab" class="row content animated fadeInUp">
               <div class="large-24 columns wrapper-box">
                 <div class="separator">
-                  <h2>Promotion</h2>
+                  <h2>Premium Program</h2>
+                </div>
+
+                <div class="separator">
+                  <div class="row">
+                    <div class="large-24 columns">
+                      <p>
+                       ON-ED Premium Program is designed to help Premium teachers and courses get the attention they deserve. Once enrolled in the program the course is actively promoted by our marketing via all available channels – Social, PPC, Email, Remarketing, Affiliate Please keep in mind that admission is decided solely at our discretion. We may not have suitable audience for you course or there could be too many courses in that topic. You can find our Revenue Share terms here. <br> <strong> (ще се отвори страница с таблица с процентите ни.)</strong>
+                      </p>
+                    </div>
+                    <div class="large-24 columns" >
+                        <input id="premium-program-checkbox" type="checkbox" name="premium-program-checkbox" value="option">
+                        <label for="premium-program-checkbox"><span><span></span></span> I want to participate in Premium Program and I understand the terms.</label>
+                    </div>
+                    <div class="large-24 columns">
+                      <p>
+                        I allow ON-ED to offer discounts for my course up to <input style="display: inline !important;width: 34px;" type="text" placeholder="70" value="70">%. Please note that allowing us a bigger discount means more effective marketing and higher profits.
+                      </p>
+                      
+                    </div>
+                  </div>
+                </div>
+
+                <div class="separator">
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <p>Status:</p>
+                    </div>
+                    <div class="large-18 left columns">
+                      | <span class="label info round">Not participating</span> |
+                       <span class="label round">Pending</span> |
+                       <span class="label secondary round">Approved</span> |
+                    </div>
+                  </div>
+                </div>
+
+                <div class="separator">
+                  <div class="row">
+                    <div class="large-6 columns">
+                      Premium program
+                    </div>
+                    <div class="large-18 columns">
+                      <p>
+                        <button class="warning-btn"><i class="fa fa-star-o"></i> Apply to Premium program</button>
+                      </p>
+                      <p>
+                        Apply to Premium program – бутон. При натискането му ще проверява дали е избран чекбокса и попълнено полето за отстъпка, и ако да, ще изкарва съобщение „ Pending course review. We will notify you about admission after your course is published and reviewed.” Ще отбелязва в базата данни участието на курса в премиум програмата и процента отстъпка. Трябва да се направи ново меню в админ панела, където да излизат заявките за премиум курсове. Име на курса, име на преподавателя, линк, процент отстъпка, верификация или отказ. При отказ да се пише причина за отказа, която да се изпраща на преподавателя с мейл – както е при одобряването на курсовете. При одобряване на премиум статута, да се изпраща мейл на преподавателя (за текст към Жаси), и да се променя статуса в страницата на курса.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+             <!-- Translation Program -->
+            <div id="translation-program-tab" class="row content animated fadeInUp">
+              <div class="large-24 columns wrapper-box">
+                <div class="separator">
+                  <h2>Translation Program</h2>
+                </div>
+
+                <div class="separator">
+                  <div class="row">
+                    <div class="large-24 columns">
+                      <p>
+                        ON-ED Translation Program is designed to erase language barriers and help your course reach much larger audience in different countries around the world. Our teams of translators will translate fully your course on different languages, including voice-over or subtitles, sales copy, name and localization. Currently we support translations to and from English, Russian and Bulgarian with more to come.
+                      </p>
+                      <p>
+                        Translators translate courses participating in the program by their own discretion so there is no guarantee that your course will be translated. Moreover we admit only top-quality courses. The translators receive shared IP on that language version, revenue share, and exclusivity on that market. The course is fully localized and separate from the original version. You can see the revenue share model here.
+                      </p>
+                    </div>
+                    <div class="large-24 columns" >
+                        <input id="translation-program-checkbox" type="checkbox" name="translation-program-checkbox" value="option">
+                        <label for="translation-program-checkbox"><span><span></span></span> I want to participate in Translation Program and I understand the terms.</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="separator">
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <p>Status:</p>
+                    </div>
+                    <div class="large-18 left columns">
+                      | <span class="label info round">Not participating</span> |
+                       <span class="label round">Pending</span> |
+                       <span class="label secondary round">Approved</span> |
+                    </div>
+                  </div>
+                </div>
+
+                <div class="separator">
+                  <div class="row">
+                    <div class="large-6 columns">
+                      Translation Program 
+                    </div>
+                    <div class="large-18 columns">
+                      <p>
+                        <button style="max-width:250px;width:100%;" class="green-btn"><i class="fa fa-language"></i> Apply to Translation Program</button>
+                      </p>
+                      <p>
+                       Apply to Translation Program – бутон. Същата функционалност като при Premium програмата, с отделно меню за одобрение в админ панела.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <!-- Share -->
+            <div id="share-tab" class="row content animated fadeInUp">
+              <div class="large-24 columns wrapper-box">
+                <div class="separator">
+                  <h2>Share</h2>
                   <p>
                     Make sure to reach your customers and let them know about your course!
                   </p>
@@ -923,6 +1043,49 @@
                       <input type="text" placeholder="Default date - today" spellcheck="false">
                     </div>
                   </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <!-- Remove -->
+            <div id="remove-tab" class="row content animated fadeInUp">
+              <div class="large-24 columns wrapper-box">
+                <div class="separator">
+                  <h2>Remove course</h2>
+                  
+                </div>
+
+                <div class="separator">
+                  <div class="row">
+                    <div class="large-24 columns">
+                      <p>
+                       You can unpublish or remove your course here. Please be careful – once removed we won’t be able to restore it.
+                      </p>
+                      <p>
+                        <a href="#remove-course"><button data-reveal-id="unpublish-course-modal" class="warning-btn"><i class="fa fa-history"></i> Unpublish Course</button></a>
+                        <a href="#remove-course"><button data-reveal-id="remove-course-modal" class="alert-btn"><i class="fa fa-eraser"></i> Remove Course</button></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="unpublish-course-modal" class="reveal-modal small" data-reveal aria-labelledby="secondModalTitle" aria-hidden="true" role="dialog">
+                  <h4>Are you sure you want to <strong>UNPUBLISH</strong> this course?</h4>
+
+                  <p class="text-center"><a href="#">YES</a>/<a href="#">NO</a></p>
+
+
+                  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                </div>
+
+                <div id="remove-course-modal" class="reveal-modal small" data-reveal aria-labelledby="secondModalTitle" aria-hidden="true" role="dialog">
+                  <h4>Are you sure you want to <strong>REMOVE</strong> this course?</h4>
+
+                  <p class="text-center"><a href="#">YES</a>/<a href="#">NO</a></p>
+
+
+                  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
                 </div>
                 
               </div>
