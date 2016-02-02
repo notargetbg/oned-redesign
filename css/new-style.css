@@ -477,15 +477,6 @@ footer .copyright {
   font-family: 'Open Sans', sans-serif;
 }
 
-
-/* Helper Classes */
-.row.margin-top-10 {
-	margin-top: 10px;
-}
-.margin-top-58 {
-  margin-top: 58px;
-}
-
 /* Main Course Boxes Styles */
 
 .wrapper-box {
@@ -1074,7 +1065,6 @@ button.twitter-btn {
     text-align: center;
 }
 
-
 .register-section .wrapper-box p {
     color: #263339;
     position:relative;
@@ -1109,10 +1099,12 @@ section.settings-section {
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px; 
 }
-
 .display-block {
   display: block !important;
-  }
+}
+.row.margin-top-10 {
+  margin-top: 10px;
+}
 .margin-top-58 {
   margin-top: 58px;
 }
@@ -1127,6 +1119,9 @@ section.settings-section {
 }
 .margin-bot-10 {
   margin-bottom: 10px !important;
+}
+.margin-bottom-16 {
+  margin-bottom: 16px;
 }
 /* Settings Menu Styles */
 .settings-section h1,
@@ -1226,7 +1221,6 @@ section.settings-section {
 .settings-section .wrapper-box .separator {
     padding: 12px;
     border-bottom: 1px solid rgba(218, 218, 218, 0.75);
-    m
 }
 .settings-section .wrapper-box .separator:last-child {
   border-bottom: none;
@@ -1319,7 +1313,7 @@ select option {
 
 .settings-section input[type=checkbox]:not(old),
 .settings-section input[type=radio   ]:not(old){
-  width: 20px;
+    width: 20px;
   margin    : 0;
   padding   : 0;
   font-size : 1em;
@@ -1350,7 +1344,7 @@ input[type=radio   ]:not(old) + label > span{
   display          : inline-block;
   width            : 22px;
   height           : 22px;
-  margin           : 0px 5px 0 0;
+  margin           : 0 5px 0 0;
   border           : 1px solid #c7dfbe;
   border-radius    : 100%;
   background-color : #fcfcfc;
@@ -2688,8 +2682,25 @@ section .panel h5 {
 }
 
 /* Discover Page */
+.discover-page h1{
+  margin-bottom: 32px;
+}
+.side-nav li a:not(.button) {
+  font-family: 'Open Sans', sans-serif;
+  color: #999999;
+  font-size: 15px;
+}
+.side-nav li a:not(.button):hover, .side-nav li a:not(.button):focus {
+  color: #737373;
+}
+.side-nav li a:not(.button) span{
+  color: #263339;
+  float: right;
+
+}
 .discover-page .sub-nav dt {
     margin-left: 0;
+        margin-top: 10px;
 }
 .discover-page .sub-nav {
   margin-bottom: 0px;
@@ -2721,9 +2732,9 @@ section .panel h5 {
   padding: 0 8px;
 }
 .discover-page .sub-nav dd.active a {
-      padding: 1px 10px;
+    padding: 4px 12px;
     line-height: 11px;
-    font-size: 14px;
+    font-size: 18px;
 }
 .discover-page .sub-nav dd.active a:first-child {
       margin-left: 5px;
@@ -2733,8 +2744,15 @@ section .panel h5 {
 }
 
 .discover-page .sub-nav dt, .discover-page .sub-nav dd, .discover-page .sub-nav li {
-  font-family: "Open Sans", sans-serif;
-      font-size: 14px;
+  font-family: 'Comfortaa', cursive;
+  font-size: 17px;
+  color: #263339;
+  padding: 8px 0;
+}
+.discover-page .sub-nav dd, .discover-page .sub-nav li a {
+  font-size: 0.875rem;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 32px;
 }
 
 .discover-page .filter .checkboxes input[type="checkbox"] {
@@ -2743,11 +2761,11 @@ section .panel h5 {
 
 .discover-page .filter .checkboxes input[type=checkbox]:not(old) + label, 
 .discover-page .filter .checkboxes input[type=radio ]:not(old) + label {
-    margin-left: 4px;
+    margin-left: 6px;
     margin-right: 0;
     position: relative;
-    top: -2px;
     color: #999999;
+    padding: 10px;
 }
 .discover-page .filter .checkboxes input[type=checkbox]:not(old) + label:hover , 
 .discover-page .filter .checkboxes input[type=radio ]:not(old) + label:hover {
@@ -2763,10 +2781,9 @@ section .panel h5 {
 }
 .discover-page .filter-sort-order button {
   font-weight: 700;
-  height: 25px;
-  padding: 0;
-  padding-bottom: 1px;
-    box-shadow: 0 1px 3px rgba(162, 162, 162, 0.2);
+  padding: 8px;
+  box-shadow: 0 1px 3px rgba(162, 162, 162, 0.2);
+  margin: 16px 0;
 }
 
 button.sort {
@@ -2793,9 +2810,10 @@ button.sort:active, button.sort:focus {
 
 .discover-page  .special-label {
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 17px;
   text-transform: uppercase;
-  color: #999999;
+  color: #263339;
+  padding: 8px 8px 8px 24px;
 }
 .discover-page .filter-sort-order .f-dropdown.tiny {
   max-width: 120px;
@@ -2851,20 +2869,19 @@ button.sort:active, button.sort:focus {
 
 /* Create Course New Styles */
 .course-preview.panel {
-    border-radius: 3px;
+    border-radius: 10px;
     box-shadow: 0 1px 4px rgba(218, 218, 218, 0.75);
     border-color: #E6E6E6;
 }
 
 .course-preview img {
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
 .course-preview button {
   text-transform: uppercase;
   font-weight: 600;
 }
-
 .wrapper-box .separator p.title {
   font-weight: 500;
 }
