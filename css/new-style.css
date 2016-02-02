@@ -1814,7 +1814,6 @@ section.br-cr > .row , section.course-header > .row , section.course-content > .
 .padding-box p {
   font-size: 13px;
   color: #202020;
-  padding-bottom: 10px;
 }
 .lessons{
     border-bottom: 1px solid #dcdedf;
@@ -2312,7 +2311,7 @@ section.br-cr > .row , section.course-header > .row , section.course-content > .
 /* New Styles */
 
 .tags {
-  margin: 15px auto;
+  margin: 8px auto;
 }
 
 .tags span {
@@ -2723,7 +2722,7 @@ section .panel h5 {
 }
 
 .discover-page .wrapper-box .details p {
-  height: 60px;
+  height: 38px;
 }
 .discover-page .sub-nav dl {
       margin-bottom: 0;
