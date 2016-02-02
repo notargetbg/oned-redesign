@@ -2680,6 +2680,10 @@ section .panel h5 {
     max-width: 100%;
 }
 
+.contact-section .wrapper-box p{
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 8px;
+}
 /* Discover Page */
 .discover-page h1{
   margin-bottom: 32px;

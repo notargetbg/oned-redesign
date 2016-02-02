@@ -52,9 +52,7 @@ Green:			#95C718;
 }
 .light-bg .green-btn {
 	width: auto;
-    font-size: 45px;
-    font-weight: 200;
-    padding: 8px 40px;
+    padding: 10px 16px;
     height: auto;
     margin-top: 20px;
 }
