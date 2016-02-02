@@ -158,14 +158,14 @@
                               </div>
                           </div>
                       </li>
-                      <li>
+                   <!--    <li>
                           <div class="ch-item ch-img-8">
                               <div class="ch-info">
                                   <h3>Alexander Nikolov</h3>
                                   <p>PHP Developer<a href="https://www.linkedin.com/in/aleksandarmnikolov" target="_blank">View on Linkedin</a></p>
                               </div>
                           </div>
-                      </li>
+                      </li> -->
                       <li>
                           <div class="ch-item ch-img-10">
                               <div class="ch-info">
@@ -288,9 +288,16 @@ If you have any questions, please contact us by: <br>
             classToAdd: 'visible animated fadeIn',
         });
 
-             $('.about-page section li').addClass("hidden").viewportChecker({
-            classToAdd: 'visible animated rollIn',
-        });
+            var delay = 0.2;
+
+             $('.about-page section .ch-grid li').each(function() {
+                $(this).addClass("hidden").viewportChecker({
+                    classToAdd: 'animated fadeIn',
+                });
+                
+                delay = delay + 0.2;
+                $(this).css({"animation-delay": delay + "s"});
+             });
 
              $('.about-page section icon').addClass("hidden").viewportChecker({
             classToAdd: 'visible animated fadeIn',
