@@ -18,7 +18,7 @@
     <!-- AWESOME CSS ANIMATIONS MADE SUPER EZ -->
     <link rel="stylesheet" href="css/animate.css">
   </head>
-  <body class="discover-page">
+  <body>
     
     <header class="">
       <nav class="oned-top-menu container-width">
@@ -86,12 +86,13 @@
     </header>
 
     <!--  Discover Page Widget -->
-    <section class="container-width discover margin-top-58">
-      <div class="row filters">
-        <div class="large-4 columns hidden-for-large-up">
+    <section class=" discover-page container-width discover margin-top-58">
+      <div class="row"> <!-- start of main content .row -->
+        <div class="filters">
+        <div class="small-24 columns hidden-for-large-up">
           <dl class="sub-nav">
             <dt>Categories:</dt>
-            <dd class="">  
+            <dd>  
               <select class="select-category">
                 <option>All</option> 
                 <option>Arts</option> 
@@ -116,18 +117,13 @@
           </dl>
         </div>
       </div>
-      <div class="row">
-        <div class="large-14 columns">
-          <h1>Viewing all 826 results</h1>
-        </div>
-        <div class="large-10 columns search-courses">
-          <input type="text" placeholder="You want to learn...">
-        </div>
-      </div>
-      <div class="row"> <!-- start of main content .row -->
         <div class="large-5 columns filter">
-          <div class="filter hide-for-medium hide-for-small">
-
+          <div class="row">        
+            <div class="large-24 columns">
+              <h1>Viewing all 826 results</h1>
+            </div>
+          </div>
+          <div class="hide-for-medium hide-for-small">
             <dl class="sub-nav">
               <dt>Type:</dt>
             </dl>
@@ -138,7 +134,7 @@
             <li><a href="#">Webinars<span>296</span></a></li>
             <li><a href="#">Pre-made courses<span>122</span></a></li>
           </ul>
-          <div class="filter hide-for-medium hide-for-small">
+          <div class="hide-for-medium hide-for-small">
             <dl class="sub-nav">
               <dt>Languages:</dt>
             </dl>
@@ -149,7 +145,18 @@
             <li><a href="#">Русский<span>296</span></a></li>
             <li><a href="#">Български<span>122</span></a></li>
           </ul>
-          <div class="filter hide-for-medium hide-for-small">
+          <div class="hide-for-medium hide-for-small">
+            <dl class="sub-nav">
+              <dt>Price:</dt>
+            </dl>
+          </div>
+          <ul class="side-nav padding-top-0  hide-for-medium hide-for-small">
+            <li><a href="#">All<span>826</span></a></li>
+            <li><a href="#">Paid<span>428</span></a></li> 
+            <li><a href="#">On Sale<span>26</span></a></li>
+            <li><a href="#">Free<span>322</span></a></li>
+          </ul>
+          <div class="hide-for-medium hide-for-small">
             <dl class="sub-nav">
               <dt>Categories:</dt>
             </dl>
@@ -171,13 +178,15 @@
             <li><a href="#">Languages<span>31</span></a></li>
             <li><a href="#">Psychology<span>156</span></a></li>
             <li><a href="#">Lifestyle<span>666</span></a></li>
-            <li><a href="#">More...</a></li>
           </ul>
           
         </div>
         <div class="large-19 columns ">
               <div class="row filter-sort-order">
-                <div class="large-24 text-right columns">
+                <div class="large-14 columns search-courses">
+                  <input type="text" placeholder="You want to learn...">
+                </div>
+                <div class="large-10 text-right columns">
                   <span class="special-label">Sort:</span>
                   <button href="#" class="sort black" data-dropdown="drop-sort">Newest <i class="fa fa-caret-down"></i></button>
                   <ul id="drop-sort" class="tiny f-dropdown" data-dropdown-content>
@@ -190,17 +199,7 @@
                   <ul id="drop-order" class="tiny f-dropdown" data-dropdown-content>
                     <li><a href="#">Ascending</a></li>
                     <li><a href="#">Descending</a></li>
-                  </ul>
-                  <span class="special-label">Price:</span>
-                  <button href="#" class="sort black" data-dropdown="drop-order">All <i class="fa fa-caret-down"></i></button>
-                  <ul id="drop-order" class="tiny f-dropdown" data-dropdown-content>
-                    <li><a href="#">All</a></li>
-                    <li><a href="#">Paid</a></li>
-                    <li><a href="#">On Sale</a></li>
-                    <li><a href="#">Free</a></li>
-                  </ul>
-                
-                  
+                  </ul>            
                   <div id="followers-modal" class="reveal-modal small padding-box" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
                   <h2 id="modalTitle">Filter Courses</h2>
                   <div class="row">

@@ -110,21 +110,21 @@ FaceBook Color -    #3a5a98
 }
 
 button {
-	font-size: 15px;
-	border-radius: 4px;
-	border: none;
-	margin: auto;
-	height: 38px;
-	width: 120px;
-	padding: 4px 10px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 800;
-  position: relative;
-  top: 0;
-  -webkit-transition: top  .1s linear;
-     -moz-transition: top     .1s linear;
-       -o-transition: top     .1s linear;
-          transition: top     .1s linear;
+    font-size: 15px;
+    border-radius: 4px;
+    border: none;
+    margin: auto;
+    height: 34px;
+    width: 120px;
+    padding: 4px 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    position: relative;
+    top: 0;
+    -webkit-transition: top .1s linear;
+    -moz-transition: top .1s linear;
+    -o-transition: top .1s linear;
+    transition: top .1s linear;
 }
 button:active {
   top: 2px;
@@ -489,6 +489,9 @@ footer .copyright {
 }
 .wrapper-box h3 a {
   color: #263339;
+  font-size: 17px;
+  line-height: 21px;
+
 }
 .wrapper-box .stick-to-bottom {
     padding-right: 15px;
@@ -507,7 +510,7 @@ footer .copyright {
   border-radius: 4px;
   background-color: #f2f2f2;
   padding: 5px 12px;
-  font-size: 13px;
+  font-size: 11px;
   color: #717171;
   margin: 2px;
 }
@@ -520,15 +523,12 @@ footer .copyright {
   color:  #202020;
   font-weight: 600;
   font-size: 13px;
-  margin-bottom: 1px;
   font-family: 'Open Sans', sans-serif;
 }
 
-
-
 .wrapper-box .details .social i.fa {
   font-size: 17px;
-  margin: 14px 0;
+  margin: 10px 0;
   color: #b5b5b5;
   margin-left: 6px;
 }
@@ -539,11 +539,11 @@ footer .copyright {
 
 }
 .wrapper-box button {
-  margin-top:10px;
+  margin-top: 4px;
 }
 
 .padding-box {
-	padding: 15px;
+	padding: 2px 12px 12px 12px;
   margin-bottom: 4px;
 }
 
@@ -654,8 +654,8 @@ footer .copyright {
 
 /* Price Styles */
 .price-box span.new-price,.price-box span.price {
-	font-size: 17px;
-	font-weight: 800;
+	font-size: 21px;
+	font-weight: 600;
 }
 .price-box span.old-price {
 	font-size: 13px;
@@ -666,10 +666,6 @@ footer .copyright {
 	font-size: 15px;
 	font-weight: 800;
 }
-
-
-
-
 
 /* Subscribe Form Box - Saved for later use... */
 .subscribe-box {
@@ -2275,7 +2271,7 @@ section.br-cr > .row , section.course-header > .row , section.course-content > .
         width: 95%;
     }
     body>section {
-        padding: 25px 10px;
+        padding: 25px 0;
     }
     body>section.course-header,body>section.video {
       padding: 0;
@@ -2706,28 +2702,40 @@ section .panel h5 {
     padding-bottom: 8px;
 }
 /* Discover Page */
+/*.discover-page .filter{
+  margin-top: 64px;
+}*/
+.discover-page button{
+  width: 100px;
+}
 .discover-page h1{
-  margin-bottom: 32px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  line-height: 36px;
+  font-family: 'Open Sans', sans-serif;
 }
 .side-nav li a:not(.button) {
   font-family: 'Open Sans', sans-serif;
-  color: #999999;
-  font-size: 15px;
+  color: #263339;
+  font-size: 14px;
+  line-height: 14px;
 }
 .side-nav li a:not(.button):hover, .side-nav li a:not(.button):focus {
   color: #737373;
 }
 .side-nav li a:not(.button) span{
-  color: #263339;
+  color: #999999;
   float: right;
 
 }
 .discover-page .sub-nav dt {
     margin-left: 0;
-        margin-top: 10px;
+    margin-top: 0;
+    text-transform: none;
 }
 .discover-page .sub-nav {
   margin-bottom: 0px;
+  padding: 0px;
 }
 .discover-page .filters {
   margin-top: 10px;
@@ -2771,7 +2779,7 @@ section .panel h5 {
   font-family: 'Comfortaa', cursive;
   font-size: 17px;
   color: #263339;
-  padding: 8px 0;
+  padding: 2px 0;
 }
 .discover-page .sub-nav dd, .discover-page .sub-nav li a {
   font-size: 0.875rem;
@@ -2805,12 +2813,14 @@ section .panel h5 {
 }
 .discover-page .filter-sort-order button {
   font-weight: 700;
-  padding: 8px;
   box-shadow: 0 1px 3px rgba(162, 162, 162, 0.2);
-  margin: 16px 0;
+  margin: 6px 0 18px;
 }
 
 button.sort {
+  padding: 4px 8px;
+  width: auto;
+  font-size: 13px;
   box-shadow: none !important;
   border: 1px solid #e8e8e8;
   font-weight: 500 !important;
@@ -2834,10 +2844,9 @@ button.sort:active, button.sort:focus {
 
 .discover-page  .special-label {
   font-family: "Open Sans", sans-serif;
-  font-size: 17px;
-  text-transform: uppercase;
+  font-size: 15px;
   color: #263339;
-  padding: 8px 8px 8px 24px;
+  padding: 8px 4px 8px 12px;
 }
 .discover-page .filter-sort-order .f-dropdown.tiny {
   max-width: 120px;
