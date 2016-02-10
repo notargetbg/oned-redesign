@@ -2252,6 +2252,16 @@ section.br-cr > .row , section.course-header > .row , section.course-content > .
     button.follow-btn {
       max-width: 300px;
     }
+    .discover-page .filters .sub-nav dt, .discover-page .filters .sub-nav dd, .discover-page .filters .sub-nav li {
+      font-size: 13px;
+      color: #263339;
+      padding: 2px 0;
+      margin: 0;
+      width: 100%;
+    }
+    .discover-page div .filter-sort-order button {
+      margin: 6px 0;
+    }
 }
 
 @media all and (max-width: 980px) {
@@ -2271,7 +2281,7 @@ section.br-cr > .row , section.course-header > .row , section.course-content > .
         width: 95%;
     }
     body>section {
-        padding: 25px 0;
+        padding: 8px 0;
     }
     body>section.course-header,body>section.video {
       padding: 0;
@@ -2316,15 +2326,7 @@ section.br-cr > .row , section.course-header > .row , section.course-content > .
   .main-heading {
       font-size:25px;
     }
-
-  button {
-    width: 100%;
-    margin:5px auto;
-  }
 }
-
-
-
 /* New Styles */
 
 .tags {
@@ -2702,9 +2704,6 @@ section .panel h5 {
     padding-bottom: 8px;
 }
 /* Discover Page */
-/*.discover-page .filter{
-  margin-top: 64px;
-}*/
 .discover-page button{
   width: 100px;
 }
@@ -2751,11 +2750,10 @@ section .panel h5 {
     top: -2px;
     line-height: 19px;
     font-size: 0.875rem;
-    text-transform: uppercase;
 }
 
 .discover-page .wrapper-box .details p {
-  height: 38px;
+  min-height: 42px;
 }
 .discover-page .sub-nav dl {
       margin-bottom: 0;
