@@ -128,7 +128,7 @@
               </div>
             </li>
              <li class="tab-title">
-                <a href="#">
+                <a href="#account-tab">
                 Account
               </a>
             </li>
@@ -482,6 +482,58 @@
                   </div>
                 </div>
 
+              </div>
+            </div>
+
+            <!-- Account Settings -->
+            <div id="account-tab" class="row content  animated fadeInUp">
+              <div class="large-24 columns wrapper-box">
+                <form data-abide>
+                  <div class="separator">
+                    <h2>Account settings</h2>
+                  </div>
+                 
+                  <div class="separator">
+                    <div class="row">
+                      <div class="large-6 columns">
+                        <p>Change your account email</p>
+                      </div>
+                      <div class="large-18 columns">
+                        <div class="">
+                          <input required id="change-email" type="text" name="change-email" value="newemail@notexisting.com" placeholder="enter an email address">
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="separator">
+                    <div class="row">
+                      <div class="large-6 columns">
+                        <p>Change your password</p>
+                      </div>
+                      <div class="large-18 columns">
+                        <div class="">
+                          <p>
+                            After you change your password you will have to log in again with the new one.
+                          </p>
+                          <input required pattern="[a-zA-Z]+" class="margin-top-5" id="change-password-old" type="password" name="change-password-old" value="" placeholder="enter your old password">
+                          <small class="error">Your password must match the requirements</small>
+                          <br>
+                        </div>
+
+                        <div>
+
+                          <input required pattern="[a-zA-Z]+" id="change-password-new" type="password" name="change-password-new" value="" placeholder="enter your new password">
+                          <small class="error">Your password must match the requirements</small>
+                          <input required pattern="[a-zA-Z]+" data-equalto="change-password-new" class="margin-top-5" id="change-password-repeat" type="password" name="change-password-repeat" value="" placeholder="repeat your new password">
+                           <small class="error">The password did not match</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </form>
               </div>
             </div>
             

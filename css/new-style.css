@@ -723,7 +723,7 @@ nav.oned-top-menu {
     padding-top: 2px;
 	    position: fixed;
     width: 100%;
-    z-index: 100;
+    z-index: 1000;
     top: 0;
 }
 ul.oned-top-menu {
@@ -2851,6 +2851,18 @@ button.sort:active, button.sort:focus {
 }
 
 /* revenue */
+.ui-datepicker .ui-datepicker-title select {
+
+  font-size: 14px !important;
+  padding: 1px 0 !important;
+  height: initial;
+}
+
+#ui-datepicker-div {
+  font-size: 15px;
+}
+
+
 .revenue-page table {
   margin: auto;
   margin-bottom: 10px;

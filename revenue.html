@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="css/foundation.css" />
     
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="css/new-style.css">
+
+
 
     
     <script src="js/vendor/modernizr.js"></script>
@@ -90,6 +93,12 @@
           <h2>Revenue</h2>
           <div class="panel">
             <!-- datepicker! -->
+            <div>
+              <label for="from">From</label>
+              <input type="text" id="from" name="from">
+              <label for="to">to</label>
+              <input type="text" id="to" name="to">
+            </div>
             <p style="color:red;">Да не забравим да интегрираме date range picker ( календар за избор на период ) !</p>
             <div>
               <h5>Total Sales</h5>
@@ -271,6 +280,8 @@
     <script src="js/foundation.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script>
       $(document).foundation();
 
@@ -371,7 +382,24 @@
             }
           );
 
-       
+       $(function() {
+        $( "#from" ).datepicker({
+          defaultDate: "+1w",
+          changeMonth: true,
+          numberOfMonths: 3,
+          onClose: function( selectedDate ) {
+            $( "#to" ).datepicker( "option", "minDate", selectedDate );
+          }
+        });
+        $( "#to" ).datepicker({
+          defaultDate: "+1w",
+          changeMonth: true,
+          numberOfMonths: 3,
+          onClose: function( selectedDate ) {
+            $( "#from" ).datepicker( "option", "maxDate", selectedDate );
+          }
+        });
+      });
       });
     </script>
   </body>
