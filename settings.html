@@ -133,7 +133,7 @@
               </a>
             </li>
             <li class="tab-title">
-               <a href="#">
+               <a href="#paypal-tab">
                 PayPal Account
               </a>
             </li>
@@ -500,8 +500,8 @@
                       </div>
                       <div class="large-18 columns">
                         <div class="">
-                          <input required id="change-email" type="text" name="change-email" value="newemail@notexisting.com" placeholder="enter an email address">
-                          
+                          <input required pattern="email" id="change-email" type="text" name="change-email" value="newemail@notexisting.com" placeholder="enter an email address">
+                          <small class="error">Your email must be valid.</small>
                         </div>
                       </div>
                     </div>
@@ -532,6 +532,109 @@
                       </div>
                     </div>
                   </div>
+
+                </form>
+              </div>
+            </div>
+
+             <!-- Paypal Account Settings -->
+            <div id="paypal-tab" class="row content  animated fadeInUp">
+              <div class="large-24 columns wrapper-box">
+                <form data-abide>
+                  <div class="separator">
+                    <h2>Paypal settings</h2>
+                  </div>
+                 
+                  <div class="separator">
+                    <div class="row">
+                      <div class="large-6 columns">
+                        <p>PayPal E-Mail</p>
+                      </div>
+                      <div class="large-18 columns">
+                        <div class="">
+                          <input pattern="email" required id="change-paypal-email" type="text" name="change-paypal-email" value="newemail@notexisting.com" placeholder="enter an email address">
+                          <small class="error">Your email must be valid.</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="separator">
+                    <div class="row">
+                      <div class="large-6 columns">
+                        <p>Address</p>
+                      </div>
+                      <div class="large-18 columns">
+                        <div class="">
+                          <input required id="change-address" type="text" name="change-address" value="San Andreas Street 1" placeholder="enter an address">
+                          <small class="error">Your address must be valid.</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="separator">
+                    <div class="row">
+                      <div class="large-6 columns">
+                        <p>City</p>
+                      </div>
+                      <div class="large-18 columns">
+                        <div class="">
+                          <input required pattern="alpha_numeric" id="change-city" type="text" name="change-city" value="San Andreas" placeholder="enter your city">
+                          <small class="error">Your city name must be valid.</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="separator">
+                    <div class="row">
+                      <div class="large-6 columns">
+                        <p>Zip Code</p>
+                      </div>
+                      <div class="large-18 columns">
+                        <div class="">
+                          <input required pattern="integer" id="change-zip" type="text" name="change-zip" value="8700" placeholder="enter zip code">
+                          <small class="error">Your zip code must be valid.</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="separator">
+                    <div class="row">
+                      <div class="large-6 columns">
+                        <p>State</p>
+                      </div>
+                      <div class="large-18 columns">
+                        <div class="">
+                          <input required pattern="alpha_numeric" id="change-state" type="text" name="change-state" value="Rockstar World State" placeholder="enter your state">
+                          <small class="error">Your state name must be valid.</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="separator">
+                    <div class="row">
+                      <div class="large-6 columns">
+                        <p>Country</p>
+                      </div>
+                      <div class="large-18 columns">
+                        <div class="">
+                          <select>
+                            <option value="Bulgaria">Bulgaria</option>
+                            <option value="Russia">Russia</option>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="Spain">Spain</option>
+                          </select>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                 
 
                 </form>
               </div>
