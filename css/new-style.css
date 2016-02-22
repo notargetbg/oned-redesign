@@ -1659,8 +1659,37 @@ section.br-cr > .row , section.course-header > .row , section.course-content > .
 .course-content p{
   font-size: 15px;
 }
-.course-header {
+.course-page .author-profile-box {
+  max-width: initial;
+  margin-top: 20px;
+  padding-top: 0;
+}
+.course-content .profile-widget p {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: none;
+}
+.course-content .profile-widget h3 {
+      font-size: 15px;
+    font-weight: 700;
+}
+.course-page .author-profile-box h2.author-name {
+  margin: 0 auto;
+}
+.course-page .author-profile-box .social-profiles a {
+      font-size: 13px;
+      font-weight: 500;
+}
+.course-profile-wrapper {
+      background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(218, 218, 218, 0.75);
+    padding: 16px 8px;
+    margin-top: 25px !important;
+}
+section.course-header {
     padding: 0 40px;
+
 }
 .course-header strong {
 	font-weight: 800;
