@@ -1106,7 +1106,7 @@ section.settings-section {
 .display-block {
   display: block !important;
 }
-.row.margin-top-10 {
+.margin-top-10 {
   margin-top: 10px;
 }
 .margin-top-58 {
@@ -1720,6 +1720,9 @@ section.course-header {
 .course-header .info {
     margin-top: 12px;
     padding: 16px 0;
+}
+.course-header .author-circle-pic {
+  max-width: 46px !important;
 }
 .course-header .info i{
    color: #b5b5b5;
@@ -2889,6 +2892,11 @@ button.sort:active, button.sort:focus {
 
 #ui-datepicker-div {
   font-size: 15px;
+}
+
+.revenue-page .date-picker input {
+  text-align: center;
+
 }
 
 

@@ -93,15 +93,19 @@
           <h2>Revenue</h2>
           <div class="panel">
             <!-- datepicker! -->
+           <div class="row text-center date-picker">
+              <div class="medium-5 medium-offset-7 columns">
+                <label for="from">From</label>
+                <input type="text" id="from" name="from">
+              </div>
+              <div class="medium-5 left columns">
+                 <label for="to">to</label>
+                 <input type="text" id="to" name="to">
+              </div>
+           </div>
+           <!--  <p style="color:red;">Да не забравим да интегрираме date range picker ( календар за избор на период ) !</p> -->
             <div>
-              <label for="from">From</label>
-              <input type="text" id="from" name="from">
-              <label for="to">to</label>
-              <input type="text" id="to" name="to">
-            </div>
-            <p style="color:red;">Да не забравим да интегрираме date range picker ( календар за избор на период ) !</p>
-            <div>
-              <h5>Total Sales</h5>
+              <h5 class="margin-top-10">Total Sales</h5>
                 <table>
                   <thead>
                     <tr>
