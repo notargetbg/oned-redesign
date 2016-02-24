@@ -130,11 +130,11 @@ button:active {
   top: 2px;
 }
 button.green-btn {
-  	color: #ffffff;
-  	background-color: #84d26d;
-    font-weight: 600;
-    box-shadow: 0 1px 2px rgba(98, 98, 98, 0.32);
-    text-transform: none;
+	color: #ffffff;
+	background-color: #84d26d;
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgba(98, 98, 98, 0.32);
+  text-transform: none;
 }
 button.blue-btn {
 	text-transform: uppercase;
@@ -146,6 +146,16 @@ button.white-btn {
 	color: #84D26D;
   text-transform: uppercase;
 	background-color: #ffffff;
+}
+button.white-btn.view-more {
+  width: 250px;
+  margin-top: 35px;
+  height: 50px;
+  color: #fff;
+  background-color: #eaebec;
+  font-family: "Comfortaa", "Open Sans", sans-serif;
+  text-transform: none;
+  font-size: 20px;
 }
 button.white-btn-blue-txt {
   color: #5ec0fd;
@@ -194,6 +204,7 @@ button.alert-btn {
   font-weight: 500;
   box-shadow: 0 1px 2px rgba(98, 98, 98, 0.32);
 }
+
 /* Typography */
 
 p {
@@ -2540,37 +2551,11 @@ section.course-header {
 }
 
 
-/* Create Course Box ( green box on top with "create-course" button ) */
-.create-course-box {
-  color: #ffffff;
-  background-color: #84d26d;
-  font-size: 27px;
-  font-family: 'Comfortaa', cursive;
-}
-.create-course-box h2 {
-  color: white;
-  font-size: 42px;
-  margin-top: 10px;
-  line-height: 42px;
-}
-
-.create-course-box p {
-  color: #ffffff;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.create-course-box img {
-  margin: 30px auto 15px;
-}
-
 /* Section Title */
 
 .section-title {
   margin-bottom: 25px;
 }
-
-
 
 
 /* Tabs For Home Page */
