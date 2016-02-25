@@ -305,73 +305,6 @@ section.main-section {
   font-weight: 400;
 }
 
-.header-section .search-form {
-  margin: 50px auto;
-}
-
-.header-section .search-form input {
-  font-weight:600;
-  font-size: 18px;
-  padding: 30px;
-  padding-left: 15px;
-   color: #717171;
-}
-
-.header-section .search-form input::before {
-  position:relative;
-
-}
-
-.header-section .search-form ::-webkit-input-placeholder { 
-    color: #717171;
-}
-.header-section .search-form ::-moz-placeholder  { 
-    color: #717171;
-
-} /* firefox 19+ */
-.header-section .search-form :-ms-input-placeholder  { 
-    color: #717171; 
-} /* ie */
-.header-section .search-form input:-moz-placeholder  { 
-    color: #717171;
-}
-
-
-.header-section .search-form ::-webkit-input-placeholder::before { 
-  font-family: fontAwesome; 
-  content:'\f002   '; 
-  color: #b5b5b5;
-  position: relative;
-  top:-1px;
-  left:2px;
-}
-.header-section .search-form ::-moz-placeholder::before  { 
-  font-family: fontAwesome; 
-  content:'\f002   '; 
-  color: #b5b5b5;
-  position: relative;  
-  top:-1px;
-  left:2px;
-} /* firefox 19+ */
-.search-form :-ms-input-placeholder::before  { 
-  font-family: fontAwesome; 
-  content:'\f002'; 
-  color: #b5b5b5;
-  position: relative; 
-  top:-1px;
-  left:2px;
-} /* ie */
-
-
-.header-section .search-form input:-moz-placeholder::before  { 
-  font-family: fontAwesome; 
-  content:'\f002   '; 
-  color: #b5b5b5;
-  position: relative; 
-  top:-1px;
-  left:2px;
-}
-
 .oned-menu-item.select-language a {
     color: #202020;
 }
@@ -698,54 +631,6 @@ footer .copyright {
 	font-size: 15px;
 	font-weight: 800;
 }
-
-/* Subscribe Form Box - Saved for later use... */
-.subscribe-box {
-	background-color: #f6f8f7;
-	padding: 30px;
-	border-radius: 7px;
-}
-.subscribe-box h2, .subscribe-box p, .subscribe-box form {
-	color: #5ec0fd;
-}
-.subscribe-form { 
-	margin-top: 25px;
-}
-
-.subscribe-form input {
-    height: 41px;
-    float: left;
-    max-width: 470px;
-}
-.subscribe-form ::-webkit-input-placeholder::before { 
-	font-family: fontAwesome; 
-	content:'\f0e0  '; 
-	color: #bcbcbe;
-  position: relative;
-  top: -2px; 
-}
-.subscribe-form ::-moz-placeholder::before  { 
-	font-family: fontAwesome; 
-	content:'\f0e0  '; 
-	color: #bcbcbe; 
-  position: relative;
-  top: -2px; 
-} /* firefox 19+ */
-.subscribe-form :-ms-input-placeholder::before  { 
-	font-family: fontAwesome; 
-	content:'\f0e0  '; 
-	color: #bcbcbe; 
-  position: relative;
-  top: -2px; 
-} /* ie */
-.subscribe-form input:-moz-placeholder::before  { 
-	font-family: fontAwesome; 
-	content:'\f0e0  '; 
-	color: #bcbcbe; 
-  position: relative;
-  top: -2px; 
-}
-
 
 
 /* Top Menu Bar */
@@ -2594,6 +2479,9 @@ section.course-header {
 .home-page .tabs {
   margin-bottom: 30px;
 }
+.home-page .main-section .search-courses input {
+  height: 50px;
+}
 
 .tabs.oned-horizontal-tabs li.tab-title a {
   font-family: 'Comfortaa', cursive;
@@ -2601,7 +2489,7 @@ section.course-header {
   font-size: 18px;
   border-radius: 3px;
   text-align: center;
-  padding: 20px 0;
+  padding: 11px 0;
 }
   .tabs.oned-horizontal-tabs li.tab-title {
     max-width: 212px;
@@ -2612,34 +2500,21 @@ section.course-header {
   }
 
 /* Media for horizontal tabs */
-@media all and (max-width: 640px ) {
-  .tabs.oned-horizontal-tabs li.tab-title i.fontello-icon {
-    display: block;
-    margin: auto;
-  }
-}
+
 @media all and (max-width: 420px ) {
-  .tabs.oned-horizontal-tabs li.tab-title {
-    width: 100%;
-    max-width: initial;
-  }
-  .tabs.oned-horizontal-tabs li.tab-title a {
-    padding: 10px 0;
-  }
-  .tabs.oned-horizontal-tabs li.tab-title:not(:first-child) {
-    margin-left: 0 !important;
-    margin-top: 5px;
-  }
+    .tabs.oned-horizontal-tabs li.tab-title {
+      width: 100%;
+      max-width: initial;
+    }
+    .tabs.oned-horizontal-tabs li.tab-title a {
+      padding: 10px 0;
+    }
+    .tabs.oned-horizontal-tabs li.tab-title:not(:first-child) {
+      margin-left: 0 !important;
+      margin-top: 5px;
+    }
 }
 
-.tabs.oned-horizontal-tabs li.tab-title i.fontello-icon {
-  color: #717171;
-}
-
-
-.tabs.oned-horizontal-tabs li.tab-title.active i.fontello-icon {
-  color: white;
-}
 .tabs.oned-horizontal-tabs li.tab-title.active a {
   background-color: #202020;
   color: white;
@@ -2648,7 +2523,11 @@ section.course-header {
 h2.section-slider-controls i.fa {
     font-size: 30px;
     margin-left: 30px;
-    cursor: pointer;
+    cursor: pointer; 
+}
+
+.tabs-content h2.section-slider-controls {
+  margin-bottom: 10px;
 }
 
 /* Media for Settings Page */
