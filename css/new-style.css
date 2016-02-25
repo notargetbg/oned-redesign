@@ -94,7 +94,9 @@ FaceBook Color -    #3a5a98
 .black {
   color: #000000;
 }
-
+.orange {
+  color: #ef8717;
+}
 
 
 
@@ -287,6 +289,21 @@ section.main-section {
   margin-top:150px;
   margin-bottom :50px;
 }
+.main-heading h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.header-section .big-btn {
+  margin-bottom: 30px;
+}
+
+.header-section .tags span {
+  color: #fafafa;
+  background: none;
+  font-weight: 400;
+}
 
 .header-section .search-form {
   margin: 50px auto;
@@ -354,7 +371,6 @@ section.main-section {
   top:-1px;
   left:2px;
 }
-
 
 .oned-menu-item.select-language a {
     color: #202020;
@@ -554,7 +570,7 @@ footer .copyright {
 }
 
 .padding-box {
-	padding: 2px 12px 12px 12px;
+	padding: 6px 12px 12px 12px;
   margin-bottom: 4px;
 }
 
@@ -587,26 +603,28 @@ footer .copyright {
   content: "Sale";
   display: block;
   position: absolute;
+      right: 10px;
   font-size: 15px;
   padding: 5px 11px;
-  background-color: #c1272c;
-  color: white;
+     background-color: #FFFFFF;
+    color: #c1272c;
   font-weight: 600;
   text-transform: uppercase;
   z-index: 10;
-  border-radius: 1px;
 }
 
 
 /* Featured Course Styles ( Big sized Box ) */
 
-.wrapper-box.course,
-.wrapper-box.webinar  {
+.wrapper-box.pre-made-course,
+.wrapper-box.webinar,
+.wrapper-box.live-course  {
   border-radius: 1px;
 }
 
-.course .stick-to-bottom-container,
-.webinar .stick-to-bottom-container {
+.pre-made-course .stick-to-bottom-container,
+.webinar .stick-to-bottom-container,
+.live-course .stick-to-bottom-container {
   border-top-left-radius: 1px;
   border-top-right-radius: 1px;
 }
@@ -628,17 +646,20 @@ footer .copyright {
 }
 
 .featured h5 a , .wrapper-box h5 a {
-  font-size: 13px;
+  font-size: 17px;
+  font-weight: 700;
 }
 
 .featured .author-box p, .featured .author-box p a {
- font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: white;
+  font-size: 17px;
+  font-weight: 400;
 }
 
 .featured.wrapper-box .tags span  {
   border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(193, 193, 193, 0.3);
   padding: 5px 12px;
   font-size: 13px;
   color: rgb(244, 244, 244);
@@ -2340,15 +2361,19 @@ section.course-header {
   
 }*/
 
-@media all and and (min-width: 1025px) {  
+@media all and (min-width: 1025px) {  
     .course-header .course-desc {
     border-right: 1px solid #e5e5e5;
     }
+
 }
 
 
 /* Responsive @Media Screen Styles */
 @media all and (max-width: 1027px) {
+  body>section {
+      padding: 20px;
+    }
     .settings-section .wrapper-box .separator p {
         position: initial;
         margin-bottom: 5px;
@@ -2498,7 +2523,7 @@ section.course-header {
 .course-image-background > div {
   min-height: 470px;
   padding: 15px;
-  background-color: rgba(2, 2, 2, 0.21)
+  background-color: rgba(2, 2, 2, 0.3)
 }
 
 .stick-to-bottom-container {
@@ -2515,14 +2540,17 @@ section.course-header {
   font-family: 'Open Sans', sans-serif;
 }
 
-
+.live-course button {
+  background-color: #ef8717;
+}
 
 .webinar button {
   background-color: #84cf6e;
 }
 
 .webinar .details p span,
-.course .details p span {
+.pre-made-course .details p span,
+.live-course .details p span {
   color: #b5b5b5;
 }
 
@@ -2545,9 +2573,13 @@ section.course-header {
   
 }
 
-.normal.course button.enroll-btn {
+.normal.pre-made-course button.enroll-btn {
   color: #5ec0fd;
   
+}
+
+.normal.live-course button.enroll-btn {
+  color: #ef8717;
 }
 
 
