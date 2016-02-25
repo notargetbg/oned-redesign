@@ -650,19 +650,13 @@
 .icon-comment:before {
 	content: "\e696";
 }
-
-
-/* General styles and layout */
-
 .wrapper {
 	overflow: hidden;
-	/* we don't want the pseudo-elements sticking out */
 }
 
 .wrapper svg {
 	display: block;
 }
-
 .wrapper section {
 	position: relative;
 	padding: 7em 10%;
