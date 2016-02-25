@@ -9,7 +9,7 @@
       font-weight: normal;
       font-style: normal;
     }
-.fontello-icon
+.f-icon
     {
       font-family: "icons";
       font-style: normal;
@@ -3151,6 +3151,7 @@ text-align: center;
   display: none;
 }
 /*  Static Pages  */
+/*  About  */
 .about-page p{
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
@@ -3408,4 +3409,16 @@ section.related a{
 section.related a:hover{
     color: #b6b6b6;
     font-size: 0.8em;
+}
+.icon {
+  display: block;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.1);
+    color: #fff;
+    text-align: center;
+    font-size: 6em;
+    line-height: 1.9em;
+    margin: 42px auto;
 }
