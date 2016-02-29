@@ -135,7 +135,6 @@ button.green-btn {
 	color: #ffffff;
 	background-color: #84d26d;
   font-weight: 600;
-  box-shadow: 0 1px 2px rgba(98, 98, 98, 0.32);
   text-transform: none;
 }
 button.blue-btn {
@@ -195,7 +194,6 @@ button.warning-btn {
   background-color: #e67e22;
   color: white;
   font-weight: 500;
-  box-shadow: 0 1px 2px rgba(98, 98, 98, 0.32);
 }
 button.alert-btn {
   width: auto;
@@ -204,7 +202,6 @@ button.alert-btn {
   background-color: #e74c3c;
   color: white;
   font-weight: 500;
-  box-shadow: 0 1px 2px rgba(98, 98, 98, 0.32);
 }
 
 /* Typography */
@@ -660,7 +657,7 @@ nav.oned-top-menu {
     -o-transition: all 1s;
     transition: all 1s;
 }
-.home-page nav.oned-top-menu {
+.transparent-nav nav.oned-top-menu {
   background: none;
 }
 .home-page nav.oned-top-menu.bg-nav {
@@ -1347,6 +1344,11 @@ select option {
   font-size : 1em;
   opacity   : 0;
   cursor: pointer;
+}
+
+.reveal-modal .close-reveal-modal {
+      top: -2px;
+    right: 8px;
 }
 
 input[type=checkbox]:not(old) + label,
@@ -2973,34 +2975,34 @@ span.label {
     height: 28px;
     width: initial;
 }
-.separator .lessons i.fa {
+.create-course-page i.fa {
   position: relative;
   top: 0;
   
   -webkit-transition: all .2s; /* Safari */
   transition: all .2s;
 }
-.separator .lessons i.fa.fa-pencil {
+.create-course-page i.fa.fa-pencil {
     color: #f39c12;
     font-size: 20px;
     margin-right: 5px;
 }
 
-.separator .lessons i.fa.fa-trash {
+.create-course-page i.fa.fa-trash {
     color: #cc696a;
     font-size: 20px;
 }
-.separator .lessons a.edit i.fa:hover {
-  color: #FF9C00;;
+.create-course-page a.edit i.fa:hover {
+  color: #FF9C00;
 }
-.separator .lessons a.edit i.fa:active {
+.create-course-page a.edit i.fa:active {
  
   top: 2px;
 }
-.separator .lessons a.delete i.fa:hover {
+.create-course-page a.delete i.fa:hover {
   color: #D04546;
 }
-.separator .lessons a.delete i.fa:active {
+.create-course-page a.delete i.fa:active {
   top: 2px;
 }
 
@@ -3040,7 +3042,7 @@ text-align: center;
   position: static;
   top: 0;
   line-height: 19px;
-  margin: 5px auto;
+  margin: 5px auto 10px;
 }
 
 .create-course-page .voucher-inputs input {
@@ -3323,4 +3325,18 @@ section.related a:hover{
     font-size: 6em;
     line-height: 1.9em;
     margin: 42px auto;
+}
+
+
+/* Labels */
+.panel.course-preview .label.info {
+    background-color: #5EC0FD;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+/* For Create Course */
+.reveal-modal .info-text {
+  font-size: 18px;
+  margin-bottom: 15px;
 }

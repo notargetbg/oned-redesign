@@ -97,49 +97,55 @@
         <div class="large-22 large-centered columns ">
           
           <ul id="settings-menu" class="settings tabs wrapper-box border-radius-top-3px" data-tab>
-            <li class="tab-title">
+            <li class="tab-title accordion-tab">
               <div class="tab-title setting-type border-radius-top-3px">
                 <h3>Profile Settings</h3>
               </div>
             </li>
-            <li class="tab-title active">
-              <a href="#general-info-tab">
-               General info
-              </a>
-            </li>
-            <li class="tab-title">
-              <a href="#personal-info-tab">
-               Personal info
-              </a>
-            </li>
-            <li class="tab-title">
-              <a href="#interests-tab">
-                Interests
-              </a>
-            </li>
-            <li class="tab-title">
-              <a href="#newsletter-tab">
-                Newsletter
-              </a>
-            </li>
-            <li class="tab-title">
+           <div class="accordion-content" data-tab>
+              <li class="tab-title active">
+                <a href="#general-info-tab">
+                 General info
+                </a>
+              </li>
+              <li class="tab-title">
+                <a href="#personal-info-tab">
+                 Personal info
+                </a>
+              </li>
+              <li class="tab-title">
+                <a href="#interests-tab">
+                  Interests
+                </a>
+              </li>
+              <li class="tab-title">
+                <a href="#newsletter-tab">
+                  Newsletter
+                </a>
+              </li>
+           </div>
+            <li class="tab-title accordion-tab">
              <div class="setting-type">
-                <h3>Settings</h3>
+                <h3>Payment Settings</h3>
               </div>
             </li>
-             <li class="tab-title">
-                <a href="#account-tab">
-                Account
-              </a>
-            </li>
-            <li class="tab-title">
-               <a href="#paypal-tab">
-                PayPal Account
-              </a>
-            </li>
+           <div class="accordion-content" data-tab>
+               <li class="tab-title">
+                  <a href="#account-tab">
+                  Account
+                </a>
+              </li>
+              <li class="tab-title">
+                 <a href="#paypal-tab">
+                  PayPal Account
+                </a>
+              </li>
+           </div>
            
            
           </ul>
+
+           
 
           <div class="tabs-content">
          
@@ -515,16 +521,17 @@
                       <div class="large-18 columns">
                         <div class="">
                           <p>
-                            After you change your password you will have to log in again with the new one.
+                            <em>After you change your password you will have to log in again with the new one.</em>
                           </p>
                           <input required pattern="[a-zA-Z]+" class="margin-top-5" id="change-password-old" type="password" name="change-password-old" value="" placeholder="enter your old password">
                           <small class="error">Your password must match the requirements</small>
-                          <br>
                         </div>
 
                         <div>
-
-                          <input required pattern="[a-zA-Z]+" id="change-password-new" type="password" name="change-password-new" value="" placeholder="enter your new password">
+                          <p class="margin-top-5">
+                           <em>Enter your new password</em>
+                          </p>
+                          <input required pattern="[a-zA-Z]+" class="margin-top-5" id="change-password-new" type="password" name="change-password-new" value="" placeholder="enter your new password">
                           <small class="error">Your password must match the requirements</small>
                           <input required pattern="[a-zA-Z]+" data-equalto="change-password-new" class="margin-top-5" id="change-password-repeat" type="password" name="change-password-repeat" value="" placeholder="repeat your new password">
                            <small class="error">The password did not match</small>
@@ -715,6 +722,13 @@
               $(this).removeClass('rotate-close-search');
             }
           );
+
+          $('#settings-menu').find('.accordion-tab').click( function() {
+          
+          $(this).next().slideToggle();
+          $(".accordion-content").not($(this).next()).slideUp();
+
+        });
 
        
       });
