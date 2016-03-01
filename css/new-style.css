@@ -111,7 +111,7 @@ FaceBook Color -    #3a5a98
   height: 50px;
 }
 
-button {
+button, .button {
     font-size: 15px;
     border-radius: 4px;
     border: none;
@@ -127,81 +127,86 @@ button {
     -moz-transition: top .1s linear;
     -o-transition: top .1s linear;
     transition: top .1s linear;
+    text-transform: uppercase;
+    line-height: 25px;
 }
-button:active {
-  top: 2px;
+button:active,.button:active {
+    top: 2px;
 }
-button.green-btn {
-	color: #ffffff;
-	background-color: #84d26d;
-  font-weight: 600;
-  text-transform: none;
+button.green-btn,.button.green-btn {
+    color: #ffffff;
+    background-color: #84d26d;
+    font-weight: 600;
+    box-shadow: 0 1px 2px rgba(98, 98, 98, 0.32);
+    text-transform: none;
 }
-button.blue-btn {
-	text-transform: uppercase;
-	color: #ffffff;
-	background-color: #5ec0fd;
+button.blue-btn, .button.blue-btn {
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #5ec0fd;
 }
-button.white-btn {
-	font-weight: 700;
-	color: #84D26D;
-  text-transform: uppercase;
-	background-color: #ffffff;
+button.white-btn, .button.white-btn {
+    font-weight: 700;
+    color: #84D26D;
+    text-transform: uppercase;
+    background-color: #ffffff;
 }
-button.white-btn.view-more {
-  width: 250px;
-  margin-top: 35px;
-  height: 50px;
-  color: #fff;
-  background-color: #eaebec;
-  font-family: "Comfortaa", "Open Sans", sans-serif;
-  text-transform: none;
-  font-size: 20px;
+button.white-btn.view-more , .button.white-btn.view-more {
+    width: 250px;
+    margin-top: 35px;
+    height: 50px;
+    color: #fff;
+    background-color: #eaebec;
+    font-family: "Comfortaa", "Open Sans", sans-serif;
+    text-transform: none;
+    font-size: 20px;
 }
-button.white-btn-blue-txt {
-  color: #5ec0fd;
-  font-weight: 700;
-  text-transform: uppercase;
-  background-color: #ffffff;
+button.white-btn-blue-txt , .button.white-btn-blue-txt {
+    color: #5ec0fd;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #ffffff;
 }
-button.square-btn {
-	width: 40px;
-	height: 40px;
-	margin: 5px;
+button.square-btn ,.button.square-btn {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
 }
-button.profile-btn {
-	margin: 5px;
-	width: 100%;	
+button.profile-btn , .button.profile-btn {
+    margin: 5px;
+    width: 100%;
 }
 button.profile-btn .author-box p {
-	text-align: left;
-	font-size: 13px;
+    text-align: left;
+    font-size: 13px;
 }
 button.profile-btn .author-box p i {
-	margin-left: 50px;
-	font-size: 12px;
+    margin-left: 50px;
+    font-size: 12px;
 }
 button.profile-btn .author-box img.author-circle-pic {
-	width:25px;
-	height:25px;
-	margin: 0;
-	margin-right: 5px;
+    width:25px;
+    height:25px;
+    margin: 0;
+    margin-right: 5px;
 }
-button.warning-btn {
-  width: auto;
-  max-width: 250px;
-  margin: auto;
-  background-color: #e67e22;
-  color: white;
-  font-weight: 500;
+button.warning-btn , .button.warning-btn {
+    width: auto;
+    max-width: 250px;
+    margin: auto;
+    background-color: #e67e22;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0 1px 2px rgba(98, 98, 98, 0.32);
 }
-button.alert-btn {
-  width: auto;
-  max-width: 250px;
-  margin: auto;
-  background-color: #e74c3c;
-  color: white;
-  font-weight: 500;
+button.alert-btn , .button.alert-btn  {
+    width: auto;
+    max-width: 250px;
+    margin: auto;
+    background-color: #e74c3c;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0 1px 2px rgba(98, 98, 98, 0.32);
 }
 
 /* Typography */
@@ -2450,12 +2455,12 @@ section.course-header {
   font-family: 'Open Sans', sans-serif;
 }
 
-.live-course button {
-  background-color: #ef8717;
+.live-course button, .live-course .button {
+    background-color: #ef8717;
 }
 
-.webinar button {
-  background-color: #84cf6e;
+.webinar button, .webinar .button {
+    background-color: #84cf6e;
 }
 
 .webinar .details p span,
@@ -2465,7 +2470,7 @@ section.course-header {
 }
 
 /* Special Styles For Buttons */
-.normal button.enroll-btn {
+.normal button.enroll-btn, .normal .button.enroll-btn {
   
   border: 1px solid #e8e8e8;
   
@@ -2478,18 +2483,16 @@ section.course-header {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#e8e8e8', GradientType=0 );
 }
 
-.normal.webinar button.enroll-btn {
-  color: #84cf6e;
-  
+.normal.webinar button.enroll-btn, .normal.webinar .button.enroll-btn {
+    color: #84cf6e;
 }
 
-.normal.pre-made-course button.enroll-btn {
-  color: #5ec0fd;
-  
+.normal.pre-made-course button.enroll-btn, .normal.pre-made-course .button.enroll-btn {
+    color: #5ec0fd;
 }
 
-.normal.live-course button.enroll-btn {
-  color: #ef8717;
+.normal.live-course button.enroll-btn, .normal.live-course .button.enroll-btn {
+    color: #ef8717;
 }
 
 
