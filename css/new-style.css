@@ -1294,8 +1294,18 @@ section.settings-section {
     border: 1px solid #5a9c46;
 }
 
+span.crop .fa-crop {
+    position: absolute;
+    left: 14px;
+    top: 5px;
+    background: white;
+    padding: 6px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px #dadada;
+}
 
-.settings-section .wrapper-box .separator button.white-btn {
+.settings-section .wrapper-box .separator button.white-btn,
+.settings-section .wrapper-box .separator .button.white-btn {
    
     width: 90%;
     max-width: 220px;
@@ -2438,7 +2448,7 @@ section.course-header {
 .course-image-background > div {
   min-height: 470px;
   padding: 15px;
-  background-color: rgba(2, 2, 2, 0.3)
+  background-color: rgba(2, 2, 2, 0.5)
 }
 
 .stick-to-bottom-container {
