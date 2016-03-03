@@ -19,7 +19,7 @@
     <!-- AWESOME CSS ANIMATIONS MADE SUPER EZ -->
     <link rel="stylesheet" href="css/animate.css">
   </head>
-  <body class="home-page transparent-nav">
+  <body class="transparent-nav">
     <header class="">
       <nav class="oned-top-menu container-width">
         <div class="row">
@@ -84,7 +84,7 @@
         </div>
       </nav>
     </header>
-
+  <div class="main-wrapper home-page">
     <section class="text-center container-width header-section">
       <div class="row">
         <div class="large-24 columns">
@@ -2020,6 +2020,7 @@
 
       
     </section>
+  </div>
   
 
     <section class="footer-section">
@@ -2232,6 +2233,8 @@
                 }, 1000);
             }
         });
+
+        $("body").addClass("home-page");
 
         $(window).scroll(function() {    
             var scroll = $(window).scrollTop();
