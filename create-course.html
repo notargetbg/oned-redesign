@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/foundation.css" />
     <script src="js/vendor/modernizr.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="css/new-style.css">
      <!-- AWESOME CSS ANIMATIONS MADE SUPER EZ -->
     <link rel="stylesheet" href="css/animate.css">
@@ -111,7 +112,12 @@
                 </div>
                 <div class="info">
                   <p>
-                    <em>4</em> Sections | <em>32</em> Lessons | <em>4</em> Hours of Video | in <em>English</em>
+                   <em>4</em> Sections | 
+                   <em>32</em> Lessons | 
+                   <em>4</em> Hours of Video| 
+                    <span class="label info radius">
+                      in <em>English</em>
+                    </span>
                   </p>
                 </div>
                 <div>
@@ -322,6 +328,16 @@
                         Стандартен DatePicker - По подразбиране днешна дата, не бива да се дава възможност на потребителя да изтрие датата, 
                         както е в момента.
                       </p>
+                      <div class="row text-center date-picker">
+                        <div class="medium-12 columns">
+                          <label for="from">From</label>
+                          <input type="text" id="from" name="from">
+                        </div>
+                        <div class="medium-12 columns">
+                           <label for="to">to</label>
+                           <input type="text" id="to" name="to">
+                        </div>
+                     </div>
                     </div>
                   </div>
                 </div>
@@ -332,7 +348,14 @@
                       <strong>(само за уебинари)</strong>
                     </div>
                     <div class="large-17 left columns">
-                      По подразбиране днешна дата, не бива да се дава възможност на потребителя да изтрие датата, както е в момента.
+                      <p>
+                        По подразбиране днешна дата, не бива да се дава възможност на потребителя да изтрие датата, както е в момента.
+                      </p>
+                      <div class="row">
+                        <div class="small-24 columns">
+                          <p><input type="text" id="webinar-date"></p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="row">
@@ -342,6 +365,8 @@
                     </div>
                     <div class="large-17 left columns">
                       По подразбиране 18:00-20:00, не бива да се дава възможност на потребителя да изтрие информацията.
+
+                      
                     </div>
                   </div>
                 </div>
@@ -353,6 +378,13 @@
                     </div>
                     <div class="large-17 left columns">
                       По подразбиране +2
+
+                      <select>
+                        <option value="62137">(UTC + 02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius</option>
+                        <option value="32132123">(UTC + 02:00) Istanbul</option>
+                        <option value="husker">(UTC + 02:00) Jerusalem</option>
+                        <option value="husker">(UTC + 03:00) Kaliningrad, Minsk</option>
+                      </select>
                     </div>
                   </div>
                 </div>
@@ -363,7 +395,15 @@
                       <strong>(само live courses)</strong>
                     </div>
                     <div class="large-17 left columns">
-                      <p>min/max</p>
+                      <div class="row">
+                        <div class="small-12 columns">
+                          <input type="text" placeholder="Min. participants">
+                        </div>
+                        <div class="small-12 columns">
+                          <input type="text" placeholder="Max. participants">
+                        </div>
+                      </div>
+
                     </div>
                   </div>
                 </div>
@@ -517,7 +557,34 @@
                           <div class="large-24 columns"><h2>4 Sections, 32 Lessons</h2></div>
                         </div>
                         <div class="row lessons-title">
-                          <div class="large-24 columns"><span class="label round">Section 1</span><strong>Introduction</strong></div>
+                          <div class="large-24 columns"><span class="label round">Section 1</span><strong>Introduction</strong> 
+                            <a data-reveal-id="delete-section-modal" href="#" class="delete"><i class="fa fa-trash"></i></a> 
+                          </div>
+                        </div>
+
+                        <div id="delete-section-modal" class="reveal-modal tiny" data-reveal aria-labelledby="secondModalTitle" aria-hidden="true" role="dialog">             
+                          <div class="row">
+                            <div class="large-24 columns text-center">
+                              <h3 class="info-text">Are you sure you want to remove this <strong>Section</strong>?</h3>
+                              <a href=""><button class="alert-btn"><i class="fa fa-eraser"></i> Remove Section</button></a>
+                              <button class="green-btn go-back"><i class="fa fa-caret-square-o-left"></i> Go back!</button>
+                            </div>
+                          </div>
+                        
+                          <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                        </div>
+
+
+                        <div id="delete-lesson-modal" class="reveal-modal tiny" data-reveal aria-labelledby="secondModalTitle" aria-hidden="true" role="dialog">             
+                          <div class="row">
+                            <div class="large-24 columns text-center">
+                              <h3 class="info-text">Are you sure you want to delete this <strong>Lesson</strong>?</h3>
+                              <a href=""><button class="alert-btn"><i class="fa fa-eraser"></i> Delete Lesson</button></a>
+                              <button class="green-btn go-back"><i class="fa fa-caret-square-o-left"></i> Go back!</button>
+                            </div>
+                          </div>
+                        
+                          <a class="close-reveal-modal" aria-label="Close">&#215;</a>
                         </div>
 
                         <div id="sortable-section-1">
@@ -528,7 +595,7 @@
                               
                               <div class="medium-9 small-24 text-right columns">
                                 
-                                <i class="fa fa-youtube-play"></i> <span>32:40</span> <a href="" class="edit"><i class="fa fa-pencil"></i></a> <a href="" class="delete"><i class="fa fa-trash"></i></a>
+                                <i class="fa fa-youtube-play"></i> <span>32:40</span> <a href="" class="edit"><i class="fa fa-pencil"></i></a> <a data-reveal-id="delete-lesson-modal" href="" class="delete"><i class="fa fa-trash"></i></a>
                               </div>
                           </div>
                           <div class="row lessons">
@@ -537,7 +604,7 @@
                               
                               <div class="medium-9 small-24 text-right columns">
                                 <span class="free-tag">Free</span>
-                                <i class="fa fa-youtube-play"></i> <span>180:00</span> <a href="" class="edit"><i class="fa fa-pencil"></i></a> <a href="" class="delete"><i class="fa fa-trash"></i></a> 
+                                <i class="fa fa-youtube-play"></i> <span>180:00</span> <a href="" class="edit"><i class="fa fa-pencil"></i></a> <a data-reveal-id="delete-lesson-modal" href="" class="delete"><i class="fa fa-trash"></i></a> 
                               </div>
                           </div>
 
@@ -546,11 +613,14 @@
                         </div>
                         <div class="row">
                           <div class="large-24 columns text-center">
-                            <button data-reveal-id="add-lesson-modal" class="small-btn green-btn">Add Lesson</button>
+                            <button data-reveal-id="add-lesson-modal" class="small-btn green-btn"><i class="fa fa-plus-square-o"></i> Add Lesson</button>
                           </div>
                         </div>
                         <div class="row lessons-title">
-                            <div class="large-18 columns"><span class="label round">Section 2</span><strong>Getting To Zero Today</strong></div>
+                            <div class="large-18 columns">
+                              <span class="label round">Section 2</span><strong>Getting To Zero Today</strong>
+                              <a data-reveal-id="delete-section-modal" href="#" class="delete"><i class="fa fa-trash"></i></a> 
+                            </div>
                         </div>
 
                       <div id="sortable-section-2">
@@ -559,7 +629,7 @@
                             <div class="medium-14 small-21 columns">WordPress Assignment Checklist (to build your website while you take the course)</div>
                             
                             <div class="medium-9 small-24 text-right columns">
-                              <i class="fa fa-youtube-play"></i> <span>120:00</span> <a href="" class="edit"><i class="fa fa-pencil"></i></a> <a href=" " class="delete"><i class="fa fa-trash"></i></a>
+                              <i class="fa fa-youtube-play"></i> <span>120:00</span> <a href="" class="edit"><i class="fa fa-pencil"></i></a> <a data-reveal-id="delete-lesson-modal" href=" " class="delete"><i class="fa fa-trash"></i></a>
                             </div>
                         </div>
                         <div class="row lessons">
@@ -567,7 +637,7 @@
                             <div class="medium-14 small-21 columns">So Why WordPress</div>
                             
                             <div class="medium-9 small-24 text-right columns">
-                              <i class="fa fa-youtube-play"></i> <span>90:00</span> <a href="" class="edit"><i class="fa fa-pencil"></i></a> <a href="" class="delete"><i class="fa fa-trash"></i></a>
+                              <i class="fa fa-youtube-play"></i> <span>90:00</span> <a href="" class="edit"><i class="fa fa-pencil"></i></a> <a data-reveal-id="delete-lesson-modal" href="" class="delete"><i class="fa fa-trash"></i></a>
                             </div>
                         </div>
                         <div class="row lessons">
@@ -575,7 +645,7 @@
                             <div class="medium-14 small-21 columns">WordPress Lingo</div>
                             
                             <div class="medium-9 small-24 text-right columns">
-                              <i class="fa fa-youtube-play"></i> <span>60:00</span> <a href="" class="edit"><i class="fa fa-pencil"></i></a> <a href="" class="delete"><i class="fa fa-trash"></i></a> 
+                              <i class="fa fa-youtube-play"></i> <span>60:00</span> <a href="" class="edit"><i class="fa fa-pencil"></i></a> <a data-reveal-id="delete-lesson-modal" href="" class="delete"><i class="fa fa-trash"></i></a> 
                             </div>
                             
                         </div>
@@ -584,7 +654,7 @@
                             <div class="medium-14 small-21 columns">WordPress Hosting &amp; Domain Names</div>
                             
                             <div class="medium-9 small-24 text-right columns">
-                              <i class="fa fa-youtube-play"></i> <span>80:40</span> <a href="" class="edit"><i class="fa fa-pencil"></i></a> <a href="" class="delete"><i class="fa fa-trash"></i></a>
+                              <i class="fa fa-youtube-play"></i> <span>80:40</span> <a href="" class="edit"><i class="fa fa-pencil"></i></a> <a data-reveal-id="delete-lesson-modal" href="" class="delete"><i class="fa fa-trash"></i></a>
                             </div>
                         </div>
                         <div class="row lessons">
@@ -592,7 +662,7 @@
                             <div class="medium-14 small-21 columns">Installing WordPress in Seconds</div>
                             
                             <div class="medium-9 small-24 text-right columns">
-                              <i class="fa fa-youtube-play"></i> <span>136:00</span> <a href="" class="edit"><i class="fa fa-pencil"></i></a> <a href=" " class="delete"><i class="fa fa-trash"></i></a>
+                              <i class="fa fa-youtube-play"></i> <span>136:00</span> <a href="" class="edit"><i class="fa fa-pencil"></i></a> <a data-reveal-id="delete-lesson-modal" href=" " class="delete"><i class="fa fa-trash"></i></a>
                             </div>
                         </div>
                         <div class="row lessons">
@@ -601,7 +671,7 @@
                             
                             <div class="medium-9 small-24 text-right columns">
                               <span class="new-tag">New</span>
-                              <i class="fa fa-youtube-play"></i> <span>42:00</span> <a href="" class="edit"><i class="fa fa-pencil"></i></a> <a href="" class="delete"><i class="fa fa-trash"></i></a>
+                              <i class="fa fa-youtube-play"></i> <span>42:00</span> <a href="" class="edit"><i class="fa fa-pencil"></i></a> <a data-reveal-id="delete-lesson-modal" href="" class="delete"><i class="fa fa-trash"></i></a>
                             </div>
                         </div>
                         <div class="row lessons">
@@ -611,7 +681,7 @@
                             <div class="medium-9 small-24 text-right columns">
                                <span class="free-tag">Free</span>
                               <span class="new-tag">New</span>
-                              <i class="fa fa-youtube-play"></i> <span>24:00</span> <a href="" class="edit"><i class="fa fa-pencil"></i></a> <a href="" class="delete"><i class="fa fa-trash"></i></a> 
+                              <i class="fa fa-youtube-play"></i> <span>24:00</span> <a href="" class="edit"><i class="fa fa-pencil"></i></a> <a data-reveal-id="delete-lesson-modal" href="" class="delete"><i class="fa fa-trash"></i></a> 
                             </div>
                         </div>
                         <div class="row lessons">
@@ -620,7 +690,7 @@
                             
                             <div class="medium-9 small-24 text-right columns">
                               <span class="new-tag">New</span>
-                              <i class="fa fa-youtube-play"></i> <span>52:00</span> <a href="" class="edit"><i class="fa fa-pencil"></i></a> <a href="" class="delete"><i class="fa fa-trash"></i></a> 
+                              <i class="fa fa-youtube-play"></i> <span>52:00</span> <a href="" class="edit"><i class="fa fa-pencil"></i></a> <a data-reveal-id="delete-lesson-modal" href="" class="delete"><i class="fa fa-trash"></i></a> 
                             </div>
                         </div>
                        
@@ -629,31 +699,46 @@
                       
                        <div class="row">
                           <div class="large-24 columns text-center">
-                            <button data-reveal-id="add-lesson-modal" class="small-btn green-btn">Add Lesson</button>
+                            <button data-reveal-id="add-lesson-modal" class="small-btn green-btn"><i class="fa fa-plus-square-o"></i> Add Lesson</button>
                           </div>
                         </div>
 
                       <div class="text-center">
-                        <button data-reveal-id="add-section-modal" class="green-btn">Add Section</button>
+                        <button data-reveal-id="add-section-modal" class="green-btn"><i class="fa fa-plus-square-o"></i> Add Section</button>
                       </div>
 
                       <div id="add-section-modal" class="reveal-modal medium" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
                       
-                        <div class="row">
-                          <div class="large-6 columns">
+                        <div class="row margin-top-10">
+                          <div class="large-4 columns">
                             <h3>Section Name</h3>
                           </div>
-                          <div class="large-18 left columns">
+                          <div class="large-20 left columns">
                             <input type="text" placeholder="Section name" spellcheck="false">
                           </div>
                         </div>
+
+                        <div class="row margin-top-10">
+                          <div class="large-4 columns">
+                            <h3>Section Description</h3>
+                          </div>
+                          <div class="large-20 left columns">
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                          </div>
+                        </div>
                         
-                        <a href="#" data-reveal-id="add-lesson-modal" class="secondary button">Second Modal...</a>
+                        <div class="row">
+                          <div class="small-24 columns text-center margin-top-10">
+                            <button data-reveal-id="add-lesson-modal" class="green-btn"><i class="fa fa-plus-square-o"></i> Add Lesson</button>
+                          </div>
+                        </div>
+                        <hr>
+                          <div class="text-center">
+                            <button type="submit" class="blue-btn"> Save</button>
+                          </div>
 
 
-                        <div id="add-lesson-modal" class="reveal-modal" data-reveal aria-labelledby="secondModalTitle" aria-hidden="true" role="dialog">
-                          <h2 id="secondModalTitle">This the add lesson modal.</h2>
-                          
+                        <div id="add-lesson-modal" class="reveal-modal" data-reveal aria-labelledby="secondModalTitle" aria-hidden="true" role="dialog">             
                           <div class="row">
                             <div class="large-4 columns">
                               <h3>Lesson Name</h3>
@@ -706,7 +791,7 @@
                                 Add video
                               </button>
                            
-                              <button class="green-btn">
+                              <button data-reveal-id="embed-link" class="green-btn">
                                 <i class="fa fa-youtube"></i>
                                 Embed video
                               </button>
@@ -721,7 +806,20 @@
                                Add audio
                               </button>
 
+                               <div id="embed-link" class="reveal-modal tiny" data-reveal aria-labelledby="secondModalTitle" aria-hidden="true" role="dialog">             
+                                <div class="row">
+                                  <div class="large-24 columns text-center">
+                                    <h3 class="info-text">Embed YouTube Video</h3>
+                                    <input type="text" placeholder="https://www.youtube.com/watch?v=sSFgyIBk7l0">
+
+                                    <div class="margin-top-10">
+                                      <button data-reveal-id="add-lesson-modal" style="border: 1px solid #84D26D;" type="submit" class="white-btn"> Go back</button> <button type="submit" class="green-btn margin-top-10"> Apply</button>
+                                    </div>
+                                  </div>
+                                </div>
                               
+                                <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                              </div>                             
 
                             </div>
                             
@@ -795,7 +893,16 @@
                   <div class="row">
                     <div class="large-24 columns">
                       <p>
-                       ON-ED Premium Program is designed to help Premium teachers and courses get the attention they deserve. Once enrolled in the program the course is actively promoted by our marketing via all available channels – Social, PPC, Email, Remarketing, Affiliate Please keep in mind that admission is decided solely at our discretion. We may not have suitable audience for you course or there could be too many courses in that topic. You can find our Revenue Share terms here. <br> <strong> (ще се отвори страница с таблица с процентите ни.)</strong>
+                        ON-ED Premium Program is designed to help Premium teachers and courses get the attention they deserve. Once enrolled in the program the course is actively promoted by our marketing via all available channels – <strong>Social, PPC, Email, Remarketing, Affiliate</strong>.
+                      </p>
+                      <p>
+                       Please keep in mind that admission is decided solely at our discretion. We may not have suitable audience for you course or there could be too many courses in that topic.
+                      </p>
+                      <p>
+                        <em>You can find our Revenue Share terms <a href="">here</a></em>.
+                      </p>
+                      <p>
+                        <strong> (ще се отвори страница с таблица с процентите ни.)</strong>
                       </p>
                     </div>
                     <div class="large-24 columns" >
@@ -854,10 +961,13 @@
                   <div class="row">
                     <div class="large-24 columns">
                       <p>
-                        ON-ED Translation Program is designed to erase language barriers and help your course reach much larger audience in different countries around the world. Our teams of translators will translate fully your course on different languages, including voice-over or subtitles, sales copy, name and localization. Currently we support translations to and from English, Russian and Bulgarian with more to come.
+                        ON-ED Translation Program is designed to erase language barriers and help your course reach much larger audience in different countries around the world. Our teams of translators will translate fully your course on different languages, including voice-over or subtitles, sales copy, name and localization. Currently we support translations to and from <strong>English, Russian and Bulgarian</strong> with more to come.
                       </p>
                       <p>
-                        Translators translate courses participating in the program by their own discretion so there is no guarantee that your course will be translated. Moreover we admit only top-quality courses. The translators receive shared IP on that language version, revenue share, and exclusivity on that market. The course is fully localized and separate from the original version. You can see the revenue share model here.
+                        Translators translate courses participating in the program by their own discretion so there is no guarantee that your course will be translated. Moreover we admit only top-quality courses. The translators receive shared IP on that language version, revenue share, and exclusivity on that market. The course is fully localized and separate from the original version.
+                      </p>
+                      <p>
+                        <em>You can see the Revenue Share model <a href="">here</a></em>.
                       </p>
                     </div>
                     <div class="large-24 columns" >
@@ -1177,11 +1287,38 @@
          $('#accordion').find('.accordion-tab').click( function() {
           
           $(this).next().slideToggle();
-
-
-
           $(".accordion-content").not($(this).next()).slideUp();
+
         });
+
+
+
+         $(function() {
+          $( "#webinar-date" ).datepicker();
+
+          $( "#from" ).datepicker({
+            defaultDate: "+1w",
+            changeMonth: true,
+            numberOfMonths: 3,
+            onClose: function( selectedDate ) {
+              $( "#to" ).datepicker( "option", "minDate", selectedDate );
+            }
+          });
+          $( "#to" ).datepicker({
+            defaultDate: "+1w",
+            changeMonth: true,
+            numberOfMonths: 3,
+            onClose: function( selectedDate ) {
+              $( "#from" ).datepicker( "option", "maxDate", selectedDate );
+            }
+          });
+        });
+
+        $('button.go-back').on('click', function() {
+          $('#delete-lesson-modal').foundation('reveal', 'close');
+        });
+
+
 
       });
     </script>
