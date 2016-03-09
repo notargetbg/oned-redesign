@@ -99,6 +99,27 @@ FaceBook Color -    #3a5a98
 }
 
 
+.file-upload {
+  position: relative;
+  overflow: hidden;
+}
+
+.file-upload input.file-input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  cursor: pointer;
+  opacity: 0;
+  width: initial;
+  filter: alpha(opacity=0); 
+}
+
+#add-lesson-modal .file-upload input.file-input {
+  font-size: 67px;
+}
 
 /* Buttons */
 
@@ -137,7 +158,6 @@ button.green-btn,.button.green-btn {
     color: #ffffff;
     background-color: #84d26d;
     font-weight: 600;
-    box-shadow: 0 1px 2px rgba(98, 98, 98, 0.32);
     text-transform: none;
 }
 button.blue-btn, .button.blue-btn {
@@ -197,7 +217,7 @@ button.warning-btn , .button.warning-btn {
     background-color: #e67e22;
     color: white;
     font-weight: 500;
-    box-shadow: 0 1px 2px rgba(98, 98, 98, 0.32);
+/*    box-shadow: 0 1px 2px rgba(98, 98, 98, 0.32);*/
 }
 button.alert-btn , .button.alert-btn  {
     width: auto;
@@ -205,8 +225,8 @@ button.alert-btn , .button.alert-btn  {
     margin: auto;
     background-color: #e74c3c;
     color: white;
-    font-weight: 500;
-    box-shadow: 0 1px 2px rgba(98, 98, 98, 0.32);
+    font-weight: 500;/*
+    box-shadow: 0 1px 2px rgba(98, 98, 98, 0.32);*/
 }
 
 /* Typography */
@@ -2987,6 +3007,7 @@ span.label {
     font-size: 13px;
     height: 28px;
     width: initial;
+        padding: 0 12px;
 }
 .create-course-page i.fa {
   position: relative;
@@ -3064,6 +3085,12 @@ text-align: center;
     margin-right: 1.33%;
 }
 
+#import-udemy-course p {
+  margin: 10px auto;
+}
+#import-udemy-course .label {
+  width: 90%;
+}
 .accordion-content:not(:first-of-type) {
   display: none;
 }
