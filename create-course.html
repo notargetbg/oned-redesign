@@ -112,10 +112,29 @@
                 </div>
                 <div class="info">
                   <p>
-                   <em>4</em> Sections | 
+                   <i class="fa fa-list-alt"></i> <em>4</em> Sections | 
                    <em>32</em> Lessons | 
-                   <em>4</em> Hours of Video| 
-                    <span class="label info radius">
+                   <i class="fa fa-clock-o"></i> <em>4</em> Hours of Video| 
+                    <span class="label secondary radius">
+                      in <em>English</em>
+                    </span>
+                  </p>
+                </div>
+                <div class="info">
+                  <p>
+                   <i class="fa fa-calendar"></i> 24.04.2016 | 
+                   <i class="fa fa-clock-o"></i> 18:00-20:00 | 
+                    <span class="label secondary radius">
+                      in <em>Russian</em>
+                    </span>
+                  </p>
+                </div>
+                <div class="info">
+                  <p>
+                   <i class="fa fa-calendar"></i> 24.04.2016 |
+                   <i class="fa fa-users"></i> 10 - 45 participants | 
+                   
+                    <span class="label secondary radius">
                       in <em>English</em>
                     </span>
                   </p>
@@ -300,7 +319,9 @@
                         <p>Notes</p>
                         <textarea name="" id="" cols="30" rows="10"></textarea>
 
-                        <em class="orange">Please note that import could take up to several days. We will notify you when the courses are uploaded.</em>
+                        <p>
+                          <em class="orange">Please note that import could take up to several days. We will notify you when the courses are uploaded.</em>
+                        </p>
                         <hr>
                         <div class="udemy-courses">
                           <h5 class="green text-center">Udemy Courses</h5>
@@ -395,9 +416,17 @@
                       <strong>(само за уебинари)</strong>
                     </div>
                     <div class="large-17 left columns">
-                      По подразбиране 18:00-20:00, не бива да се дава възможност на потребителя да изтрие информацията.
-
-                      
+                      <div class="row hour-picker">
+                        <div class="medium-12 columns">
+                          <label for="start-time">From</label>
+                          <input value="18:00" type="text" id="start-time" name="time-picker">
+                        </div>
+                        <div class="medium-12 columns">
+                           <label for="end-time">to</label>
+                           <input value="20:00" type="text" id="end-time" name="time-picker">
+                        </div>
+                     </div>
+                      По подразбиране 18:00-20:00, не бива да се дава възможност на потребителя да изтрие информацията.                      
                     </div>
                   </div>
                 </div>
@@ -836,12 +865,14 @@
                                 Embed video
                               </button>
                             
-                              <button class="green-btn">
+                              <button class="green-btn file-upload">
                                 <i class="fa fa-file-text-o"></i>
+                                <input type="file" class="file-input">
                                Add document
                               </button>
                               
-                              <button class="green-btn">
+                              <button class="green-btn file-upload">
+                                <input type="file" class="file-input">
                                 <i class="fa fa-file-audio-o"></i>
                                Add audio
                               </button>
@@ -857,6 +888,13 @@
                                 </div>
                               </div>
 
+
+                                <div class="uploaded-files">
+                                  <div>
+                                    <span class="info radius label">Lesson-one.doc</span> <a href=""><i class="fa fa-trash"></i></a>
+                                  </div>
+                                </div>
+
                               <div id="add-live-session" class="reveal-modal tiny" data-reveal aria-labelledby="secondModalTitle" aria-hidden="true" role="dialog">             
                                 <div class="row">
                                   <div class="large-24 columns text-center">
@@ -865,7 +903,7 @@
                                     <p>Udemy course url</p>
                                     <input type="text" placeholder="https://www.udemy.com/view?id=sSFgyIBk7l0">
 
-                                    <p>Notes</p>
+                                    <p><em>Notes</em></p>
                                     <textarea name="" id="" cols="30" rows="10"></textarea>
 
                                     <div class="margin-top-10">
@@ -1029,6 +1067,16 @@
                       </p>
                     </div>
                   </div>
+                  <div class="row">
+                    <div class="large-24 columns">
+                      
+                      <div data-alert class="alert-box info radius" style="
+                        margin-top: 10px;">
+                        We will notify you about admission after your course is published and reviewed.
+                          <a href="#" class="close">&times;</a>
+                        </div>
+                    </div>
+                  </div>
                 </div>
                 
               </div>
@@ -1086,6 +1134,17 @@
                       <p>
                        Apply to Translation Program – бутон. Същата функционалност като при Premium програмата, с отделно меню за одобрение в админ панела.
                       </p>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="large-24 columns">
+                      
+                      <div data-alert class="alert-box info radius" style="
+                        margin-top: 10px;">
+                        We will notify you about admission after your course is published and reviewed.
+                          <a href="#" class="close">&times;</a>
+                        </div>
                     </div>
                   </div>
                 </div>
