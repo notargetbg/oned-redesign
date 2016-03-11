@@ -47,6 +47,7 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	color: #263339;
+  background: #f7f9fa;
 }
 h1,h2,h3,h4,h5,h6,p {
 	margin: 0;
@@ -63,6 +64,51 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 }
 form {
 	margin: auto;
+}
+.panel {
+  background: #fff;
+  border: none;
+}
+
+/* Custom Tooltips */
+
+.twrapper {
+  position: relative;
+  display: inline;
+}
+.twrapper .ttip {
+    position: absolute;
+    width: 350px;
+    color: #000000;
+    background: #F7F7F7;;
+    line-height: 22px;
+    padding: 6px 10px;
+    visibility: hidden;
+    border-radius: 3px;
+    top: 0;
+    box-shadow: 0 1px 4px rgba(218, 218, 218, 0.75);
+}
+.twrapper .ttip:after {
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 100%;
+  margin-top: -8px;
+  width: 0;
+  height: 0;
+  left: -8px;
+  border-right: 8px solid #F7F7F7;;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+.twrapper:hover .ttip {
+  visibility: visible;
+  opacity: 0.85;
+  left: 75%;
+  top: 50%;
+  margin-top: -15px;
+  margin-left: 15px;
+  z-index: 999;
 }
 
 /* Colors Pallete 
@@ -124,17 +170,17 @@ FaceBook Color -    #3a5a98
 /* Buttons */
 
 .small-btn {
-  width: initial;
+  width: initial !important;
 }
 .big-btn {
-  width: 190px;
-  font-size: 15px;
-  height: 50px;
+  width: 190px !important;
+  font-size: 15px !important;
+  height: 50px !important;
 }
 
 button, .button {
     font-size: 15px;
-    border-radius: 4px;
+    border-radius: 4px !important;
     border: none;
     margin: auto;
     height: 34px;
@@ -3379,4 +3425,35 @@ section.related a:hover{
 .reveal-modal .info-text {
   font-size: 18px;
   margin-bottom: 15px;
+}
+
+/* Payment page */
+.payment-form label {
+    margin-bottom: 5px !important;
+}
+.payment-form .fa {
+  font-size: 19px;
+  margin-right: 4px;
+}
+.payment-form img {
+  margin-right: 4px;
+}
+
+.order-details table {
+  width: 100%;
+}
+
+.order-details thead {
+  background: #84D26D;
+}
+
+.order-details thead tr th {
+  color: white;
+}
+.order-details tbody tr td {
+  font-weight: 400;
+}
+
+.payment-radio-btns label {
+  width: 200px;
 }
