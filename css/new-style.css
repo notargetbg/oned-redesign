@@ -78,9 +78,10 @@ form {
 }
 .twrapper .ttip {
     position: absolute;
-    width: 350px;
+    width: 400px;
+    cursor: initial;
     color: #000000;
-    background: #F7F7F7;;
+   background: rgba(247, 247, 247, 0.85);
     line-height: 22px;
     padding: 6px 10px;
     visibility: hidden;
@@ -103,7 +104,6 @@ form {
 }
 .twrapper:hover .ttip {
   visibility: visible;
-  opacity: 0.85;
   left: 75%;
   top: 50%;
   margin-top: -15px;
@@ -3435,10 +3435,6 @@ section.related a:hover{
   font-size: 19px;
   margin-right: 4px;
 }
-.payment-form img {
-  margin-right: 4px;
-}
-
 .order-details table {
   width: 100%;
 }
@@ -3454,6 +3450,75 @@ section.related a:hover{
   font-weight: 400;
 }
 
-.payment-radio-btns label {
-  width: 200px;
+.payment-form .oned-horizontal-tabs li.tab-title {
+ width: 48% ;
+ max-width: initial;
+ margin-right: 1% ;
+ position: relative;
+}
+.payment-form .oned-horizontal-tabs li.tab-title a {
+  
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px !important;
+}
+.payment-form .oned-horizontal-tabs li.tab-title.active a {
+ background-color: #84D26D;
+  color: white;
+}
+.payment-form .oned-horizontal-tabs li.tab-title.active::before {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 8px solid #84D26D;
+    content: "";
+    position: absolute;
+    left: 48%;
+    bottom: -7px;
+}
+.settings-section .payment-form .tabs-content {
+  width: 100%;
+  margin-left: 0;
+  margin-top: 10px;
+  background: #F4FFF1;
+  padding: 10px;
+  border-radius: 3px;
+}
+ .inputs-styles input {
+
+  max-width: 300px;
+  margin: initial;
+  margin-bottom: 5px;
+}
+
+.inputs-styles input[type=checkbox] {
+  width: initial !important;
+  height: initial;
+  opacity: 1 !important;    
+  position: relative;
+  top: 1px;
+}
+ .inputs-styles .facebook-btn {
+      width: 48%;
+    float: right;
+    height: 40px;
+}
+
+.bank-payment .bank p {
+    padding: 5px 2px;
+    background: whitesmoke;
+}
+.bank-payment .input-positioning p {
+    margin: 0;
+    color: grey;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* Validation Styles */
+small.error {
+  margin-top: 2px;
+    border-radius: 4px;
+    padding: 4px 8px;
 }

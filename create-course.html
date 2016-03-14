@@ -110,33 +110,26 @@
                   <span><a href="">Arts</a></span>
                   <span><a href="">Gaming &amp; Education</a></span>
                 </div>
+                <!-- Course Type - PRE MADE -->
                 <div class="info">
                   <p>
                    <i class="fa fa-list-alt"></i> <em>4</em> Sections | 
                    <em>32</em> Lessons | 
-                   <i class="fa fa-clock-o"></i> <em>4</em> Hours of Video| 
-                    <span class="label secondary radius">
-                      in <em>English</em>
-                    </span>
+                   <i class="fa fa-clock-o"></i> <em>4</em> Hours of Video
                   </p>
                 </div>
+                <!-- Course Type - WEBINAR -->
                 <div class="info">
                   <p>
                    <i class="fa fa-calendar"></i> 24.04.2016 | 
-                   <i class="fa fa-clock-o"></i> 18:00-20:00 | 
-                    <span class="label secondary radius">
-                      in <em>Russian</em>
-                    </span>
+                   <i class="fa fa-clock-o"></i> 18:00 - 20:00
                   </p>
                 </div>
+                <!-- Course Type - LIVE COURSE -->
                 <div class="info">
                   <p>
-                   <i class="fa fa-calendar"></i> 24.04.2016 |
-                   <i class="fa fa-users"></i> 10 - 45 participants | 
-                   
-                    <span class="label secondary radius">
-                      in <em>English</em>
-                    </span>
+                   <i class="fa fa-calendar"></i> 03.04.2016 - 24.04.2016 |
+                   <i class="fa fa-users"></i> 10 - 45 participants
                   </p>
                 </div>
                 <div>
@@ -898,12 +891,32 @@
                               <div id="add-live-session" class="reveal-modal tiny" data-reveal aria-labelledby="secondModalTitle" aria-hidden="true" role="dialog">             
                                 <div class="row">
                                   <div class="large-24 columns text-center">
-                                    <h3 class="info-text">Add Udemy Course</h3>
+                                    <h3 class="info-text">Add Live Session</h3>
 
-                                    <p>Udemy course url</p>
-                                    <input type="text" placeholder="https://www.udemy.com/view?id=sSFgyIBk7l0">
+                                    <p><em>Title</em></p>
+                                    <input type="text" placeholder="Enter a live session title">
 
-                                    <p><em>Notes</em></p>
+                                    
+                                    <div class="row">
+                                      <div class="medium-12 columns">
+                                        <p><em>Start Date</em></p>
+                                        <input placeholder="Date" type="text" id="live-session-date">
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="row hour-picker">
+                                      <div class="medium-12 columns">
+                                        <label for="start-time"><em>From</em></label>
+                                        <input value="18:00" type="text" id="start-time" name="time-picker">
+                                      </div>
+                                      <div class="medium-12 columns">
+                                         <label for="end-time"><em>to</em></label>
+                                         <input value="20:00" type="text" id="end-time" name="time-picker">
+                                      </div>
+                                   </div>
+
+                                   <p><em>Description</em></p>
+
                                     <textarea name="" id="" cols="30" rows="10"></textarea>
 
                                     <div class="margin-top-10">
@@ -1206,7 +1219,7 @@
                     </div>
                     <div class="large-18 medium-18 columns">
                       <p>
-                        <span class="label round">5% Course Discount</span>
+                        <span class="label round">5% Course Discount</span> <a href=""><i class="fa fa-trash"></i></a>
                       </p>
                        <p>
                         <span class="label info  round">No vouchers found for this course.</span>
@@ -1454,6 +1467,8 @@
           $( "#voucher-exp-date" ).datepicker();
 
           $( "#on-sale-exp-date" ).datepicker();
+
+          $( "#live-session-date" ).datepicker();
 
           $( "#from" ).datepicker({
             defaultDate: "+1w",

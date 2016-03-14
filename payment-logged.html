@@ -174,64 +174,100 @@
       <div class="row">
         <div class="large-22 large-centered columns ">
           <div class="panel course-preview">
-            <h2>Плащане по Банков Път</h2>
+            <h2>Payment Details</h2>
             <hr>
             
             <form class="payment-form" action="">
               <div class="row">
-                <div class="large-24 columns bank-payment">
-                 <p>
-                    <em>
-                       Моля, впишете като основание за плащане номера на заявката.
-                    </em>
-                 </p>
-
-                  <div class="bank">
-                    <p>Номер на заявката: <span class="right"><strong>2479</strong></span></p>
-                    <p>Сума за плащане: <span class="right"><strong>20 lev</strong></span></p>
-                    <p>Банка: <span class="right">"Централна Кооперативна Банка"</span></p>
-                    <p>IBAN: <span class="right">BG95CECB979010E7642300</span></p>
-                    <p>Получател: <span class="right">"ОН-ЕД" ООД</span></p>
-                    <p>Основание за плащане: <span class="right">Плащане по поръчка: <strong>2479</strong></span></p>
-                  </div>
-
-                  <form action="">
-                    <em>Данни за фактура:</em>
-                    <hr>
-
-                    <div class="input-positioning">
-                      <p>Искам фактура?</p>
-                      <input id="invoice_no" type="radio" name="invoice" checked value="option">
-                      <label for="invoice_no"><span><span></span></span>Не</label>
-                      <input id="invouce_yes" type="radio" name="invoice" value="option">
-                      <label for="invouce_yes"><span><span></span></span>Да</label>
+                <div class="medium-16 columns payment-radio-btns">
+                   <h6>
+                    Choose type of payment:
+                  </h6>
+                  <input id="paypal" type="radio" name="payment" value="option">
+                  <label class="twrapper" for="paypal"><span><span></span></span> <i class="fa fa-paypal"></i>  PayPal 
+                    <div class="ttip">
+                      <img src="imgs/payment-logos/white-bg/pmw_tt_paypal.gif" style="width:73px; height:20px; position:absolute; top:5px; right:3px;" alt="">
+                      <strong>Плащанe от PayPal.com</strong><br>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, ipsa! Rerum asperiores autem a natus ipsam dolorem ipsa illo, quo, voluptatibus quas veniam, sunt dicta illum totam minus? Quod, fugiat.
+                      </p>
+                      <p>
+                        <a href="">go to.com</a>
+                      </p>
                     </div>
-
-                    <div class="inputs-styles input-grid">
-                      <input type="text" placeholder="Име на фирмата">
-                      <input type="text" placeholder="Адрес на фирмата">
-                      <input type="text" placeholder="Булстат">
-                      <input type="text" placeholder="МОЛ">
-
+                  </label><br>
+                  <input id="credit-cart" type="radio" name="payment" value="option">
+                  <label class="twrapper" for="credit-cart"><span><span></span></span> <i class="fa fa-credit-card"></i> Credit/Debit Card
+                    <div class="ttip">
+                      <img src="imgs/payment-logos/white-bg/pmw_tt_borica.gif" style="width:73px; height:20px; position:absolute; top:5px; right:3px;" alt="">
+                      <strong>Плащанe с банкова карта</strong><br>
+                      <p>
+                        Улеснено плащане с кредитна карта Visa или MasterCard или дебитна карта Visa Electron или Maestro. 100% сигурно, извършва се посредством системата на Борика.
+                      </p>
+                      <p>
+                        <img src="imgs/payment-logos/white-bg/pmw_maestro.gif" alt="">
+                        <img src="imgs/payment-logos/white-bg/pmw_mastercard.gif" alt="">
+                        <img src="imgs/payment-logos/white-bg/pmw_visa.gif" alt="">
+                        <img src="imgs/payment-logos/white-bg/pmw_visaelectron.gif" alt="">
+                      </p>
                     </div>
-
-                     <div class="input-positioning">
-                      <p>Регистрирана по ДДС?</p>
-                      <input id="vat_no" type="radio" name="vat" checked value="option">
-                      <label for="vat_no"><span><span></span></span>Не</label>
-                      <input id="vat_yes" type="radio" name="vat" value="option">
-                      <label for="vat_yes"><span><span></span></span>Да</label>
+                  </label><br>
+                  <input id="epay" type="radio" name="payment" value="option">
+                  <label class="twrapper" for="epay"><span><span></span></span> <img style="margin-right: 4px;" src="imgs/payment-logos/dark/epay-logo.png" alt=""> ePay
+                    <div class="ttip">
+                      <img src="imgs/payment-logos/white-bg/epay.png" style="position:absolute; top:5px; right:3px;" alt="">
+                      <strong>Плащанe от ePay.com</strong><br>
+                      <p>
+                        ePay.bg е надеждна и 100% сигурна българска система за онлайн плащания. Можете да платите от регистрирана карта или микросметка.
+                      </p>
                     </div>
-                  </form>
+                  </label><br>
 
-                
+                  <input id="easypay" type="radio" name="payment" value="option">
+                  <label class="twrapper" for="easypay"><span><span></span></span> <img style="margin-right: 4px;" src="imgs/payment-logos/dark/easypay-logo.png" alt="">  В брой (Изипей)
+                    <div class="ttip">
+                      <img src="imgs/payment-logos/white-bg/pmw_tt_easypay.gif" style="position:absolute; top:5px; right:3px;" alt="">
+                      <strong>Плащанe на каса на Изипей</strong><br>
+                      <p>
+                        Улеснено плащане в брой на една от 1500-те каси на Easypay (Изипей АД) в цялата страна.
+                      </p>
+                      <p>
+                        Каси на Изипей има и в повечето клонове на Първа Инвестиционна Банка, Office 1 Superstore, Централна Кооперативна Банка, Д Банк, ТексимБанк, Билла, Пикадили, Фантастико, ОМВ и др.
+                      </p>
+                      <p>
+                        <a href="http://www.easypay.bg/?p=offices">Пълен списък с касите на Easypay.</a>
+                      </p>
+                    </div>
+                  </label><br>
+
+
+                  <input id="bank-transfer" type="radio" name="payment" value="option">
+                  <label class="twrapper" for="bank-transfer"><span><span></span></span> <i class="fa fa-university"></i> Плащанe с банков превод
+                    <div class="ttip">
+                      <img src="imgs/payment-logos/white-bg/epay.png" style="position:absolute; top:5px; right:3px;" alt="">
+                      <strong>Плащанe с банков превод</strong><br>
+                      <p>
+                        Нареждане на банков превод към сметка на Grabo.bg от всяка банка в България.
+                      </p>
+                      <p>
+                        На следващата стъпка ще получите нашия IBAN номер и подробни инструкции за плащането.
+                      </p>
+                    </div>
+                  </label>
+                </div>
+                <div class="medium-8 right columns text-right">
+                  <h6>
+                    Whats next?
+                  </h6>
+                  <p class="info-text">
+                    After completion of playment process you will be granted full access to the course.
                   </p>
                 </div>             
               </div>
 
               <div class="row">
                 <div class="small-24 columns text-center">
-                  <input type="submit" class="button green-btn big-btn">
+                  <input type="submit" class="button green-btn big-btn" value="Continue">
                 </div>
               </div>
             </form>
