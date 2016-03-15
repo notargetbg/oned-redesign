@@ -745,7 +745,8 @@ nav.oned-top-menu {
 .transparent-nav nav.oned-top-menu {
   background: none;
 }
-.home-page nav.oned-top-menu.bg-nav {
+.home-page nav.oned-top-menu.bg-nav,
+.transparent-nav nav.oned-top-menu.bg-nav {
   background-color: #202020;
 }
 ul.oned-top-menu {
@@ -1069,7 +1070,8 @@ section.register-section {
 #login-modal {
   width: 100%;
   max-width: 350px;
-    top: 235px !important;
+  top: 275px !important;
+  position: fixed;
 }
 #login-modal .tabs {
     top: -60px;
