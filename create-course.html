@@ -110,14 +110,26 @@
                   <span><a href="">Arts</a></span>
                   <span><a href="">Gaming &amp; Education</a></span>
                 </div>
+                <!-- Course Type - PRE MADE -->
                 <div class="info">
                   <p>
-                   <em>4</em> Sections | 
+                   <i class="fa fa-list-alt"></i> <em>4</em> Sections | 
                    <em>32</em> Lessons | 
-                   <em>4</em> Hours of Video| 
-                    <span class="label info radius">
-                      in <em>English</em>
-                    </span>
+                   <i class="fa fa-clock-o"></i> <em>4</em> Hours of Video
+                  </p>
+                </div>
+                <!-- Course Type - WEBINAR -->
+                <div class="info">
+                  <p>
+                   <i class="fa fa-calendar"></i> 24.04.2016 | 
+                   <i class="fa fa-clock-o"></i> 18:00 - 20:00
+                  </p>
+                </div>
+                <!-- Course Type - LIVE COURSE -->
+                <div class="info">
+                  <p>
+                   <i class="fa fa-calendar"></i> 03.04.2016 - 24.04.2016 |
+                   <i class="fa fa-users"></i> 10 - 45 participants
                   </p>
                 </div>
                 <div>
@@ -285,9 +297,42 @@
                       <p>Import</p>
                     </div>
                     <div class="large-7 medium-18 left columns">
-                     <button class="white-btn">Import a course</button>
+                     <button data-reveal-id="import-udemy-course" class="white-btn">Import a course</button>
                     </div>
                   </div>
+
+                  <div id="import-udemy-course" class="reveal-modal tiny" data-reveal aria-labelledby="secondModalTitle" aria-hidden="true" role="dialog">             
+                    <div class="row">
+                      <div class="large-24 columns text-center">
+                        <h3 class="info-text">Add Udemy Course</h3>
+
+                        <p>Udemy course url</p>
+                        <input type="text" placeholder="https://www.udemy.com/view?id=sSFgyIBk7l0">
+
+                        <p>Notes</p>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                        <p>
+                          <em class="orange">Please note that import could take up to several days. We will notify you when the courses are uploaded.</em>
+                        </p>
+                        <hr>
+                        <div class="udemy-courses">
+                          <h5 class="green text-center">Udemy Courses</h5>
+                          <div>
+                            <span class="info radius label">Learn how to program in 30 days</span> <a href=""><i class="fa fa-trash"></i></a>
+                          </div>
+                        </div>
+
+                        <div class="margin-top-10">
+                        <!--   <button data-reveal-id="add-lesson-modal" style="border: 1px solid #84D26D;" type="submit" class="white-btn"> Go back</button>  -->
+                          <button type="submit" class="green-btn margin-top-10"> Apply</button>
+                        </div>
+                      </div>
+                    </div>
+                              
+                    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                  </div> 
+                 
                 </div>
                 <div class="separator">
                   <div class="row">
@@ -353,7 +398,7 @@
                       </p>
                       <div class="row">
                         <div class="small-24 columns">
-                          <p><input type="text" id="webinar-date"></p>
+                          <p><input value="03/09/2016" type="text" id="webinar-date"></p>
                         </div>
                       </div>
                     </div>
@@ -364,9 +409,17 @@
                       <strong>(само за уебинари)</strong>
                     </div>
                     <div class="large-17 left columns">
-                      По подразбиране 18:00-20:00, не бива да се дава възможност на потребителя да изтрие информацията.
-
-                      
+                      <div class="row hour-picker">
+                        <div class="medium-12 columns">
+                          <label for="start-time">From</label>
+                          <input value="18:00" type="text" id="start-time" name="time-picker">
+                        </div>
+                        <div class="medium-12 columns">
+                           <label for="end-time">to</label>
+                           <input value="20:00" type="text" id="end-time" name="time-picker">
+                        </div>
+                     </div>
+                      По подразбиране 18:00-20:00, не бива да се дава възможност на потребителя да изтрие информацията.                      
                     </div>
                   </div>
                 </div>
@@ -460,7 +513,7 @@
                         image should be at minimum
                         220x220 px.
                       </p>
-                      <button class="white-btn">Upload an image</button>
+                      <button class="white-btn file-upload"><input type="file" class="file-input"> Upload an image</button>
                     </div>
                   </div>
                 </div>
@@ -471,7 +524,12 @@
                     </div>
                     
                     <div class="large-18 medium-18 left columns position-relative">
-                      <button style="margin-top:0;" class="white-btn">Upload a video</button>
+                      <div class="uploaded-files">
+                          <div>
+                            <span class="info radius label">Lesson-one.doc</span> <a href=""><i class="fa fa-trash"></i></a>
+                          </div>
+                        </div>
+                      <button style="margin-bottom:5px;" class="white-btn file-upload"><input type="file" class="file-input"> Upload a video</button>
                     </div>
                   </div>
                   <div class="row">
@@ -480,6 +538,9 @@
                       margin-top: 10px;">
                         Your <strong>demo video</strong> has been uploaded sucessfully.
                         <a href="#" class="close">&times;</a>
+                      </div>
+                       <div class="progress secondary radius">
+                        <span class="meter" style="width: 72%"></span>
                       </div>
                     </div>
                   </div>
@@ -704,7 +765,7 @@
                         </div>
 
                       <div class="text-center">
-                        <button data-reveal-id="add-section-modal" class="green-btn"><i class="fa fa-plus-square-o"></i> Add Section</button>
+                        <button data-reveal-id="add-section-modal" class="blue-btn big-btn"><i class="fa fa-plus-square-o"></i> Add Section</button>
                       </div>
 
                       <div id="add-section-modal" class="reveal-modal medium" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
@@ -781,13 +842,14 @@
                             </div>
                             <div class="large-20 columns lesson-type">
 
-                              <button class="green-btn">
+                              <button data-reveal-id="add-live-session" class="green-btn">
                                 <i class="fa fa-users"></i>
                                Add live session
                               </button>
 
-                              <button class="green-btn">
+                              <button class="green-btn file-upload">
                                 <i class="fa fa-video-camera"></i>
+                                <input type="file" class="file-input">
                                 Add video
                               </button>
                            
@@ -796,15 +858,76 @@
                                 Embed video
                               </button>
                             
-                              <button class="green-btn">
+                              <button class="green-btn file-upload">
                                 <i class="fa fa-file-text-o"></i>
+                                <input type="file" class="file-input">
                                Add document
                               </button>
                               
-                              <button class="green-btn">
+                              <button class="green-btn file-upload">
+                                <input type="file" class="file-input">
                                 <i class="fa fa-file-audio-o"></i>
                                Add audio
                               </button>
+
+                              <div class="">
+                                <div data-alert class="alert-box info radius" style="
+                                margin-top: 10px;">
+                                  Your <strong>file</strong> has been uploaded sucessfully.
+                                  <a href="#" class="close">&times;</a>
+                                </div>
+                                 <div class="progress info radius">
+                                  <span class="meter" style="width: 72%"></span>
+                                </div>
+                              </div>
+
+
+                                <div class="uploaded-files">
+                                  <div>
+                                    <span class="info radius label">Lesson-one.doc</span> <a href=""><i class="fa fa-trash"></i></a>
+                                  </div>
+                                </div>
+
+                              <div id="add-live-session" class="reveal-modal tiny" data-reveal aria-labelledby="secondModalTitle" aria-hidden="true" role="dialog">             
+                                <div class="row">
+                                  <div class="large-24 columns text-center">
+                                    <h3 class="info-text">Add Live Session</h3>
+
+                                    <p><em>Title</em></p>
+                                    <input type="text" placeholder="Enter a live session title">
+
+                                    
+                                    <div class="row">
+                                      <div class="medium-12 columns">
+                                        <p><em>Start Date</em></p>
+                                        <input placeholder="Date" type="text" id="live-session-date">
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="row hour-picker">
+                                      <div class="medium-12 columns">
+                                        <label for="start-time"><em>From</em></label>
+                                        <input value="18:00" type="text" id="start-time" name="time-picker">
+                                      </div>
+                                      <div class="medium-12 columns">
+                                         <label for="end-time"><em>to</em></label>
+                                         <input value="20:00" type="text" id="end-time" name="time-picker">
+                                      </div>
+                                   </div>
+
+                                   <p><em>Description</em></p>
+
+                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                                    <div class="margin-top-10">
+                                    <!--   <button data-reveal-id="add-lesson-modal" style="border: 1px solid #84D26D;" type="submit" class="white-btn"> Go back</button>  -->
+                                      <button type="submit" class="green-btn margin-top-10"> Apply</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              
+                                <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                              </div> 
 
                                <div id="embed-link" class="reveal-modal tiny" data-reveal aria-labelledby="secondModalTitle" aria-hidden="true" role="dialog">             
                                 <div class="row">
@@ -813,7 +936,8 @@
                                     <input type="text" placeholder="https://www.youtube.com/watch?v=sSFgyIBk7l0">
 
                                     <div class="margin-top-10">
-                                      <button data-reveal-id="add-lesson-modal" style="border: 1px solid #84D26D;" type="submit" class="white-btn"> Go back</button> <button type="submit" class="green-btn margin-top-10"> Apply</button>
+                                    <!--   <button data-reveal-id="add-lesson-modal" style="border: 1px solid #84D26D;" type="submit" class="white-btn"> Go back</button>  -->
+                                      <button type="submit" class="green-btn margin-top-10"> Apply</button>
                                     </div>
                                   </div>
                                 </div>
@@ -860,8 +984,19 @@
                         <p>
                           You can upload up to 1GB of additional materials for your students. They will be accessible only for those enrolled in your course.
                         </p>
-                         <button class="white-btn">
-                          <i class="fa fa-file"></i>
+                        <div class="uploaded-files">
+                          <div>
+                            <span class="info radius label">Lesson-one.doc</span> <a href=""><i class="fa fa-trash"></i></a>
+                          </div>
+                          <div>
+                            <span class="info radius label">Keep-talking-one.mp3</span> <a href=""><i class="fa fa-trash"></i></a>
+                          </div>
+                          <div>
+                            <span class="info radius label">The greatness of pink floyd.pdf</span> <a href=""><i class="fa fa-trash"></i></a>
+                          </div>
+                        </div>
+                         <button class="white-btn file-upload">
+                          <i class="fa fa-file"></i><input type="file" class="file-input">
                          Add file
                         </button>
                     </div>
@@ -938,11 +1073,21 @@
                     </div>
                     <div class="large-18 columns">
                       <p>
-                        <button class="warning-btn"><i class="fa fa-star-o"></i> Apply to Premium program</button>
+                        <button style="max-width:300px;width:100%;" class="warning-btn"><i class="fa fa-star-o"></i> Apply to Premium program</button>
                       </p>
                       <p>
                         Apply to Premium program – бутон. При натискането му ще проверява дали е избран чекбокса и попълнено полето за отстъпка, и ако да, ще изкарва съобщение „ Pending course review. We will notify you about admission after your course is published and reviewed.” Ще отбелязва в базата данни участието на курса в премиум програмата и процента отстъпка. Трябва да се направи ново меню в админ панела, където да излизат заявките за премиум курсове. Име на курса, име на преподавателя, линк, процент отстъпка, верификация или отказ. При отказ да се пише причина за отказа, която да се изпраща на преподавателя с мейл – както е при одобряването на курсовете. При одобряване на премиум статута, да се изпраща мейл на преподавателя (за текст към Жаси), и да се променя статуса в страницата на курса.
                       </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="large-24 columns">
+                      
+                      <div data-alert class="alert-box info radius" style="
+                        margin-top: 10px;">
+                        We will notify you about admission after your course is published and reviewed.
+                          <a href="#" class="close">&times;</a>
+                        </div>
                     </div>
                   </div>
                 </div>
@@ -997,11 +1142,22 @@
                     </div>
                     <div class="large-18 columns">
                       <p>
-                        <button style="max-width:250px;width:100%;" class="green-btn"><i class="fa fa-language"></i> Apply to Translation Program</button>
+                        <button style="max-width:300px;width:100%;" class="green-btn"><i class="fa fa-language"></i> Apply to Translation Program</button>
                       </p>
                       <p>
                        Apply to Translation Program – бутон. Същата функционалност като при Premium програмата, с отделно меню за одобрение в админ панела.
                       </p>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="large-24 columns">
+                      
+                      <div data-alert class="alert-box info radius" style="
+                        margin-top: 10px;">
+                        We will notify you about admission after your course is published and reviewed.
+                          <a href="#" class="close">&times;</a>
+                        </div>
                     </div>
                   </div>
                 </div>
@@ -1063,7 +1219,7 @@
                     </div>
                     <div class="large-18 medium-18 columns">
                       <p>
-                        <span class="label round">5% Course Discount</span>
+                        <span class="label round">5% Course Discount</span> <a href=""><i class="fa fa-trash"></i></a>
                       </p>
                        <p>
                         <span class="label info  round">No vouchers found for this course.</span>
@@ -1090,7 +1246,7 @@
                   </div>
                   <div class="row margin-top-5">
                     <div class="medium-6 medium-offset-6 columns">
-                      <input type="text" placeholder="Voucher Expiration" spellcheck="false">
+                      <input type="text" id="voucher-exp-date" value="03/09/2016" spellcheck="false">
                     </div>
                     <div class="medium-6 left columns" style="    padding-top: 8px;">
                         <input id="voucher-expiry" type="checkbox" name="voucher-expiry" value="option">
@@ -1151,7 +1307,7 @@
                       <p>Expiration date</p>            
                     </div>
                     <div class="medium-6 left columns">
-                      <input type="text" placeholder="Default date - today" spellcheck="false">
+                      <input type="text" id="on-sale-exp-date" value="03/09/2016" spellcheck="false">
                     </div>
                   </div>
                 </div>
@@ -1182,19 +1338,31 @@
                 </div>
 
                 <div id="unpublish-course-modal" class="reveal-modal small" data-reveal aria-labelledby="secondModalTitle" aria-hidden="true" role="dialog">
-                  <h4>Are you sure you want to <strong>UNPUBLISH</strong> this course?</h4>
 
-                  <p class="text-center"><a href="#">YES</a>/<a href="#">NO</a></p>
+                 <div class="row">
+                          <div class="large-24 columns text-center">
+                  <h3 class="info-text">Are you sure you want to <strong>UNPUBLISH</strong> this course?</h3>
+
+                  <a href=""><button class="alert-btn"><i class="fa fa-eraser"></i> YES</button></a>
+
+                  <button class="green-btn go-back"><i class="fa fa-caret-square-o-left"></i> NO</button>
+                   </div>
+                          </div>
 
 
                   <a class="close-reveal-modal" aria-label="Close">&#215;</a>
                 </div>
 
                 <div id="remove-course-modal" class="reveal-modal small" data-reveal aria-labelledby="secondModalTitle" aria-hidden="true" role="dialog">
-                  <h4>Are you sure you want to <strong>REMOVE</strong> this course?</h4>
+                    <div class="row">
+                          <div class="large-24 columns text-center">
+                  <h3 class="info-text">Are you sure you want to <strong>REMOVE</strong> this course?</h3>
 
-                  <p class="text-center"><a href="#">YES</a>/<a href="#">NO</a></p>
+                  <a href=""><button class="alert-btn"><i class="fa fa-eraser"></i> YES</button></a>
 
+                  <button class="green-btn go-back"><i class="fa fa-caret-square-o-left"></i> NO</button>
+                   </div>
+                          </div>
 
                   <a class="close-reveal-modal" aria-label="Close">&#215;</a>
                 </div>
@@ -1295,6 +1463,12 @@
 
          $(function() {
           $( "#webinar-date" ).datepicker();
+
+          $( "#voucher-exp-date" ).datepicker();
+
+          $( "#on-sale-exp-date" ).datepicker();
+
+          $( "#live-session-date" ).datepicker();
 
           $( "#from" ).datepicker({
             defaultDate: "+1w",

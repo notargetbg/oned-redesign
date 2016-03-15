@@ -47,6 +47,7 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	color: #263339;
+  background: #f7f9fa;
 }
 h1,h2,h3,h4,h5,h6 {
 	margin: 0;
@@ -63,6 +64,51 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 }
 form {
 	margin: auto;
+}
+.panel {
+  background: #fff;
+  border: none;
+}
+
+/* Custom Tooltips */
+
+.twrapper {
+  position: relative;
+  display: inline;
+}
+.twrapper .ttip {
+    position: absolute;
+    width: 400px;
+    cursor: initial;
+    color: #000000;
+   background: rgba(247, 247, 247, 0.85);
+    line-height: 22px;
+    padding: 6px 10px;
+    visibility: hidden;
+    border-radius: 3px;
+    top: 0;
+    box-shadow: 0 1px 4px rgba(218, 218, 218, 0.75);
+}
+.twrapper .ttip:after {
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 100%;
+  margin-top: -8px;
+  width: 0;
+  height: 0;
+  left: -8px;
+  border-right: 8px solid #F7F7F7;;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+.twrapper:hover .ttip {
+  visibility: visible;
+  left: 75%;
+  top: 50%;
+  margin-top: -15px;
+  margin-left: 15px;
+  z-index: 999;
 }
 
 /* Colors Pallete 
@@ -99,21 +145,42 @@ FaceBook Color -    #3a5a98
 }
 
 
+.file-upload {
+  position: relative;
+  overflow: hidden;
+}
+
+.file-upload input.file-input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  cursor: pointer;
+  opacity: 0;
+  width: initial;
+  filter: alpha(opacity=0); 
+}
+
+#add-lesson-modal .file-upload input.file-input {
+  font-size: 67px;
+}
 
 /* Buttons */
 
 .small-btn {
-  width: initial;
+  width: initial !important;
 }
 .big-btn {
-  width: 190px;
-  font-size: 15px;
-  height: 50px;
+  width: 190px !important;
+  font-size: 15px !important;
+  height: 50px !important;
 }
 
 button, .button {
     font-size: 15px;
-    border-radius: 4px;
+    border-radius: 4px !important;
     border: none;
     margin: auto;
     height: 34px;
@@ -137,7 +204,6 @@ button.green-btn,.button.green-btn {
     color: #ffffff;
     background-color: #84d26d;
     font-weight: 600;
-    box-shadow: 0 1px 2px rgba(98, 98, 98, 0.32);
     text-transform: none;
 }
 button.blue-btn, .button.blue-btn {
@@ -197,7 +263,7 @@ button.warning-btn , .button.warning-btn {
     background-color: #e67e22;
     color: white;
     font-weight: 500;
-    box-shadow: 0 1px 2px rgba(98, 98, 98, 0.32);
+/*    box-shadow: 0 1px 2px rgba(98, 98, 98, 0.32);*/
 }
 button.alert-btn , .button.alert-btn  {
     width: auto;
@@ -205,8 +271,8 @@ button.alert-btn , .button.alert-btn  {
     margin: auto;
     background-color: #e74c3c;
     color: white;
-    font-weight: 500;
-    box-shadow: 0 1px 2px rgba(98, 98, 98, 0.32);
+    font-weight: 500;/*
+    box-shadow: 0 1px 2px rgba(98, 98, 98, 0.32);*/
 }
 
 /* Typography */
@@ -2987,6 +3053,7 @@ span.label {
     font-size: 13px;
     height: 28px;
     width: initial;
+        padding: 0 12px;
 }
 .create-course-page i.fa {
   position: relative;
@@ -3064,6 +3131,12 @@ text-align: center;
     margin-right: 1.33%;
 }
 
+#import-udemy-course p {
+  margin: 10px auto;
+}
+#import-udemy-course .label {
+  width: 90%;
+}
 .accordion-content:not(:first-of-type) {
   display: none;
 }
@@ -3352,4 +3425,100 @@ section.related a:hover{
 .reveal-modal .info-text {
   font-size: 18px;
   margin-bottom: 15px;
+}
+
+/* Payment page */
+.payment-form label {
+    margin-bottom: 5px !important;
+}
+.payment-form .fa {
+  font-size: 19px;
+  margin-right: 4px;
+}
+.order-details table {
+  width: 100%;
+}
+
+.order-details thead {
+  background: #84D26D;
+}
+
+.order-details thead tr th {
+  color: white;
+}
+.order-details tbody tr td {
+  font-weight: 400;
+}
+
+.payment-form .oned-horizontal-tabs li.tab-title {
+ width: 48% ;
+ max-width: initial;
+ margin-right: 1% ;
+ position: relative;
+}
+.payment-form .oned-horizontal-tabs li.tab-title a {
+  
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px !important;
+}
+.payment-form .oned-horizontal-tabs li.tab-title.active a {
+ background-color: #84D26D;
+  color: white;
+}
+.payment-form .oned-horizontal-tabs li.tab-title.active::before {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 8px solid #84D26D;
+    content: "";
+    position: absolute;
+    left: 48%;
+    bottom: -7px;
+}
+.settings-section .payment-form .tabs-content {
+  width: 100%;
+  margin-left: 0;
+  margin-top: 10px;
+  background: #F4FFF1;
+  padding: 10px;
+  border-radius: 3px;
+}
+ .inputs-styles input {
+
+  max-width: 300px;
+  margin: initial;
+  margin-bottom: 5px;
+}
+
+.inputs-styles input[type=checkbox] {
+  width: initial !important;
+  height: initial;
+  opacity: 1 !important;    
+  position: relative;
+  top: 1px;
+}
+ .inputs-styles .facebook-btn {
+      width: 48%;
+    float: right;
+    height: 40px;
+}
+
+.bank-payment .bank p {
+    padding: 5px 2px;
+    background: whitesmoke;
+}
+.bank-payment .input-positioning p {
+    margin: 0;
+    color: grey;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* Validation Styles */
+small.error {
+  margin-top: 2px;
+    border-radius: 4px;
+    padding: 4px 8px;
 }
