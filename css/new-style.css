@@ -2267,7 +2267,7 @@ section.course-header {
   padding-right: 8px;
 }
 
-.course-widget-price button{
+.course-widget-price button, .create-course-enroll {
   background-color: #ffc579;
     background-image: linear-gradient(to bottom, #ff9f00, #fb6e00);
     border-radius: 7px;
@@ -2279,6 +2279,7 @@ section.course-header {
     padding: 12px 58px;
     text-transform: uppercase;
     width: auto;
+        color: white;
 }
 .course-widget-price img{
   display: block;
