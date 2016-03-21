@@ -628,6 +628,20 @@ footer .copyright {
   text-transform: uppercase;
   z-index: 10;
 }
+.wrapper-box.normal.premium-label .img-box::before {
+    content: "Premium";
+    display: block;
+    position: absolute;
+    left: 0;
+    font-size: 15px;
+    padding: 5px 11px;
+    background-color: #72C8FD;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    z-index: 10;
+    bottom: 0;
+}
 
 
 /* Featured Course Styles ( Big sized Box ) */
@@ -734,7 +748,8 @@ nav.oned-top-menu {
 .transparent-nav nav.oned-top-menu {
   background: none;
 }
-.home-page nav.oned-top-menu.bg-nav {
+.home-page nav.oned-top-menu.bg-nav,
+.transparent-nav nav.oned-top-menu.bg-nav {
   background-color: #202020;
 }
 ul.oned-top-menu {
@@ -1056,7 +1071,8 @@ section.register-section {
 #login-modal {
   width: 100%;
   max-width: 350px;
-    top: 235px !important;
+  top: 275px !important;
+  position: fixed;
 }
 #login-modal .tabs {
     top: -60px;
@@ -2256,7 +2272,7 @@ section.course-header {
   padding-right: 8px;
 }
 
-.course-widget-price button{
+.course-widget-price button, .create-course-enroll {
   background-color: #ffc579;
     background-image: linear-gradient(to bottom, #ff9f00, #fb6e00);
     border-radius: 7px;
@@ -2268,6 +2284,7 @@ section.course-header {
     padding: 12px 58px;
     text-transform: uppercase;
     width: auto;
+        color: white;
 }
 .course-widget-price img{
   display: block;
