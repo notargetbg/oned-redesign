@@ -462,6 +462,9 @@ button.profile-btn .fa-dot-circle-o {
 section.footer-section {
   background-color: white;
   padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 footer .footer-menu {
   margin: 0;
@@ -1001,8 +1004,6 @@ li.oned-menu-item button {
 /* Register and Login Page */
 
 section.register-section {
-    box-shadow: 0 1px 4px rgba(218, 218, 218, 0.75);
-    background-color: #eeeff1;
     padding-top: 100px;
     padding-bottom: 40px;
 }
@@ -1152,8 +1153,12 @@ section.settings-section {
 .settings-section .wrapper-box {
     padding: 0;
 }
-
 /* Utility Classes */
+div.percent-100 {
+   min-height:100%;
+   position:relative;
+   padding-bottom: 98px;
+}
 .position-relative {
     position: relative;
 }
