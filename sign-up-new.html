@@ -89,7 +89,11 @@
     <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi velit unde, provident reiciendis harum omnis ullam quidem recusandae labore. Quis corporis pariatur illum quibusdam minima ipsa, veniam, nam quidem aliquid.</div>
     <div>Harum corporis quidem voluptates illo totam consequuntur deleniti explicabo neque, incidunt, in expedita aut. Enim fugit, laboriosam dolor veniam minus porro! Facilis consectetur perspiciatis architecto est inventore recusandae, vitae dignissimos.</div>
     <div>Aliquam, laborum delectus rem iusto quidem accusantium. Sint molestias quam voluptas, labore iusto eveniet dicta assumenda consectetur cumque recusandae. Error assumenda molestias sed blanditiis eius eaque, quod voluptates quia provident.</div>
+
+    <a href="#" class="gender-m"></a>
+
     <a href="#"  data-reveal-id="login-modal" class="">Login</a>
+    <a href="#"  data-reveal-id="login-modal-step-2" class="">Step 2</a>
 
                 <div id="login-modal" class="reveal-modal small padding-box" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
 
@@ -137,6 +141,8 @@
                       <div class="row">
                         <div class="large-24 columns">
                            or <br> 
+                          <input type="text" placeholder="First Name">
+                          <input type="text" placeholder="Last Name">
                           <input type="text" placeholder="E-mail">
                           <input type="text" placeholder="Password">
                           <label>
@@ -154,8 +160,99 @@
 
                   <a class="close-reveal-modal" aria-label="Close">&#215;</a>
                 </div>
-              </div>
-            </div> -->
+
+                <div id="login-modal-step-2" class="reveal-modal small padding-box step-2" data-reveal>
+                  <div class="row">
+                    <div class="large-24 center columns">
+                      <label><h3>Choose Your Gender<h3></label>
+                      <input id="checkbox1" type="checkbox" class="gender-m"><label for="checkbox1"><span><span></span></span>Male</label>
+                      <input id="checkbox2" type="checkbox" class="gender-f"><label for="checkbox2"><span><span></span></span>Female</label>                    
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="large-16 large-offset-4 columns">
+                        <hr>                    
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="large-24 center columns">
+                      <label><h3>I want to see courses in these languages:<h3></label>
+                      <input id="checkbox4" type="checkbox" class="lang-b"><label for="checkbox4"><span><span></span></span></label>
+                      <input id="checkbox3" type="checkbox" class="lang-e"><label for="checkbox3"><span><span></span></span></label>
+                      <input id="checkbox5" type="checkbox" class="lang-r"><label for="checkbox5"><span><span></span></span></label>                    
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="large-16 large-offset-4 columns">
+                        <hr>                    
+                    </div>
+                  </div>
+
+                  <div class"row">
+                          <div class="large-24 columns">
+                            <label><h3>Select categories you are interested in:<h3></label>
+                          </div>
+                          
+                          <div class="large-24 text-alight-center columns">
+
+                            <input id="interests-arts" type="checkbox" name="interests" value="option" class="categoty-i">
+                            <label for="interests-arts"><span><span></span></span>Arts</label>
+
+                            <input id="interests-technology" type="checkbox" name="interests" value="option">
+                            <label for="interests-technology"><span><span></span></span>Technology</label>
+                            
+                            <input id="interests-design" type="checkbox" name="interests" value="option">
+                            <label for="interests-design"><span><span></span></span>Design</label>
+
+                            <input id="interests-business" type="checkbox" name="interests" value="option">
+                            <label for="interests-business"><span><span></span></span>Business</label>                     
+
+                            <input id="interests-health" type="checkbox" name="interests" value="option">
+                            <label for="interests-health"><span><span></span></span>Health and Sport</label>
+
+                            <input id="interests-photography" type="checkbox" name="interests" value="option">
+                            <label for="interests-photography"><span><span></span></span>Photography</label>
+
+                            <input id="interests-education" type="checkbox" name="interests" value="option">
+                            <label for="interests-education"><span><span></span></span>Education</label>
+                          
+                            <input id="interests-music" type="checkbox" name="interests" value="option">
+                            <label for="interests-music"><span><span></span></span>Music</label>
+
+                            <input id="interests-crafts" type="checkbox" name="interests" value="option">
+                            <label for="interests-crafts"><span><span></span></span>Crafts and Hobbies</label>
+
+                            <input id="interests-kids" type="checkbox" name="interests" value="option">
+                            <label for="interests-kids"><span><span></span></span>Kids</label>
+                          </div>
+
+                          <div class="large-24 text-alight-center columns">
+                            <input id="interests-select-all" type="checkbox" name="interests" value="option">
+                            <label for="interests-select-all"><span><span></span></span>Select All</label><br>
+                          </div>
+
+                          <div class="row">
+                            <div class="large-24 text-alight-center columns">
+                                <button type="submit" class="blue-btn">Skip</button>
+                                <button type="submit" class="blue-btn">Save and finish</button>                    
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="large-16 large-offset-4 columns">
+                                <hr>                    
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="large-24 text-alight-center columns">
+                                <p>You can skip this step and change your preferences later from your profile menu.</p>              
+                            </div>
+                          </div>
+                  </div>
+                  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                </div>
 
     <section class="footer-section">
       <footer>

@@ -1079,6 +1079,9 @@ section.register-section {
     position: relative;
 
 }
+.tabs-content {
+    margin-bottom: 0;
+}
 #login-modal .tabs a {
   background: none;
   color: #E0E0E0;
@@ -1121,7 +1124,6 @@ section.register-section {
 }
 .reveal-modal-bg {
     background: rgba(0, 0, 0, 0.75);
-
 }
 #login-modal .close-reveal-modal {
   position: fixed;
@@ -1130,7 +1132,104 @@ section.register-section {
   background: rgba(255, 255, 255, 0.3);
   padding: 9px 18px;
 }
-
+body .step-2 p{
+  font-size: 11px;
+}
+.step-2 .blue-btn{
+  width: auto;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin: 24px 0;
+}
+.step-2 label{
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin: 24px 0;
+  font-weight: 100;
+}
+.step-2 hr{
+  margin: 0;
+}
+.step-2 label h3{
+  font-family: 'Comfortaa', cursive;
+  font-size: 22px;
+  font-weight: 100;
+}
+.step-2 input[type=checkbox]:not(old), .settings-section input[type=radio ]:not(old) {
+    width: 0px;
+    height: 0px;
+}
+.step-2 input[type=checkbox]:not(old) + label, input[type=radio ]:not(old) + label {
+    margin-left: 0;
+}
+.step-2 input.gender-m[type=checkbox ]:not(old) + label > span {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    background-position: bottom;
+    background-image: url(../imgs/icons/m-g.png);
+    transition: 0.3s ease-in;
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+.step-2 input.gender-f[type=checkbox ]:not(old) + label > span {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    background-position: bottom;
+    background-image: url(../imgs/icons/f-g.png);
+    transition: 0.3s ease-in;
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+.step-2 input.lang-b[type=checkbox ]:not(old) + label > span {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    background-position: bottom;
+    background-image: url(../imgs/icons/Bulgaria.png);
+    transition: 0.3s ease-in;
+    width: 50px;
+    height: 34px;
+    display: block;
+}
+.step-2 input.lang-e[type=checkbox ]:not(old) + label > span {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    background-position: bottom;
+    background-image: url(../imgs/icons/United-Kingdom.png);
+    transition: 0.3s ease-in;
+    width: 50px;
+    height: 34px;
+    display: block;
+}
+.step-2 input.lang-r[type=checkbox ]:not(old) + label > span {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    background-position: bottom;
+    background-image: url(../imgs/icons/Russia.png);
+    transition: 0.3s ease-in;
+    width: 50px;
+    height: 34px;
+    display: block;
+}
+.step-2 input[type=checkbox]:not(old):checked + label > span {
+    text-align: center;
+    background-position: top;
+}
+.step-2 input.gender-f[type=checkbox]:not(old):checked + label > span:before, 
+.step-2 input.gender-m[type=checkbox]:not(old):checked + label > span:before, 
+.step-2 input.lang-b[type=checkbox ]:not(old):checked + label > span:before,
+.step-2 input.lang-e[type=checkbox ]:not(old):checked + label > span:before,
+.step-2 input.lang-r[type=checkbox ]:not(old):checked + label > span:before {
+    display: none;
+}
 button.facebook-btn {
     background-color: #3a5a98;
     color: #ffffff;
@@ -1170,6 +1269,9 @@ section.settings-section {
     padding: 0;
 }
 /* Utility Classes */
+.text-alight-center {
+  text-align: center;
+}
 div.percent-100 {
    min-height:100%;
    position:relative;
@@ -1452,7 +1554,6 @@ select option {
       top: -2px;
     right: 8px;
 }
-
 input[type=checkbox]:not(old) + label,
 input[type=radio   ]:not(old) + label{
   display      : inline-block;
