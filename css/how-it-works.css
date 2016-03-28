@@ -69,7 +69,6 @@ Green:			#95C718;
 }
 .dark-bg li{
 	color: #ffffff;
-	font-family: 'Comfortaa', cursive;
 	font-weight: 100;
 }
 .light-bg {
@@ -102,9 +101,6 @@ p.introduction-wrapper {
 	font-weight: 400;
 	text-align: center;
 
-}
-.special-words-green {
-	color: #537d3e;
 }
 .orange-link-text {
 	color: rgb(255, 174, 0);

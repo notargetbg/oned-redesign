@@ -211,6 +211,11 @@ button.blue-btn, .button.blue-btn {
     color: #ffffff;
     background-color: #5ec0fd;
 }
+button.blue-btn:hover, .button.blue-btn:hover {
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #19a5fc;
+}
 button.white-btn, .button.white-btn {
     font-weight: 700;
     color: #84D26D;
@@ -321,12 +326,16 @@ section.header-section {
     background-size: 100%;
   }
 }
-@media all and (max-width: 970px) {
-.header-section .tags a {
-  line-height: 44px;
-}  
+@media all and (max-width: 1140px) {
+  body div.percent-100 {
+      padding-bottom: 128px;
+  }
 }
-
+@media all and (max-width: 970px) {
+  .header-section .tags a {
+    line-height: 44px;
+  }
+}
 @media all and (max-width: 768px) {
   section.header-section {
     background-size: initial;
@@ -341,12 +350,23 @@ section.header-section {
     margin-top: 20px !important;
   }
 }
-
-section.main-section {
-	background-color: #f5f5f5;
-	box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+@media all and (min-width: 640px) {
+  div.step-2 {
+    min-width: 600px;
+  }
 }
-
+@media all and (max-width: 640px) {
+  body div.percent-100 {
+      padding-bottom: 154px;
+  }
+}
+@media all and (max-width: 400px) {
+  .step-2 .text-alight-center .blue-btn{
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 42px 0 0;
+  }
+}
 .circle-icon .fa-angle-down {
   cursor: pointer;
   margin-top: 25px;
@@ -538,17 +558,19 @@ footer .copyright {
 }
 .wrapper-box .stick-to-bottom {
     padding-right: 15px;
+    width: 95%;
 }
-
-
+.featured h2{
+  font-size: 17px;
+}
+.home-page .featured h2{
+  font-size: 22px;
+}
 
 .wrapper-box .author-box p, .wrapper-box .author-box p a {
   font-family: 'Open Sans', sans-serif;
   color: #717171;
 }
-
-
-
 .wrapper-box .tags span  {
   border-radius: 4px;
   background-color: #f2f2f2;
@@ -642,8 +664,21 @@ footer .copyright {
     z-index: 10;
     bottom: 0;
 }
-
-
+.wrapper-box.featured.premium-label .course-image-background::before {
+    content: "Premium";
+    display: block;
+    position: absolute;
+    left: 0;
+    font-size: 15px;
+    padding: 5px 11px;
+    background-color: rgba(2, 2, 2, 0.5);
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    z-index: 3;
+    top: 0;
+    width: 100%;
+}
 /* Featured Course Styles ( Big sized Box ) */
 
 .wrapper-box.pre-made-course,
@@ -702,7 +737,9 @@ footer .copyright {
   margin-bottom: 1px;
   font-family: 'Open Sans', sans-serif;
 }
-
+.discover-page .featured.wrapper-box .details p {
+    font-size: 11px;
+}
 /* Normal Course Styles ( Normal sized Box ) */
 .img-box {
   max-height: 168px;
@@ -1125,6 +1162,7 @@ section.register-section {
 .reveal-modal-bg {
     background: rgba(0, 0, 0, 0.75);
 }
+#login-modal-step-2 .close-reveal-modal,
 #login-modal .close-reveal-modal {
   position: fixed;
   top: 0px;
@@ -1133,27 +1171,27 @@ section.register-section {
   padding: 9px 18px;
 }
 body .step-2 p{
-  font-size: 11px;
+    font-size: 11px;
 }
 .step-2 .blue-btn{
-  width: auto;
-  padding-right: 40px;
-  padding-left: 40px;
-  margin: 24px 0;
-}
-.step-2 label{
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
-  margin: 24px 0;
-  font-weight: 100;
-}
-.step-2 hr{
-  margin: 0;
+    width: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin: 42px 0 0;
 }
 .step-2 label h3{
-  font-family: 'Comfortaa', cursive;
-  font-size: 22px;
-  font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin: 24px 0;
+    font-weight: 100;
+}
+.step-2 hr{
+    margin: 24px 0 0; 
+}
+.step-2 label h3{
+    font-family: 'Comfortaa', cursive;
+    font-size: 22px;
+    font-weight: 100;
 }
 .step-2 input[type=checkbox]:not(old), .settings-section input[type=radio ]:not(old) {
     width: 0px;
@@ -1161,6 +1199,9 @@ body .step-2 p{
 }
 .step-2 input[type=checkbox]:not(old) + label, input[type=radio ]:not(old) + label {
     margin-left: 0;
+}
+.select-all-box {
+    margin: 32px 0 16px;
 }
 .step-2 input.gender-m[type=checkbox ]:not(old) + label > span {
     margin: 0;
@@ -1187,7 +1228,7 @@ body .step-2 p{
     display: block;
 }
 .step-2 input.lang-b[type=checkbox ]:not(old) + label > span {
-    margin: 0;
+    margin: 0 24px;
     padding: 0;
     cursor: pointer;
     background-position: bottom;
@@ -1198,7 +1239,7 @@ body .step-2 p{
     display: block;
 }
 .step-2 input.lang-e[type=checkbox ]:not(old) + label > span {
-    margin: 0;
+    margin: 0 24px;
     padding: 0;
     cursor: pointer;
     background-position: bottom;
@@ -1209,7 +1250,7 @@ body .step-2 p{
     display: block;
 }
 .step-2 input.lang-r[type=checkbox ]:not(old) + label > span {
-    margin: 0;
+    margin: 0 24px;
     padding: 0;
     cursor: pointer;
     background-position: bottom;
@@ -1219,15 +1260,53 @@ body .step-2 p{
     height: 34px;
     display: block;
 }
+.step-2 input.categoty-i[type=checkbox ]:not(old) + label > span {
+    margin: 0;
+    padding: 4px 20px;
+    cursor: pointer;
+    background-position: bottom;
+    background-color: #f9f9f9;
+    transition: 0.3s ease-in;
+    display: block;
+    border-radius: 100px;
+    width: auto;
+    height: auto;
+    box-shadow: none;
+}
+.step-2 input.lang-b[type="checkbox"] + label,
+.step-2 input.lang-e[type="checkbox"] + label,
+.step-2 input.lang-e[type="checkbox"] + label,
+.step-2 input.lang-r[type="checkbox"] + label{
+    margin: 0 12px;
+}
+input.categoty-i[type=checkbox]:not(old) + label, input[type=radio ]:not(old) + label {
+    margin-top: 12px;
+}
+input.categoty-i[type="checkbox"] + label, input[type="radio"] + label {
+    margin-right: 12px;
+}
+.step-2 input.categoty-i[type=checkbox]:hover + label > span,
+.step-2 input.categoty-i[type=checkbox]:focus + label > span {
+    background-color: #9edaff;
+    color: #fff;
+}
+.step-2 input.categoty-i[type=checkbox]:not(old):checked + label > span {
+    background-color: #5ec0fd;
+    color: #fff;
+}
 .step-2 input[type=checkbox]:not(old):checked + label > span {
     text-align: center;
     background-position: top;
 }
+input.gender-f[type="checkbox"],input.gender-m[type="checkbox"],
+input.lang-b[type="checkbox"],input.lang-e[type="checkbox"],input.lang-r[type="checkbox"],
+input.categoty-i[type="checkbox"],input.select-all[type="checkbox"],
 .step-2 input.gender-f[type=checkbox]:not(old):checked + label > span:before, 
 .step-2 input.gender-m[type=checkbox]:not(old):checked + label > span:before, 
 .step-2 input.lang-b[type=checkbox ]:not(old):checked + label > span:before,
 .step-2 input.lang-e[type=checkbox ]:not(old):checked + label > span:before,
-.step-2 input.lang-r[type=checkbox ]:not(old):checked + label > span:before {
+.step-2 input.lang-r[type=checkbox ]:not(old):checked + label > span:before,
+.step-2 input.categoty-i[type=checkbox ]:not(old):checked + label > span:before {
     display: none;
 }
 button.facebook-btn {
@@ -2921,6 +3000,19 @@ section .panel h5 {
     padding-bottom: 8px;
 }
 /* Discover Page */
+.discover-page .course-image-background {
+  /* Default */
+  min-height: 390px; 
+}
+.discover-page .course-image-background > div {
+    min-height: 390px;
+}
+.discover-page .wrapper-box .details p {
+    font-size: 11px;
+}
+.discover-page p{
+  margin-bottom: 0;
+}
 .discover-page button{
   width: 100px;
 }
@@ -3644,4 +3736,8 @@ small.error {
   margin-top: 2px;
     border-radius: 4px;
     padding: 4px 8px;
+}
+/* My Courses */
+.my-courses .oned-horizontal-tabs {
+  padding: 42px 0 24px;
 }
