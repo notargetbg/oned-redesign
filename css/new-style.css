@@ -1108,7 +1108,7 @@ section.register-section {
 #login-modal {
   width: 100%;
   max-width: 350px;
-  top: 275px !important;
+  top: 25% !important;
   position: fixed;
 }
 #login-modal .tabs {
@@ -3736,6 +3736,10 @@ small.error {
   margin-top: 2px;
     border-radius: 4px;
     padding: 4px 8px;
+}
+small.errorMessage {
+    font-size: 13px;
+    color: #C37272;
 }
 /* My Courses */
 .my-courses .oned-horizontal-tabs {
