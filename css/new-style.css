@@ -3737,9 +3737,18 @@ small.error {
     border-radius: 4px;
     padding: 4px 8px;
 }
+[data-abide] .error small.error, [data-abide] .error span.error, [data-abide] span.error, [data-abide] small.error, small.errorMessage, .login-form-error {
+    font-size: 14px;
+    color: white;
+    background: #C37272;
+    border-radius: 3px;
+    width: 100%;
+    text-align: center;
+    margin-top: 4px;
+    padding: 0;
+}
 small.errorMessage {
-    font-size: 13px;
-    color: #C37272;
+    display: block;
 }
 /* My Courses */
 .my-courses .oned-horizontal-tabs {
