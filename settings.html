@@ -252,79 +252,222 @@
             </div>
 
             <!-- Personal Info -->
-            <div id="personal-info-tab" class="row content  animated fadeInUp">
+
+            <div id="personal-info-tab" class="row content animated fadeInUp">
               <div class="large-24 columns wrapper-box">
+                              
                 <div class="separator">
                   <div class="row">
                     <div class="medium-16 columns">
                       <h2>Personal Info</h2>
                     </div>
                     <div class="medium-8 columns text-right lang-translations">
-                      <span class="active">BG</span>
-                      <span>EN</span>
-                      <span>RU</span>
+                      <ul class="tabs" data-tab>
+                        <li class="tab-title active">
+                          <a href="#english-panel" ><span>EN</span></a>                    
+                        </li>
+                        <li class="tab-title">
+                          <a href="#russian-panel"><span>RU</span></a>                    
+                        </li>
+                        <li class="tab-title">
+                          <a href="#bulgarian-panel"><span>BG</span></a>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
-                <div class="separator">
-                  <div class="row">
-                    <div class="large-6 columns">
-                      <p>First Name</p>
+
+                <div class="tabs-content languages-tabs">
+                  
+                  <div id="english-panel" class="content active">
+                    <div class="separator">
+                      <div class="row">
+                        <div class="large-6 columns">
+                          <p>First Name</p>
+                        </div>
+                        <div class="large-17 left columns">
+                          <input type="text" placeholder="First Name">
+                        </div>
+                      </div>
                     </div>
-                    <div class="large-17 left columns">
-                      <input type="text" placeholder="First Name">
+                    <div class="separator">
+                      <div class="row">
+                        <div class="large-6 columns">
+                          <p>Family Name</p>
+                        </div>
+                        <div class="large-17 left columns">
+                          <input type="text" placeholder="Family Name">
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="separator">
-                  <div class="row">
-                    <div class="large-6 columns">
-                      <p>Family Name</p>
+                    <div class="separator">
+                      <div class="row">
+                        <div class="large-6 columns">
+                          <p>Biography</p>
+                        </div>
+                        <div class="large-17 left columns">
+                          <textarea type="text" rows="10" placeholder="Enter more about you"></textarea>
+                        </div>
+                      </div>
                     </div>
-                    <div class="large-17 left columns">
-                      <input type="text" placeholder="Family Name">
+                    <div class="separator">
+                      <div class="row">
+                        <div class="large-6 columns">
+                          <p>Education</p>
+                        </div>
+                        <div class="large-17 left columns">
+                          <textarea type="text" rows="7" placeholder="Enter more about you"></textarea>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="separator">
-                  <div class="row">
-                    <div class="large-6 columns">
-                      <p>Biography</p>
+                    <div class="separator">
+                      <div class="row">
+                        <div class="large-6 columns">
+                          <p>Job</p>
+                        </div>
+                        <div class="large-17 left columns">
+                          <textarea type="text" rows="7" placeholder="Enter more about you"></textarea>
+                        </div>
+                      </div>
                     </div>
-                    <div class="large-17 left columns">
-                      <textarea type="text" rows="10" placeholder="Enter more about you"></textarea>
+                    <div class="separator">
+                      <div class="row">
+                        <div class="large-6 columns">
+                          <p>Description</p>
+                        </div>
+                        <div class="large-17 left columns">
+                          <textarea type="text" rows="7" placeholder="Enter more about you"></textarea>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="separator">
-                  <div class="row">
-                    <div class="large-6 columns">
-                      <p>Education</p>
+                  </div> <!-- .english-tab end -->
+
+                  <div id="russian-panel" class="content">
+                    <div class="separator">
+                      <div class="row">
+                        <div class="large-6 columns">
+                          <p>Имя</p>
+                        </div>
+                        <div class="large-17 left columns">
+                          <input type="text" placeholder="First Name">
+                        </div>
+                      </div>
                     </div>
-                    <div class="large-17 left columns">
-                      <textarea type="text" rows="7" placeholder="Enter more about you"></textarea>
+                    <div class="separator">
+                      <div class="row">
+                        <div class="large-6 columns">
+                          <p>Фамилия</p>
+                        </div>
+                        <div class="large-17 left columns">
+                          <input type="text" placeholder="Family Name">
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="separator">
-                  <div class="row">
-                    <div class="large-6 columns">
-                      <p>Job</p>
+                    <div class="separator">
+                      <div class="row">
+                        <div class="large-6 columns">
+                          <p>Биография</p>
+                        </div>
+                        <div class="large-17 left columns">
+                          <textarea type="text" rows="10" placeholder="Enter more about you"></textarea>
+                        </div>
+                      </div>
                     </div>
-                    <div class="large-17 left columns">
-                      <textarea type="text" rows="7" placeholder="Enter more about you"></textarea>
+                    <div class="separator">
+                      <div class="row">
+                        <div class="large-6 columns">
+                          <p>Образование</p>
+                        </div>
+                        <div class="large-17 left columns">
+                          <textarea type="text" rows="7" placeholder="Enter more about you"></textarea>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="separator">
-                  <div class="row">
-                    <div class="large-6 columns">
-                      <p>Description</p>
+                    <div class="separator">
+                      <div class="row">
+                        <div class="large-6 columns">
+                          <p>Работа</p>
+                        </div>
+                        <div class="large-17 left columns">
+                          <textarea type="text" rows="7" placeholder="Enter more about you"></textarea>
+                        </div>
+                      </div>
                     </div>
-                    <div class="large-17 left columns">
-                      <textarea type="text" rows="7" placeholder="Enter more about you"></textarea>
+                    <div class="separator">
+                      <div class="row">
+                        <div class="large-6 columns">
+                          <p>Краткое описание</p>
+                        </div>
+                        <div class="large-17 left columns">
+                          <textarea type="text" rows="7" placeholder="Enter more about you"></textarea>
+                        </div>
+                      </div>
                     </div>
-                  </div>
+                  </div> <!-- .russian-tab end -->
+
+                  <div id="bulgarian-panel" class="content">
+                    <div class="separator">
+                      <div class="row">
+                        <div class="large-6 columns">
+                          <p>Име</p>
+                        </div>
+                        <div class="large-17 left columns">
+                          <input type="text" placeholder="First Name">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="separator">
+                      <div class="row">
+                        <div class="large-6 columns">
+                          <p>Фамилия</p>
+                        </div>
+                        <div class="large-17 left columns">
+                          <input type="text" placeholder="Family Name">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="separator">
+                      <div class="row">
+                        <div class="large-6 columns">
+                          <p>Биография</p>
+                        </div>
+                        <div class="large-17 left columns">
+                          <textarea type="text" rows="10" placeholder="Enter more about you"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="separator">
+                      <div class="row">
+                        <div class="large-6 columns">
+                          <p>Образование</p>
+                        </div>
+                        <div class="large-17 left columns">
+                          <textarea type="text" rows="7" placeholder="Enter more about you"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="separator">
+                      <div class="row">
+                        <div class="large-6 columns">
+                          <p>Професия</p>
+                        </div>
+                        <div class="large-17 left columns">
+                          <textarea type="text" rows="7" placeholder="Enter more about you"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="separator">
+                      <div class="row">
+                        <div class="large-6 columns">
+                          <p>Кратко описание</p>
+                        </div>
+                        <div class="large-17 left columns">
+                          <textarea type="text" rows="7" placeholder="Enter more about you"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div> <!-- .bulgarian-tab end -->
+
                 </div>
               </div>
             </div>
@@ -415,6 +558,10 @@
 
                             <input id="interests-select-all" type="checkbox" name="interests" value="option">
                             <label for="interests-select-all"><span><span></span></span>Select All</label><br>
+
+                            <script>
+                              
+                            </script>
                           </div>
                         </div>
                       </div>
@@ -728,7 +875,11 @@
           $(this).next().slideToggle();
           $(".accordion-content").not($(this).next()).slideUp();
 
-        });
+          });
+
+          $("#interests-select-all").change(function () {
+            $(".interests input:checkbox").prop('checked', $(this).prop("checked"));
+          });
 
        
       });
