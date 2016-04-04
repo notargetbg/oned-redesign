@@ -57,8 +57,7 @@ Green:			#95C718;
     margin-top: 20px;
 }
 .light-bg p{
-	font-size: 20px;
-	font-weight: 200;
+
 }
 .dark-bg {
 	background-color: #202020;
@@ -78,25 +77,24 @@ Green:			#95C718;
 /* Typography Classes */
 
 p.introduction-wrapper {	
-	font-size: 20px;
 	font-weight: 300;
 	letter-spacing: 3px;
 	text-align: justify;
 }
 
-.center-slim {
+/*.center-slim {
 	font-size: 20px;
 	font-weight: 300;
 	letter-spacing: 2px;
-}
+}*/
 .small-slim {
-	font-size: 16px;
+
 	font-weight: 300;
 	letter-spacing: 2px;
 }
 .normal-text-desc p {
 	margin: 100px auto;
-	font-size: 17px;
+;
 	letter-spacing: 2px;
 	font-weight: 400;
 	text-align: center;
@@ -124,7 +122,7 @@ p.introduction-wrapper {
 .big-category-icons p {
     letter-spacing: 2px;
     text-transform: uppercase;
-    font-size: 14px;
+
     font-weight: 400;
 }
 
@@ -144,7 +142,7 @@ p.introduction-wrapper {
 	margin-top: 24px;
 }
 
-/* Media Querries */
+/* Media Querries 
 
 @media (max-width: 1280px) {
 	.custom-container-width {
@@ -243,7 +241,7 @@ p.introduction-wrapper {
 		letter-spacing: 2px;
 	}
 }
-
+*/
 /* Addon-Fixes Dec 2015 */
 .blue-bg h1, 
 .blue-bg p,
@@ -254,11 +252,6 @@ p.introduction-wrapper {
 .green-bg h1,
 .green-bg p {
 	color: white;
-}
-.how-it-works-page h1,
-.how-it-works-page h2,
-.how-it-works-page p {
-	margin: 25px auto;
 }
 .delay-02 {
 	-webkit-animation-delay: 	.2s; 	/* Chrome, Safari, Opera */
@@ -295,4 +288,16 @@ p.introduction-wrapper {
 }
 .visible {
 	opacity: 1;
+}
+
+section.white-bg p, section.light-bg p {
+      font-family: 'Open Sans', sans-serif;
+      margin: 15px auto;
+}
+section.white-bg h3, section.light-bg h3,
+section.white-bg h5, section.light-bg h5 {
+   font-family: 'Open Sans', sans-serif;
+}
+section.white-bg h5, section.light-bg h5{
+  font-weight: 100;
 }
