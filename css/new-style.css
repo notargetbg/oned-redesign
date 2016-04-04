@@ -2190,6 +2190,7 @@ section.course-header {
     min-height: 32px;
     vertical-align: middle;
     margin: auto 0;
+    padding-top: 5px;
 }
 
 .lessons hr{
@@ -2214,7 +2215,13 @@ section.course-header {
     font-size: 22px;
     padding: 22px 8px 8px;
 }
-
+.lessons .text-right span{
+    display: inline-block;
+    margin-top: 7px;
+}
+.lessons .large-1{
+    margin-top: 5px;
+}
 .lessons span{
     font-size: 13px;
     padding-right: 8px;
@@ -2225,6 +2232,8 @@ section.course-header {
     border-radius: 3px;
     color: #ffffff;
     margin-left: 2px;
+    display: inline-block;
+    margin-top: 3px;
 }
 
 .preview-tag {
@@ -2240,6 +2249,8 @@ section.course-header {
     border-radius: 3px;
     color: #ffffff;
     margin-left: 2px;
+    display: inline-block;
+    margin-top: 3px;
 }
 .lessons .fa-youtube-play{
     color: #cc696a;
@@ -2253,9 +2264,11 @@ section.course-header {
     color: #ffffff;
     font-size: 11px;
     padding: 4px;
+    margin-left: -5px;
 }
 .combine , .bootom-enroll{
     background-color: #ffffff;
+    padding: 24px 0;
 }
 .bootom-enroll button{
     background-color: #ffc579;
@@ -2269,7 +2282,7 @@ section.course-header {
     height: auto;
 }
 .bootom-enroll p{
-  font-family: "Open Sans",sans-serif;
+  margin-bottom: 0;
 }
 .bootom-enroll p strong{
   color: #5ec0fd;
@@ -2490,7 +2503,13 @@ section.course-header {
     padding: 12px 58px;
     text-transform: uppercase;
     width: auto;
-        color: white;
+    color: white;
+    -webkit-transition: all .8s ease-in;
+    transition: all .8s ease-in;
+}
+.course-widget-price button:hover, .create-course-enroll {
+    background-image: linear-gradient(to bottom, #fb6e00, #fb6e00);
+    color: white;
 }
 .course-widget-price img{
   display: block;
@@ -2515,12 +2534,12 @@ section.course-header {
   color: #202020;
   border: none;
 }
+.course-content {
+  padding-bottom: 52px; 
+}
 .course-content h2{
   padding: 16px 0;
   font-weight: 600;
-}
-.course-content .small-24 .wrapper-box{
-  margin-top: 8px;
 }
 .course-content p{
   font-family: "Open Sans",sans-serif;
