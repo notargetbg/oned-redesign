@@ -75,6 +75,9 @@ Green:			#95C718;
 }
 
 /* Typography Classes */
+.static-page .dark-bg .font-size-35 {
+    color: white;
+}
 .static-page p, .static-page li{
 	font-size: 20px;
 	font-weight: 300;
@@ -89,18 +92,6 @@ Green:			#95C718;
 .static-page footer p.copyright{
 	font-size: 12px;
 }
-/*
-p.introduction-wrapper {	
-	font-weight: 300;
-	letter-spacing: 3px;
-	text-align: justify;
-}
-
-.center-slim {
-	font-size: 20px;
-	font-weight: 300;
-	letter-spacing: 2px;
-}*/
 .small-slim {
 
 	font-weight: 300;
@@ -138,7 +129,6 @@ body .static-page .big-category-icons p {
 
 .icon-course-type {
 	font-size: 75px;
-	/*text-shadow: 0 1px 1px rgba(0, 0, 0, 0.95);*/
 }
 
 /* Other Classes */
@@ -150,6 +140,14 @@ body .static-page .big-category-icons p {
 .how-web-icon {
 	font-size: 54px;
 	margin-top: 24px;
+}
+.static-page .green-btn {
+	width: auto;
+	margin-bottom: 24px;
+	font-size: 35px;
+	padding: 24px;
+	height: auto;
+	font-weight: 400;
 }
 
 /* Media Querries */
@@ -171,87 +169,7 @@ body .static-page .big-category-icons p {
 		padding: 50px 0;
 	}
 }
-/*
-@media (max-width: 768px) {
-	.font-size-75 {
-		font-size: 55px;
-	}
-	.font-size-45 {
-		font-size: 35px;
-	}
-	.font-size-35 {
-		font-size: 25px;
-	}
-	.white-bg, .light-blue-bg, .dark-bg, .green-bg {
-		padding: 25px 0;
-	}
-	.top-margin-50 {
-		margin-top: 25px;
-	}
-	h1.font-size-45, h1.font-size-75 {
-		height: initial !important;
-		line-height: initial !important;
-	}
-	h2.special-heading {
-		font-size: 25px;
-	}
-	h2.center-slim {
-		padding: 0 10px;
-	}
-	p.text-center {
-		margin: 10px auto;
-	}
-}
 
-@media (max-width: 455px) {
-	.font-size-75 {
-		font-size: 40px;
-	}
-	.font-size-45 {
-		font-size: 30px;
-	}
-	.font-size-35 {
-		font-size: 25px;
-	}
-	.white-bg, .blue-bg, .light-blue-bg, .dark-bg, .green-bg {
-		padding: 25px 0;
-	}
-	.top-margin-50 {
-		margin-top: 25px;
-	}
-	.center-slim {
-		font-size: 19px;
-	}
-	p.introduction-wrapper {
-		font-size: 20px;
-	}
-}
-
-@media (max-width: 400px) {
-	.font-size-75 {
-		font-size: 37px;
-	}
-	.font-size-45 {
-		font-size: 28px;
-	}
-	.font-size-35 {
-		font-size: 22px;
-	}
-	.white-bg, .blue-bg, .light-blue-bg, .dark-bg, .green-bg {
-		padding: 22px 0;
-	}
-	.top-margin-50 {
-		margin-top: 20px;
-	}
-	p.introduction-wrapper {
-		font-size: 18px;
-	}
-	.big-category-icons p {
-		font-size: 9px;
-		letter-spacing: 2px;
-	}
-}
-*/
 /* Addon-Fixes Dec 2015 */
 .blue-bg h1, 
 .blue-bg p,
@@ -311,7 +229,7 @@ section.idea {
 section.idea h2 {
   color: #263339;
     font-size: 3.6em;
-    font-weight: 800;
+    font-weight: 400;
     margin-bottom: 20px;
     margin-top: 40px;
     line-height: 52px;
@@ -326,7 +244,7 @@ section.featured-icons {
 }
 section.featured-icons h2  {
   font-size: 1.6em;
-    font-weight: 800;
+    font-weight: 400;
     color: white;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -334,67 +252,10 @@ section.featured-icons h2  {
 section.featured-icons p {
   color: white;
 }
-/*section.team-images {
-  background:#ffffff;
-}
-body.teachers section.team-images {
-  background:#202020;
-}
 section.team-images h2 {
   font-size: 3.6em;
     margin-top: 40px;
-    font-weight: 800;
-    color: #263339;
-    margin-bottom: 40px;
-    line-height: 52px;
-}
-body.teachers section.team-images .columns {
-  height: 275px;
-}
-body.teachers section.team-images {
-  padding: 50px;
-}
-body.teachers section.team-images h2 {
-    margin-top: 0px; 
-}
-body.teachers section.team-images .name {
-  margin: 0;
-  font-size: 1.6em;
-  font-weight: 600;
-  line-height: 1em;
-  color: white;
-}
-body.teachers section.team-images .job-title {
-  margin: 0;
-  font-size: 14px;
-  font-weight: 100;
-  color: white;
-}
-body.teachers section.team-images hr {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-body.teachers section.team-images .description {
-  color: white;
-}
-body.teachers section.team-images button {
-  width: 100%;
-    margin-top: 15px;
-}
-body.teachers section.team-images .ch-grid li {
-  margin: 0 20px;
-}
-section.team-images {
-  background:#ffffff;
-}
-body.teachers section.team-images {
-  background:#202020;
-}
-*/
-section.team-images h2 {
-  font-size: 3.6em;
-    margin-top: 40px;
-    font-weight: 800;
+    font-weight: 400;
     color: #263339;
     margin-bottom: 40px;
     line-height: 52px;

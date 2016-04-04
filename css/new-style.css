@@ -66,8 +66,12 @@ form {
 	margin: auto;
 }
 .panel {
-  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(218, 218, 218, 0.75);
+  padding: 10px;
   border: none;
+  background: #ffffff;
+  color: #263339;
 }
 
 /* Custom Tooltips */
@@ -3001,10 +3005,10 @@ margin-bottom: 12px;
     animation-delay: .4s;
 }
 
-section .panel p {
-      font-family: 'Open Sans', sans-serif;
+section .panel p, section .panel li {
       font-size: 1em;
       margin: 15px auto;
+      font-weight: 400;
 }
 section .panel h3, 
 section .panel h5 {
