@@ -1109,7 +1109,7 @@ section.register-section {
   width: 100%;
   max-width: 350px;
   top: 25% !important;
-  position: fixed;
+  position: absolute;
 }
 #login-modal .tabs {
     top: -60px;
