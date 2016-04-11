@@ -120,7 +120,7 @@ form {
 Green  -      #84d26d
 Blue   -        #5ec0fd
 Orange -      #fbaf41
-Red    -      #c7595a
+Red    -      #c7595a / cc696a
 Grey   -      #eeeff1
 Light Grey -    #666666
 Very Light Grey - #adadad
@@ -131,29 +131,40 @@ Dark   -      #263339
 BG for Register -   #f6f8f7
 FaceBook Color -    #3a5a98
 */
-
-.green {
-  color: #84d26d;
-}
-.blue {
-  color: #5ec0fd;
-}
 .white {
   color: #ffffff;
 }
 .black {
   color: #000000;
 }
+.green {
+  color: #84d26d;
+}
+.blue {
+  color: #5ec0fd;
+}
 .orange {
   color: #ef8717;
 }
-
-
+.red {
+  color: #cc696a;
+}
+.green-bg {
+  background-color: #84d26d;
+}
+.blue-bg {
+  background-color: #5ec0fd;
+}
+.orange-bg {
+  background-color: #ef8717;
+}
+.red-bg {
+  background-color: #cc696a;
+}
 .file-upload {
   position: relative;
   overflow: hidden;
 }
-
 .file-upload input.file-input {
   position: absolute;
   top: 0;
@@ -638,7 +649,9 @@ footer .copyright {
 .author-name a {
   color: #263339;
 }
-
+.author-short-desc {
+  margin-bottom: 0;
+}
 .wrapper-box.normal.discount::before, 
 .wrapper-box.featured.discount::before,
 .wrapper-box.webinar.discount::before {
@@ -1991,11 +2004,10 @@ section.br-cr > .row , section.course-header > .row , section.course-content > .
       font-weight: 500;
 }
 .course-profile-wrapper {
-      background-color: #ffffff;
+    background-color: #ffffff;
     border-radius: 4px;
     box-shadow: 0 1px 4px rgba(218, 218, 218, 0.75);
     padding: 16px 8px;
-    margin-top: 25px !important;
 }
 section.course-header {
     padding: 0 40px;
@@ -2250,11 +2262,27 @@ section.course-header {
     display: inline-block;
     margin-top: 3px;
 }
-.lessons .fa-youtube-play{
+.lessons .fa {
     color: #cc696a;
     font-size: 32px;
-    margin-left: 18px;
     vertical-align: middle;
+}
+.lessons .fa-youtube-play {
+    margin-left: 6px;
+}
+.lessons .fa-file-pdf-o,
+.lessons .fa-file-audio-o,
+.lessons .fa-file-video-o {
+  margin: 0 4px;
+}
+.lessons .fa-users {
+  margin-right: 1px;  
+}
+.lessons .fa-file-pdf-o,
+.lessons .fa-file-audio-o,
+.lessons .fa-file-video-o,
+.lessons .fa-users {
+  font-size: 30px;
 }
 .lessons .fa-check{
     background-color: #84d26d;
@@ -2459,8 +2487,7 @@ section.course-header {
   box-shadow: 0 1px 4px rgba(218, 218, 218, 0.75);
   padding: 16px 8px 26px;
 }
-.top-green {
-  background-color: #84d26d;
+.top-widget {
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
@@ -2470,6 +2497,7 @@ section.course-header {
   font-size: 18px;
   padding: 3px;
 }
+
 .course-widget-price p{
   font-size: 18px;
   font-weight: 700;
@@ -2480,7 +2508,6 @@ section.course-header {
 }
 .course-widget-price p span{
   font-size: 34px;
-  color: #84d26d;
 }
 .course-widget-price p span.old-price-wiget{
   font-size: 18px;
@@ -2519,8 +2546,9 @@ section.course-header {
   text-align: left;
   color: #717171;
   font-family: "Open Sans",sans-serif;
-  border-top: 1px solid #dadada;
   line-height: 21px;
+  margin-bottom: 0;
+  padding-top: 0;
 }
 .course-widget-price .widget-price-bottom p span{
   font-size: 15px;
@@ -2564,14 +2592,15 @@ section.course-header {
     text-align: center;
     text-transform: uppercase;
 }
-.course-futures {
+.course-features {
   padding: 20px 8px;
 }
-.course-futures p{
+.course-features p{
   color: #202020;
   line-height: 28px;
+  margin-bottom: 10px;
 }
-.course-futures i{
+.course-features i{
   color: #bcbdbe;
   font-size: 20px;
 }
@@ -2968,36 +2997,12 @@ margin-bottom: 12px;
   padding: 4px 16px;
   width: auto;
 }
-.lesson-files-files .lesson-file-pdf{
-  color: #c7595a;
-  font-size: 13px;
-  font-weight: 700;
-  padding-right: 24px;
-  text-transform: uppercase;
-}
-.lesson-files-files .lesson-file-avi{
-  color: #666666;
-  font-size: 13px;
-  font-weight: 700;
-  padding-right: 24px;
-  text-transform: uppercase;
-}
-.lesson-files-files .lesson-file-doc{
-  color: #4fa3c9;
-  font-size: 13px;
-  font-weight: 700;
-  padding-right: 24px;
-  text-transform: uppercase;
-}
-.lesson-files-title {
-  padding-bottom: 8px;  
-}
 .lesson-files-title span{
   font-size: 13px;
   text-transform: uppercase;
   padding-right: 10px;
 }
-.lecture-desc h3{
+.lesson-desc h3{
   font-size: 17px;
   font-weight: 400;
   margin-bottom: -16px;
