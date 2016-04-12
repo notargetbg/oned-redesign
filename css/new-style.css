@@ -627,7 +627,6 @@ footer .copyright {
   margin-bottom: 4px;
 }
 
-
 /* Author Box Styles */
 .author-box p, .author-box p a {
 	color: #FFFFFF;
@@ -718,8 +717,6 @@ footer .copyright {
   border-top-left-radius: 1px;
   border-top-right-radius: 1px;
 }
-
-
 .wrapper-box.featured {
   background-color: #202020;
 }
@@ -790,7 +787,6 @@ footer .copyright {
 	font-size: 15px;
 	font-weight: 800;
 }
-
 
 /* Top Menu Bar */
 nav.oned-top-menu {
@@ -915,10 +911,6 @@ li.oned-menu-item button {
   }
 
 }
-
-  
-
-
 @media all and (max-width: 990px) {
   li.oned-menu-item.menu-logo {
     left: 8px;
@@ -1439,7 +1431,6 @@ div.percent-100 {
 
   font-family: 'Open Sans', sans-serif;
 }
-
 .settings.tabs.wrapper-box {
   max-width: 270px;
   width: 25%;
@@ -1466,20 +1457,16 @@ div.percent-100 {
   font-family: 'Open Sans', sans-serif;
   border-bottom: 1px solid rgba(218, 218, 218, 0.75);
 }
-
 .settings-section .settings .tab-title:hover a {
   background-color: #F3F3F3;
   color: #5A5A5A;
 }
-
 .settings-section .wrapper-box.tabs .tab-title.active a {
   color: #5ec0fd;
 }
-
 .settings-section .wrapper-box .setting-type {
     background-color: #eeeff1;
 }
-
 .settings-section .settings .setting-type h3 {
   margin: initial;
   padding: 20px;
@@ -1497,7 +1484,6 @@ div.percent-100 {
   .settings-section .settings .setting-type h3:active {
     top: 2px;
   }
-
 .settings-section .tabs-content {
   width: 70%;
   margin-left: 5%;
@@ -1512,11 +1498,9 @@ div.percent-100 {
 .settings-section .tabs-content .row.button-row {
   margin: 0;
 }
-
 .settings-section .tabs-content .wrapper-box {
   border-radius: 3px;
 }
-
 .settings-section .button-row button {
   margin-top: 20px;
   width: 100%;
@@ -1543,7 +1527,6 @@ div.percent-100 {
   font-size: 27px;
   line-height: 38px;
 }
-
 .settings-section .wrapper-box .separator h3, .settings-section .wrapper-box .separator p {
     color: #000000;
 }
@@ -1561,7 +1544,6 @@ div.percent-100 {
   color: #757575;
   font-weight: 400;
 }
-
 .wrapper-box .separator .interests input {
   margin-bottom: 36px;
 }
@@ -1598,7 +1580,6 @@ div.percent-100 {
   background: none !important;
   padding: 0;
 }
-
 span.crop .fa-crop {
   position: absolute;
   left: 14px;
@@ -1608,7 +1589,6 @@ span.crop .fa-crop {
   border-radius: 5px;
   box-shadow: 0 1px 1px #dadada;
 }
-
 .settings-section .wrapper-box .separator button.white-btn,
 .settings-section .wrapper-box .separator .button.white-btn {
    
@@ -1627,7 +1607,6 @@ background: -ms-linear-gradient(top, rgba(255,255,255,0.03) 0%, rgba(255,255,255
 background: linear-gradient(to bottom, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.05) 78%, rgba(255,255,255,0.05) 80%, rgba(255,255,255,0.05) 81%, rgba(255,255,255,0.05) 81%, rgba(255,255,255,0.05) 82%, rgba(255,255,255,0.05) 83%, rgba(255,255,255,0.05) 84%, rgba(255,255,255,0.05) 85%, rgba(153,153,153,0.05) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#999999', GradientType=0 );
 }
-
 select {
       height: 41px;
       border-radius: 7px;
@@ -1641,12 +1620,10 @@ select {
       font-family: 'Open Sans', sans-serif;
       cursor: pointer;
 }
-
 select option {
   background-color: white;
   font-family: 'Open Sans', sans-serif;
 }
-
 .settings-section input[type=checkbox]:not(old),
 .settings-section input[type=radio   ]:not(old){
     width: 20px;
@@ -1665,7 +1642,6 @@ select option {
   opacity   : 0;
   cursor: pointer;
 }
-
 .reveal-modal .close-reveal-modal {
       top: -2px;
     right: 8px;
@@ -1676,7 +1652,6 @@ input[type=radio   ]:not(old) + label{
   margin-left  : -2em;
   line-height  : 1.5em;
 }
-
 
 /* Radio Button Styles */
 
@@ -1730,46 +1705,26 @@ input[type=checkbox]:not(old):checked + label > span:before{
 
 
 /* Profile Page */
-@media all and (max-width: 640px) {
-  .profile-page .author-courses  .price-box p {
-    position: relative;
-  }
-  .profile-page .author-courses  .price-box span {
-    position: absolute;
-    top: -33px;
-    right: 0;
-  }
-  .profile-page .author-courses .wrapper-box button.enroll-btn {
-    margin-left: 0;
-  }
+@media all and (max-width: 640px) {/*
   .profile-page .profile-header button.follow-btn {
     margin-top: 0px;
     margin-bottom: 20px;    
-  }
-
+  }*/
 }
-
 section.author-courses {
     background-color: white;
     padding-top:15px;
 }
-
-
+section.author-courses h2 {
+  margin: 20px 0;
+}
+.author-short-desc small {
+  color: #202020;
+}
 .profile-header {
     background-color: white;
-    padding-top: 58px;
+    margin-top: 58px;
 }
-.author-profile-box {
-  max-width: 200px;
-  margin: 0 auto;
-  padding-top: 50px;
-}
-
-.profile-header .tabs {
-  margin: 25px 0;
-}
-
-
 button.follow-btn {
     width: 110px;
     font-weight: 600;
@@ -1780,12 +1735,10 @@ button.follow-btn {
     background-color: #84d26d;
     box-shadow: 0 1px 2px rgba(98, 98, 98, 0.32);
 }
-
 .author-information-box h3 {
     font-size: 14px;
     font-weight: 700;
 }
-
 .author-information-box p {
     font-size: 14px;
     margin: 10px auto;
@@ -1794,65 +1747,29 @@ button.follow-btn {
 .author-courses .author-box {
     margin: 8px auto 0px;
 }
-.author-courses .wrapper-box button.enroll-btn {
-  margin-left:20px;
-  font-weight: 700;
-}
-.author-courses .wrapper-box .img-box .thumbnail-image {
-      border-top-right-radius: 0;
-}
-.author-courses .author-box .author-circle-pic {
-    margin: initial;
-}
-.author-courses .course-row {
-  margin-bottom: 20px;
-}
-.author-courses .course-row a.green:hover {
-  color: #74C15E;
-}
-.author-courses .header-top-course {
-  padding-top:10px;
-}
-.author-courses .course-row .wrapper-box {
-  background-color: rgba(252, 252, 252, 0.41);
-} 
-.author-courses .wrapper-box .price-box span.new-price, .price-box span.price {
-  font-weight: 700;
-}
-.author-courses .wrapper-box .author-box p a {
-  color: #020202;
-  font-weight: 700;
-}
 .profile-widget h3 {
     margin: 15px auto;
 }
 .profile-widget div:first-child h3 {
   margin: 0;
   margin-bottom: 15px;
-
 }
-
 .profile-widget .author-biography p {
   color: #666666;
 }
-
 .profile-widget .social-profiles {
   margin-top: 25px;
   margin-bottom: 25px;
 }
-
 .profile-widget .social-profiles a{
   font-size: 13px;
   color: #adadad;
 }
-
 .profile-widget .social-profiles span{
     display: inline-block;
     margin-right: 10px;
     margin-top: 5px;
-    
 }
-
 .profile-widget .social-profiles i.fa {
     background-color: #B4ADAD;
     padding: 5px;
@@ -1891,14 +1808,14 @@ button.follow-btn {
 /*#followers-modal {
       top: 850px !important;
 }*/
-
+/*
 .profile-page #followers-modal .users {
   text-align: center;
 }
 .profile-page #followers-modal .author-circle-pic {
   margin: 4px;
 }
-
+*/
 
 .author-profile-box .author-circle-pic {
       width: 150px;
@@ -1908,11 +1825,13 @@ button.follow-btn {
       border: 7px solid rgba(255, 255, 255, 0.5);
       background-size: 100%;
 }
-
 .author-profile-box .author-stats {
     margin-bottom: 15px;
 }
-
+.author-profile-box .author-stats .courses p {
+  font-size: 15px;
+  margin: 0;
+}
 .author-profile-box h2 {
     font-size: 23px;
     font-weight: 700;
@@ -1946,11 +1865,36 @@ button.follow-btn {
     position: relative;
     top: 1px;
 }
+ .author-profile-box {
+  max-width: initial;
+  margin-top: 20px;
+  padding-top: 0;
+}
 .author-profile-box .social-profiles span .fa {
     color: white;
     font-size: 9px;
     position: relative;
     top: -2px;
+}
+ .profile-widget p {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: none;
+}
+ .profile-widget h3 {
+      font-size: 15px;
+    font-weight: 700;
+}
+
+.author-profile-box .social-profiles a {
+      font-size: 13px;
+      font-weight: 500;
+}
+.course-profile-wrapper {
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(218, 218, 218, 0.75);
+    padding: 16px 8px;
 }
 button.follow-btn {
     width: 100%;
@@ -1973,41 +1917,12 @@ button.follow-btn {
     margin: 8px auto 0px;
 }
 
-
 /* Course and Lesson Page */
 section.br-cr > .row , section.course-header > .row , section.course-content > .row , section.bootom-enroll > .row  {
       max-width: 61.25em;
 }
-
 .course-content p{
   font-size: 15px;
-}
-.course-page .author-profile-box {
-  max-width: initial;
-  margin-top: 20px;
-  padding-top: 0;
-}
-.course-content .profile-widget p {
-  font-size: 13px;
-  font-weight: 500;
-  text-transform: none;
-}
-.course-content .profile-widget h3 {
-      font-size: 15px;
-    font-weight: 700;
-}
-.course-page .author-profile-box h2.author-name {
-  margin: 0 auto;
-}
-.course-page .author-profile-box .social-profiles a {
-      font-size: 13px;
-      font-weight: 500;
-}
-.course-profile-wrapper {
-    background-color: #ffffff;
-    border-radius: 4px;
-    box-shadow: 0 1px 4px rgba(218, 218, 218, 0.75);
-    padding: 16px 8px;
 }
 section.course-header {
     padding: 0 40px;
@@ -2116,6 +2031,9 @@ section.course-header {
     font-size: 13px;
     color: #adadad;
     padding: 0 0 12px;
+}
+.course-profile-wrapper h2.author-name {
+  margin: 0 auto;
 }
 .course-lector img{
     border-radius: 50%;
