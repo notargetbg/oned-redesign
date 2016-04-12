@@ -1465,13 +1465,13 @@ div.percent-100 {
   color: #5ec0fd;
 }
 .settings-section .wrapper-box .setting-type {
-    background-color: #eeeff1;
+    background-color: rgb(132, 210, 109);
 }
 .settings-section .settings .setting-type h3 {
   margin: initial;
   padding: 20px;
   border-bottom: none;
-  color: #adadad;
+  color: #fff;
   font-weight: 700;
   padding-top: 10px;
   padding-bottom: 10px;
