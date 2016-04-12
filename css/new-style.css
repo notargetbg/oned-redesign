@@ -150,16 +150,16 @@ FaceBook Color -    #3a5a98
   color: #cc696a;
 }
 .green-bg {
-  background-color: #84d26d;
+  background-color: #84d26d !important;
 }
 .blue-bg {
-  background-color: #5ec0fd;
+  background-color: #5ec0fd !important;
 }
 .orange-bg {
-  background-color: #ef8717;
+  background-color: #ef8717 !important;
 }
 .red-bg {
-  background-color: #cc696a;
+  background-color: #cc696a !important;
 }
 .file-upload {
   position: relative;
@@ -3449,4 +3449,17 @@ small.errorMessage {
 /* My Courses */
 .my-courses .oned-horizontal-tabs {
   padding: 42px 0 24px;
+}
+/* Home Page - Featured Icons */
+.big-category-icons .big-category-icon {
+    display: block;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.1);
+    color: #fff;
+    text-align: center;
+    font-size: 4em;
+    line-height: 1.9em;
+    margin: 32px auto;
 }

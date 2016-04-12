@@ -107,7 +107,7 @@ Green:			#95C718;
 }
 /* Icon Classes */
 
-.big-category-icons .big-category-icon {
+/*.big-category-icons .big-category-icon {
 	display: block;
     width: 2em;
     height: 2em;
@@ -118,7 +118,7 @@ Green:			#95C718;
     font-size: 4em;
     line-height: 1.9em;
     margin: 32px auto;
-}
+}*/
 
 body .static-page .big-category-icons p {
     letter-spacing: 2px;
