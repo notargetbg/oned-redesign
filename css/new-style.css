@@ -848,8 +848,22 @@ li.search-courses input {
         border: none;
         font-size:14px;
         font-weight: 600;
-    box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.35) inset;
+   
+
+/*    box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.35) inset; */
+    float: left;
+    width: 90%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
+li.oned-menu-item button {
+    width: 35px;
+    min-height: 40px;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important; 
+        margin-top: 0 !important;
+}
+
 li.search-courses input:active,
 li.search-courses input:focus {
   background-color: #fff;
@@ -943,7 +957,7 @@ li.oned-menu-item button {
     text-align: center;
        width: 18px;
     height: 18px;
-    color: #1F1F1F;
+    color: #fff;
     font-size: 18px;
     cursor: pointer;
      -webkit-transition: transform  .3s ease-in;
@@ -3238,7 +3252,7 @@ span.label {
     width: initial;
         padding: 0 12px;
 }
-.create-course-page i.fa {
+.create-course-page .settings-section i.fa {
   position: relative;
   top: 0;
   
