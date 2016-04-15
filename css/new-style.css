@@ -485,6 +485,15 @@ button.profile-btn .fa-dot-circle-o {
     right: -1px;
     top: -1px;
 }
+.home-page .main-section .search-courses input {
+  float: left;
+  width: 75%;
+}
+.home-page .main-section .search-courses button {
+  width: 22.5%;
+  margin-left: 2.5%;
+  height: 50px;
+}
 
 .color-light-grey {
 	color: #666666;
@@ -2843,7 +2852,7 @@ h2.section-slider-controls i.fa {
     text-shadow: 1px 1px 0 white;
 }
 .home-page .section-slider-controls {
-  
+
     margin-top: 30px;
 }
 .discover-page h2.section-slider-controls i.fa {
