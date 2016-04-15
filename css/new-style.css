@@ -489,6 +489,15 @@ button.profile-btn .fa-dot-circle-o {
     right: -1px;
     top: -1px;
 }
+.home-page .main-section .search-courses input {
+  float: left;
+  width: 75%;
+}
+.home-page .main-section .search-courses button {
+  width: 22.5%;
+  margin-left: 2.5%;
+  height: 50px;
+}
 
 .color-light-grey {
 	color: #666666;
@@ -852,15 +861,13 @@ li.search-courses input {
         border: none;
         font-size:14px;
         font-weight: 600;
-   
-
 /*    box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.35) inset; */
     float: left;
-    width: 90%;
+    width: 80%;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
-li.oned-menu-item button {
+li.oned-menu-item button.search-btn {
     width: 35px;
     min-height: 40px;
     border-top-left-radius: 0 !important;
@@ -2787,7 +2794,12 @@ section.course-header {
 .section-title {
   margin-bottom: 25px;
 }
-
+.section-category-title {
+  font-size: 40px;
+  margin: 25px auto;
+      color: #969696;
+    text-shadow: 1px 1px 0 white;
+}
 
 /* Tabs For Home Page */
 .home-page .tabs {
@@ -2838,6 +2850,12 @@ h2.section-slider-controls i.fa {
     font-size: 30px;
     margin-left: 30px;
     cursor: pointer; 
+        color: #969696;
+    text-shadow: 1px 1px 0 white;
+}
+.home-page .section-slider-controls {
+
+    margin-top: 30px;
 }
 .discover-page h2.section-slider-controls i.fa {
 margin-bottom: 12px;
