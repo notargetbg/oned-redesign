@@ -857,11 +857,9 @@ li.search-courses input {
         border: none;
         font-size:14px;
         font-weight: 600;
-   
-
 /*    box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.35) inset; */
     float: left;
-    width: 90%;
+    width: 80%;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
