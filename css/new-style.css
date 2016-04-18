@@ -1243,7 +1243,7 @@ body .step-2 p{
 .select-all-box {
     margin: 32px 0 16px;
 }
-.step-2 input.gender-m[type=checkbox ]:not(old) + label > span {
+.step-2 input.gender-m:not(old) + label > span {
     margin: 0;
     padding: 0;
     cursor: pointer;
@@ -1255,7 +1255,7 @@ body .step-2 p{
     height: 40px;
     display: block;
 }
-.step-2 input.gender-f[type=checkbox ]:not(old) + label > span {
+.step-2 input.gender-f:not(old) + label > span {
     margin: 0;
     padding: 0;
     cursor: pointer;
@@ -1266,6 +1266,9 @@ body .step-2 p{
     width: 40px;
     height: 40px;
     display: block;
+}
+.step-2 input[type=radio ]:not(old) + label {
+  margin-left: 0;
 }
 .step-2 input.lang-b[type=checkbox ]:not(old) + label > span {
     margin: 0 24px;
@@ -1334,11 +1337,11 @@ input.categoty-i[type="checkbox"] + label, input[type="radio"] + label {
     background-color: #5ec0fd;
     color: #fff;
 }
-.step-2 input[type=checkbox]:not(old):checked + label > span {
+.step-2 input:not(old):checked + label > span {
     text-align: center;
-    background-position: top;
+    background-position: top !important;
 }
-input.gender-f[type="checkbox"],input.gender-m[type="checkbox"],
+input.gender-f[type="radio"],input.gender-m[type="radio"],
 input.lang-b[type="checkbox"],input.lang-e[type="checkbox"],input.lang-r[type="checkbox"],
 input.categoty-i[type="checkbox"],input.select-all[type="checkbox"],
 .step-2 input.gender-f[type=checkbox]:not(old):checked + label > span:before, 
