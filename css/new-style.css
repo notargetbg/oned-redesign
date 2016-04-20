@@ -2213,6 +2213,11 @@ section.course-header {
     font-size: 32px;
     vertical-align: middle;
 }
+.notifications .lessons a i {
+    color: #5EC0FD;
+    font-size: 18px;
+    margin-left: 20px;
+}
 .lessons .fa-youtube-play {
     margin-left: 6px;
 }
