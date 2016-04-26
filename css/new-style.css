@@ -73,7 +73,15 @@ form {
   background: #ffffff;
   color: #263339;
 }
-
+a:hover, a:focus {
+    color: #19a5fc;
+}
+a.green:hover, a.green:focus {
+    color: #63bb49;
+}
+a.orange:hover, a.orange:focus {
+    color: #cf6b00;
+}
 /* Custom Tooltips */
 
 .twrapper {
@@ -118,8 +126,11 @@ form {
 /* Colors Pallete 
 
 Green  -      #84d26d
-Blue   -        #5ec0fd
+Green:Hover-  #63bb49
+Blue   -      #5ec0fd
+Blue:Hover-   #19a5fc
 Orange -      #fbaf41
+Orange:Hover- #cf6b00
 Red    -      #c7595a / cc696a
 Grey   -      #eeeff1
 Light Grey -    #666666
@@ -220,6 +231,10 @@ button.green-btn,.button.green-btn {
     background-color: #84d26d;
     font-weight: 600;
     text-transform: none;
+}
+button.green-btn:hover,.button.green-btn:hover,
+button.green-btn:active,.button.green-btn:active {
+    background-color: #63bb49;
 }
 button.blue-btn, .button.blue-btn {
     text-transform: uppercase;
@@ -1384,7 +1399,8 @@ button.twitter-btn {
 }
 /* Settings Page Styles Start Here */
 section.settings-section {
-    padding-top: 130px;
+    padding-top: 88px;
+    padding-bottom: 30px;
 }
 
 .settings-section .wrapper-box {
@@ -1740,7 +1756,7 @@ input[type=checkbox]:not(old):checked + label > span:before{
   }*/
 }
 section.author-courses {
-    background-color: white;
+   /*background-color: white;*/
     padding-top:15px;
 }
 section.author-courses h2 {
@@ -1751,7 +1767,7 @@ section.author-courses h2 {
 }
 .profile-header {
     background-color: white;
-    margin-top: 58px;
+    padding-top: 58px;
 }
 button.follow-btn {
     width: 110px;
@@ -1762,6 +1778,9 @@ button.follow-btn {
     color: #ffffff;
     background-color: #84d26d;
     box-shadow: 0 1px 2px rgba(98, 98, 98, 0.32);
+}
+button.follow-btn:hover, button.follow-btn:active {
+   background-color: #63bb49;
 }
 .author-information-box h3 {
     font-size: 14px;
@@ -2347,7 +2366,7 @@ section.course-header {
     height: 40px;
     margin-bottom: 4px;
     margin-top: 32px;
-    padding: 14px;
+    padding: 8px;
     width: 40px;
 }
 .chevron-button:hover{
@@ -2480,8 +2499,11 @@ section.course-header {
     text-transform: uppercase;
     width: auto;
     color: white;
-    -webkit-transition: all .8s ease-in;
-    transition: all .8s ease-in;
+}
+.course-widget-price button:hover, .create-course-enroll:hover,
+.course-widget-price button:focus, .create-course-enroll:focus {
+    background-image: linear-gradient(to bottom, #fb6e00, #fb6e00);
+    color: #ffffff;
 }
 .course-widget-price button:hover, .create-course-enroll {
     background-image: linear-gradient(to bottom, #fb6e00, #fb6e00);
@@ -2763,7 +2785,10 @@ section.course-header {
 .webinar button, .webinar .button {
     background-color: #84cf6e;
 }
-
+.webinar button:hover, .webinar .button:hover,
+.webinar button:focus, .webinar .button:focus {
+    background-color: #63bb49;
+}
 .webinar .details p span,
 .pre-made-course .details p span,
 .live-course .details p span {
@@ -2959,6 +2984,9 @@ margin-bottom: 12px;
   padding: 4px 16px;
   width: auto;
 }
+.lesson-files-files button:hover{
+  background-color: #63bb49;
+}
 .lesson-files-title span{
   font-size: 13px;
   text-transform: uppercase;
@@ -2970,9 +2998,9 @@ margin-bottom: 12px;
   margin-bottom: -16px;
   margin-top: 20px;
 }
-.lesson-page section{
+/*.lesson-page section{
   background-color: #ffffff;
-}
+}*/
 .lesson-page .course-header h1{
   margin: 20px 0;
 }
