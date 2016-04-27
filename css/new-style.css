@@ -1418,6 +1418,12 @@ div.percent-100 {
 .position-relative {
     position: relative;
 }
+.position-absolute {
+  position: absolute;
+}
+.position-static {
+  position: static;
+}
 .border-radius-top-7px {
     border-top-left-radius: 7px;
     border-top-right-radius: 7px; 
@@ -1439,6 +1445,9 @@ div.percent-100 {
 }
 .margin-top-10 {
   margin-top: 10px;
+}
+.margin-top-15 {
+    margin-top: 15px;
 }
 .margin-top-58 {
   margin-top: 58px;
