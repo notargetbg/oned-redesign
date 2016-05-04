@@ -3349,7 +3349,9 @@ span.label {
 .create-course-page a.delete i.fa:active {
   top: 2px;
 }
-
+.create-course-page i.fa.clickable:active {
+  top: 2px;
+}
 .separator .lessons span {
   display: inline-block;
    min-width: 55px;
