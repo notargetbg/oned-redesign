@@ -2719,6 +2719,9 @@ section.course-header {
   margin: 5px;
   line-height: 30px;
   font-family: 'Comfortaa', cursive;
+  white-space: pre;
+    display: inline-block;
+    line-height: 24px;
 }
 
 
