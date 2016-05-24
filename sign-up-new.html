@@ -133,6 +133,20 @@
                             <p class="help-link-login">
                               <a href="#">Forgot your password?</a>
                             </p>
+                            <form id="forgot-pass-form">
+                              <div class="row">
+                                <div class="large-24 columns">
+                                  <div class="row collapse">
+                                    <div class="small-20 columns">
+                                      <input style="margin: 0;" type="text" placeholder="Enter an email">
+                                    </div>
+                                    <div class="small-4 columns">
+                                      <a href="#" class="button postfix forgot-pass-btn">Go</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
                            
                             
                           </div>
@@ -328,6 +342,10 @@
               $(this).removeClass('rotate-close-search');
             }
           );
+
+         $(".help-link-login a").click(function(){
+          $("#forgot-pass-form").slideToggle(300);
+         });
 
        $('#login-modal .wrapper-box').addClass("hidden animated fadeIn").css({"animation-delay": 0.4 + "s"});
 
