@@ -3533,6 +3533,15 @@ small.errorMessage {
 .my-courses .oned-horizontal-tabs {
   padding: 42px 0 24px;
 }
+.my-courses-modal.reveal-modal {
+    top: 35% !important;
+    position: fixed;
+}
+@media all and (max-width: 768px) {
+    .my-courses-modal.reveal-modal {
+        min-height: auto;
+    }
+}
 /* Home Page - Featured Icons */
 .big-category-icons .big-category-icon {
     display: block;
