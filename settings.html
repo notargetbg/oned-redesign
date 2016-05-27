@@ -121,6 +121,11 @@
                 </a>
               </li>
               <li class="tab-title">
+                <a href="#social-profiles-tab">
+                  Social profiles
+                </a>
+              </li>
+              <li class="tab-title">
                 <a href="#newsletter-tab">
                   Newsletter
                 </a>
@@ -571,6 +576,81 @@
                   </div>
                 </div>
 
+              </div>
+            </div>
+
+            <!-- Social Profiles Settings -->
+            <div id="social-profiles-tab" class="row content  animated fadeInUp">
+              <div class="large-24 columns wrapper-box">
+                <form data-abide>
+                  <div class="separator">
+                    <h2>Social profiles</h2>
+                    <p>
+                        Your social network URL will be displayed on your profile page.
+                    </p>
+                      <p class="margin-top-5">
+                         <em class="vlt-gray">Example:</em> <kbd>https://twitter.com/SassCSS</kbd>
+                      </p>
+                  </div>
+                 
+                  <div class="separator">
+                    <div class="row">
+                      <div class="large-6 columns">
+                        <p><i class="fa fa-facebook fb-color"></i> Facebook Account</p>
+                      </div>
+                      <div class="large-18 columns">
+                        <div class="">
+                          <input required pattern="url" id="fb-account" type="text" name="fb-account"  placeholder="paste your Facebook account">
+                          <small class="error">Your link url must be valid.</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="separator">
+                    <div class="row">
+                      <div class="large-6 columns">
+                        <p><i class="fa fa-twitter tw-color"></i> Twitter Account</p>
+                      </div>
+                      <div class="large-18 columns">
+                        <div class="">
+                          <input required pattern="url" id="tw-account" type="text" name="tw-account"  placeholder="paste your Twitter account">
+                          <small class="error">Your link url must be valid.</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="separator">
+                    <div class="row">
+                      <div class="large-6 columns">
+                        <p><i class="fa fa-linkedin li-color"></i> LinkedIn Account </p>
+                      </div>
+                      <div class="large-18 columns">
+                        <div class="">
+                          <input required pattern="url" id="fli-account" type="text" name="li-account"  placeholder="paste your LinkedIn account">
+                          <small class="error">Your link url must be valid.</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Perhaps give the russian/ukrainian users etc. the option of vkontakt account ? just a suggestion... -->
+                  <div class="separator">
+                    <div class="row">
+                      <div class="large-6 columns">
+                        <p><i class="fa fa-vk vk-color"></i> VK Account </p>
+                      </div>
+                      <div class="large-18 columns">
+                        <div class="">
+                          <input required pattern="url" id="vk-account" type="text" name="vk-account" placeholder="paste your VKontakte account">
+                          <small class="error">Your link url must be valid.</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </form>
               </div>
             </div>
 

@@ -140,8 +140,24 @@ Dirty White -   #f6f8f7
 Black  -      #000000
 Dark   -      #263339
 BG for Register -   #f6f8f7
-FaceBook Color -    #3a5a98
 */
+
+/*FaceBook Color - #3a5a98*/
+.fb-color {
+  color: #3a5a98;
+}
+/*Twitter Color - #1C9DED*/
+.tw-color {
+  color: #1C9DED;
+}
+/*LinkedIn Color - #00669B*/
+.li-color {
+  color: #00669B;
+}
+/*VKontakte Color - #597DA3*/
+.vk-color {
+  color: #597DA3;
+}
 .white {
   color: #ffffff;
 }
@@ -159,6 +175,9 @@ FaceBook Color -    #3a5a98
 }
 .red {
   color: #cc696a;
+}
+.vlt-gray {
+    color: #adadad;
 }
 .green-bg {
   background-color: #84d26d !important;
@@ -364,7 +383,7 @@ section.header-section {
 }
 @media all and (min-width: 1280px) {
   section.header-section {
-    background-size: 100%;
+    background-size: cover;
   }
 }
 @media all and (max-width: 1140px) {
@@ -624,6 +643,7 @@ footer .copyright {
 .wrapper-box .author-box p, .wrapper-box .author-box p a {
   font-family: 'Open Sans', sans-serif;
   color: #717171;
+  margin-bottom: 5px;
 }
 .wrapper-box .tags span  {
   border-radius: 4px;
@@ -643,11 +663,12 @@ footer .copyright {
   font-weight: 600;
   font-size: 13px;
   font-family: 'Open Sans', sans-serif;
+  margin-bottom: 0;
 }
 
 .wrapper-box .details .social i.fa {
   font-size: 17px;
-  margin: 10px 0;
+  margin: 10px 0 0;
   color: #b5b5b5;
   margin-left: 6px;
 }
@@ -816,6 +837,8 @@ footer .copyright {
 .price-box span.new-price,.price-box span.price {
 	font-size: 21px;
 	font-weight: 600;
+  float: right;
+  line-height: 18px;
 }
 .price-box span.old-price {
 	font-size: 13px;
@@ -1416,6 +1439,11 @@ section.settings-section {
 
 .settings-section .wrapper-box {
     padding: 0;
+}
+#social-profiles-tab i.fa {
+    width: 22px;
+    text-align: center;
+    font-size: 19px;
 }
 /* Utility Classes */
 .text-alight-center {
@@ -2799,6 +2827,8 @@ section.course-header {
 
 .price-box p {
   font-family: 'Open Sans', sans-serif;
+  margin-bottom: 0;
+  line-height: 28px;
 }
 
 .live-course button, .live-course .button {
@@ -3125,7 +3155,7 @@ section .panel h5 {
 }
 
 .discover-page .wrapper-box .details p {
-  min-height: 42px;
+  /*min-height: 42px;*/
 }
 .discover-page .sub-nav dl {
       margin-bottom: 0;
@@ -3216,7 +3246,7 @@ button.sort:active, button.sort:focus {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   color: #263339;
-  padding: 8px 4px 8px 12px;
+  margin-right: 5px;
 }
 .discover-page .filter-sort-order .f-dropdown.tiny {
   max-width: 120px;
