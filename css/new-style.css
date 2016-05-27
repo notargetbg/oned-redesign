@@ -271,6 +271,10 @@ button.white-btn, .button.white-btn {
     text-transform: uppercase;
     background-color: #ffffff;
 }
+#close-enter-webinar {
+    border: 2px solid;
+    padding-top: 3px;
+}
 button.white-btn.view-more , .button.white-btn.view-more {
     width: 250px;
     margin-top: 35px;
